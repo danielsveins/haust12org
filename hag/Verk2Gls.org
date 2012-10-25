@@ -1,0 +1,50 @@
+* Heimaverkefi 2 Hagverkfræði      Bergur Þorgeirsson
+
+1.  Á öðru ári væri framtíðarvirði 100 kallsins sem er borgaður út á fyrsta ári 
+  orðið 100*(1+0.1) = 110  .
+    Á þeim sama tímapunkti þ.e.a.s. á ári tvö væri núvirði greiðslunar sem kæmi
+á þriðja ári 100/(1+0.1) = 90.9
+    mætti því mögulega meta sem svo að sammanlagt virði greiðsluflæðis á ári 2
+væri 200.9
+
+2.   
+  6*13 = 78 þ.a.  ef við gefum okkur áframhaldandi 6$ hækkun á hverju 4 vikna 
+skeiði þá verður tunnan 130$ eftir árið. þ.a. ávöxtun á ársgrundvelli væri
+    (130-52)/52 = 1.5   sem gerir 150% ávöxtun
+
+3.
+  159.72 = p = A/(1+0.12) + A/(1+0.12)^4
+
+
+   =  A/(1.12) + A/(1.573)
+
+
+P/A = 1/1.12 + 1/1.573 = 1.528
+    
+
+    A = P/1.528   =  104.53
+
+4.
+  
+  Núvirðum tekjurnar til stofnunartíma
+     p = 100/(1+0.05) + 40/(1+0.05)^2 = 131.52
+
+en stofnfjárfestinginn var 125, þ.a. þetta er 
+arðbært mv. 5% ávöxtunarkröfu 
+
+ef við hinsvegar framtíðarvirðum allt fram í ár 2 
+tekjur F = 100*1.05 + 40 = 145
+     samanborið við 125(1.05)^2 = 137.8
+
+   þ.a. sést líka miðað við 5% ávöxtunarkröfu að fjárfestingin
+er arðbær
+
+Ef ávöxtunarkrafa er 22%
+Framtíðarvirðum í ár 2
+=>   tekjur F = 100*1.22 + 40 = 162
+       en
+     125(1.22)^2 = 186.05
+
+
+þ.a. hér  má sjá að fjárfestinginn er ekki arðbær mv. 22% 
+ávöxtunarkröfu.

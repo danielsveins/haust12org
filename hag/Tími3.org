@@ -1,0 +1,120 @@
+* Fyrl 3 Hagverkfr Glos
+
+Veldisvextir
+
+V = A * (1+r)^t
+V = A *(1+r/m)^(mt)      er það sama... sambærilegt
+
+P = C0 + C1/(1+r) + C2/((1+r)^2 + ....+ Cn/(1+r)^n
+
+F = C0*(1+r)^n + C1*(1+r)^(n-1)+ ... + Cn
+
+P = F/(1+r)^n
+
+Simple intrest (flatir vextir) is used infrequently
+
+Dæmi: Sparnaður og eyðsla
+
+Við viljum leggja fyrir 3 greiðslur, geyma peninginn í tvö ár, og taka hann
+síðan út í tveimur greiðslum.
+
+C   C   C    
+------------------------------------>
+0   1   2    3    4     5
+                  A     A  
+
+
+C og r eru þekkt en okkur vantar A.  Notum 3 sem viðmiðunarár.
+Sparnaðurinn:
+C*(1+r)^3 + C*(1+r)^2 + C*(1+r) = Framtíðarvirði á ári 3
+Eyðsla:
+A/(1+r) + A/(1+r)^2 = núvirði á ári 3
+
+við viljum sparnaður = eyðsla
+
+=>  C(1+r)^3 + C(1+r)^2 + C(1+r) = A/(1+r) +A/(1+r)^2
+
+Ef r = 0% => 3C = 2A => A = 1,5C
+
+A = C(((1+r)^3 + (1+r)^2 + (1+r))/(1/(1+r) + 1/(1+r)^2))
+
+hér er viðmiðunarpunkturinn 3.
+
+Dæmi: Lífeyrisparnaður
+þú leggur fram 250000 á ári
+við vinnum frá 25 til 65 ára.            4% séreignarsparnaður af c.a. 520000 kr/man
+tökum lífeyrir út frá 66 til 75 ára       eru um 250000 kr/ári
+Hver verður lífeyririnn?
+ 
+   250  250  250       250
+---------------------------------------
+0   1    2    3  ...... 40    41    42
+                              A     A
+
+
+veljum ár 40 til viðmiðunar, en það er ár lokagreiðslunar
+Framtíðarvirðum allar greiðslur í þann pkt og
+Núvirðum lífeyrisgreiðslur líka í þann pkt.
+Sparnaður = lífeyrir á ári 40
+
+250000((1+r)^39 + (1+r)^38 + ... + (1+r)^0) = A((1+r)^-1 +(1+r)^-2 +...+(1+r)^-10)
+
+Ef r = 0% => A = 1 milljon kr
+   r = 5% => A = 3,9 mkr
+   r = 7% => A = 7,1 mkr
+
+** Ávöxtun
+
+ávöxtun er breyting á virði mælt í %, hækkun eða lækun á tímabili: 
+   (P{t}-P{0})/P{0}
+P{0} : Virði á tíma 0
+P{t} : Virði á tíma t
+- ÁVÖXTUNINN:
+Finna y sem leysir: Pt = P0*(1-y)^t
+y: ávöxtun
+
+um miðjan ágúst var álverð 1.830 $/tonn
+viku síðar var álverðið    1.850 $/tonn
+
+Hækkunin var  (1.850 - 1.830)/1.830  =  1,1% hækkun
+
+ávöxtun á ársgrunni => 1.850 = 1.830*(1+y)^(1/52)
+=>  y = 76% ávöxtun
+þetta þýðir að ef við fengjum þessa ávöxtun í heilt ár yrði 
+álverðið: 1.830 * (1+76%) = 3.220
+
+
+gott að sjá ávöxtun með .com bólunni  um 2000 og hrunið 2008 til að 
+meta ávöxtun í einhverjum sjóði eða banka.
+
+
+** Raunávöxtun/Verðbólga
+
+Verðbólga : Hækkun yfir tímabil
+Verðhjöðnun : Lækkun yfir tímabil
+Vísitala neysluverðs sett í 100 í maí 1988
+í ágúst 2012 var hun 396,60
+
+
+
+http://hagstofa.is/Hagtolur/Verdlag-og-neysla/Visitala-neysluverds
+
+Ef bankabók ber 10% vexti
+
+                            110
+------------------------------
+t=0
+100
+
+Ef verðbólga væri 10% þá er "Raunávöxtun" = 0
+Nafnávöxtun : ávöxtun fjármuna
+Raunávöxtun : ávöxtun leiðrétt fyrir verðbólgu
+
+Hvað eru verðbætur?
+
+Verð eftir 1 ár er jafnt (1+V) V:Verðbætur mælt í %
+
+Formúla fyrir raunvexti er :
+  (1+y{r}) = (1+y)/(1+v)              y{r} = raunávöxtun : vextir og verðbætur 
+                                      y : Nafnávöxtun : vextir á ákveðnu tímabili
+

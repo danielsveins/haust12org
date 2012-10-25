@@ -1,0 +1,40 @@
+* Jotunn
+
+** jotunn Intro
+Koffein:  CH3       Anybody is welcome
+           | to work on Jotunn |   |       |       |                                                           |
+           | O=C---N           |   |       |       |                                                           |
+           | /     \           |   |       |       |                                                           |
+           | H3C-N       C=O   |   |       |       |                                                           |
+           | \     /           |   |       |       |                                                           |
+           | C===C             |   |       |       |                                                           |
+           |                   | \ |       |       |                                                           |
+           |                   |   | N-CH3 |       |                                                           |
+           |                   |   |       | /     |                                                           |
+           |                   |   |       | N===C |                                                           |
+           |                   |   |       |       |                                                           |
+           |                   |   |       |       | H                                                         |
+           |                   |   |       |       |                                                           |
+           |                   |   |       |       | Please read the Jotunn guide:                             |
+           |                   |   |       |       | less /etc/lrms/Jotunn-guide.txt                           |
+           |                   |   |       |       |                                                           |
+           |                   |   |       |       | Necessary info for user setup. Run:                       |
+           |                   |   |       |       | less /etc/lrms/userinfo.txt                               |
+           |                   |   |       |       |                                                           |
+           |                   |   |       |       | Information about changes and                             |
+           |                   |   |       |       | enhancements on Jotunn. Run:                              |
+           |                   |   |       |       | less /etc/lrms/changelog.txt                              |
+           |                   |   |       |       | ***** OVERLOAD *****                                      |
+           |                   |   |       |       | Wed Aug 24 12:06:01 GMT 2011                              |
+           |                   |   |       |       | Some users crashed the server by overload.                |
+           |                   |   |       |       | ***** OS UPDATE *****                                     |
+           |                   |   |       |       | 07. dec 2010 22:20 Server taken down to install Red Hat 5 |
+           |                   |   |       |       | ***** NEW COMMANDS *****                                  |
+           |                   |   |       |       | 31. march 2010                                            |
+           |                   |   |       |       | cdheima   # cd to the externally mounted                  |
+           |                   |   |       |       | # drive on heima.rhi.hi.is .                              |
+           |                   |   |       |       | cdhome    # cd to the local directory                     |
+           |                   |   |       |       | # /usr/local/home/$USER                                   |
+           |                   |   |       |       | See: /etc/lrms/Jotunn-guide.txt                           |
+           |                   |   |       |       | [bergurth@jotunn ~]$ emacs veit.txtauto-logout            |
+           |                   |   |       |       |                                                           |

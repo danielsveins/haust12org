@@ -1,0 +1,59 @@
+Einstæklingsverkefni 1 Forritunarmál
+
+Bergur Þorgeirsson    d3     kt. 160881 3803
+
+
+1. Mál allra strengja yfir {'(',')'}, þar sem svigar eru í jafnvægi.  Sýnið 
+útleiðslutré fyrir strenginn '()(())'.
+BNF
+S->(S)S|e
+
+EBNF
+S = '(',S,')',S|
+
+MÁLRIT
+                 
+    /---- \
+   |      |
+---\-[S]--/---------------->
+   /               \
+   |               |
+    \-----[(S)]----
+
+
+
+()(())
+
+útleiðist
+
+              
+               S
+               |
+             (S)S
+             /   \
+            ()   (S)S
+                 /  \
+              ((S)S)  e
+               /   |
+               e   e
+
+
+        QED.  ()(())
+
+  
+
+
+lýsið í stuttu máli málum þeim, sem eftirfarandi BNF mállýsingar lýsa:  
+
+6.  S -> SS+ | SS- |t
+
+dæmi:
+s>ss+>SS-t+>SS+t-t+>tt+t-t+
+
+s>ss+>ss-t+>tt-t+
+
+s>ss->sss-->ssss--->sssss----
+
+mál strengja sem enda alltaf á - eða + ef þeir eru ekki bara stakt t.Það er 
+alltaf einn fleirri t en + og - til sammans. 
+

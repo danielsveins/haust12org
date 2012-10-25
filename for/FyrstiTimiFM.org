@@ -1,0 +1,140 @@
+* Fortnml fyrsti tími
+
+-d2 morgun á thridjudegi er dæmatíminnö hugbunvrfr og stae
+
+-1 til 2 verkefni á viku
+vikuleg einstæklingsverkefni ..skil 3 dögum fyrir dæmatímanum sem þú ert í
+þ.a. - föstd. ef þú ert á þriðd.
+-skil fyrir fyrsta dæmatíma vikunar hefur í för með sér fulla einkun
+
+10 bestu gilda til einkunar
+þarf að ná annarsvegar 4.5 í prófi...og meðaltal prófs og hins stuffs (verkefna einkunn)4.5
+
+
+** Efni námskeiðsins - Yfirlit
+-málfræði
+-inviðir -block structured Pascal, Scheme og Morpho  . .Ada
+-Fallforitun
+-ruslasöfnun -ekki í ...
+
+
+** Bók til hliðsjónar 
+Sebesta - þarf ekki að kaupa
+
+
+** Málfræði forritunarmála
+fortran lisp...Algol, þegar kom að Algol var fundið upp á BNF
+Backkus Normal Form
+eða BAckkus Naur Form
+
+Noam Chompskey skilgreindi það sama - context free languages
+í tölvunarfræði notum við eða höfum áhuga á samhengisfrjáls og regluleg mál.
+
+Mál er mengi strengja
+
+skilgreining er t.d.
+<expr> ::= <num> | ( <expr> ) | <expr> <op> <expr>
+<op> ::= + | - | * | /
+<num> ::= <digit> | <digit> <num>
+<digit> ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 
+
+strengur er í máli ef hægt er að leiða hann út frá þessari skilgr.
+
+innan pílusviga eru millitákn en endanleg tákn eru digit og op og svigar.
+Þessi endanlegu tákn mynda stafróf málsins en hin tákninn, millitáknin 
+koma bara við sögu í útleiðslunni.
+
+margræð mállýsing ef hægt er að leiða út sama strenginn á meira en einn hátt.
+
+1-2-3 = -4
+
+(1-2)-3 = -1-3 = -4
+
+1 - ( 2 - 3 ) = 1--1 = 2
+
+hægt að ganga frá málfræðinni í mállýsingunni
+en svo er líka bara hægt að muna t.d. reikna frá hlgri til vinstri
+
+gat á milli málfræði og merkingarfræði.
+
+*** Regluleg mál
+
+Regluleg mál eru einfaldari en samhengisfrjáls mál.  Regluleg mál eru undirmengi af
+samhengisfrjálsum málum.
+
+notuð til að lýsa frum einingum í forritunarmálum
+t.d.
+löglegir fleititölufastar í java
+1.0
+2.1e10
+osfv.
+
+ath .. finite state automaton, regular expressions og grep.
+
+þýðandinn
+
+
+Forrit -- lesgreining -- þáttun -- þulusnið -- class
+     
+     texti        les lexeme   tré  
+
+
+fræði og tækni fyrir regluleg mál eru öflugri þ.a. við notum þau tækni 
+eins langt og það nær
+
+ 
+grep-- general regular expression parser
+
+
+a
+
+getur haft 3 merkingar
+
+stafurin, strengurinn, og reglulega segðin ...  a
+
+M(xy)={uv|u e M(x), v e M(y)}
+M(x|y)=M(x) U M(y)
+
+
+0*={e,0,00,000,..
+
+0*12* = { 1,01,12,012, ..
+
+
++ eitt eða fleiri
+? 0 eða eitt endurt.
+stjarna eða * þýðir 0 eða fleirri
+
+þessi ofantöldu hafa mestann forang
+og svo
+XY
+og svo X|Y
+
+
+
+tölvur geta unnið mjög hratt úr reglulegum segðum.
+Þessu er náð fram með endanlegum stöðuvélum.
+Reglulegar segðir og endanlegar stöðuvélar skilgreina sama hlutinn - 
+regluleg mál.
+
+
+0*12*
+
+->o()0->(o)()2
+
+seinni stöðinn er lokastaða.
+
+allar bryðgengar(nnon determenistic) stöðuvélar hafa samsvarandi löggenga
+(deterministic) og samsvarandi reglulega segð.
+hvorutvegja er FSA finite state automaton.
+
+Málrit
+Syntax Diagram eða Railroad Diagram
+samhengisfrjáls mál
+CFL
+Context Free Language
+
+*** EBNF
+Extended BNF
+
+munur á táknum og metatáknum... 

@@ -1,0 +1,600 @@
+* Nand to Tetris
+
+
+TED talk
+http://www.ted.com/talks/shimon_schocken_the_self_organizing_computer_course.html
+
+YoutubeMyndband
+http://www.youtube.com/watch?v=IlPj5Rg1y2w
+
+Námskeið
+http://diycomputerscience.com/courses/course/the-elements-of-computing-systems
+
+Original Course Page.
+http://www.nand2tetris.org/
+
+http://www.nand2tetris.org/course.php
+
+** First Lecture glos
+
+explanation of CMOS nand gates
+http://tams-www.informatik.uni-hamburg.de/applets/hades/webdemos/05-switched/40-cmos/nand.html
+
+*** Transistors
+
+http://en.wikipedia.org/wiki/Transistor
+
+*** ALU (Arithmetic Logic Unit)
+This is the atithmatic logic unit
+
+
+
+
+** First Project (project 00)
+
+
+http://www.nand2tetris.org/00.php
+
+software _+ útskýringar
+http://www.nand2tetris.org/software.php
+note: in Unix use diff instead of text comparer-bat program
+
+ Project (project 00) er lokið  Tue Oct  9 23:11:46 GMT 2012
+
+
+** Project 01
+
+*** Lecture glos
+
+http://www.nand2tetris.org/01.php
+
+**** Boolean Algebra
+Elementary functons
+
+Not(x)
+
+| x | Not(x) |
+|---+--------|
+| 0 | 1      |
+| 1 | 0      |
+
+And(x,y)
+
+| x | y | And(x,y) |
+|---+---+----------|
+| 0 | 0 | 0        |
+| 0 | 1 | 0        |
+| 1 | 0 | 0        |
+| 1 | 1 | 1        |
+
+Or(x,y)
+
+| x | y | Or(x,y) |
+|---+---+---------|
+| 0 | 0 | 0       |
+| 0 | 1 | 1       |
+| 1 | 0 | 1       |
+| 1 | 1 | 1       |
+
+
+Nand(x.y)
+
+| x | y | Nand(x,y) |
+|---+---+-----------|
+| 0 | 0 |         1 |
+| 0 | 1 |         1 |
+| 1 | 0 |         1 |
+| 1 | 1 |         0 |
+
+
+Boolean functions
+
+All Boolean functions of 2 variables
+
+| Function    | x         | 0 | 0 | 1 | 1 |
+|             | y         | 0 | 1 | 0 | 1 |
+|-------------+-----------+---+---+---+---|
+| Constant 0  | 0         | 0 | 0 | 0 | 0 |
+| And         | x*y       | 0 | 0 | 0 | 1 |
+| x And Not y | x*-y      | 0 | 0 | 1 | 0 |
+| x           | x         | 0 | 0 | 1 | 1 |
+| Not x And y | -x*y      | 0 | 1 | 0 | 0 |
+| y           | y         | 0 | 1 | 0 | 1 |
+| Xor         | x*-y+-x*y | 0 | 1 | 1 | 0 |
+| Or          | x + y     | 0 | 1 | 1 | 1 |
+| Nor         | -(x+y)    | 1 | 0 | 0 | 0 |
+| Equivalence | x*y+-x*-y | 1 | 0 | 0 | 1 |
+| Not y       | -y        | 1 | 0 | 1 | 0 |
+| If y then x | x+-y      | 1 | 0 | 1 | 1 |
+| Not x       | -x        | 1 | 1 | 0 | 0 |
+| If x then y | -x+y      | 1 | 1 | 0 | 1 |
+| Nand        | -(x*y)    | 1 | 1 | 1 | 0 |
+| Constant 1  | 1         | 1 | 1 | 1 | 1 |
+
+Given Nand the others can be built:
+Given: Nand(a,b) and false
+- Not(a) = Nand(a,a)
+- true = Not(False)
+
+ect.
+
+**** Logic Gates
+
+Interface vs. Implementation
+
+Xor
+
+Interface =
+
+| a | b | out |
+|---+---+-----|
+| 0 | 0 |   0 |
+| 0 | 1 |   1 |
+| 1 | 0 |   1 |
+| 1 | 1 |   0 |
+
+
+Implementation =
+
+Xor(a,b) = Or(And(a,Not(b)),And(Not(a),b)))
+
+
+Given Nand(a,b) , false
+
+Build:
+
+Not(a) = Nand(a,a)
+true = Not(false)
+And(a,b) = Not(Nand(a,b))
+Or(a,b) = 
+
+
+current location--> bls. 10 of lecture 01
+
+
+
+*** project
+
+Progress: The Xor gate is finnished. Circa 11 CHIP's to go
+reading of lecture 01 finnished
+Wed Oct 17 02:16:48 GMT 2012
+
+
+finished up to 16-bit And
+Or16
+Mux16
+Or8-way
+Mux4Way16
+Mux8Way16
+DMux4Way
+DMux8Way
+Project 01 compleated:
+Sun Oct 21 01:56:39 GMT 2012
+
+
+** Project 02
+
+
+*** kafla glos
+
+2's compliment
+ to obtain code of -x from code of x:
+flip all the bits of x and add 1 to the result.
+
+6951022 -> 0mmu simi
+
+**** HalfAdder
+
+Inputs: a, b
+Outputs: sum, carry
+Function: 
+     
+        sum = LSB of a+b
+	carry = MSB of a+b
+
+
+ Inputs    Outputs
+| a | b | carry | sum |
+|---+---+-------+-----|
+| 0 | 0 | 0     | 0   |
+| 0 | 1 | 0     | 1   |
+| 1 | 0 | 0     | 1   |
+| 1 | 1 | 1     | 0   |
+
+sum => Xor(a,b)
+carry=>And(a,b)
+
+
+**** FullAdder
+
+| a | b | c | carry | sum |
+|---+---+---+-------+-----|
+| 0 | 0 | 0 |     0 |   0 |
+| 0 | 0 | 1 |     0 |   1 |
+| 0 | 1 | 0 |     0 |   1 |
+| 0 | 1 | 1 |     1 |   0 |
+| 1 | 0 | 0 |     0 |   1 |
+| 1 | 0 | 1 |     1 |   0 |
+| 1 | 1 | 0 |     1 |   0 |
+| 1 | 1 | 1 |     1 |   1 |
+
+Xor(a,b) -> 
+             Xor(aXb,Cin) -> sum
+Cin  ->
+
+ And(a,b) ->
+                 Or() -> Carry
+ And(aXb,Cin) ->
+
+
+
+**** ALU
+
+
+has two 16-bit inputs
+x and y and a 16-bit output out.
+out=f{i}(x,y)
+
+f{i} is an aritmatic or logic function from a fixed reportie of 18 functions
+
+
+***** All chips so far
+
+Nand Nand gate (primitive) 
+Not 
+And 
+Or 
+Xor 
+Mux 
+DMux 
+Not16 
+And16 
+Or16 
+Mux16 
+Or8Way 
+Mux4Way16 16-bit/4-way 
+Mux8Way16 16-bit/8-way 
+DMux4Way 4-way demultiplexor 
+DMux8Way 8-way demultiplexor 
+
+
+HalfAdder Half Adder HalfAdder.tst HalfAdder.cmp
+FullAdder Full Adder FullAdder.tst FullAdder.cmp
+Add16 16-bit Adder Add16.tst Add16.cmp
+Inc16 
+
+
+
+
+
+*** project
+
+
+
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/02/ALU.hdl
+
+/**
+ * The ALU. Computes one of the following functions:
+ * x+y, x-y, y\226x, 0, 1, -1, x, y, -x, -y, !x, !y,
+ * x+1, y+1, x-1, y-1, x&y, x|y on two 16-bit inputs.
+ * Which function to compute is determined by 6 input bits
+ * denoted zx, nx, zy, ny, f, no.
+ * The computed function's value is called "out".
+ * In addition to computing out, the ALU computes two
+ * 1-bit outputs called zr and ng:
+ * if out == 0, zr = 1; otherwise zr = 0;
+ * If out < 0, ng = 1; otherwise ng = 0.
+ * The 6-bit combinations (zx,nx,zy,ny,f,no) and
+ * their effect are documented in the book.
+ */
+
+// Implementation: the ALU manipulates the x and y
+// inputs and then operates on the resulting values,
+// as follows:
+// if (zx  == 1) sets x = 0        // 16-bit constant
+// if (nx  == 1) sets x = ~x       // bitwise "not"
+// if (zy  == 1) sets y = 0        // 16-bit constant
+// if (ny  == 1) sets y = ~y       // bitwise "not"
+// if (f   == 1) sets out = x + y  // integer 2's-complement addition
+// if (f   == 0) sets out = x & y  // bitwise And
+// if (no  == 1) sets out = ~out   // bitwise Not
+// if (out == 0) sets zr = 1
+// if (out < 0)  sets ng = 1
+
+
+CHIP ALU {
+    IN
+        x[16], y[16],  // 16-bit inputs
+        zx, // zero the x input?
+        nx, // negate the x input?
+        zy, // zero the y input?
+        ny, // negate the y input?
+        f,  // compute  out = x + y (if f == 1) or out = x & y (if == 0)
+        no; // negate the out output?
+
+    OUT
+        out[16], // 16-bit output
+        zr, // 1 if (out == 0), 0 otherwise
+        ng; // 1 if (out < 0),  0 otherwise
+
+    PARTS:
+    // Put your code here.
+    
+}
+
+
+
+fyrsti partu er orrglega Mux16 eithv
+Mux16(a=x, b=false, sel=zx);
+**** zx
+// this is a test chip that is part of ALU constr project
+CHIP zxTest {
+     IN x[16],
+        zx;
+     OUT
+        out[16];
+        PARTS:
+
+        Mux16(a=x, b=false, sel=zx, out=out);
+
+}
+
+// similar deal for zy
+**** nx
+// This is a test chip that is part of ALU constr project
+CHIP testnx {
+     IN x[16],
+        nx;
+     OUT
+        out[16];
+
+     PARTS:
+
+     Not16(in=x, out=b);
+     Mux16(a=x, b=b, sel=nx, out=out);
+}
+
+**** f
+
+// This is a test chip that is part of ALU construction project
+
+CHIP ftest {
+     IN x[16],
+        y[16],
+        f;
+
+     OUT
+        out[16];
+
+     PARTS:
+
+     Mux16(a=andxy, b=addxy, sel=f, out=out);
+     And16(a=x, b=y, out=andxy);
+     Add16(a=x, b=y, out=addxy);
+
+}
+
+**** no
+
+same as nx
+
+**** zr
+
+// 1 if out==0
+// this is a test chip and part of a ALU constructing project
+
+CHIP zrTest {
+     IN z[16];
+
+     OUT
+        zr;
+
+
+
+     PARTS:
+     Or16Way(in=z, out=notzr);
+     Not(in=notzr, out=zr);
+
+}
+
+
+
+
+***** Or16Way
+
+CHIP Or16Way {
+     IN in[16];
+     OUT out;
+
+     PARTS:
+    Or(a=in[0],b=in[1], out=or0);
+    Or(a=in[2],b=in[3], out=or1);
+    Or(a=in[4],b=in[5], out=or2);
+    Or(a=in[6],b=in[7], out=or3);
+    Or(a=in[8],b=in[9], out=or4);
+    Or(a=in[10],b=in[11], out=or5);
+    Or(a=in[12],b=in[13], out=or6);
+    Or(a=in[14],b=in[15], out=or7);
+
+    Or(a=or0, b=or1, out=or8);
+    Or(a=or2, b=or3, out=or9);
+    Or(a=or4, b=or5, out=or10);
+    Or(a=or6, b=or7, out=or11);
+
+    Or(a=or8, b=or9, out=f0);
+    Or(a=or10, b=or11, out=f1);
+    Or(a=f0, b=f1, out=out);
+}
+
+
+
+
+**** ng
+
+Out[16]
+
+... out[15]=ng
+
+
+**** ALU final
+
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/02/ALU.hdl
+
+/**
+ * The ALU. Computes one of the following functions:
+ * x+y, x-y, y\226x, 0, 1, -1, x, y, -x, -y, !x, !y,
+ * x+1, y+1, x-1, y-1, x&y, x|y on two 16-bit inputs.
+ * Which function to compute is determined by 6 input bits
+ * denoted zx, nx, zy, ny, f, no.
+ * The computed function's value is called "out".
+ * In addition to computing out, the ALU computes two
+ * 1-bit outputs called zr and ng:
+ * if out == 0, zr = 1; otherwise zr = 0;
+ * If out < 0, ng = 1; otherwise ng = 0.
+ * The 6-bit combinations (zx,nx,zy,ny,f,no) and
+ * their effect are documented in the book.
+ */
+
+// Implementation: the ALU manipulates the x and y
+// inputs and then operates on the resulting values,
+// as follows:
+// if (zx  == 1) sets x = 0        // 16-bit constant
+// if (nx  == 1) sets x = ~x       // bitwise "not"
+// if (zy  == 1) sets y = 0        // 16-bit constant
+// if (ny  == 1) sets y = ~y       // bitwise "not"
+// if (f   == 1) sets out = x + y  // integer 2's-complement addition
+// if (f   == 0) sets out = x & y  // bitwise And
+// if (no  == 1) sets out = ~out   // bitwise Not
+// if (out == 0) sets zr = 1
+// if (out < 0)  sets ng = 1
+
+
+CHIP ALU {
+    IN
+        x[16], y[16],  // 16-bit inputs
+        zx, // zero the x input?
+        nx, // negate the x input?
+        zy, // zero the y input?
+        ny, // negate the y input?
+        f,  // compute  out = x + y (if f == 1) or out = x & y (if == 0)
+        no; // negate the out output?
+
+    OUT
+        out[16], // 16-bit output
+        zr, // 1 if (out == 0), 0 otherwise
+        ng; // 1 if (out < 0),  0 otherwise
+
+    PARTS:
+    // Put your code here.
+    Mux16(a=x, b=false, sel=zx, out=x1);
+    Not16(in=x1, out=x2);
+    Mux16(a=x1, b=x2, sel=nx, out=x3);
+
+    Mux16(a=y, b=false, sel=zy, out=y1);
+    Not16(in=y1, out=y2);
+    Mux16(a=y1, b=y2, sel=ny, out=y3);
+
+    And16(a=x3, b=y3, out=andxy);
+    Add16(a=x3, b=y3, out=addxy);
+    Mux16(a=andxy, b=addxy, sel=f, out=fout);
+
+    Not16(in=fout, out=nfout);
+    Mux16(a=fout, b=nfout, sel=no, out[15]=ng, out=preout1, out=out);
+
+    Or16Way(in=preout1, out=preout2);
+    Not(in=preout2, out=zr);
+
+
+
+}
+
+
+Project 02 lokið: Mon Oct 22 04:57:01 GMT 2012
+
+
+
+** Project 03
+
+
+*** LectureGlos
+
+Data Flip Flop  -  DFF
+
+out(t)=in(t-1)
+
+
+       load
+        |
+        v
+in  ->(MUX)->[DFF]-o--> out
+    ->            |
+    \_____________/
+    
+Load bit, read logic, write logic 
+
+if load(t-1) then out(t)=in(t-1)
+else out(t)=out(t-1)
+
+   1-bit register.
+
+
+**** Random Access Memory (RAM)
+
+           load
+            |
+            V
+     _______________
+          
+      | register 0 |
+      |------------|
+      | register 1 |
+      |------------|
+      | register 2 | 
+              
+            .
+            .
+            .
+       register n-1
+ 
+       RAM n
+
+   |Direct Access Logic|
+     
+
+    _______^__________
+
+
+word in word out, address 0 to n-1, load,
+
+
+
+RAM chips needed for the HACK platform are:
+
+| Chip name |     n |  k |
+|-----------+-------+----|
+| RAM8      |     8 |  3 |
+| RAM64     |    64 |  6 |
+| RAM512    |   512 |  9 |
+| RAM4K     |  4096 | 12 |
+| RAM16K    | 16384 | 14 | 
+
+  
+****  counter
+
+If reset(t-1) then out(t)=0
+ else if load(t-1) then out(t)=in(t-1)
+  else ifinc(t-1) then out(t)=out(t-1)+1
+   else out(t)=out(t-1)
+
+
+
+
+Tue Oct 23 22:14:32 GMT 2012
+
+lestur lectures lokid:  Tue Oct 23 22:14:32 GMT 2012

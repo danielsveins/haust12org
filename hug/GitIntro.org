@@ -1,0 +1,6 @@
+* Gitintro
+
+
+http://git-scm.com/book/en/Git-Basics-Getting-a-Git-Repository
+You clone a repository with :git clone [url]
+

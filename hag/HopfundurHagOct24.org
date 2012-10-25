@@ -1,0 +1,34 @@
+* Hopfundur Hagverkfr 24/10/2012
+
+Advania og GreenCloud
+
+hysing vs. cloud computing
+
+byrja-stórt-lýtið
+
+** annad
+
+*** Public svaæði á Jotun
+.public_html 
+
+** Þarfar Uplysingar ?
+
+*** Kostnadur
+
+**** Stofn-fastur kostnadur
+-hardware
+**** Breytilegur kostnadur
+-Orkan- orkuverd - raforkuver
+-leiga a svaedi
+-starfsmenn (Uppbygging starfskrafts, verð á starfskrafti)
+-kæling
+
+*** Markadsverd a þjónustu
+-verð á þjónustu
+-stórir kúnnar?
+
+
+** Arsreikn Advania
+http://www.advania.is/um-advania/hluthafaupplysingar/
+
+

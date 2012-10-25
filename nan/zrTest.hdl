@@ -1,0 +1,15 @@
+// this is a test chip and part of a ALU constructing project
+
+CHIP zrTest {
+     IN z[16];
+
+     OUT
+	zr;
+
+	
+
+     PARTS:
+     Or16Way(in=z, out=notzr);
+     Not(in=notzr, out=zr);
+
+}

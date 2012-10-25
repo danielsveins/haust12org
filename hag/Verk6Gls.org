@@ -1,0 +1,121 @@
+* Verk6 Hagverkfræði Glós
+
+** Spurning 1
+
+vaxtalaust lán til 3 mánaða með 1% lántökugjald
+Hver er hlutfallstala kostnaðar fyrir þessi lán?
+
+
+*** lántökugjald?
+
+Lántökugjöld
+Þarftu lán fyrir lántökugjaldi?
+Þegar tekið er lán til íbúðarkaupa þarf að
+reiða lántökugjald sem er yfirleitt um 1%
+Af lánsupphæðinni. Sumar lánastofnanir
+   lána ekki fyrir þessu gjaldi sérstaklega og
+     því þarf að fjármagna það með öðrum
+              hætti. Það segir sig svo sjálft að eftir því
+                    sem íbúðaverð hækkar hækka einnig lánin
+                          og þar með lántökugjöldin. Algengt er að
+                               fólk taki um 20 milljóna íbúðalán (sem fyrir
+                                    um áratug hefði verið margfalt lægra) og þá
+                                         þarf að greiða 200 þúsund í lántökugjald.
+Helstu gjöld tengd kaupum og rekstri Kostnaður við þinglýsingu
+ á fasteignum 
+Það er ekki bara að íbúðaverð hafi hækkað
+heldur hefur einnig orðið umtalsverð hækk­-
+un á ýmsum öðrum gjöldum sem tengjast
+íbúðarkaupum. Þannig eru stimpil- og lán­-
+töku­gjöld tengd fasteignaverði auk þess
+sem lánin eru væntanlega hærri því dýrari
+sem íbúðin er.
+
+
+*** hlutfallstala kostnaðar   (árleg hlutfallstala kostnaðar = anual prosentage rate)
+
+Hvað er árleg hlutfallstala kostnaðar?
+Árleg hlutfallstala kostnaðar mælir heildarkostnað við lántöku án tillits til þess hvar lán er tekið.  Hlutfallstalan mælir ekki bara vaxtakostnað heldur tekur hún einnig til annars kostnaðar við lántökuna, s.s. lántökugjalds, seðil- og innheimtukostnaðar.
+
+Árleg hlutfallstala kostnaðar er fundin samkvæmt reikniformúlu sem er að finna í reglugerð nr. 377/1993 með síðari breytingum.  Á vefsvæðum fjármálafyrirtækja sem veita lán til neytenda er að finna rafrænar reiknivélar þar sem auðvelt er að reikna árlega hlutfallstölu kostnaðar fyrir neytendalán. Aðeins þarf að setja inn upplýsingar um vaxtaprósentu, lánstíma, lántökukostnað og gjöld sem lánveitandi krefst þegar borgað er af láninu. 
+
+Áður en lán er tekið er mikilvægt að bera saman þá lánamöguleika sem bjóðast, s.s. í verslun og banka, og nýtist árleg hlutfallstala kostnaðar vel til þess. Þar sem árleg hlutfallstala kostnaðar er lægst er hagstæðasta lánið að finna.
+
+
+
+
+Dæmi 1 frá dóms og kirkjumálráðn:
+
+Lánsfjárhæð  S= 1000 ECU.
+greiðist með einni greiðslu sem nemur 1200 ECU 1.5 ári eftir dagsetningu lánsins
+
+
+jafnann verður því:
+
+1000 = 1200/(1+?)^1.5
+
+eða
+         (1+?)^1.5  = 1,2
+=>
+          1+? = 1.129243234....
+=>
+            ? = 0.12924
+
+
+
+
+
+Dæmi 1.  Vaxtalaust lán í 3 mán...
+þ.a. eftir 3 mán er borgað    . . ..   (lán)*0.01
+
+    L =  L*1.01/(1+r)^0.24
+=>
+      r = 0.0406
+
+** Spurning 2
+
+Acounting
+
+financial acounting
+
+
+
+eigið fé = owners equity
+
+Eignir  = Assets
+
+Skuldir  = Liability
+
+svar:
+eignir lækka um 130000
+
+s.m.b.    Eignir = skuldir + eigið fé
+
+
+** Spurning 3
+
+b.  Samtals skuldir fyrirtækis eru 60,000
+
+** Spurning 4
+
+Reiknum EBT
+
+Rekstrartekjur:  100.000
+
+heildargjöld = 75000
+þ.a.  EBITDA = 25000
+
+
+| Rekstrartekjur  |  100000 |
+| Rekstrargjöld   |  -75000 |
+|-----------------+---------|
+| EBITA           |   25000 |
+| -afskr          |       0 |
+|-----------------+---------|
+| EBIT            |   25000 |
+| -fjármagnsgjöld | -100000 |
+|-----------------+---------|
+| EBT             | -75000  |
+
+
+

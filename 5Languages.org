@@ -1,0 +1,14 @@
+* 5 languages U should know
+https://www.youtube.com/watch?v=NvWTnIoQZj4&feature=related
+
+c++
+java
+mabey python (for mainline work)
+ruby and java script, c, c#.
+
+these languages create a cluster so you know others
+
++ somthing quite weird like one of the functional languages. . .
+
+-> good for high performance numerical computation
+

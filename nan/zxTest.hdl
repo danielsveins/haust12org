@@ -1,0 +1,12 @@
+// this is a test chip that is part of ALU constr project
+CHIP zxTest {
+     IN x[16],
+     	zx;
+     OUT
+	out[16];
+	PARTS:
+
+	Mux16(a=x, b=false, sel=zx, out=out);
+
+}
+

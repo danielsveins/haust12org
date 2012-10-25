@@ -1,0 +1,47 @@
+** Hópverkefni
+
+
+Aron Ingi Óskarsson
+Bergur Þorgeirsson
+Ólafur Gíslasson
+
+
+2 og 5
+
+2. Mál allra löglegra formúlna með '(',')','1',og '+'.
+xSýnið útleiðslutré fyrir '1+(1+1)'.
+S::=> A|e
+A::=>A+A
+A::=> (A)
+A::=> B
+B::=> 1B|e
+A::=> AA
+S=>A=>A+A=>A+(A)=>A+(A+A)=>B+(B+B)=>1+(1+1)
+
+             S
+             |
+             A
+             |
+            A+A
+           /   \
+          B    (A)
+         /      |
+        1B     A+A
+	 |    /   \
+         e   B     B
+            /       \
+           1B      1B
+            |       |
+            e       e
+           
+*** 5
+lýsið í stuttu máli málum þeim, sem eftirfarandi BNF mállýsingar lýsa:  
+S->(S)S|e
+==
+S= '(',S,')',S|;
+
+
+lýsir svigamáli þ.s. þú getur haft endalaust marga sviga í mismunandi uppröðunnum,
+ en það er tryggt að ef svigi opnast þá lokast hann.
+
+

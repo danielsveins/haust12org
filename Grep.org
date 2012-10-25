@@ -1,0 +1,115 @@
+* Grep notes
+Global Regular Expression Print
+grep 'bla' file 
+
+** metacharacters
+^ . * ?
+
+
+*** ^
+does anything start with this letter
+
+*** .
+any character
+
+*** *
+0 or more times
+
+*** ?
+one or more times
+
+*** $
+if string ends with 
+
+
+** greps
+
+search all files inn directory with grep 'bla' *
+search recursively in all files and folders in directory
+grep -r 'bla' *
+
+EVERYTHING INSIDE FOLDER BLA2
+grep 'bla' BLA2/*
+
+grep -rn 'fart' .
+
+gives a recursive search in the current directory and gives the line number
+also.
+
+-l will give the listing  that is just the file names. ..
+
+grep -v
+
+gives everything that does not fit in the file
+
+grep -vi  
+
+gives everything not with case non sensitive
+
+
+ you can pipe | grep into grep again
+
+grep -i 'frank' test*
+
+gives anything that is frank in file that starts with test
+
+grep -il 
+
+would return just the file names
+
+If I wanted to search recursivly in nested folders 
+
+grep -ilr 'frank' *
+
+if you want to see e.g. 2 lines above and below said string
+
+grep -C 2 -i 'hello world' test.txt
+
+use:
+grep --help
+
+or better
+
+grep --help | less
+
+to sel grep help.
+
+grep '[0-9]' test.txt
+
+
+
+** switches
+
+-w
+
+stands for word, impies only returning instances where the string is
+an independent word
+
+-v
+
+finds lines that dont fit the expression
+
+-n
+
+ inserts line numbers in front
+
+-l
+
+writes names of files containing the string
+
+-c
+
+writes the number of lines containing the string
+
+-F
+
+ignor regex, literal instead
+
+-E 
+
+adds extended regular expressions
+
+-r
+
+recursive leit
+

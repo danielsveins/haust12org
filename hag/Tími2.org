@@ -1,0 +1,145 @@
+* Hagverkfr frl 2
+** Kostnaður
+5. Fórnarkostnaður-opportunety cost
+mat á kostnaði við að velja eina leið en hafna annari. Þ.E. kostnaður við að 
+sleppa bestu lausn af þeim sem er hafnað
+-Dæmi
+Námsmaður hættis vinnu  og fer í skóla
+-fórnuð laun 4mio kr
+-útgjöld við að fara í skóla 1 mio kr
+fórnarkostnaður 5 mio kr = 4+1
+6. Heildarkostnaður yfir líftíma
+*** líftímakúrfan
+**** ABC greining
+ | veltu | Umfang |  |
+ |-------+--------|--|
+ |   80% |    20% |a
+ |   15% |    30% |b
+ |    5% |    50% |c
+
+ 
+
+
+-heildarkostn yfir líftíma er oft reiknaður í verkfráðil. tilgangi
+-allur kostnaður dregin saman yfir allan líftímann
+-í viðskiptalegu tilliti er líftíma skipt up í tvö stig:
+1)Undirbúningsfasa
+2)Framleiðslufasa (operation)
+-á undirbúningsfasa eru teknar ákvarðannir sem snerta um 80% af líftímakostn.
+en raunverulegur kostn sem fellur til í undirbúningsfasa er ekki nema um 20%
+-meðal kostnaðarliða sem huga verður að við líftímagreiningu eru:
+--Fjárfestingarkostnaður-hversu stór vél ?
+--Fjármagnskostnaður
+--Rekstrar og viðhaldsk.
+--kostn við rusl og t.d. förgur(í lok líftíma)
+  Mat á fjárfestingum
+-virkjun
+-gagnaver
+-íðúðarkaup vs. leiga
+arðbært?
+
+** Tímagildi Peninga
+
+Vaxtaútreikningar
+
+*** flatirvextir
+V=A*(1+r*t)
+V:virði
+t:tími í árum
+or:vaxtaprósenta(venja að sé ársvextir)
+a:höfuðstóll
+
+presentvalue = núgildi
+
+| dæmi  | v=100*(1+10%*1) |
+|-------+-----------------|
+| r=10% | 110             |
+| A=100 |                 |
+
+
+tímagildi = 10
+
+*** Veldisvextir
+V=A*(1+r)^t
+Dæmi:
+=[100*(1+10%)]*[(1+10%)]=121
+  (fyrsta ár) (vaxtavextir)
+
+*** Vaxtatímabil
+getum skipt árinu upp í mörg vaxtatímabil
+V=A*(1+r/m)^(t*m)              m:# vaxtatímabila
+Dæmi yfirdrátarvextir  12,6%
+V=100*(1+12,6%/12)^(1*12)   =  114,5
+Flatir vextir
+V=100*(1+12,6%)=112,6
+
+mism 1,73% ~= 1,94 kr
+
+C'  Samfeldir vextir
+látum m-> 8 (# vaxtatímabila)
+þ.a. lim m->8   (1+r/m)^(m*t)= e^(r*t)
+
+V= A*e^(r*t)   þegar m->8 þ.e.a.s. stefnir á óendanlegt
+
+4 leiðir til að meta vexti
+a flatir vextir
+b veldisvextir
+c vaxtatímabil
+c = d samfeldirvextir   m->8  V{d}=A*e^r{d}t
+
+Ef r{c} er þekkt hvað þarf r{d} a] vera til a[
+V{c}=V{d}=> A*(1+r{c}/m)^mt = A*e^r{d}t
+     =>  (1+r{c}/m)^m  =  e^r{d}
+     =>  r{d}=ln[(1+r{c}/m)^m]
+Ef r{a} er þekkt hvað þarf r{d} að vera til að
+V{A} = V{d}
+
+=>  A*(1+r{a}*t) = A* e^r{d}t
+     (1+r{a}t) = e^r{d}t
+    r{d} = 1/t * ln(1+r{a}t)
+
+Hvers virði er 100 í dag sem við fáum eftir 1 ár
+
+Núvirðum Greiðslu P{1} = 100/(1+r)
+Eftir 2 ár P{2} = 100/(1+r)^2
+
+Almenna reglan fyrir núvirði
+
+C{0}    C{1}   C{2}         C{n}
+-------------------------------
+p
+
+p= C{0} + C{1}/(1+r) + C{2}/(1+r)^2 + C{3}/(1+r)^3 + ..... +  C{n}/(1+r)^n
+
+C{i} = árlegar greiðslur
+
+þ.s. p er núvirði greiðsluflæðis
+
+greiðslur meiga vera neikvæðar þ.e.a.s. útgjöld
+
+ 
+
+
+Vaxtadagar hjá bönkum eru 360
+
+Future value  - Fratíðarvirði - F
+
+C0     C1      C2                  Cn
+------------------------------------
+0      1       2                   F
+                                           v = 1
+F = C0*(1+r)^n + C1*(1+r)^n-1 +......+ Cn*(1+r)^0
+
+
+P = F/(1+r)^n
+
+Dæmi:
+
+Þurfum 1.200.000 kr til að yfirfara vél
+eftir 5 ár
+getum fengið 6% fjármögnun á fé sem við leggjum fyrir núna
+
+P = F/(1+r)^n
+
+= 1.200.00/(1 + 6%)^5  = 896.710,-
+

@@ -1,0 +1,36 @@
+* Firefox keybindings
+
+Þetta söff er awsome
+
+http://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly#w_navigation
+
+** Navigation
+Alt + arrowkey   -> forward backward
+
+Ctrl + r   -> reload page
+
+Open file  ->  Cntrl-o
+
+Cntrl + D bookmark this page
+
+Cntrl + U    page source  -> this gives the source code for page and is !Awsome!
+
+Cntrl + L   -> select location bar
+Alt + D   ----^
+
+Cntrl + T   new tab
+
+
+Command         Shortcut
+Toggle Play / Pause     Space bar
+Decrease volume         ↓
+Increase volume         ↑
+Mute audio      Ctrl + ↓
+Unmute audio    Ctrl + ↑
+Seek back 15 seconds    ←
+Seek back 10 %  Ctrl + ←
+Seek forward 15 seconds         →
+Seek forward 10 %       Ctrl + →
+Seek to the beginning   Home
+Seek to the end         End
+

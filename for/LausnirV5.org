@@ -1,0 +1,203 @@
+* Lausnir V5
+Ákvað að senda aukalausn á dæmi 6, sem notast ekki við reverse fall. Veit
+ekki hvort hún er betri. Með list-ref er hægt að stökkva aftast í lista. Sjá
+hér fyrir neðan. Kv. T.
+
+
+
+;; Notkun: (insert-right f u x)
+
+;; Fyrir: f er tvíundarfall, þ.e. fall
+
+;; sem tekur tvö viðföng af einhverju
+
+;; tagi, x er listi (x1 ... Xn)
+
+;; gilda af því tagi, u er gildi
+
+;; af því tagi.
+
+;; Gildi: (f(f (xN xN-1)...f(x1 u))
+
+;; T.d. ef f = "-"
+
+;; er útkoman u - xN - xN-1...x1
+
+;; Listinn meðhöndlaður með f í öfugri röð.
+
+;; Notast EKKI við reverse fallið.
+
+
+
+(define (insert-right f u x)
+
+(define len (length x))
+
+;; Notkun: (fall f l u x)
+
+;; Fyrir: f er tvíundarfall, þ.e. fall
+
+;; sem tekur tvö viðföng af einhverju
+
+;; tagi, x er listi (x1 ... Xn)
+
+;; gilda af því tagi, u er gildi
+
+;; af því tagi. l er lengd lista.
+
+;; Gildi: (f(f (xN xN-1)...f(x1 u))
+
+;; T.d. ef f = "-"
+
+;; er útkoman u - xN - xN-1...x1
+
+(define (fall f l u x)
+
+(if (= l 0)
+
+u
+
+(fall f (- l 1) (f u (list-ref x (- l 1))) x)
+
+)
+
+)
+
+(fall f len u x)
+
+)
+
+From: Theódór Norðkvist [mailto:thn8@hi.is]
+Sent: 4. október 2012 20:46
+To: 'Theódór Norðkvist'; 'Guðmundur Björn Birkisson'; 'Aron Ingi Óskarsson'
+Cc: 'Sigurður Hallgrímur Ólafsson'; 'Gunnar Örn Stefánsson'; 'Bergur
+Þorgerisson'
+Subject: TÖL304G_d3_Forritunarmál_Hópverkefni 5_Theódór Norðkvist
+
+
+
+Hópverkefni af vikublaði 5 – Forritunarmál. Sent með fyrirvara um
+breytingar.
+
+
+
+Þar sem ég verð mjög upptekinn á morgun sendi ég núna það sem er komið. Læt
+fylgja með DrRacket skrár, með öllum föllunum frá Snorra (í dæmi 5), en
+okkar kóði er neðst og vel merkt hvar hann byrjar.
+
+
+
+Með góðri kveðju,
+
+
+
+Theódór Norðkvist
+
+Gunnar Örn Stefánsson
+
+Sigurður Hallgrímur Ólafsson
+
+Bergur Þorgeirsson
+
+
+
+** skil
+
+Dæmatímakennari:
+TÖL304G– Forritunarmál
+d3
+Theódór Norðkvist
+Gunnar Örn Stefánsson
+Bergur Þorgeirsson
+Sigurður Hallgrímur Ólafsson
+Aron Ingi Óskarsson
+Hópverkefni 5
+Guðmundur Björn Birkisson
+thn8@hi.is
+gunnar.stefansson@advania.is
+bergurth@hi.is
+sho1@hi.is
+aio4@hi.is
+gbb8@hi.is
+5. dæmi
+;; Notkun: f
+;; Gildi: óendanlega Taylor-röðin sem
+;; kemur út úr Taylor-föllunum
+;; (sjá lýsingar Snorra á hans föllum.)
+;; Þetta er tvítegruð Taylor-röðin
+;; samsett úr taylor- og taylor-zero (núllröð.)
+(define f
+(taylor-integrate 0
+(taylor-integrate 1 (taylor- taylor-zero f))
+)
+)
+(taylor-eval f 1.0 10)
+(taylor-eval f 2.0 10)
+(taylor-eval f 3.0 10)
+(taylor-eval f 3.14159 10)
+(taylor-eval f 1.0 20)
+(taylor-eval f 2.0 20)
+(taylor-eval f 3.0 20)
+(taylor-eval f 3.14159 20)
+Welcome to DrRacket, version 5.3 [3m].
+Language: R5RS; memory limit: 128 MB.
+0.8414710097001764
+0.9093474426807762
+0.1453125000000004
+0.006927860670351237
+0.8414709848078965
+0.9092974268256411
+0.1411200078587156
+2.6530608845278612e-006
+>
+Randskilyrðin og að f‘‘ = -f benda til að þetta sé fallið sinus af x. Nálgunartölurnar benda líka til þess,
+en þetta er mjög nálægt þeim gildum sem sin(0, sin(1), sin(2), sin(3) og sin(3.14159, þ.e. pi) gefa,
+hvort fyrir sig.
+6. dæmi
+;; Notkun: (insert-right f u x)
+;; Fyrir: f er tvíundarfall, þ.e. fall
+;; sem tekur tvö viðföng af einhverju
+;; tagi, x er listi (x1 ... Xn)
+;; gilda af því tagi, u er gildi
+;; af því tagi. x er EKKI tómur.
+;; Gildi: (f(f (xN xN-1)...f(x1 u))
+;; Listinn meðhöndlaður með f í öfugri röð.
+(define (insert-right f u x)
+;; Notkun : ( r ev 2 x )
+;; Fyrir : x er listi (x1...xN)
+;; Gildi : ( xN...x1)
+;; Ath. fall frá Snorra
+(define (rev2 x)
+(define (snuaskeyta x y)
+(if (null? x)
+y
+(snuaskeyta (cdr x) (cons (car x) y))
+)
+)
+(snuaskeyta x '())
+)
+;; snúa listanum við
+(rev2 x)
+;; Notkun: (insert f u x)
+;; Fyrir: f er tvíundarfall, þ.e. fall
+;; sem tekur tvö viðföng af einhverju
+;; tagi, x er listi (x1 ... Xn)
+;; gilda af því tagi, u er gildi
+;; af því tagi.
+;; Gildi: (f (f ... (f (f u x1) x2) ... ) xN)
+;; Sama fallið og insert en
+;; það fær upphaflega listann
+;; í öfugri röð, meðhöndlar hann
+;; frá vinstri til hægri og þar með
+;; upphaflega listann frá hægri til vinstri,
+;; eins og beðið var um.
+(if (null? x)
+u
+(insert-right f (f u (car x)) (cdr x))
+)
+)
+(insert-right + 10 '(2 3 4 5))
+Welcome to DrRacket, version 5.3 [3m].
+Language: R5RS; memory limit: 128 MB.
+24
+>

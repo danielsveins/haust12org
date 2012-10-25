@@ -1,0 +1,24 @@
+Enter file in which to save the key (/home/bergurth/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/bergurth/.ssh/id_rsa.
+Your public key has been saved in /home/bergurth/.ssh/id_rsa.pub.
+The key fingerprint is:
+ef:86:f4:e8:1d:d8:06:32:cf:a3:99:85:23:eb:25:77 bergurthssn@gmail.com
+The key's randomart image is:
++--[ RSA 2048]----+
+|                 |
+|                 |
+|                 |
+|                 |
+|      o S        |
+|       *.=       |
+|    o =.E+=      |
+|     * Bo=o.     |
+|   .o +...o      |
++-----------------+
+
+
+ATH. passphrase er: simalina2
+ATH. git paswd er fyrir Wilber Fred
+      username er Bergurth

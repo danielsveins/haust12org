@@ -1,0 +1,42 @@
+* Eclipse
+
+-þróunarumhverfi
+   editor, debugger, keyrsluumhverfi
+-eclipse.org
+-Byggist á plug-ins
+
+** Android SDK
+
+  -developer.android.com
+  -hleður niður installer
+  -Setur upp SDK tól
+
+Android 2.3
+
+
+Java
+. Eclipse
+Android SDK
+.SDK and
+ AVD manager
+. Android development
+   tools
+.  Android emulator
+
+
+
+-SDK and AVd manager
+  Leyfir þér að setja upp mismunandi útgáfur
+  . libraries og tól
+-Android development tools
+   plug-in
+
+Android emulator
+   leyfir þér að keyra android foritið í hermi
+
+-Býrð til hermi skv.
+    getu símans sem þú hermir eftir
+
+ https://dl-ssl.google.com/android/eclipse/
+
+adl-sl.google//

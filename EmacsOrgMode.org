@@ -1,0 +1,68 @@
+* Emacs Org mode
+
+** Orgmode with version control
+http://orgmode.org/worg/org-tutorials/org-vcs.html
+** Hack Emacs
+http://www.youtube.com/watch?v=VTh_Xgt69-E
+
+*** markup
+
+*BOLD*, /italic/ _underlined_
+
+*** Links
+-http://emacswiki.org
+
+C^cC^o opens link.
+
+: [[http://google.com][Google]]
+uncommented below 
+ [[http://google.com][Google]]
+
+*** Symbols
+
+LaTeX Symbols
+
+\alpha, \beta, \Beta.
+
+most of these will work.
+file links, absolute or relative
+- file:/home/bergurth/Desktop/Haust2012/Grep.org
+this is an absolute path, otherwise a relative path
+is used relative to the current directory
+- file:Grep.org
+SkipulagsPlaggid
+- file:SkipulagsPlag.org
+
+These offer programing capabilities.
+Awsome link types
+: - elisp:
+: - shell:
+
+first activates a peice of elisp code
+the second shell code
+-These kinds of powerful links give you the ability to 
+write Org Mode files that are programs that have "Buttons"
+that invoke code.
+
+
+**** Examples
+[[elisp:(color-theme-subtle-hacker)]]
+: [[elisp:(color-theme-subtle-hacker)]]
+[[elisp:(color-theme-comidia)][Comidia]]
+
+these color themes are missing, need to find out where to get
+them.....
+
+: [[shell:ls -lR]]
+
+ [[shell:ls -lR]]
+This previous one executes a long ls in the shells current directory
+
+pearl scripts .. also
+
+you can also find a specific line in file
+
+: [[file:bla - Org.org::13][name]
+here is line number, one can also search for similar syntax..
+: [[file:bla - Org.org::Org Remember][similar syntax]
+

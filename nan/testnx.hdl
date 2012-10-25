@@ -1,0 +1,13 @@
+// This is a test chip that is part of ALU constr project
+CHIP testnx {
+     IN x[16],
+     	nx;
+     OUT
+	out[16];
+
+     PARTS:
+
+     Not16(in=x, out=b);
+     Mux16(a=x, b=b, sel=nx, out=out);
+}
+

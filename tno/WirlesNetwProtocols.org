@@ -1,0 +1,34 @@
+* new Wireless Network protocols
+
+** Old Glos
+*** from WLAN.org
+ WLAN standardar..
+http://compnetworking.about.com/cs/wireless80211/a/aa80211standard.htm
+
+http://en.wikipedia.org/wiki/IEEE_802.11
+
+*** from CNglos.org
+ Computer Networks
+
+Wireless LAN  11-hundreds of Mbps
+Wired LAN (ethernet) 100 Mbps - 10 Gbps
+
+the gateways are on the network level, the network layer
+
+paeling fra Torfa -->  Port Scanner
+
+www info
+
+wwww.w3.org
+
+**** Vocab for research
+Virtual Lan VLAN
+VPN's  Virtual Private Networks
+
+
+
+
+
+
+** Google search 
+https://www.google.com/search?client=ubuntu&channel=fs&q=new+wireless+network+protocols&ie=utf-8&oe=utf-8

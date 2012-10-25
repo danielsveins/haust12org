@@ -1,0 +1,19 @@
+* AWK
+
+to print the second column of a file
+awk < file '{ print $2 }'
+means on every line, print the second field
+
+conditionals
+
+awk '{if($1 ~ /123/) print }' test.txt
+
+prints the line if the first collumn is 123
+
+changing the delimiter to :
+use the -F:
+flag.
+
+awk -F: '{ print $2 }' test.txt
+
+ 

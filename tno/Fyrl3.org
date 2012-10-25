@@ -1,0 +1,138 @@
+* Fyrl 3 T0lvunet og 0rrygi
+
+** Design issues for the Layers
+-Vistfenging (addressing)
+-Villumedferd  (error control)
+uppgotvun villna
+-flaedistyring (flow control)
+-fjölrásun eða fléttun (multiplexing)
+-..
+
+allocation of resources like bandwidth   - Multiple access , congestion control
+
+** Connection-Oriented vs. Connectionless  
+
+POTS plain old -- system
+
+| service                | example              |
+|------------------------+----------------------|
+| Reliable mesage stream | Sequence of pages    |
+
+
+
+
+| primitive | Meaning |
+|-----------+---------|
+| Listen    |         | 
+
+
+
+Reference Models
+
+TCP/IP  
+
+
+OSI Reference Model
+
+
+abstraction, afmorkun svaeda 
+
+Application - provides functions needed by users
+presentation- Converts different representations
+Session- Manages task dialogs
+Transport-Provides end-to-end delivery
+Network-sends packets over multiple links
+Data link-sends frames of information
+Physical-sends bits and signals
+
+lagur samnefnari
+i stad dumb terminal og snuduga midju
+
+** TCP/IP Reference Model
+
+IP is the narow waist of the internet
+
+HTTP SMTP RTP DNS      Application
+    TCP  UDP                     transport
+   IP  ICMP                      internet
+DSL SONET 802.11 Ethernet       link
+
+
+Physical data link:
+ARPANET er gamalt , SATNET Packet radio, LAN
+
+
+TCP er connection oriented en ekki UDP
+
+Network lagid er IP 
+
+
+Lawrence Lessing
+
+Viðmiðunarmódel OSI TCP/IP
+
+| OSI          | TCP/IP          |
+|--------------+-----------------|
+| Application  | Application     |
+| Presentation | not present     |
+| Session      | not present     |
+| Transport    | Transport       |
+| Network      | Internet        |
+| Data link    | Host-to-network |
+| Physical     | -"-             |
+
+
+TCP modelið vann Protocola stríðið
+
+
+þau lönd sem hengu lengi í því að reina að gera það sem yfirvöld
+sögðu OSI einsog Japan t.d. urðu bara eftirá
+
+hér á íslandi var aldrei neitt nema TCP, 
+
+modelið sem menn standa uppi með er Hybrid model 
+| 5 | Application layer | Notkunarlag            |
+|---+-------------------+------------------------|
+| 4 | Transport         | Flutningslag           |
+| 3 | Network           | Netlag eða Internetlag |
+| 2 | Data link         | Greinalag              |
+| 1 | Physical          | Eðlislag               |
+
+
+ARPANET
+advanced research projects agency
+fyrirenari internetsins   56 kbps
+
+NSFNET national science foundation netið var sett upp 1988
+
+
+IXP internet exchange point (Samtengipunktur)   RIX reykjavík internet exchange point
+
+RFID sensor networks
+
+
+
+5 til 10 yfirtónar til að ná fram kassabylgju circa..
+
+Nyquist..
+sýnataka af 2x hæstu yfirtíðni eða hæstu tíðni sem við viljum varðveita
+
+
+8-bita
+256 mismunandi þrep í spennugildi í símtali..
+
+16-bita
+þ.e.a.s. 2^16 spennuþrep í CD diski  
+
+Bandbreidd = f{max}-f{min}
+
+
+log{2}X=Y
+=>
+2^Y=X
+log{10}2^Y=log{10}X
+=>
+Ylog{10}2=log{10}X
+=>
+Y=(log{10}X)/(log{10}2)=(logX/log2)
+

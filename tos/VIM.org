@@ -1,0 +1,65 @@
+* The VIM editor
+** Modes
+Insert mode
+command mode
+replace mode
+visual mode
+
+
+Esc Esc Esc brings back to command mode
+
+jk hl up down left right
+
+
+** Commands
+
+http://www.youtube.com/watch?v=Ge342TZCcfE
+
+Please fill in the comands for the given operations:
+        Move crusor down: j
+        Move crusor up: k
+        Move Crusor left: h
+        Move crusor right: l
+        Move to end of word: e
+        Move to beginning of word: w, b
+        Move to the beginning of the line: ^
+        Move to the end of the line: $
+        Jump to line number n: :{number}
+
+        Insert text before cursor: i
+        Append text after cursor: a
+        Insert text at the start of line: I
+        Append text at end of line: A
+
+        Open new line after current: o
+        Open new line before current: O
+        Change the rest of the current line: C
+        Replace current character: r
+        Replace all characters: R
+        Escape from insert mode: ESC, CTRL-[
+
+        Cut character:  x
+        Cut line: dd
+        Yank character:
+        Yank line: yy
+        Paste: p, P
+        Enter visual mode: v or V
+
+        Write to the disk: :w (can add a name for save as)
+        Explore file: :e
+        Change buffer: :buffers
+        Quit: :q, :q!, :wq, ZZ, ZQ
+
+	 Undo: u
+        Redo: CTR-r
+
+        Search: /
+        Replace:
+
+	Shell cmd: Visual line mode and then :
+
+        Place mark: ma
+        to mark: 'a
+
+
+

@@ -1,0 +1,45 @@
+* Verkefni 2
+
+Verkefnishópur CyClon hefur sundurliðað verkefnið (WBS)
+
+
+| Verkþáttur | lýsing                      | Tímanotkun | Undanfari |
+|------------+-----------------------------+------------+-----------|
+|          1 | Cyclon Verkefni             |            |           |
+|          2 | Hönnun                      |         10 |           |
+|          3 | Kaup á hlutum í prototýpu   |         10 |         2 |
+|          4 | Framleiðsla hluta           |          8 |         2 |
+|          5 | Samsetning                  |          4 |       3,4 |
+|          6 | Prófanir                    |          7 |         5 |
+|          7 | Reynsluprófun               |         10 |         6 |
+|          8 | Aðlögun hönnunar            |          6 |         7 |
+|          9 | Panta lagervörur            |         10 |         8 |
+|         10 | Panta Sérvörur              |         15 |         8 |
+|         11 | Samsetning prófunar eininga |         10 |      9,10 |
+|         12 | Prófa einingu               |          5 |        11 |
+|         13 | Skýrsla                     |          3 |        12 |
+|            |                             |            |           |
+
+
+Spurningar:
+
+A.  Gerið A-O-N flæðilínurit miðað við upplýsingar í töflu.  Hver verður verktíminn?
+Hvar er bundna leiðinn?
+
+
+Early start
+
+early finish 'late start'
+
+late finnish
+
+
+slack sl
+
+
+| ES | ID    | EF |
+|----+-------+----|
+| SL | descr | .. |
+| LS | Dur   | LF |
+
+

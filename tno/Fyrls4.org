@@ -1,0 +1,15 @@
+* Tlvn&Orryg Fyrl4
+
+** Tengingar
+Allt saman stórir ljósleiðarar
+
+Faric                    2*36*10Gb/s
+Danice                   5.1 TB =~ 4*128*10Gb/s
+Greenland Connect         2*96*10Gb/s
+
+        NUMBER OF WORKSPACES PER A FLOOR
+3 RJ45/WPS * 90 WPS = 270 RJ45
+
+
+solid copar  - má ekki jagast mikið.. 
+patch

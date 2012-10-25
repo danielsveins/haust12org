@@ -1,0 +1,5 @@
+* Glos fyrir sprett 0 Design
+litur fyrir takka osfv.  color :#008080 
+Þetta er grænn litur
+
+><img class="logo" src="/skin/basic/design/i/logofisk-2009.gif" alt="Vefur Fiskistofu" /></a></div>

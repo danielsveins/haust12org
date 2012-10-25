@@ -1,0 +1,30 @@
+Foritunarmál -  Verkefni 5 -Bergur Þorgeirsson
+
+
+3. Einstaklingsverkefni
+;; Notkun: s
+;; Gildi:  [1 2 4 8 16 ......2^n]
+(define s
+  (cons-stream 1 (stream-map (lambda (x) (* 2 x)) s))
+  )
+
+Notkun:
+
+> (stream-list s 5)
+(1 2 4 8 16)
+> 
+
+
+4. Einstaklingsverkefni
+
+;; Notkun: heil+strm
+;; Gildi: [x{1}+1 x{2}+2 x{3}+3 .... x{n}+n]
+(define (heil+strm x)
+  (stream-binop + heil x)
+  )
+
+Notkun:
+
+> (stream-list (heil+strm s) 5)
+(2 4 7 12 21)
+> 

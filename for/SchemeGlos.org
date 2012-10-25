@@ -1,0 +1,135 @@
+* Scheme
+booleans in scheme are #t #f
+
+if-else clauses
+(if (< a b)
+    a
+    b ))
+
+or 
+
+(if (some-test)
+    (some-actin))
+
+examples:
+
+>(if (< 1 3) 1)
+>1
+>(if (< 3 1) 1)
+>
+
+>(if (< 3 1) 1 4)
+>4
+
+so if the condition evaluates to #t
+then the first of the following arguments is returned
+otherwise the second
+** listst
+'()  is the empty list
+
+This function rev2 reverses a list in a tailrecursive 
+fashion.
+
+(define (rev2 x)
+  (define (snusk x y)
+    (if (null? x)
+        y
+        (snusk (cdr x) (cons (car x) y))
+        )
+    )
+  (snusk x '())
+  ) 
+
+
+This function finds the nth Fibonacci number
+;; Notkun: (fibo n)
+;; Fyrir: n er heiltala . >=0
+;; Gildi: n-ta Fibonacci talan
+(define (fibo n)
+  ;; Notkun: (hjalp f1 f2 i)
+  ;; Fyrir: 0 <= i <= n,
+  ;;        f1 er i-ta Fibonacci talan,
+  ;;        f2 er (i+1)-ta Fibonacci talan,
+  ;; Gildi: n-ta Fibonacci talan.
+  (define (hjalp f1 f2 i)
+    (if (= i n)
+        f1
+        (hjalp f2 (+ f1 f2) (+ i 1))
+        )
+    )
+  ;; stofn fallsins fibo:
+  (hjalp 1 1 0)
+  )
+
+Here is a "normal" function for calculating n!
+;; Notkun: (fact n)
+;; Fyrir: n er heiltala. >= 0 
+;; Gildi: n!
+(define (fact n)
+  (if (= n 0) 1 (* n (fact (- n 1))))
+)
+
+This following function is a tailrecursive version
+
+;; Notkun: (fact n)
+;; Fyrir: n er heiltala. >= 0 
+;; Gildi: n!
+(define (fact n)
+   ;; Notkun: (hjalp n x)
+   ;; Fyrir: n er heiltala, >=0, x er tala
+   ;; Gildi: n!*x
+   (define (hjalp n x)
+      (if (= n 0)
+          x
+          (hjalp (- n 1) (* n x))
+     )
+   )
+   (hjalp n 1)
+)
+
+
+
+
+Simple mapping function
+
+;;  Notkun: (mymap f x)
+;;  Fyrir f er fall sem tekur eitt fi[fang,
+;;     x er listi (x1 .....xN)
+;;  Gildi: Listinn (y1 ....yN)   þ.s.
+;;      yI er (f xI)
+(define (mymap f x)
+  (if (null? x)
+      ()
+      (cons (f (car x)) (mymap f (cdr)))
+   )
+)
+
+;; Different kind of map function
+
+
+;;  Notkun: ((mymap2 f) x)
+;;  Fyrir: f er fall sem tekur eitt vidfang,
+;;        x er listi  (x1....xN)
+;;  Gildi:  Listinn (y1 ... yN) þ.s.
+;;   yI er (f xI)
+(define (mymap2 f)
+  (lambda (x)
+    (if (null? x)
+	()
+	(cons (f (car x)) ((mymap2 f) (cdr)))
+	)
+    )
+)
+
+
+;; Tímaverkefni
+;; 1
+(define (sum x)
+  (if (= x 0)
+      0
+      (+ x (sum (- x 1)))
+      )
+  )
+
+
+

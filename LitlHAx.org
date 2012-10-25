@@ -1,0 +1,5 @@
+http://www.howtogeek.com/howto/17001/how-to-format-a-usb-drive-in-ubuntu-using-gparted/
+
+https://www.youtube.com/watch?v=NLM32ZOAqIc&feature=related
+
+http://wiki.debian.org/DebianEeePC/HowTo/InstallUsingStandardInstaller

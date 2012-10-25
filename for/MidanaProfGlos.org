@@ -1,0 +1,209 @@
+* Glos Fyrir midanarpróf
+
+** Bálkmótun(block structure)
+
+lexical scope..
+*** scope
+context inn wich a variable with a name or other identifier is valid
+and can be used, or within which a declaration has effect.
+
+*** Closures
+
+http://mitpress.mit.edu/sicp/full-text/book/book-Z-H-21.html#%_sec_3.2
+
+A closure or lexical closure, or function closure, 
+..
+
+**** closures in scheme
+
+***** functions in functions
+
+(define (sum-of-squares x y)
+
+   (define (square a)
+      (* a a))
+
+   (define (sum b c)
+      (+ b c))
+
+   (sum (square x) (square y)))
+
+***** Using outer symbols
+
+(define (assert-equal a b)
+    (define (print-error)
+        (display a)
+	(display " is not equal to ")
+	(display b)
+	(newline))
+
+ > (assert-equal 3 (+ 1 2))
+
+ > (assert-equal 3 (+ 2 2))
+3 is not equal to 4
+
+***** Using outer symnbols 2
+
+(define (circle-details r)
+    (define pi 3.14)
+    (define (area) (round (* pi r r)))
+    (define (circum) (round (* 2 pi r)))
+    (list (area) (circum)))
+
+> (circle-details 3)
+(28.0 19.0)
+
+; uses circum and area in an inner function..
+
+ 
+***** returning functions
+
+(define (make-add-one)
+    (define (inc) (+ 1 x))
+    inc)
+
+; returns the thing that is defined..
+
+>(define myfn (make-add-one))
+
+>(myfn 2)
+3
+
+***** Closures
+
+(define (make-add-x x)
+    (define (add-x y) (+ x y))
+    add-x)
+
+; returns the proceedure add-x
+
+(define add-3 (make-add-x 3))
+
+>add-3
+#proceedure
+>(add-3 4)
+7
+; closure means that it is not illegal to  do what we just did.
+
+;group theory - closures
+
+***** Uses-Holding state
+
+(define (make-counter)
+    (define value 0)
+    (define (counter)
+        (set! value (+ value 1))
+	value)
+    counter)
+
+>(define mycounter1 (make-counter))
+
+>(mycounter1)
+1
+>(mycounter1)
+2
+>(mycounter1)
+3
+
+
+>(define mycounter2 (make-counter))
+
+>(mycounter2)
+1
+>(mycounter1)
+4
+; every makecounter makes its own closure.
+
+***** Uses-Testing
+
+(define (shout display-fn txt)
+    (display-fn
+        (list->string
+	    (map
+	        char-upcase
+		(string->list txt)))))
+
+
+> (shout dispay display "boo")
+BOO
+
+***** Uses - Testing 3
+
+(define (test-shout-displays-uppercase)
+    (define displayes "")
+    (define (fake-display txt)
+        (set! displayed txt)
+
+    (shout fake-display "Hello Andy")
+    (assert-equal displayed "HELLO ANDY"))
+
+...
+
+***** Uses - Classes
+
+(define (make-balace)
+    (define value 0)
+    (define (bal method)
+        (define (add-method)
+	    (set! value (+ value x)))
+        (define (get-method) value)
+	(if (equal? method "add")
+	    add-method
+	    get-method))
+     bal)
+
+; returns a function called bal
+;simulation of a class in scheme, this is in a sense the constructor
+; value is defined and the other functions have acces to it
+; bal takes 1 argument, a string called method
+; add method adds x to value
+; get method returns value
+
+>(define a (make-balance))
+
+>(a "get")
+#proceedure
+>((a "get"))
+0
+>((a "add") 3)
+
+>((a "get"))
+3
+
+
+> (define b (make-balance))
+
+>((b "get"))
+0
+>((b "add") -1)
+
+>((b "get"))
+-1
+>((a "get"))
+3
+
+
+
+*** Nesting
+A nested function is a function that is lexically encapsulated+within another
+function, It can only be called by the enclosing function or by functions
+directly or inderectly encapsulated(nested) within the same enclosing
+function.
+
+** Gamla skyndiprof
+
+1
+
+S->SS,(S)
+S->D,DED.
+D->0,1,2,3,4,5,6,7,8,9,-DG,DD
+G->0,1,2,3,4,5,6,7,8,9,GG,e
+E->+,-
+
+2
+
+mál balenceraðra sviga
+
+
+
+

@@ -1,0 +1,111 @@
+* Scheme Let.* Gloss
+
+** sources
+http://www.cs.hut.fi/Studies/T-93.210/schemetutorial/node4.html#SECTION00454000000000000000
+
+** Let
+
+>(define x 10)
+
+>(+ let ((x 5))
+     (* x (+ x 2)))
+   x)
+45
+
+
+
+>(define x 10)
+
+>(let ((x 5)
+      (y (* x 2)))
+    (+ x y))
+25
+
+>(define x 10)
+
+>(let ((x 5)
+      (y (* x 2)))
+    (+ x y))
+25
+
+The variable x wil be will be bound to the value 5 and the variable y will
+be bound to 20, not 10.  This is because the x in the expression for y is
+computed outside the 'let' expression and the value of that x is 10.
+
+** Let*
+
+>(define x 10)
+
+>(let* ((x 5)
+        (y (* x 2))
+    (+ x y))
+15
+
+variable x x bound in the let expression will be used when computing
+the value for the variable y
+
+let* is equivalent to  a sequence of nested 'let' expressions
+
+(let ((var1 exp1))
+  (let  ((var2 exp2))
+    (let  ...
+      (let  ((varn exprn))
+          body) .... )))
+
+the syntax for let* is similar to let
+
+(let*  ((var1 exp1)
+        (var2 exp2)
+         .
+         .
+         .
+        (varn expn))
+     body)
+
+** Named let
+
+(let var bindings body)
+
+allows calling proceedure, here named var, to invoke body.
+
+(define factorial
+   (lambda (n)
+      (let iter ((product 1)
+                 (counter 1))
+      (if  (> counter n)
+           product
+           (iter (* counter product) (+ counter 1))))))
+
+** Letrec
+
+Synax for letrec is:
+
+(letrec ((var1 val1)
+         (var 2 val2)
+         .
+         .
+         .
+         (varn valn))
+      body)
+
+ The idea behind letrec expressions is to allow recursion in the definition of the variables bound locally. The scope of the variables include the other variables as well as the body. Any procedure body containing internal definitions can be converted into a completely equivalent letrec expression. Let's see how to convert the procedure for counting factorials into an equivalent procedure using a letrec expression instead of internal definitions:
+
+;; The procedure factorial taken from SICP, p. 33 
+(define (factorial n)
+  (define (iter product counter)
+    (if (> counter n)
+        product
+        (iter (* counter product)
+              (+ counter 1))))
+  (iter 1 1))
+
+;; The procedure factorial rewritten using letrec
+(define factorial
+  (lambda (n)
+    (letrec ((iter
+              (lambda (product counter)
+                (if (> counter n)
+                    product
+                    (iter (* counter product)
+                          (+ counter 1))))))
+      (iter 1 1)))

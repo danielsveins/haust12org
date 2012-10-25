@@ -1,0 +1,29 @@
+* Fyrl1 HBV
+Fri Aug 31 12:41:33 GMT 2012
+
+3 manna hópar
+tölur fremst á áætlun eru kaflar í bókinni
+
+scrum fundir á áætlun eru annaðhvort kynningar eða plannlegging
+með aðstoð kennara
+-> skráð mætting í þetta
+
+** Hugbúnaðarverkfræði
+hugbúnaðarverkfræði er sú faggrein sem beitir vísindalegri þekkingu við að þróa
+hugbúnað sem viðskiptavinurinn þarf á að halda.
+
+ 
+AÐFERÐIR
+
+** Agile manifesto
+-fólk og samskipti fram yfir ferli og tól
+-Hugbúnaður sem virkar fram yfir ítarlega skkjalaðan hugbúnað
+-Samvinna við viðskiptavin fram yfir samninga
+-Bregðast við breytingum fram yfir plan
+
+| Human perspective | Organizational | Tæknilega |
+|-------------------+----------------+-----------|
+|                   |                |           |
+|                   |                |           |
+
+

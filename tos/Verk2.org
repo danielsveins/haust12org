@@ -1,0 +1,77 @@
+* Verkefni 2 - Tölvur og stýrikerfi
+** Lesefni
+Drög að unix bók
+2 kafli
+3 kafli
+4 kafli
+6.5 Pípulagnir
+
+kafli 5 og 
+
+kafli 7
+
+** 1
+a) 
+svar: cd ~
+eða cd
+b)
+mkdir und
+cd und
+
+c)
+echo Afi minn > a
+echo fór á honum rauð > b
+
+d) 
+mv a b ~/mapp
+
+e) 
+cd ~
+rm -r mapp
+rm -r und
+
+
+** 2
+a) hvað gerir eftirfarandi samsetta skipun?
+sort -k3 -n -r < nem | head -2 | tail -1
+ 
+finnur næst hæsta nemanda
+
+b)
+
+awk '{if($1 ~ /Guðjón/ ) print $1}' < nem | uniq -c
+
+grep -w Guðjón nem | wc -l
+
+grep -c Guðjón nem --- er ekki nógu gott, mundi telja Guðjónsen líka t.d.
+
+mundi líka duga ef seinni nafnið má vera Guðjón
+
+c)
+ 
+Guðný Guðmundsdóttir 168 60
+
+d) 10 þyngstu nem
+
+sort -k4 -n -r  < nem | head
+
+e)
+1) til verður skjal abc sem inniheldur xyz
+2)  sama og eitt en skjágluggi lokast líka
+3) cat hættir og eftir verður tómt skjal abc
+
+
+
+** 3  More or less
+
+í tilfelli less þá getur maður farið upp og niður með því að nota
+örvarnar en bara niður með því að ýta á enter í more.  Þegar komið 
+er niður á enda í more þá færist maður beint yfir á skipanalínu aftur
+en maður þarf að ýta á q til að komast út í less.
+
+** 4 
+date;echo skrár;ls
+
+forrit skrifar dagsetningu
+orðið skrár
+og svo listar skrár í möppunni

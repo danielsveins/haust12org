@@ -1,0 +1,19 @@
+// This is a test chip that is part of ALU construction project
+
+CHIP ftest {
+     IN x[16],
+     	y[16],
+	f;
+
+     OUT
+	out[16];
+
+     PARTS:
+
+     Mux16(a=andxy, b=addxy, sel=f, out=out);
+     And16(a=x, b=y, out=andxy);
+     Add16(a=x, b=y, out=addxy);
+
+}
+
+	 

@@ -1,0 +1,5 @@
+* HBV 1 byrjunar stöff
+lesa bls 1-24
+** Glosur 1-24
+HOT -Human perspective, Organizational perspective, Technological perspective
+pair programing.  Driver(keyboard man) and Navigator-higher level of abstraction

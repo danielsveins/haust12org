@@ -1,0 +1,9 @@
+Blessaður Jón
+
+  Ég er einn af nnemendum þínum í Tölvunet og öryggi., og ég var að pæla í skel skriftun og textavinslu um daginn og rak svo í minningum um að þú hafir einhvertímann sagt að þetta námskeið (Tölvunet og öryggi) snérist aðalega um skammstafanir.  Í kjölfarið varð ég mér út um textaskjal með fjórðu útgáfu af kennslubókinni (Computer Networks) og keyrði svo skelskriftu  : grep -Ewo '[A-Z][A-Z][A-Z]*' CN4.txt |sort| uniq -c|sort -nk1rh > tidniSkamstCN4.txt, í því 
+skyni að eima út skamstafannir, (hér runur af tveim eða fleirri stórum stöfum) og flokka þær eftir tíðni.  Mér datt í hug að þetta gæti verið hjálplegt þér og öðrum nemendum þ.a. ég ætla að viðhengja hér textaskjölinn, CN4.txt (bókinn í textaformi) og (tidniSkamstCN4.txt).  Þar sem að tíðni í textanum er ekki endilega besti mælikvarði á vægi skammstafanna
+þá væri kannski upplagt ef þú mundir tékka við þær skamstafannir sem þér þykkir mikilægar og eins mögulega benda á einhverrar sem mögulega vanta upp á.  Ég vona að þú fyrirgefur þessa uppátækjasemi hjá mér, ég veit að þú ert sennilega frekar upptekinn maður, en þetta er bara svona hugmynd, ég vil alls ekki vera tilætlunarsamur, eða leggja á þig neinar kvaðir.
+
+með bestu kveðju
+
+Bergur Þorgeirsson

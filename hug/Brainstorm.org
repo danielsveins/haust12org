@@ -1,0 +1,73 @@
+* Brainstorm
+Brynjar, Jón, Bergur, Aron
+
+
+Brynjar - scrumMaster - þjálfari
+
+Jón - Kaupandi
+
+Bergur - Hönnuður
+
+Aron - Villuprófari
+
+
+** Scrum
+
+tímabil  2 vikur -  sem fókuserað er bara afmarkaðan hluta
+
+** Hugmyndir
+
+Lyfjadæmi
+
+Gjaldmidilsreikn
+
+Skuldbokaldari
+
+Verð á bensíni + kort
+
+Around Me á íslandi
+-- hefur í för með sér gagnagrunn 0.s.f.v.
+-- hægt að tengjast 4-square gagnagrunninn
+
+Explore
+-ísland of lítið fyrir þetta
+
+
+
+Eithvað fyrir túrista á Íslandi .. .. Grapevine
+
+heitar laugar á íslandi                                -------->  ?pæling í dag 
+
+-app sem segir hvað fjöll heita o.s.f.v.
+
+-einsog planets
+
+-Eithvað með póker
+
+-Mæer leikur---einfaldur leikur...
+
+-Game of life pæling
+
+
+- Brynjar og Fiskistofan -- Ath. með eithv lítið app.
+
+- Næsta klósett -- Almenningsklósett
+
+**  Heitar Laugar á Íslandi
+
+->   ætti að vera Dýrt app 
+
+læra á gps ið
+
+Google maps API ið
+
+útfæra stjörnugjöf og comment
+
+-Óvættir bættir inní --- Gríla drap þig.. o.s.f.v.
+
+** Skil eftir 3 vikur
+
+Viðskiptaáætlun
+skilgreina verkefnið
+skipta niður í þætti
+

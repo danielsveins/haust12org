@@ -1,0 +1,109 @@
+* Verkefni 5
+
+1) lán A er vaxtagreiðslulán til tveggja ára með árlegum gjaldögum, höfuðstól
+100 og 10% vöxtum. Hver er meðaltími (e. modified duration) greiðsluflæðis?
+
+
+Dm = 1/(1+r) * [SUM k=1 -> n k*C{k}/(1+r)^k]/P
+
+P = 100
+
+Dm = 1.735537  = circa 1.736
+
+2)  -Dm * P = dP/dr
+
+Delta P = dP/dr * Delta r
+
+Dm = 5
+
+Delta r = 1%
+
+P = 98.5
+
+-Dm *  P =- 5 *  98.5 =- 492.5 = dP/dr
+
+dP/dr * Delta r = -4.925
+
+P{2} = 93.575
+
+
+3)
+
+| tegund Greidslu                 | hofudstll principal | vextir | lanstimi maturety | Ávöxtunakrafa yield | Núv. Present value | modified duration |
+|---------------------------------+---------------------+--------+-------------------+---------------------+--------------------+-------------------|
+| Vaxtagriðslur  coupon payments  |                 100 | x      |                 3 |                  7% | 100                | 2,62              |
+| Jafnar greiðslur equal payments |                 100 | 6%     |                 2 |                  7% | Y                  | 1,39              |
+| Jafnar afborganir               |                 100 | 6,5%   |                 2 |                  7% | 99,31              | Z                 |
+
+
+fyrir Z  
+
+fyrsta greiðsla = 56,5  
+önnur greiðsla = 53.25
+
+
+Dm/(1+r)*P = 56,5/(1,07) + 2*53.25/(1,07)^2  = 145.8249
+
+                                                 Dm = 1.3723 = Z
+
+fyrir Y 
+
+   p = c/(1+r) + c/((1+r)^2  
+
+P/c =  1/(1+r) + 1/((1+r)^2
+
+c = (1+r)/p + (1+r)^2/p
+
+
+A = p * r*(1+r)^n / [ (1+r)^n  -1 ]
+  = 100 * 0.06 * (1.06)^2 / [ (1.06)^2 - 1 ]
+  = 54.544
+Núvirði samasem
+
+   P =  54.544/(1+0.07) + 54.544/ (1 + 0.07)^2
+                                                  =  98.6165 = Y  
+
+
+dp/dr = -c/(1+r)^2  - 2c/(1+r)^3
+
+
+                                                x er 7% þ.s. P er jafnt og höfuðstóll og Ávöxtunarkrafa er 7%
+
+4.
+
+a)
+Pk = A/r * (1 - (1 + r)^(k-n))
+
+A = r/(1-(1+r)^-n)  * p
+
+setjum
+pk = P/2
+ 
+ og  
+    reiknum
+             leysum fyrir k
+=> svar ..
+
+b) vinnum út frá A
+A{2} = A * 1.2
+
+og leysum    A{2} = P * r/(1-(a+r)^-n)     fyrir n.
+
+
+5.
+
+Delta P = -Dm * P * delta r + 1/2 * C * P * delta r ^2
+
+=>   delta P/P = -Dm * delta r 1/2 * C * delta r^2
+
+http://www.investopedia.com/university/advancedbond/advancedbond6.asp#axzz286S8iICB
+
+http://www.investopedia.com/university/advancedbond/advancedbond7.asp#axzz286S8iICB
+
+http://en.wikipedia.org/wiki/Greeks_%28finance%29
+
+formúlan finnst hér
+http://en.wikipedia.org/wiki/Bond_convexity
+
+
+

@@ -1,0 +1,172 @@
+* Glos fyrir Unix bók
+
+algild slóð byrjar á /
+afstæð á engu
+~ vísar í heimamöppu
+
+../../usr   upp tvær og svo usr
+
+$HISTSIZE  fjldi skipana geymd innan keyrslu a skel
+$HISTFILESIZE sama milli keyrslna
+
+escape character er \
+
+fyrir einn staf
+
+margir með einföldum eða tvöföldum gæsalöppum
+
+** Pipes
+
+cmd1 | cmd2  
+
+cmd1 |& cmd 2   adds the standard error too
+cmd1 >& file1  output plus error to file
+
+** Regex
+.^$*[]-\
+(- telst bara sértákn innan [ og ])
+
+at*i   passar vid ati atti attti o.s.f.v.
+a.ti   lika plus ali anni o.s.f.v.
+
+^ byrjar á
+$ endar á
+
+\b  stendur fyrir word boundary þ.a. áll\b kemmur 3 í Páll er háll sem áll
+
+en \báll\b passar við aftasta þ.e.a.s. áll.
+
+\< byrjun orðs  \> enda orðs
+
+^ Allt nema ef hattur er fremst t.d. [^a-zA-Z] er allt nema enskir bókstafir
+
+
+komin í lok 7.1 bls 11 
+
+*** General regex
+bætist við ?+|(){og}
+þ.e.a.s. við
+.^$*[]-\
+-Endurtekningar ?,+,{ og }
+? þýðir aldrei eða einusinn
++ einu sinni eða oftar
+{5} fimm sinnum
+{3,5} þrisvar til fimm sinnum
+{5,} fimm sinnum eða oftar
+
+| 
+
+táknar eða
+
+[Hh]ann|[Hh]ún passar við: Hann fór, Hún fór, fór hún?  o.s.f.v.
+
+
+(hann|hún)(er|var)  
+
+passar við : hann er, hún er, hann var, hún var
+
+   
+** Skipanir almment
+
+*** chmod
+
+ugo user group other
+
+chmod ugo=rwx skra
+==
+chmod a=rwx skra
+==
+chmod 777 skra
+
+fyrir möppu er x til að sýna að leita meigi í möppunni
+
+*** grep
+
+grep '^[a-z]{3}$' /usr/share/dict/words
+
+skrifar öll 3-stafa orð í ensku
+
+
+*** head
+
+head [-n] [skra]
+
+gefur fyrstu n sjálfgefið 10 línur
+
+*** ps
+
+sýnir process id
+
+*** logout
+
+hætta vinnu í tlv sem tengs var með ssh
+
+*** make
+
+Þýðir forrit og tengir smkv nánari fyrirmælum í Makefile
+
+ 
+*** scp
+
+Afrita skrár yfir á aðra tölvu
+
+t.d.
+
+scp xx.dat jomasson@katla.rhi.hi.is:
+
+
+*** sort
+sort [skrá]
+Raðar skrá eða línum úr pípu í stafrófsröð og skrifar á staðalútak
+
+-n
+
+numeric  , Raðar í talnaröð
+
+-r
+
+reverse, raðar afturábak
+
+-b
+
+sleppir bilum milli dálka þegar röð er ákvörðuð
+
+-kn
+
+Raðar eftir n-ta dálki (dálkar eru aðskildir af eyðum), og ef gildin þar
+eru eins þá eftir dálki n+1 o.s.f.v. Hægt er að nota marga -k rofa, t.d.
+-k3,4 -k2,2 -k1,1 sem mundi raða fyrst eftir dálki 3, síðan 4, þá dálki 2 
+og loks 1.
+
+
+
+*** tee
+
+Té stikki , úttak skrifað bæði í skrá og staðalútak
+
+*** tail
+tail -n [skrá]
+
+skrifar n(sjálfgefið 10) seinustu línur skrár eða pípu
+
+*** time skipun
+Framkvæmir skipun og tekur tíman á henni, raun og keyrslutíma
+
+*** tr
+tr runa1 runa2
+
+Les staðalinntak og þýðir hvern staf sem fyrir kemur í runu1 yfir í stafin í 
+sama sæti í runu2 og skrifar niðurstöðu á staðalúttak.  Nota má - til að brúa
+bil milli tákna í ASCII röð líkt og í reglulegum segðum.  Nota má táknin \n 
+fyrir línuskipti og \t fyrir TAB og ýmis fleirri sértákn.
+
+Dæmi a) "tr a-z A-Z < gogn > GOGN"  breytir öllum enskum lágstöfum í skránni
+gogn í upphafsstafi og skrifar í GOGN
+
+
+cat bible.txt| tr ' ' '\n' | grep -Ew '[a-z]{3}' | sort | uniq -c | less
+
+
+tr -d '.,:;!?()%'  eyðir öllu sem kemur fyrir
+
+

@@ -1,0 +1,54 @@
+* Fyrilestur TNO  mand 8 /10/2012
+
+switching vs. packet ..
+Circuit switched - á við um síma o.s.f.v.
+
+en Hub v.s. switching kerfi hefur til að bera smá 
+
+| HUB                          | Sviss                                 | Rúter                                                     |
+|------------------------------+---------------------------------------+-----------------------------------------------------------|
+| auwsome heimsk græja         | er þannig gerður að hann finnur       | Rúterinn er meira svona jaðargræja, tengja við önnur net  |
+| gat bara þjónað einum        | fljótlega útúr því hver er að senda   | , rúting protocall o.s.f.v. ---Til að losna við broadcast |
+| í einu, eina sem hub         | -skráir mac-addressur, hægt er að     | -storma, ..                                               |
+| gerði var að endurgera       | taka pakka frá einu porti og senda    |                                                           |
+| signal um eitt port          | á annað á sama tíma og c er að tala   |                                                           |
+| yfir á öll önnur port,       | við d. þ.e.a.s. A-> B og C->D er í    |                                                           |
+| en senda busy signal ef      | lagi.  Eina vandamálið er þegar allir |            L3 -netlag                                     |
+| hubið fékk tvö signal í einu | vilja tala við eitt port.  Þess vegna |                                                           |
+| -> random bið hjá sendendum  | er gott að hafa uplink portinn        |                                                           |
+| (hub þjónaði bara einum í    | (yfileitt 2) miklu stærri . . .       |                                                           |
+| einu)  4-8 vélar tengdar     |                                       |                                                           |
+| -> allt í lagi               |                                       |                                                           |
+|                              |                                       |                                                           |
+| L1- eðlislag                 |       L2-Greinalag                    |                                                           |
+
+
+|              |
+|--------------|
+| L3 Netlag    |
+| L2 Greinalag |
+| L1 Eðlislag  |
+
+
+Netrekstraraðilli þarf að passa uppá það að frá sínu svæði leki ekki eithvað rugl..
+Með því þá drepuru það að það flæði út um allt.
+
+engar ip tölur út frá þínu neti sem eiga ekki að fara út frá þínu neti. - löglegar tölur
+
+sumar tölur eiga bara að vera inná staðanetum.
+
+DDOS-  runa af litlum pökkum, þá fer allt í umsýslunna..(frá einhverjum hóp af compomeruðum tölvum).
+
+
+** Cellular mobile phone systems
+
+
+hex-cellur - innann sömu cellu eru hver sími með ákv tíðni og tímaslott
+en sama tíðni og tímaslott er ekki notað í samliggjandi cellum. 
+
+    -----
+   /     \
+   0     0
+   \     /
+    =====
+

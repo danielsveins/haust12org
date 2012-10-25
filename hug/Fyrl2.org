@@ -1,0 +1,34 @@
+* Fylrl 2 Hugúnaðarverkefni
+
+Unlocking Android fyrstu 4 kaflar
+Hugtök/meginforritseiningar
+
+Byggir á MVC - Model View Controler
+að einhverju leiti
+
+-activity
+   Notendaviðmót forritsins
+   Notendaviðmót útfærð sem view og eru skilgreind í XML layout skrá
+-Service
+   Forrit sem hefur langann líftíma - t.d. spila tónlist
+   -Ræst með millibili eða sem viðbrögð við einhverjum atburði
+   -Hafa ekki notendaviðmót
+-Broadcast Receiver
+   Bregst við víðværum (global) atburði  - t.d. símhringingu eða textaskilaboði
+   -Hafa ekki notendaviðmót
+-Content Provider
+    Birtir gögn, t.d. öðrum forritum
+    - sent gögn til activity
+    - skrár, SQLlite
+
+
+-Intent
+    -er svona límið sem er sent á milli eininga
+    -skilgreining á þörf - t.d. ég vill fletta upp í símaskrá
+    -tengir saman einingar
+    -er sent á milli einingar
+    -skilgreint eða þekkt frá Action og gögnum.
+
+-IntentFilter
+    -Lýst í XML ská sem heitir AndroidManifest.xml
+    -Skilgreinir sambandið á milli Intents og applications

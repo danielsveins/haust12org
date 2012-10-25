@@ -1,0 +1,25 @@
+* Fyrlilestur 2 
+Þríhyrningur
+Tími, gæði, Kostnaður
+
+** Tegundir verkefna
+hugb..
+
+virk verkefnastjórnun ..
+frekar undirbúning og eftirfylgni
+heldur en að takast á við vandamál sem
+koma upp
+
+** Fossalíkanið
+
+requirements
+design
+implementation
+verification
+maintenence
+
+hentar vel í t.d. byggingu hús
+
+við hugbúnaðargerð er frekar um að ræða spíral eis og 
+t.a.m. í scrum
+

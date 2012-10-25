@@ -1,0 +1,79 @@
+* Verkefni 3 Forritunarmál
+lx.(ly.x+y)
+
+2. (Hópverkefni)
+
+((lx.(ly.x+y))10)20
+
+(((lambda (x) (lambda (y) (+ x y)))10)20)
+
+segðinn skilar gildi 30
+engar breytur eru frjálsar en x er samt frjáls innan
+ly.x+y   segðinni
+
+4. (Hópverkefni) 
+lx.(ly.(lz.x(yz)))
+
+(lambda (x) (lambda (y) (lambda (z) (x ( y z)))))
+
+or 
+
+(define (f x)
+   (lambda (y) (lambda (z) (x (y z))))
+)
+
+
+(((f (lambda (a) (+ a 1))) (lambda (b) (+ b 1)))1)
+
+(+(+11)1)=3
+
+engar breytur eru frjálsar í heildarsegðinni.
+Breytan x er samt frjáls innan ly.(lz.x(yz)) og
+breyturnar x og y eru frjálsar innan lz.x(yz).
+
+
+3. (Einstaklingsverkefni)
+lx.x+y
+
+(lambda (x) (+ x y))
+
+(define (f y)
+   (lambda (x) (+ x y))
+)
+
+notkun:
+
+>((f 3)2)
+>5
+
+eða einsog:
+
+>((lambda (x) (- 3 x))2)
+>1
+
+í segðinni lx.x+y  er breytan y frjáls
+
+umskrifun væri t.d.
+
+la.a+b
+
+
+
+5. (Einstaklingsverkefni)  
+((lx.(ly.(x(xy))))(lx.x+1))1
+
+(define (p x)
+  (lambda (x) (lambda (y) (x(xy))))(lambda (x) (+ x 1))
+)
+
+notkun:
+
+>((p 1)1)
+2
+>
+
+það eru engar frjálsar breytur í heildarfallinu
+innan  (ly (x(xy))) er x frjáls breyta
+
+
+

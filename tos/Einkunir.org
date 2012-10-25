@@ -1,0 +1,24 @@
+* Einkunnir Fyriir Dæmahóp 5 verkefni
+https://cs.hi.is/tos12/
+| Nemandi                      | Verkefni1 | Verkefni2 |
+|------------------------------+-----------+-----------|
+| Unnur Þórisdóttir            | 12.5/16   | 13.5/14   |
+| Viðar Snær Svanbjörnsson     | 11/16     | 9.5/14    |
+| Trausti Már Svararsson       | 14.5/16   | 12/14     |
+| Viktor Bao Phuc Hafsteinsson | 12/16     |  9/14     |
+| Aron Skúlason                | 16/16     | 13/14     |
+| Sigurður Óli Árnason         | 14/16     |           |
+| Tara Líf Tómasdóttir         | 12.5/16   |           |
+| Þorsteinn Sævar Kristjánsson | 15/16     | 14/14     |
+| Unnsteinn Barkarson          | 15.5/16   |           |
+| Veigar Pálsson               | 14/16     |           |
+| Thelma Rún Heimisdóttir      | 14/16     |           |
+| Tihomir Drobnjak             | 14.5/16   | 9.5/14    |
+| Bjarni Grétar Ingólfsson     |           | 14/14     |
+| Alfreð Simonarsson           |           | 11.5/14   |
+| Þórir Guðjónsson             |           | 7/14      |
+| Þórður Björnsson             |           | 14/14     |
+| Dagur Bergsson               |           | 13.5/14   |
+| Tinna Sædal Ragnarsdóttir    |           | 11/14     |
+
+  

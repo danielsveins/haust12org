@@ -1,0 +1,159 @@
+* Glos V1 fortnml
+hópfélagi
+olg14@hi.is
+
+rafræn skil í gegnum netið fyrir föstd. til Snorra
+
+->O()0-><-0()0
+       1 1
+
+** BNF
+BNF er aðfeerð eða svokallað meta-mál til að skilgr. mál
+endl stvl -> samsvarandi BNF
+
+->O()0-><-0()0
+       1 1
+
+fyrsta stöð verður  A seinni B
+Þetta er BNF:
+<A>::= 1<B>
+<A>::=0<A>
+<B>::=1<A>
+<B>::=0<B>
+<B>::=e   
+
+e þýðir hér tómi strengurinn.
+epsilon
+
+
+** EBNF
+
+ódýrasta leiðinn er að taka BNFið beint og varpa yfir í EBNF
+
+A = '1', B | '0', B;
+B = '1', A | '0', B| ;
+
+
+** Málrit
+
+járnbrautar schema
+
+    [0]          [0]
+/--(-.-)-[1]----(-.-) \--->
+|                     |  
+\------ [1] --------- /
+
+
+** Útleiðslutré
+
+fyrir streng 10011
+
+         A
+        / \
+       1   B
+          / \
+         0   B
+            / \
+           1   A
+              / \
+             1   B
+                  \
+                  e
+
+** Mál löglegra fleytitölufasta 
+regluleg segð
+(+|-)?d+.d+((e|E)(+|-)?d+)?
+
+d = 0|1|2|....|9
+
+<float> ::= <opt-sign><digits>.<digits><opt-exp>
+<opt-sign>::= +|-|e
+<digits>::=<digit><digits>|<digit>
+<digit>::= 0|1|2|3|...|9
+
+** Hópverkefni
+
+2 og 5
+
+2. Mál allra löglegra formúlna með '(',')','1',og '+'.
+xSýnið útleiðslutré fyrir '1+(1+1)'.
+S::=> A|e
+A::=>A+A
+A::=> (A)
+A::=> B
+B::=> 1B|e
+A::=> AA
+S=>A=>A+A=>A+(A)=>A+(A+A)=>B+(B+B)=>1+(1+1)
+
+             S
+             |
+             A
+             |
+            A+A
+           /   \
+          B    (A)
+         /      |
+        1      A+A
+	      /   \
+             B     B
+            /       \
+           1         1
+
+           
+*** 5
+lýsið í stuttu máli málum þeim, sem eftirfarandi BNF mállýsingar lýsa:  
+S->(S)S|e
+==
+S= '(',S,')',S|;
+
+
+lýsir svigamáli þ.s. þú getur haft endalaust marga sviga í mismunandi uppröðunnum,
+ en það er tryggt að ef svigi opnast þá lokast hann.
+
+
+** Einstæklings verkefni
+
+1. Mál allra strengja yfir {'(',')'}, þar sem svigar eru í jafnvægi.  Sýnið 
+útleiðslutré fyrir strenginn '()(())'.
+BNF
+S->(S)S|e
+
+EBNF
+S = '(',S,')',S|
+
+
+()(())
+
+útleiðist
+
+              
+               S
+               |
+             (S)S
+             /   \
+            ()   (S)S
+                 /  \
+              ((S)S)  e
+               /   |
+               e   e
+
+
+        QED.  ()(())
+
+  
+
+
+lýsið í stuttu máli málum þeim, sem eftirfarandi BNF mállýsingar lýsa:  
+
+6.  S -> SS+ | SS- |t
+
+dæmi:
+s>ss+>SS-t+>SS+t-t+>tt+t-t+
+
+s>ss+>ss-t+>tt-t+
+
+s>ss->sss-->ssss--->sssss----
+
+mál strengja sem enda alltaf á - eða + ef þeir eru ekki bara stakt t.Það er 
+alltaf einn fleirri t en + og - til sammans. 
+

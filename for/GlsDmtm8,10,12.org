@@ -1,0 +1,83 @@
+* Dæmatími Forritunarmál 8/10/2012
+
+4. 
+;;Notkun:  (inc-stream s)
+;; Fyrir
+(define (inc-stream s)
+      (stream-binop + (cons-stream 0 heil) s)
+)
+
+
+5.
+
+
+f'' = -f   f(x) = f(0) + intgr{o->x} f'(x)dx
+f(0)=0
+f'(0)=1
+
+f(x)  0 + intgr{0->x} [1 + intgr{0->x} -f(x) dx ]dx
+
+(define f
+   (taylor-integrate 0
+      (taylor-integrate 1
+         (taylor- taylor-zero f))
+   )
+)
+
+
+6.
+
+(f(f.....(f( f u X{n}) x{n-1})....)x{1})
+(fx{1}(fx{2} .....(fx{n} u) . .. ..))
+;;Notkun: (insert-right f x u)
+;;Fyrir: f er tv'iundarfall
+          x er listi gilda
+          u er tala
+;; Gildi:  (f x{1}(f x{2} ....(f x{n} u) .... ))
+(define (insert-right f x u)
+   (if (null? x)
+       U
+       (F  (car x) (insert-right f (cdr x) u))
+)
+)
+
+
+** CAML stuff
+
+1.
+(*
+Notkun: MApreduce f op ((+)) u X
+Fyrir: f er fall af tagi A->B
+       op er fall af tagi C->B->C
+       u er gildi af tagi C
+       x er listi gilda at tagi A
+Gildi:  U(+)(f x{1}) (+) .....(+)(f x{n})
+        þar sem (+) er op
+*)
+
+let rec mapreduce f op u x =
+           if x =[] then
+               u
+           else
+               mapreduce f op(op u(f (hdx)))(tl x)
+;;
+(a->b)->(c->b->c)->c->alist->c
+
+
+[samhengislaust] ->  let f x=x+2;;
+                     mapreduce f(prefix +)
+                     1[1;2;3];;
+
+6.
+(*
+Notkun:  lengd x      it_list f u x
+Fyrir:  x er listi
+Gildi: lengd listands x *)
+let lengd x =
+    let add1 x y = x+1
+    in 
+      it_list add1 0 x;;
+
+
+(*   it_list er annað fall sem hann gefur upp á vikublaðinnu *)
+

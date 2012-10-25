@@ -1,0 +1,22 @@
+Forritunarmál      Bergur Þorgeirsson d3
+
+
+;; fyrsta einstaklingsverkefni var tekið fyrir
+;; Einstaklingsverkefni
+;; sumfun2 tekur 2 vidfong fall f og talnalista l, og
+;; framkvaemir fallid a ollum stokunum og sumerar sidan
+;; up og kemur med eina tolu 
+(define (sumfun2 f l)
+  (define (hjlp f l s)
+    (if (null? l)
+        s
+        (hjlp f (cdr l) (+ s (f (car l))))
+        )
+    
+    )
+  (hjlp f l 0)
+  )
+;; Notkunardaemi
+> (sumfun2 (lambda (x) (* x x)) '(1 2 3))
+14
+

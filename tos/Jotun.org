@@ -1,0 +1,2 @@
+* Jotun
+ssh bergurth@jotunn.rhi.hi.is
