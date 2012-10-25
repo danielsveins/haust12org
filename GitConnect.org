@@ -1,0 +1,5 @@
+* GitConnection
+
+** SSH
+for this file tree the git projects ssh address is:
+git@github.com:Bergurth/haust12org.git
