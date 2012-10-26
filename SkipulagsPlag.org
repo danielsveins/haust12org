@@ -10,6 +10,8 @@ file:tno/WirlesNetwProtocols.org
 
 
 *** Verkefnastjverkefni  (1)                                -skil 29/10/12
+file:ver/Verkefni3/GlsV3.org
+
 *** Forritunarmal-v9     (1-3)                              -skil 29/10/12
 
 ** Projects
