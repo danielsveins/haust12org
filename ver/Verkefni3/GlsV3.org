@@ -1,0 +1,214 @@
+* Glósur tengdar verkefni 3 í verkefnastjórnun
+
+** Verkefnisblað
+
+Verkefnastjórnun I – áætlanagerð
+IÐN503G
+Verkefni 3 – Tíma- og kostnaðaráætlun (7,5%)
+NÝ RAFSTÖÐ
+Verkefnishópur hjá ISAVIA hefur ákveðið að endurnýja rafstöð í einni af bygginum sínum. Leggja
+skal af eldri varaaflsvélar og tilheyrandi rafbúnað og byggja nýtt hús fyrir rafstöð á lóð. Á lóðinni
+þar sem byggingin á að rísa er rafstrengur sem þarf að flytja.
+Byggingin er 60 m2 ( 6mx10m) á einni hæð og inniheldur tvær varadísilvélar, olíutank, handvask,
+loftræsikerfi, rafmagnstöflu og ofnakerfi. Á lóðinni er niðurgrafinn olíubirgðartankur með tilheyrandi
+pípum. Frá byggingu liggur rafmagnskapall inn í aðalbyggingu ca. 20 metrar. Sett verður upp
+vaktkerfi fyrir búnað inn í aðalbyggingu.
+Bygging er úr forsteyptum einingum og sökklum (sjá heimild). Nokkuð djúpt er á fast og grafa
+þarf 5 metra og fylla. Jarðvinna er því frekar umfangsmikil.
+Burðarvirki er steypt en lagnir eru í grunni fyri þakniðurföll og handvask auk loftræsikerfis.
+Raforkuvirki eru fyrir ljós og rafmagnsbúnað innanhúss eins og geymahleðslu .
+Ganga þarf frá húsi utanhúss og innan og laga lóð. Kostnaðarskipting verkþátta vegna
+framkvæmda er þannig jarðvinna 10%, burðarvirki 30%, lagnir og tankar 10%, raflagnir 10% og
+frágangur utanhúss 20% og innanhús 10% og lóðarlögun 10% af heildarframkvæmdakostnaði
+húss. Flutningur á jarðkapli tekur 4 daga en kostnaður er innifalinn í raflögnum.
+Hanna á verkið og bjóða út. Sækja þarf um leyfir fyrir byggingaráform eftir að arkitekt er búinn
+með sína vinnu og síðan um byggingarleyfi þegar allir hönnuðir hafa lokið sinni vinnu. Það tekur
+viku að bíða eftir leyfumi. Ráða þarf eftirlismann sem mun vinna við verkið eftir að verktaki hefur
+verið valinn. Verkkaupi annast verkefnastjórnun. Gerð verður forhönnun til að festa þarfagreiningu,
+stærð húss og kröfur verkkaupa áður en farið verður í verkhönnun (gerð teikninga). Sér útboð er
+fyrir varavél og annað fyrir byggingu. Gerð verða útboðsgögn sem samanstanda af verklýsingum
+og magntöluskrám. Útboðsgögn fyrir vélar er klárt fyrir 10.desember 2012 og er auglýst strax en
+fyrir bygging 15. desember en þá á allri hönnun að vera lokið. Verkkaupi rýnir gögn fram að útboði.
+Búið er að ráða arkitekt, rafmagnshönnuð, burðarþolshönnuð,lagnahönnuð og lóðarhönnuð að
+verki. Rafmagnshönnuður er hönnunarstjóri. Hönnuðir gera uppdrætti og útboðsgögn en gerð
+
+
+útboðsgagna er 10% af þóknun hönnuða. Taxtar hönnuða er þannig að arkitektar eru með 13.000
+kr/tímann en aðrir hönnuðir er með 15.000 kr/tímann. Eftirlismaður er með þóknun sem nemur 5%
+af framkvæmdakostnaði húss. Þóknun arkitekts og annar hönnuða er 8% af heildarkostnaði
+verkefnisins. Hlutfallsleg skipting þóknunar er skv. fyrirlestrarslæðu. Samræming gagna er
+mikilvægur þáttur þegar gögn eru afhent öðrum aðila og er reiknað með 1⁄2 dags fundum fyrir
+hverja afhendingu.
+Framkvæmdakostnaður (kostnaður verktaka) áætlast til 35 millj. Kr. fyrir húsið en 20 millj. Kr. fyrir
+vélar. Bjóða skal bygginguna út 10. janúar 2013. Útboðstími er 4 vikur fyrir bæði útboðin . Yfirferð
+og samþykki tilboða tekur tvær vikur eftir opnun tilboða. Húsi skal vera fullgert með tilheyrandi
+búnaður fyrir 1. ágúst 2013. Allur rafbúnaður skal settur í þegar 4 vikur eru liðnat eftir að innri
+frágang er lokið vegna raka í byggingarefnum. Varavélar koma til landsins 1.ágúst 2013 og fara
+beint í uppsetningu sem tekur tvær vikur. Prófun tekur við sem verkkaupi annast sem hluti af
+verkskilum ásamt úttektum. Til að nýta tímann var ákveðið að jarðvinna væri sett í gang strax og
+forhönnun er lokið.
+Leysið eftirfarandi:
+a) Setjið fram skynsamlega sundurliðun (WBS) verkefnis á grundvelli ofangreindra upplýsinga.
+Bætið inn verkþáttum sem þið teljið eiga við. Sundurliðið verkefnið á 1. og 2. stýrilagi og
+teiknið sundurliðunina upp í WBS mynd. Sundurliðun verkefnis er bæði fyrir hönnun og
+framkvæmd og verklok sem felast aðallega í úttektum.
+b) Gerið aðfangaáætlun (upplýsingar um aðföng mynd 58) í töfluformi fyrir fyrir hvern verkþátt í
+sundurliðun á stýrilagi 2. Eingöngu er unnið í dagvinnu.
+c) Gerið kostnaðaráætlun fyrir heildarkostnaðinn og reiknið með ófyrirséðu fyrir „mótaða
+hugmynd“ (ófyrirséð vegna magntalna í útboðsgögnum og vegna ófyrirséðra verkþátta). Ekki
+skal reikna með óbeinum kostnaði né kostnaði vegna tengigjalda við veitur né annara gjalda.
+Setjið upp í tölfu (dæmi tafla 20)
+d) Gerið tímaáætlun á bjálkaformi (e. Gantt chart) á grunvelli WBS. Tengið verkþætti saman á
+grundvelli upplýsinga í textanum. Merkið inn bundnu leiðina, t.d. með því að dekkja þá stöpla
+sem marka hana. Nefnið þá verkþætti sem þið teljið að séu með slaka. Setjið inn vörður
+samkvæmt upplýsingum. Metið mönnun á verkið þannig að hönnun verði lokið fyrir 15.
+desember 2012. Afköst og byggingarhraði er lýst í heimild til viðmiðunar. Frí er í verkefni fram
+að útboði. Taxti iðnaðarmanns er 4500 kr/tímann. Afköst jarðvinnutækja er 10 metrar af skurði
+á klukkutíma og 5 m3 á klukkustund (keyrsla tefur). Almennt er vinna 30% af kostnaði og að
+hámarki tveir menn að vinna í hverjum verkþætti. Ekki er unnin næturvinna. Verkið hefst
+1.11.2012.
+e) Gerið fjárstreymisáætlun (tafla 21) og graf sem sýnir samhengi fjárstreymis og uppsafnaðs
+fjárstreymis. Ekki þarf að reikna með vöxtum á framkvæmdatíma. Varavélar eru greiddar
+þannig að 10% er greitt við samning 30% mánuð fyrir afhendingu, 40% eftir uppsetningu og
+rest að ári eftir og ábyrgðarúttekt (kemur ekki inn í fjárstreymisáætlun.
+
+
+
+
+Verkefni skal skilað í kassa á skrifstofu í VII
+Heimildir: http://www.fjarmalaraduneyti.is/log_og_reglugerdir/reglugerdir/framkv_eignaumsysla/nr/1514
+http://www.landogsaga.is/section.php?id=9&id_art=1101 (um byggingarhraða )
+
+
+
+
+
+Sæmundargötu 6
+101 Reykjavík
+Sími
+Fax
+525 4000
+552 1331
+hi@hi.is
+www.hi.is
+
+
+** Almennar Glosur við lestur verklýsingar
+*** ???
+
+-Hvaða Upplýsingar í dæminu eru nauðsynlegar?
+-Hvað er bara sögusviðið, eða rugl til að hræða mann?
+*** Vinnuþættir
+**** byggja nýtt hús fyrir rafstöð - 60m^2 (6m*10)-ein hæð.
+ Útboð verður haldið fyrir byggingu og varavél..
+ flytja rafstreng, til að ryma fyrir bygginguna
+Bygging er úr forsteyptum einingum og sökklum.
+ http://www.fjarmalaraduneyti.is/log_og_reglugerdir/reglugerdir/framkv_eignaumsysla/nr/1514
+http://www.landogsaga.is/section.php?id=9&id_art=1101 
+grafa þarf 5 metra og fylla.
+***** Inniheldur
+      
+      2*varadíselvélar
+      olíutank
+      handvask
+      loftræstikerfi
+      rafmagnstöflu
+      ofnakerfi
+***** ???
+
+     á lóðinni er niðurgrafin olíubirgðatankur m. tilheyrandi pípum.
+     Frá byggingu liggur rafmagnskapall inn í aðalbyggingu ca. 20 metrar.
+     Sett verður upp vaktkerfi fyrir búnað inn í aðalbyggingu.
+    
+***** ??? Kostnaðarskipting verkþátta vegna framkvæmda:
+
+% af heildarframkvæmdarkostnaði húss.
+
+      jarðvinna            10%
+      burðarvirki          30%
+      lagnir og tankar     10%
+      raflagnir            10%
+      frágangaur utanhús   20%
+      frágangur innanhús   10%
+      lóðarlögun           10%
+
+     fluttningur á jarðkapli tekur 4 daga en kostnaður er innifalin í raflögnum.
+**** Hanna verkið og bjóða út
+***** Gerð forhönnun
+til að festa þarfagreiningu.
+-> Verkhönnun gerð hjá Arkitekta
+-> Jarðvinna sett af stað strax og forrhönnun er lokið.. (L48)
+ 
+***** Sækja þarf um leyfi fyrir byggingaráform
+  Eftir að arkitekt er búinn með sína vinn 
+-vika í bið eftir leyfi
+***** Sækja þarf um byggingarleyfi 
+      Þegar allir hönnuðir hafa lokið sinni vinnu.
+-vika í bið eftir leyfi
+***** Ráða eftirlitsmann
+      Eftir að verktaki hefur verið valinn.
+***** Útboð fyrir varavél.
+      útboðsgögn fyrir ???"Vélar" er klárt fyrir 10 des. 2012
+***** útboð fyrir byggingu.
+      Útboðsgögn fyrir byggingu klár 15 des. -> þá á allri hönnun að vera lokið.
+
+**** Þóknanir starfskrafta
+
+     gerð útboðsgagna er 10% af þóknun hönnuða.
+     Taxtar hönnuða:
+     Arkitektar              13.000 kr/tímann
+     aðrir hönnuðir          15.000 kr/tímann
+
+     Eftirlitsmaður          5% af framkvæmdarkostnaði húss ??? -> conflict of intrest maybe ???
+
+     Þóknun Arkitekts og annara hönnuða..       8% af heildarkostnaði verkefnis.
+
+     ??? Hlutfallsleg skipting þóknunar er samkvæmt fyrirlestrarglæru 
+
+     .5 dags fundum fyrir hverja afhendingu gagna.
+
+**** Útboð
+
+     Bjóða skal bygginguna út 10. jan 2013.  Útboðstími 4 vikur.
+
+     ??? Yfirferð og samþykki tilboða tekur tvær vikur eftir eftir /opnun/ tilboða ??? á ekki að vera lokun..
+
+
+
+
+*** Álaður Framkvæmdarkostnaður
+    35 millj. Kr. fyrir húsið + 20 millj. Kr. fyrir vélar.
+
+*** Verklok
+
+    Húsi skal vera fullgert með tilheyrandi búnaði fyrir 1. ágúst 2013.
+    
+    Allur rafbúnaður settur í þegar 4 vikur eru liðnar síðann innri frágangaur
+    er lokinn sökkum raka í byggingarefnum.
+
+    Varavélar koma til landsins 1.ágúst 2013 og fara beint í uppsetningu sem tekur 
+    2 vikur.
+
+    -> Prófun
+
+*** Prófun
+
+    tekur við sem verkkaupi annast sem hluti af verkskilum ásamt úttektum.
+
+** Hugtök
+*** forhönnun ???
+til að festa þarfagreiningu, stærð húss og kröfur verkkaupa.
+
+*** Verkhönnun
+gerð teikninga
+
+*** WBS sundurliðun
+http://en.wikipedia.org/wiki/Work_breakdown_structure
+
+*** ??? Aðfangaráætlun
+(upplýsingar um aðföng mynd 58) -> bls. 164 í SKIPULAGSFÆRNI
+
+** Leysið eftirfarandi..Glos
+
+...
+
