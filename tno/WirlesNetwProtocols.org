@@ -32,3 +32,36 @@ VPN's  Virtual Private Networks
 
 ** Google search 
 https://www.google.com/search?client=ubuntu&channel=fs&q=new+wireless+network+protocols&ie=utf-8&oe=utf-8
+
+
+** Wireless80211
+http://compnetworking.about.com/cs/wireless80211/a/aa80211standard.htm
+
+*** 802.11g
+In 2002 and 2003, WLAN products supporting a newer standard called 802.11g emerged on the market.
+ 802.11g attempts to combine the best of both 802.11a and 802.11b. 802.11g supports bandwidth up 
+to 54 Mbps, and it uses the 2.4 Ghz frequency for greater range. 802.11g is backwards compatible 
+with 802.11b, meaning that 802.11g access points will work with 802.11b wireless network adapters 
+and vice versa.
+
+    Pros of 802.11g - fast maximum speed; signal range is good and not easily obstructed
+    Cons of 802.11g - costs more than 802.11b; appliances may interfere on the unregulated signal 
+frequency 
+
+*** 802.11n
+The newest IEEE standard in the Wi-Fi category is 802.11n. It was designed to improve on 802.11g 
+in the amount of bandwidth supported by utilizing multiple wireless signals and antennas (called 
+MIMO technology) instead of one.
+
+When this standard is finalized, 802.11n connections should support data rates of over 100 Mbps.
+802.11n also offers somewhat better range over earlier Wi-Fi standards due to its increased signal
+intensity. 802.11n equipment will be backward compatible with 802.11g gear.
+
+    Pros of 802.11n - fastest maximum speed and best signal range; more resistant to signal 
+interference from outside sources
+    Cons of 802.11n - standard is not yet finalized; costs more than 802.11g; the use of multiple 
+signals may greatly interfere with nearby 802.11b/g based networks. 
+
+additional information about 802.11n
+http://en.wikipedia.org/wiki/IEEE_802.11n-2009
+
