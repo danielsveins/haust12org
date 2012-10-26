@@ -1,5 +1,6 @@
 * Emacs Org mode
-
+Emacs cheat sheet
+https://ccrma.stanford.edu/guides/package/emacs/emacs.html  
 ** Orgmode with version control
 http://orgmode.org/worg/org-tutorials/org-vcs.html
 ** Hack Emacs
