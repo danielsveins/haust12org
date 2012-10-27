@@ -1,0 +1,145 @@
+* OrgModeLecture Notes
+http://www.youtube.com/watch?v=oJTwQvgfgMM&feature=youtu.be
+tab for local sub tree visisbility cycling
+shift-tab for global heading thingy
+-cycle through . ..
+-cycle the visibility of subtree v.s. global.
+
+!get emacs 24..if not already have->current version is 23
+
+** Promoting or Demoting subtree
+restructuring
+Meta-s (arrow)
+
+that is cursor keys
+
+-> demote
+ ^
+:| move upp
+
+** Internal links and Hyperlinks
+
+
+** Plain-text table editor
+and spread sheet
+-> creators favorite hack
+
+move collumns. .similar to Promoting Demoting
+
+-> link to calc package
+
+emacs calc mode
+
+:=taylor($1,$2,$4)
+
+
+*** Radio Tables
+
+
+** LaTex
+
+for taking notes during science class
+
+**  TODO [#B] 	stuff 					      :buy:Frys:work:
+ 
+          ^                       ^
+        priority cookie       keywords tags
+
+  DEADLINE: <2012-11-12>
+
+
+
+
+** Inheritance
+
+tags inherited downwards
+
+date/time function
+
+:date+time - function
+
+** Interfaces
+
+
+** Capture
+
+capture with remember..
+
+remember.el by John Wriegley
+
+org mode has a full clocking.
+
+
+** Using Browser inside EMACS
+
+** Collect and Display
+
+*** Sparse Trees
+
+*** Agenda views
+
+
+** Exporting & Publishing
+
+pdf
+html
+ASCII exporting for 
+
+
+** Context sensitive keys
+
+*** Meta + cursor
+- Structure editing on headlines
+- table structure editing in tables
+
+*** C-c C-c
+-12 different variations
+
+*** TAB
+- Visibility cycling in headline
+- Motion and evaluation in tables
+- LaTex template expansion in normat text
+
+project this functionality into any mode with wrapper
+
+** Org-mode uses
+
+Taking notes
+Task Planning
+TODO list manager
+day planner
+small database
+Basis for constructing web pages
+Tool for making drafts
+Swiss Army Knife
+
+*** What Org is not
+not fiddle free
+not for the masses
+not for vi users
+does not offer finished and closed solution
+
+** Org Origin
+
+started as a small personal hack
+95% of features added later
+
+
+** Practical common LISP
+book
+http://www.youtube.com/watch?feature=endscreen&v=VeAdryYZ7ak&NR=1
+
+** GTD Getting Things Done
+http://members.optusnet.com.au/~charles57/GTD/gtd_workflow.html
+
+
+** Org-Agenda
++ org remember
+
+
+** HAck EMACS
+An Overview of org mode
+https://www.youtube.com/watch?v=6W82EdwQhxU
+
+
+
