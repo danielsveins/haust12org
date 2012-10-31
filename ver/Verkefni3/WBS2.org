@@ -1,0 +1,89 @@
+* Ný Rafstöð
+    35 millj. Kr. fyrir húsið + 20 millj. Kr. fyrir vélar.
+
+
+
+a) Setjið fram skynsamlega sundurliðun (WBS) verkefnis á grundvelli ofangreindra upplýsinga.
+Bætið inn verkþáttum sem þið teljið eiga við. Sundurliðið verkefnið á 1. og 2. stýrilagi og
+teiknið sundurliðunina upp í WBS mynd. Sundurliðun verkefnis er bæði fyrir hönnun og
+framkvæmd og verklok sem felast aðallega í úttektum.
+
+** Ófyrirséð
+** Forhönnun
+*** Forathugun
+**** Lýsing verkefnis
+**** Þarfagreining - húsrýmisáætlun
+**** Skoðun lausna
+**** Mat á kostnaði Lausna, og hagkvæmni
+**** Yfirferð og afgreiðsla
+*** Frumhönnun
+**** Val á ráðgjöfum
+**** Frumhönnun
+*** Kostnaðaráætlun
+
+*** Afhending gagna, Rýni frumhönnunar
+ 0.5 dags fundur.
+** Verkhönnun
+Útboðsgögn fyrir bygginu klár 15.des 2012, en þá á öll
+hönnun að vera lokinn
+:*** Hönnun Arkitekta
+:*** Önnur Hönnun
+:**** Rafmagnshönnun
+:**** burðarþolshönnun
+:**** Lóðarhönnun
+:**** Gerð Útboðsgagna
+gerð útboðsgagna er 10% af þóknun hönnuða
+*** Bygginganefndarteikningar
+**** Aðalteikningar & Uppdráttur að brunahönnun
+gerðar af arkitekt
+****  burðarþolsteikningar
+**** lagnateikningar
+**** raflagnateikningar
+**** Lóðar teikningar
+*** Vinnuteikningar
+uppl sem nauðsynl. eru til að ljúka mannvirkinnu að fullu með föstum
+innréttingum.
+*** Deilihönnun
+*** Framkvæmdarkostnaðsáætlun
+Áætlunn hönnuða, út frá verklýsingum og tilboðskrám á kostnaði
+*** Afhending gagna
+0.5 dags fundur..
+** Sækja um leyfi
+*** Sækja Um leyfi fyrir Byggingaráform
+*** Sækja um byggingarleyfi
+** Útboð
+*** Útboð fyrir byggingu
+Útboðsgögn fyrir bygginu klár 15.des 2012, en þá á öll
+hönnun að vera lokinn
+*** Útboð fyrir varavél
+Útboðsgögn fyrir vélar þarf að vera klárt 10.des 2012
+*** Val á Verktaka og Samningsgerð
+** Ráða Eftirlitsmann
+*** Auglýsa starf
+*** Viðtöl
+** Framkvæmd
+fluttningur á jarðkapli tekur 4 daga en kostnaður 
+er innifalin í raflögnum.
+
+Sennilega átt við % af 35 millj. áætl. heildarkostnað
+fyrir húsið
+*** Jarðvinna
+áætlað 10% af heildarkostnaði
+sett af stað strax í lok forrhönnunar
+*** burðarvirki
+áætlað 30% af heildarkostnaði
+*** Lagnir og Tánkar
+áætlað 10% af heildarkostnaði
+*** Raflagnir
+áætlað 10% af heildarkostnaði
+*** Frágangur utanhús
+áætlað 20% af heildarkostnaði
+*** Frágangur innanhús
+áætlað 10% af heildarkostnaði
+**** Uppsetning Varavéla
+koma til landsins 1.ágúst 2013 -uppsetning tekur 2 vikur
+*** Lóðarlögun
+áætlað 10% af heildarkostnaði
+
+** Prófun
+

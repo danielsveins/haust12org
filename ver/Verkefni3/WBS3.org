@@ -1,0 +1,49 @@
+* Ný Rafstöð
+
+** Ófyrirséð
+** Forhönnun
+*** Forathugun
+**** Lýsing verkefnis
+**** Þarfagreining - húsrýmisáætlun
+**** Skoðun lausna
+**** Mat á kostnaði Lausna, og hagkvæmni
+**** Yfirferð og afgreiðsla
+*** Frumhönnun
+**** Val á ráðgjöfum
+**** Frumhönnun
+*** Kostnaðaráætlun
+
+*** Afhending gagna, Rýni frumhönnunar
+** Verkhönnun
+*** Bygginganefndarteikningar
+**** Aðalteikningar & Uppdráttur að brunahönnun
+****  burðarþolsteikningar
+**** lagnateikningar
+**** raflagnateikningar
+**** Lóðar teikningar
+*** Vinnuteikningar
+*** Deilihönnun
+*** Framkvæmdarkostnaðsáætlun
+*** Afhending gagna
+** Sækja um leyfi
+*** Sækja Um leyfi fyrir Byggingaráform
+*** Sækja um byggingarleyfi
+** Útboð
+*** Útboð fyrir byggingu
+*** Útboð fyrir varavél
+*** Val á Verktaka og Samningsgerð
+** Ráða Eftirlitsmann
+*** Auglýsa starf
+*** Viðtöl
+** Framkvæmd
+*** Jarðvinna
+*** burðarvirki
+*** Lagnir og Tánkar
+*** Raflagnir
+*** Frágangur utanhús
+*** Frágangur innanhús
+**** Uppsetning Varavéla
+*** Lóðarlögun
+
+** Prófun
+

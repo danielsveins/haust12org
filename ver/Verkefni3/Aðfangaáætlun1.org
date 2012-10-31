@@ -1,0 +1,189 @@
+* Aðfangaáætlun
+
+
+
+** stof sem kemur til greina sem aðföng
+
+  2*varadíselvélar
+      olíutank
+      handvask
+      loftræstikerfi
+      rafmagnstöflu
+      ofnakerfi
+
+ Á lóðinni er niðurgrafinn olíubirgðartankur með tilheyrandi
+pípum. Frá byggingu liggur rafmagnskapall inn í aðalbyggingu ca. 20 metrar. Sett verður upp
+vaktkerfi fyrir búnað inn í aðalbyggingu.
+
+forsteyptar einingar og sökklar
+
+lagnir, þakkniðurföll
+
+ Sett verður upp vaktkerfi fyrir búnað inn í aðalbyggingu.
+
+  Varavélar koma til landsins 1.ágúst 2013 og fara beint í uppsetningu sem tekur
+    2 vikur.
+
+mynd 58 bls. 164
+
+
+
+
+frá:http://www.landogsaga.is/section.php?id=9&id_art=1101
+Sem dæmi má nefna að einbýlishús eru steypt á um viku tíma og
+síðan reist á innan við viku. Á einum til tveimur mánuðum getur
+húsbyggjandi komið húsi í fokhelt ástand og sparað þannig
+verulegar fjárhæðir sem ella færu í fjármagnskostnað,“ segir Pá
+
+** Tímahnit
+Verkið Hefst 1.11.2012 
+
+  Varavélar koma til landsins 1.ágúst 2013 og fara beint í uppsetningu sem tekur
+    2 vikur.
+
+Framkvæmdakostnaður (kostnaður verktaka) áætlast til 35 millj. Kr. fyrir húsið en 20 millj. Kr. fyrir
+vélar. Bjóða skal bygginguna út 10. janúar 2013. Útboðstími er 4 vikur fyrir bæði útboðin . Yfirferð
+og samþykki tilboða tekur tvær vikur eftir opnun tilboða. Húsi skal vera fullgert með tilheyrandi
+búnaður fyrir 1. ágúst 2013. Allur rafbúnaður skal settur í þegar 4 vikur eru liðnat eftir að innri
+frágang er lokið vegna raka í byggingarefnum. Varavélar koma til landsins 1.ágúst 2013 og fara
+beint í uppsetningu sem tekur tvær vikur. Prófun tekur við sem verkkaupi annast sem hluti af
+verkskilum ásamt úttektum. Til að nýta tímann var ákveðið að jarðvinna væri sett í gang strax og
+forhönnun er lokið.
+
+
+Útboðsgögn fyrir bygginu klár 15.des 2012, en þá á öll
+hönnun að vera lokinn
+:*** Útboð fyrir varavél
+Útboðsgögn fyrir vélar þarf að vera klárt 10.des 2012
+
+frá 3 lið spurningu:
+
+ Metið mönnun á verkið þannig að hönnun verði lokið fyrir 15.
+desember 2012. Afköst og byggingarhraði er lýst í heimild til viðmiðunar. Frí er í verkefni fram
+að útboði. Taxti iðnaðarmanns er 4500 kr/tímann. Afköst jarðvinnutækja er 10 metrar af skurði
+á klukkutíma og 5 m3 á klukkustund (keyrsla tefur). Almennt er vinna 30% af kostnaði og að
+hámarki tveir menn að vinna í hverjum verkþætti. Ekki er unnin næturvinna. Verkið hefst
+1.11.2012.
+
+20 metra skurður -> 2 klk tímar
+
+5*60 m^3  = 300 m^3
+
+5 m3 á klst  -> 60 klkst að grafa grunninn
+
+
+byggingarhraði
+Þegar verkfræði- og rafmagnsteikningar eru tilbúnar hefst hin eiginlega framleiðsla. Sökklar 
+eru steyptir, þeim komið fyrir og gengið frá lögnum og fyllingu í grunn. „Sem dæmi má nefna að 
+einbýlishús eru steypt á um viku tíma og síðan reist á innan við viku. Á einum til tveimur 
+mánuðum getur húsbyggjandi komið húsi í fokhelt ástand og sparað þannig verulegar fjárhæðir sem 
+ella færu í fjármagnskostnað,“ segir Páll.
+
+
+
+62 / 9
+
+*** Aftanfrá
+
+Hefst 1.11.12
+
+
+Fullgert 1.8.13
+\
+rafbunadur    
+  /
+  4 vikur -(raki að þorna) - 13 maí    ------> 10 vikur í deadline
+   \
+  Innri Fragangur  -?      2 vika
+      /
+   Burðarvirki   -- 6 vikur  - 1 aprl
+   \          \ 
+ Jarðvinna    /     
+     /        Útboð (Lokið  4. feb)   \
+    /         \                        \Leyfi fyrir  - vika 18. feb. seinasti dagur eftir skoðun tilb. 
+    /      Verkhönnun (Lokið 15 des)
+    /
+   forhonun
+
+forhonnun-
+
+
+** Forsendur sem við gefum okkur/metum
+
+Forhönnun tekur -   circa. 1.5 viku 
+=> lokinn 12/11/2012
+1 Arkitekt og 2 aðrir hönnuðir í forhönnun    (1) 1-12.11.12
+2 Arkitekt  3 vikur í viðbót -> Arkitktar búnir 10 des
+
+4 Hönnuðir 10 des til 15 des
+
+** Hlutfallskostn
+af heild 8%
+
+47% Arkitekt
+2%  Landslagsh.
+16%  Lagnir
+13%  Rafmagn
+17%  Burðarþol
+4.5% Hönnun & Stjórn
+
+
+** tafla
+
+| Verkþættir         | Aðfömg - hlutir      | Tengill | Magn      |           Hvenær | Athugasemdir                       |
+|--------------------+----------------------+---------+-----------+------------------+------------------------------------|
+|                    |                      |         |           |                  | Lokið fyrir 21/11/12               |
+|                    |                      |         |           |                  |                                    |
+|--------------------+----------------------+---------+-----------+------------------+------------------------------------|
+|                    | Aðföng - starfsmenn  |         |           |                  |                                    |
+|--------------------+----------------------+---------+-----------+------------------+------------------------------------|
+| 2.1                | Arkitekt 1           |         | 1.5 vika  |        1.11.2012 | 13000 Kr. / klkst                  |
+| Forhönnun          | Hönnuður 1           |         | 1.5 vika  |        1.11.2012 | 15000 Kr. / klkst                  |
+|                    | Hönnuður 2           |         | 1.5 vika  |        1.11.2012 | 15000 Kr. / klkst                  |
+|--------------------+----------------------+---------+-----------+------------------+------------------------------------|
+| 2.2                | Arkitekt 1           |         | 3 vikur   |   12.11-10.12.12 | 13000 Kr. / klkst                  |
+|                    | Arkitekt 2           |         | 3 vikur   |   12.11-10.12.12 | 13000 Kr. / klkst                  |
+| Verkhönnun         | Hönnuður 1           |         | 5 dagar   |      10-15.12.12 | 15000 Kr. / klkst                  |
+|                    | Hönnuður 2           |         | 5 dagar   |      10-15.12.12 | 15000 Kr. / klkst                  |
+|                    | Hönnuður 3           |         | 5 dagar   |      10-15.12.12 | 15000 Kr. / klkst                  |
+|                    | Hönnuður 4           |         | 5 dagar   |      10-15.12.12 | 15000 Kr. / klkst                  |
+|--------------------+----------------------+---------+-----------+------------------+------------------------------------|
+| 4.1                | Iðnaðarmaður 1       |         | 1 vika    |   Hefst 12/11/12 | 4500 Kr. / klkst                   |
+|                    | Iðnaðarmaður 2       |         | 1 vika    |   Hefst 12/11/12 | 4500 Kr. / klkst                   |
+| Jarðvinna          | Jarðvinnutæki        |         | 1 vika    |   Hefst 12/11/12 | tekur 62 klkst (skurdur + Grunnur) |
+|                    | rafmagnskapal        |         | 20metrar  |                  |                                    |
+|--------------------+----------------------+---------+-----------+------------------+------------------------------------|
+| 4.2                | Iðnaðarmaður 1       |         | 6 vikur   |              4.1 | 4500 Kr. / klkst                   |
+|                    | Iðnaðarmaður 2       |         | 6 vikur   |     ?Hefst 19/11 | 4500 Kr. / klkst                   |
+| Burðarvirki        | söklar               |         | ?         | ?Spursm m. leyfi |                                    |
+|                    | forsteyptar einingar |         | ?         |                  | tekur 1-2 mán að gera hús fokkhelt |
+|--------------------+----------------------+---------+-----------+------------------+------------------------------------|
+| 4.3                | Iðnaðarmaður 1       |         |           |              4.1 | 4500 Kr. / klkst                   |
+|                    | Iðnaðarmaður 2       |         |           |                  | 4500 Kr. / klkst                   |
+|                    | olíutankur           |         | 1         |                  |                                    |
+| Lagnir & Tankar    | handvaskur           |         | 1         |                  |                                    |
+|                    | olíubirgðatankur     |         | 1         |                  |                                    |
+|                    | lagnir               |         | N/A eða ? |                  |                                    |
+|--------------------+----------------------+---------+-----------+------------------+------------------------------------|
+| 4.4                | Iðnaðarmaður 1       |         |           |    4.2 + 4 vikur | 4500 Kr. / klkst                   |
+| Raflagnir          | Iðnaðarmaður 2       |         |           |                  | 4500 Kr. / klkst                   |
+|                    | rafmagnstafla        |         | 1         |                  |                                    |
+|                    | vaktkerfi            |         | 1         |                  |                                    |
+|                    |                      |         |           |                  |                                    |
+|--------------------+----------------------+---------+-----------+------------------+------------------------------------|
+| 4.5                | Iðnaðarmaður 1       |         |           |                  | 4500 Kr. / klkst                   |
+| Frágangur Utanhús  | Iðnaðarmaður 2       |         |           |                  | 4500 Kr. / klkst                   |
+|                    |                      |         |           |                  |                                    |
+|--------------------+----------------------+---------+-----------+------------------+------------------------------------|
+| 4.6                | Iðnaðarmaður 1       |         |           |                  | 4500 Kr. / klkst                   |
+| Frágangur Innanhús | Iðnaðarmaður 2       |         |           |                  | 4500 Kr. / klkst                   |
+|                    | Varadíselvélar       |         | 2         |     1.ágúst 2013 | uppsetning tekur 2 vikur           |
+|                    | loftræstikerfi       |         | 1         |                  |                                    |
+|                    | ofnakerfi            |         | 1         |                  |                                    |
+|                    |                      |         |           |                  |                                    |
+|--------------------+----------------------+---------+-----------+------------------+------------------------------------|
+| 4.6                | Iðnaðarmaður 1       |         |           |                  | 4500 Kr. / klkst                   |
+| Lóðarlögun         | Iðnaðarmaður 2       |         |           |                  | 4500 Kr. / klkst                   |
+|                    |                      |         |           |                  |                                    |
+
+  

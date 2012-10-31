@@ -62,8 +62,8 @@ d) Gerið tímaáætlun á bjálkaformi (e. Gantt chart) á grunvelli WBS. Tengi
 grundvelli upplýsinga í textanum. Merkið inn bundnu leiðina, t.d. með því að dekkja þá stöpla
 sem marka hana. Nefnið þá verkþætti sem þið teljið að séu með slaka. Setjið inn vörður
 samkvæmt upplýsingum. Metið mönnun á verkið þannig að hönnun verði lokið fyrir 15.
-desember 2012. Afköst og byggingarhraði er lýst í heimild til viðmiðunar. Frí er í verkefni fram
 að útboði. Taxti iðnaðarmanns er 4500 kr/tímann. Afköst jarðvinnutækja er 10 metrar af skurði
+desember 2012. Afköst og byggingarhraði er lýst í heimild til viðmiðunar. Frí er í verkefni fram
 á klukkutíma og 5 m3 á klukkustund (keyrsla tefur). Almennt er vinna 30% af kostnaði og að
 hámarki tveir menn að vinna í hverjum verkþætti. Ekki er unnin næturvinna. Verkið hefst
 1.11.2012.
@@ -118,7 +118,8 @@ grafa þarf 5 metra og fylla.
 
      á lóðinni er niðurgrafin olíubirgðatankur m. tilheyrandi pípum.
      Frá byggingu liggur rafmagnskapall inn í aðalbyggingu ca. 20 metrar.
-     Sett verður upp vaktkerfi fyrir búnað inn í aðalbyggingu.
+   
+  Sett verður upp vaktkerfi fyrir búnað inn í aðalbyggingu.
     
 ***** ??? Kostnaðarskipting verkþátta vegna framkvæmda:
 
@@ -210,5 +211,29 @@ http://en.wikipedia.org/wiki/Work_breakdown_structure
 
 ** Leysið eftirfarandi..Glos
 
-...
+*** a) Skynsamleg sundurliðunn WBS
+ 
+Sundurliðið 1. og 2. stýrilag
+og 
+WBS Mynd
 
+file:WBS.org
+
+
+*** b) Aðfangaáætlun
+mynd 58 bls. 164
+
+
+frá:http://www.landogsaga.is/section.php?id=9&id_art=1101
+Sem dæmi má nefna að einbýlishús eru steypt á um viku tíma og
+síðan reist á innan við viku. Á einum til tveimur mánuðum getur 
+húsbyggjandi komið húsi í fokhelt ástand og sparað þannig 
+verulegar fjárhæðir sem ella færu í fjármagnskostnað,“ segir Páll.
+
+*** c) Kostnaðaráætlun
+tafla 20 bls. 171
+reiknið með ófyrirséðu..
+*** d) Tímaáætlun í bjálkformi (Gant Chart)
+á Grundvelli WBS,
+*** e) Fjárstreymisáætlun
+Tafla 21 bls. 174

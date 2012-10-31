@@ -1,5 +1,9 @@
 * new Wireless Network protocols
 
+** misc stuff
+
+*** Redda leyser bendi fyrir kynningu
+
 ** Old Glos
 *** from WLAN.org
  WLAN standardar..
@@ -65,3 +69,62 @@ signals may greatly interfere with nearby 802.11b/g based networks.
 additional information about 802.11n
 http://en.wikipedia.org/wiki/IEEE_802.11n-2009
 
+
+
+*** Baisic on WIFI
+from
+http://computer.howstuffworks.com/wireless-network1.htm
+
+Uses radios, on router and computer..
+
+transmit on frequencies of 2.4 -5 GHz, higher than  frequencies for cellphones.
+Higher frequenciy allows signal to carry more data.
+
+
+
+[Til samanburðar mældist nethraðinn gegnum, WIFI á hávallagötu
+16.81 Mbs]
+
+
+**** 802.11a 
+transmits at 5 GHz, and can move upp to 54 megabits a sec
+uses
+orthagonal frequency-division multiplexing (OFDM) ..
+
+**** 802.11b
+transmits at 2.4 GHz 
+http://electronics.howstuffworks.com/radio-spectrum.htm
+11 megabits per sec
+uses complimentary code keying (CCK)..
+
+**** 802.11g 
+also transmits at 2.4 GHz but is faster than b.
+-can handle up to 54 megabits per second
+-because it uses same (OFDM) coding as a.
+
+**** 802.11n
+is the newest standard tht is wideley available
+http://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=802.11n&x=0&y=0
+
+this standar signifigantly improves speed and range.
+
+g in realworld has performance around 24 Mbs
+n can reportedly acheive speeds up to 140 megabits per a second
+
+**** more general stuff
+
+many wireless adapters can use more than one 802.11 standard
+
+
+**** Wireleaa security
+
+***** WEP
+
+uses TKIP encryption
+
+***** WPA 
+
+***** media access Control  (MAC) address 
+(MAC) address filtering
+
+it is possible to spoof a mac address
