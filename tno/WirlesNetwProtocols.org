@@ -128,6 +128,11 @@ this standar signifigantly improves speed and range.
 g in realworld has performance around 24 Mbs
 n can reportedly acheive speeds up to 140 megabits per a second
 
+**** 802.16
+
+líkt og 4G nota OFDM og MIMO, margt lítur út fyrir að
+4G og WIMAx þ.e.a.s. 802.16 eru að stefna samann
+
 **** more general stuff
 
 many wireless adapters can use more than one 802.11 standard
