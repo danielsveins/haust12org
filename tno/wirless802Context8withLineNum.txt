@@ -1,0 +1,1327 @@
+208-universities and large businesses. When the third edition appeared in 1996, computer
+209-networks, especially the Internet, had become a daily reality for millions of people. The new
+210-item in the fourth edition is the rapid growth of wireless networking in many forms.
+211-The networking picture has changed radically since the third edition. In the mid-1990s,
+212-numerous kinds of LANs and WANs existed, along with multiple protocol stacks. By 2003, the
+213-only wired LAN in widespread use was Ethernet, and virtually all WANs were on the Internet.
+214-Accordingly, a large amount of material about these older networks has been removed.
+215-However, new developments are also plentiful. The most important is the huge increase in
+216:wireless networks, including 802.11, wireless local loops, 2G and 3G cellular networks,
+217-Bluetooth, WAP, i-mode, and others. Accordingly, a large amount of material has been added
+218-on wireless networks. Another newly-important topic is security, so a whole chapter on it has
+219-been added.
+220-Although Chap. 1 has the same introductory function as it did in the third edition, the contents
+221-have been revised and brought up to date. For example, introductions to the Internet,
+222-Ethernet, and wireless LANs are given there, along with some history and background. Home
+223-networking is also discussed briefly.
+224-Chapter 2 has been reorganized somewhat. After a brief introduction to the principles of data
+--
+921-Figure 1-11. (a) Bluetooth configuration. (b) Wireless LAN.
+922-
+923-The next step up in wireless networking are the wireless LANs. These are systems in which every computer has
+924-a radio modem and antenna with which it can communicate with other systems. Often there is an antenna on the
+925-ceiling that the machines talk to, as shown in Fig. 1-11(b). However, if the systems are close enough, they can
+926-communicate directly with one another in a peer-to-peer configuration. Wireless LANs are becoming increasingly
+927-common in small offices and homes, where installing Ethernet is considered too much trouble, as well as in older
+928-office buildings, company cafeterias, conference rooms, and other places. There is a standard for wireless LANs,
+929:called IEEE 802.11, which most systems implement and which is becoming very widespread. We will discuss it
+930-in Chap. 4.
+931-The third kind of wireless network is used in wide area systems. The radio network used for cellular telephones
+932-is an example of a low-bandwidth wireless system. This system has already gone through three generations.
+933-The first generation was analog and for voice only. The second generation was digital and for voice only. The
+934-third generation is digital and is for both voice and data. In a certain sense, cellular wireless networks are like
+935-wireless LANs, except that the distances involved are much greater and the bit rates much lower. Wireless LANs
+936-can operate at rates up to about 50 Mbps over distances of tens of meters. Cellular systems operate below 1
+937-Mbps, but the distance between the base station and the computer or telephone is measured in kilometers
+--
+1696-
+1697-1.5 Example Networks
+1698-The subject of computer networking covers many different kinds of networks, large and small, well known and
+1699-less well known. They have different goals, scales, and technologies. In the following sections, we will look at
+1700-some examples, to get an idea of the variety one finds in the area of computer networking.
+1701-We will start with the Internet, probably the best known network, and look at its history, evolution, and
+1702-technology. Then we will consider ATM, which is often used within the core of large (telephone) networks.
+1703-Technically, it is quite different from the Internet, contrasting nicely with it. Next we will introduce Ethernet, the
+1704:dominant local area network. Finally, we will look at IEEE 802.11, the standard for wireless LANs.
+1705-1.5.1 The Internet
+1706-The Internet is not a network at all, but a vast collection of different networks that use certain common protocols
+1707-and provide certain common services. It is an unusual system in that it was not planned by anyone and is not
+1708-controlled by anyone. To better understand it, let us start from the beginning and see how it has developed and
+1709-why. For a wonderful history of the Internet, John Naughton's (2000) book is highly recommended. It is one of
+1710-those rare books that is not only fun to read, but also has 20 pages of ibid.'s and op. cit.'s for the serious
+1711-historian. Some of the material below is based on this book.
+1712-Of course, countless technical books have been written about the Internet and its protocols as well. For more
+--
+2184-Similarly, IBM had its own favorite: its proprietary token ring. The token was passed around the ring and
+2185-whichever computer held the token was allowed to transmit before putting the token back on the ring. Unlike
+2186-802.4, this scheme, standardized as 802.5, is still in use at some IBM sites, but virtually nowhere outside of IBM
+2187-sites. However, work is progressing on a gigabit version (802.5v), but it seems unlikely that it will ever catch up
+2188-with Ethernet. In short, there was a war between Ethernet, token bus, and token ring, and Ethernet won, mostly
+2189-because it was there first and the challengers were not as good.
+2190-57
+2191-
+2192:1.5.4 Wireless LANs: 802.11
+2193-Almost as soon as notebook computers appeared, many people had a dream of walking into an office and
+2194-magically having their notebook computer be connected to the Internet. Consequently, various groups began
+2195-working on ways to accomplish this goal. The most practical approach is to equip both the office and the
+2196-notebook computers with short-range radio transmitters and receivers to allow them to communicate. This work
+2197-rapidly led to wireless LANs being marketed by a variety of companies.
+2198-The trouble was that no two of them were compatible. This proliferation of standards meant that a computer
+2199-equipped with a brand X radio would not work in a room equipped with a brand Y base station. Finally, the
+2200-industry decided that a wireless LAN standard might be a good idea, so the IEEE committee that standardized
+2201-the wired LANs was given the task of drawing up a wireless LAN standard. The standard it came up with was
+2202:named 802.11. A common slang name for it is WiFi. It is an important standard and deserves respect, so we will
+2203:call it by its proper name, 802.11.
+2204-The proposed standard had to work in two modes:
+2205-1. In the presence of a base station.
+2206-2. In the absence of a base station.
+2207:In the former case, all communication was to go through the base station, called an access point in 802.11
+2208-terminology. In the latter case, the computers would just send to one another directly. This mode is now
+2209-sometimes called ad hoc networking. A typical example is two or more people sitting down together in a room
+2210-not equipped with a wireless LAN and having their computers just communicate directly. The two modes are
+2211-illustrated in Fig. 1-35.
+2212-Figure 1-35. (a) Wireless networking with a base station. (b) Ad hoc networking.
+2213-
+2214-The first decision was the easiest: what to call it. All the other LAN standards had numbers like 802.1, 802.2,
+2215:802.3, up to 802.10, so the wireless LAN standard was dubbed 802.11. The rest was harder.
+2216-In particular, some of the many challenges that had to be met were: finding a suitable frequency band that was
+2217-available, preferably worldwide; dealing with the fact that radio signals have a finite range; ensuring that users'
+2218-privacy was maintained; taking limited battery life into account; worrying about human safety (do radio waves
+2219-cause cancer?); understanding the implications of computer mobility; and finally, building a system with enough
+2220-bandwidth to be economically viable.
+2221-At the time the standardization process started (mid-1990s), Ethernet had already come to dominate local area
+2222:networking, so the committee decided to make 802.11 compatible with Ethernet above the data link layer. In
+2223-particular, it should be possible to send an IP packet over the wireless LAN the same way a wired computer sent
+2224-an IP packet over Ethernet. Nevertheless, in the physical and data link layers, several inherent differences with
+2225-Ethernet exist and had to be dealt with by the standard.
+2226-First, a computer on Ethernet always listens to the ether before transmitting. Only if the ether is idle does the
+2227-computer begin transmitting. With wireless LANs, that idea does not work so well. To see why, examine Fig. 136. Suppose that computer A is transmitting to computer B, but the radio range of A's transmitter is too short to
+2228-58
+2229-
+2230-reach computer C. If C wants to transmit to B it can listen to the ether before starting, but the fact that it does not
+2231:hear anything does not mean that its transmission will succeed. The 802.11 standard had to solve this problem.
+2232-Figure 1-36. The range of a single radio may not cover the entire system.
+2233-
+2234-The second problem that had to be solved is that a radio signal can be reflected off solid objects, so it may be
+2235-received multiple times (along multiple paths). This interference results in what is called multipath fading.
+2236-The third problem is that a great deal of software is not aware of mobility. For example, many word processors
+2237-have a list of printers that users can choose from to print a file. When the computer on which the word processor
+2238-runs is taken into a new environment, the built-in list of printers becomes invalid.
+2239-The fourth problem is that if a notebook computer is moved away from the ceiling-mounted base station it is
+2240-using and into the range of a different base station, some way of handing it off is needed. Although this problem
+2241-occurs with cellular telephones, it does not occur with Ethernet and needed to be solved. In particular, the
+2242-network envisioned consists of multiple cells, each with its own base station, but with the base stations
+2243-connected by Ethernet, as shown in Fig. 1-37. From the outside, the entire system should look like a single
+2244:Ethernet. The connection between the 802.11 system and the outside world is called a portal.
+2245:Figure 1-37. A multicell 802.11 network.
+2246-
+2247-After some work, the committee came up with a standard in 1997 that addressed these and other concerns. The
+2248-wireless LAN it described ran at either 1 Mbps or 2 Mbps. Almost immediately, people complained that it was too
+2249-slow, so work began on faster standards. A split developed within the committee, resulting in two new standards
+2250:in 1999. The 802.11a standard uses a wider frequency band and runs at speeds up to 54 Mbps. The 802.11b
+2251:standard uses the same frequency band as 802.11, but uses a different modulation technique to achieve 11
+2252-Mbps. Some people see this as psychologically important since 11 Mbps is faster than the original wired
+2253:Ethernet. It is likely that the original 1-Mbps 802.11 will die off quickly, but it is not yet clear which of the new
+2254-standards will win out.
+2255-To make matters even more complicated than they already were, the 802 committee has come up with yet
+2256:another variant, 802.11g, which uses the modulation technique of 802.11a but the frequency band of 802.11b.
+2257:We will come back to 802.11 in detail in Chap. 4.
+2258-
+2259-59
+2260-
+2261:That 802.11 is going to cause a revolution in computing and Internet access is now beyond any doubt. Airports,
+2262-train stations, hotels, shopping malls, and universities are rapidly installing it. Even upscale coffee shops are
+2263:installing 802.11 so that the assembled yuppies can surf the Web while drinking their lattes. It is likely that
+2264:802.11 will do to the Internet what notebook computers did to computing: make it mobile.
+2265-1.6 Network Standardization
+2266-Many network vendors and suppliers exist, each with its own ideas of how things should be done. Without
+2267-coordination, there would be complete chaos, and users would get nothing done. The only way out is to agree
+2268-on some network standards.
+2269-Not only do standards allow different computers to communicate, but they also increase the market for products
+2270-adhering to the standard. A larger market leads to mass production, economies of scale in manufacturing, VLSI
+2271-implementations, and other benefits that decrease price and further increase acceptance. In the following
+2272-sections we will take a quick look at the important, but little-known, world of international standardization.
+--
+2401-NIST (National Institute of Standards and Technology) is part of the U.S. Department of Commerce. It used to be
+2402-the National Bureau of Standards. It issues standards that are mandatory for purchases made by the U.S.
+2403-Government, except for those of the Department of Defense, which has its own standards.
+2404-Another major player in the standards world is IEEE (Institute of Electrical and Electronics Engineers), the
+2405-largest professional organization in the world. In addition to publishing scores of journals and running hundreds
+2406-of conferences each year, IEEE has a standardization group that develops standards in the area of electrical
+2407-engineering and computing. IEEE's 802 committee has standardized many kinds of LANs. We will study some of
+2408-its output later in this book. The actual work is done by a collection of working groups, which are listed in Fig. 138. The success rate of the various 802 working groups has been low; having an 802.x number is no guarantee
+2409:of success. But the impact of the success stories (especially 802.3 and 802.11) has been enormous.
+2410-Figure 1-38. The 802 working groups. The important ones are marked with *. The ones marked with are
+2411-hibernating. The one marked with gave up and disbanded itself.
+2412-62
+2413-
+2414-1.6.3 Who's Who in the Internet Standards World
+2415-The worldwide Internet has its own standardization mechanisms, very different from those of ITU-T and ISO. The
+2416-difference can be crudely summed up by saying that the people who come to ITU or ISO standardization
+2417-meetings wear suits. The people who come to Internet standardization meetings wear jeans (except when they
+--
+2542-connectionless or connection-oriented. Most networks support protocol hierarchies, with each layer providing
+2543-services to the layers above it and insulating them from the details of the protocols used in the lower layers.
+2544-Protocol stacks are typically based either on the OSI model or on the TCP/IP model. Both have network,
+2545-transport, and application layers, but they differ on the other layers. Design issues include multiplexing, flow
+2546-control, error control, and others. Much of this book deals with protocols and their design.
+2547-Networks provide services to their users. These services can be connection-oriented or connectionless. In some
+2548-networks, connectionless service is provided in one layer and connection-oriented service is provided in the
+2549-layer above it.
+2550:Well-known networks include the Internet, ATM networks, Ethernet, and the IEEE 802.11 wireless LAN. The
+2551-Internet evolved from the ARPANET, to which other networks were added to form an internetwork. The present
+2552-Internet is actually a collection of many thousands of networks, rather than a single network. What characterizes
+2553-it is the use of the TCP/IP protocol stack throughout. ATM is widely used inside the telephone system for longhaul data traffic. Ethernet is the most popular LAN and is present in most large companies and universities.
+2554-Finally, wireless LANs at surprisingly high speeds (up to 54 Mbps) are beginning to be widely deployed.
+2555-To have multiple computers talk to each other requires a large amount of standardization, both in the hardware
+2556-and software. Organizations such as the ITU-T, ISO, IEEE, and IAB manage different parts of the
+2557-standardization process.
+2558-Problems
+--
+2670-How long was a bit on the original 802.3 standard in meters? Use a transmission speed of 10 Mbps and
+2671-assume the propagation speed in coax is 2/3 the speed of light in vacuum.
+2672-An image is 1024 x 768 pixels with 3 bytes/pixel. Assume the image is uncompressed. How long does it
+2673-take to transmit it over a 56-kbps modem channel? Over a 1-Mbps cable modem? Over a 10-Mbps
+2674-Ethernet? Over 100-Mbps Ethernet?
+2675-67
+2676-
+2677-29. Ethernet and wireless networks have some similarities and some differences. One property of Ethernet
+2678:is that only one frame at a time can be transmitted on an Ethernet. Does 802.11 share this property with
+2679-Ethernet? Discuss your answer.
+2680-30. Wireless networks are easy to install, which makes them inexpensive since installation costs usually far
+2681-overshadow equipment costs. Nevertheless, they also have some disadvantages. Name two of them.
+2682-31. List two advantages and two disadvantages of having international standards for network protocols.
+2683-32. When a system has a permanent part and a removable part (such as a CD-ROM drive and the CDROM), it is important that the system be standardized, so that different companies can make both the
+2684-permanent and removable parts and everything still works together. Give three examples outside the
+2685-computer industry where such international standards exist. Now give three areas outside the computer
+2686-industry where they do not exist.
+--
+3138-1) to get the best reception (many watts/Hz).
+3139-Most transmissions use a narrow frequency band (i.e., Df/f
+3140-However, in some cases, a wide band is used, with two variations. In frequency hopping spread spectrum, the
+3141-transmitter hops from frequency to frequency hundreds of times per second. It is popular for military
+3142-communication because it makes transmissions hard to detect and next to impossible to jam. It also offers good
+3143-resistance to multipath fading because the direct signal always arrives at the receiver first. Reflected signals
+3144-follow a longer path and arrive later. By then the receiver may have changed frequency and no longer accepts
+3145-signals on the previous frequency, thus eliminating interference between the direct and reflected signals. In
+3146:recent years, this technique has also been applied commercially—both 802.11 and Bluetooth use it, for example.
+3147-As a curious footnote, the technique was co-invented by the Austrian-born sex goddess Hedy Lamarr, the first
+3148-woman to appear nude in a motion picture (the 1933 Czech film Extase). Her first husband was an armaments
+3149-manufacturer who told her how easy it was to block the radio signals then used to control torpedos. When she
+3150-81
+3151-
+3152-discovered that he was selling weapons to Hitler, she was horrified, disguised herself as a maid to escape him,
+3153-and fled to Hollywood to continue her career as a movie actress. In her spare time, she invented frequency
+3154-hopping to help the Allied war effort. Her scheme used 88 frequencies, the number of keys (and frequencies) on
+--
+3271-Medical) bands for unlicensed usage. Garage door openers, cordless phones, radio-controlled toys, wireless
+3272-mice, and numerous other wireless household devices use the ISM bands. To minimize interference between
+3273-these uncoordinated devices, the FCC mandates that all devices in the ISM bands use spread spectrum
+3274-techniques. Similar rules apply in other countries
+3275-The location of the ISM bands varies somewhat from country to country. In the United States, for example,
+3276-devices whose power is under 1 watt can use the bands shown in Fig. 2-13 without requiring a FCC license. The
+3277-900-MHz band works best, but it is crowded and not available worldwide. The 2.4-GHz band is available in most
+3278-countries, but it is subject to interference from microwave ovens and radar installations. Bluetooth and some of
+3279:the 802.11 wireless LANs operate in this band. The 5.7-GHz band is new and relatively undeveloped, so
+3280:equipment for it is expensive, but since 802.11a uses it, it will quickly become more popular.
+3281-Figure 2-13. The ISM bands in the United States.
+3282-
+3283-84
+3284-
+3285-2.3.4 Infrared and Millimeter Waves
+3286-Unguided infrared and millimeter waves are widely used for short-range communication. The remote controls
+3287-used on televisions, VCRs, and stereos all use infrared communication. They are relatively directional, cheap,
+3288-and easy to build but have a major drawback: they do not pass through solid objects (try standing between your
+--
+4932-connection. Since GPRS is just an overlay over the existing voice system, it is at best a stop-gap measure until
+4933-3G arrives.
+4934-Even though 3G networks are not fully deployed yet, some researchers regard 3G as a done deal and thus not
+4935-interesting any more. These people are already working on 4G systems (Berezdivin et al., 2002; Guo and
+4936-Chaskar, 2002; Huang and Zhuang, 2002; Kellerer et al., 2002; and Misra et al., 2002). Some of the proposed
+4937-features of 4G systems include high bandwidth, ubiquity (connectivity everywhere), seamless integration with
+4938-wired networks and especially IP, adaptive resource and spectrum management, software radios, and high
+4939-quality of service for multimedia.
+4940:Then on the other hand, so many 802.11 wireless LAN access points are being set up all over the place, that
+4941-some people think 3G is not only not a done deal, it is doomed. In this vision, people will just wander from one
+4942:802.11 access point to another to stay connected. To say the industry is in a state of enormous flux is a huge
+4943-understatement. Check back in about 5 years to see what happens.
+4944-2.7 Cable Television
+4945-We have now studied both the fixed and wireless telephone systems in a fair amount of detail. Both will clearly
+4946-play a major role in future networks. However, an alternative available for fixed networking is now becoming a
+4947-major player: cable television networks. Many people already get their telephone and Internet service over the
+4948-cable, and the cable operators are actively working to increase their market share. In the following sections we
+4949-will look at cable television as a networking system in more detail and contrast it with the telephone systems we
+4950-have just studied. For more information about cable, see (Laubach et al., 2001; Louis, 2002; Ovadia, 2001; and
+--
+7804-
+7805-4.3 Ethernet
+7806-We have now finished our general discussion of channel allocation protocols in the abstract, so
+7807-it is time to see how these principles apply to real systems, in particular, LANs. As discussed in
+7808-Sec. 1.5.3, the IEEE has standardized a number of local area networks and metropolitan area
+7809-networks under the name of IEEE 802. A few have survived but many have not, as we saw in
+7810-Fig. 1-38. Some people who believe in reincarnation think that Charles Darwin came back as a
+7811-member of the IEEE Standards Association to weed out the unfit. The most important of the
+7812:survivors are 802.3 (Ethernet) and 802.11 (wireless LAN). With 802.15 (Bluetooth) and
+7813-802.16 (wireless MAN), it is too early to tell. Please consult the 5th edition of this book to find
+7814:out. Both 802.3 and 802.11 have different physical layers and different MAC sublayers but
+7815-converge on the same logical link control sublayer (defined in 802.2), so they have the same
+7816-interface to the network layer.
+7817-We introduced Ethernet in Sec. 1.5.3 and will not repeat that material here. Instead we will
+7818-focus on the technical details of Ethernet, the protocols, and recent developments in highspeed (gigabit) Ethernet. Since Ethernet and IEEE 802.3 are identical except for two minor
+7819-differences that we will discuss shortly, many people use the terms ''Ethernet'' and ''IEEE
+7820-802.3'' interchangeably, and we will do so, too. For more information about Ethernet, see
+7821-(Breyer and Riley, 1999 ; Seifert, 1998; and Spurgeon, 2000).
+7822-
+--
+8516-Ethernet, far more complex, and harder to manage. Eventually, Ethernet caught up with them
+8517-in terms of speed, so they had no advantages left and quietly died off except for ATM's use
+8518-deep within the core of the telephone system.
+8519-
+8520-4.4 Wireless LANs
+8521-Although Ethernet is widely used, it is about to get some competition. Wireless LANs are
+8522-increasingly popular, and more and more office buildings, airports, and other public places are
+8523-being outfitted with them. Wireless LANs can operate in one of two configurations, as we saw
+8524:in Fig. 1-35: with a base station and without a base station. Consequently, the 802.11 LAN
+8525-standard takes this into account and makes provision for both arrangements, as we will see
+8526-shortly.
+8527:We gave some background information on 802.11 in Sec. 1.5.4. Now is the time to take a
+8528-closer look at the technology. In the following sections we will look at the protocol stack,
+8529-physical layer radio transmission techniques, MAC sublayer protocol, frame structure, and
+8530:services. For more information about 802.11, see (Crow et al., 1997; Geier, 2002; Heegard et
+8531-al., 2001; Kapp, 2002; O'Hara and Petrick, 1999; and Severance, 1999). To hear the truth
+8532:from the mouth of the horse, consult the published 802.11 standard itself.
+8533-
+8534-219
+8535-
+8536:4.4.1 The 802.11 Protocol Stack
+8537-The protocols used by all the 802 variants, including Ethernet, have a certain commonality of
+8538:structure. A partial view of the 802.11 protocol stack is given in Fig. 4-25. The physical layer
+8539-corresponds to the OSI physical layer fairly well, but the data link layer in all the 802 protocols
+8540:is split into two or more sublayers. In 802.11, the MAC (Medium Access Control) sublayer
+8541-determines how the channel is allocated, that is, who gets to transmit next. Above it is the LLC
+8542-(Logical Link Control) sublayer, whose job it is to hide the differences between the different
+8543-802 variants and make them indistinguishable as far as the network layer is concerned. We
+8544-studied the LLC when examining Ethernet earlier in this chapter and will not repeat that
+8545-material here.
+8546-
+8547:Figure 4-25. Part of the 802.11 protocol stack.
+8548-
+8549:The 1997 802.11 standard specifies three transmission techniques allowed in the physical
+8550-layer. The infrared method uses much the same technology as television remote controls do.
+8551-The other two use short-range radio, using techniques called FHSS and DSSS. Both of these
+8552-use a part of the spectrum that does not require licensing (the 2.4-GHz ISM band). Radiocontrolled garage door openers also use this piece of the spectrum, so your notebook
+8553-computer may find itself in competition with your garage door. Cordless telephones and
+8554-microwave ovens also use this band. All of these techniques operate at 1 or 2 Mbps and at low
+8555-enough power that they do not conflict too much. In 1999, two new techniques were
+8556-introduced to achieve higher bandwidth. These are called OFDM and HR-DSSS. They operate at
+8557-up to 54 Mbps and 11 Mbps, respectively. In 2001, a second OFDM modulation was introduced,
+8558-but in a different frequency band from the first one. Now we will examine each of them briefly.
+8559-Technically, these belong to the physical layer and should have been examined in Chapter 2,
+8560:but since they are so closely tied to LANs in general and the 802.11 MAC sublayer, we treat
+8561-them here instead.
+8562-
+8563:4.4.2 The 802.11 Physical Layer
+8564-Each of the five permitted transmission techniques makes it possible to send a MAC frame
+8565-from one station to another. They differ, however, in the technology used and speeds
+8566-achievable. A detailed discussion of these technologies is far beyond the scope of this book,
+8567-but a few words on each one, along with some of the key words, may provide interested
+8568-readers with terms to search for on the Internet or elsewhere for more information.
+8569-The infrared option uses diffused (i.e., not line of sight) transmission at 0.85 or 0.95 microns.
+8570-Two speeds are permitted: 1 Mbps and 2 Mbps. At 1 Mbps, an encoding scheme is used in
+8571-which a group of 4 bits is encoded as a 16-bit codeword containing fifteen 0s and a single 1,
+--
+8590-building-to-building links. Its main disadvantage is its low bandwidth.
+8591-The third modulation method, DSSS (Direct Sequence Spread Spectrum), is also restricted
+8592-to 1 or 2 Mbps. The scheme used has some similarities to the CDMA system we examined in
+8593-Sec. 2.6.2, but differs in other ways. Each bit is transmitted as 11 chips, using what is called a
+8594-Barker sequence. It uses phase shift modulation at 1 Mbaud, transmitting 1 bit per baud
+8595-when operating at 1 Mbps and 2 bits per baud when operating at 2 Mbps. For years, the FCC
+8596-required all wireless communications equipment operating in the ISM bands in the U.S. to use
+8597-spread spectrum, but in May 2002, that rule was dropped as new technologies emerged.
+8598:The first of the high-speed wireless LANs, 802.11a, uses OFDM (Orthogonal Frequency
+8599-Division Multiplexing) to deliver up to 54 Mbps in the wider 5-GHz ISM band. As the term
+8600-FDM suggests, different frequencies are used—52 of them, 48 for data and 4 for
+8601-synchronization—not unlike ADSL. Since transmissions are present on multiple frequencies at
+8602-the same time, this technique is considered a form of spread spectrum, but different from both
+8603-CDMA and FHSS. Splitting the signal into many narrow bands has some key advantages over
+8604-using a single wide band, including better immunity to narrowband interference and the
+8605-possibility of using noncontiguous bands. A complex encoding system is used, based on phaseshift modulation for speeds up to 18 Mbps and on QAM above that. At 54 Mbps, 216 data bits
+8606-are encoded into 288-bit symbols. Part of the motivation for OFDM is compatibility with the
+8607-European HiperLAN/2 system (Doufexi et al., 2002). The technique has a good spectrum
+8608-efficiency in terms of bits/Hz and good immunity to multipath fading.
+8609-Next, we come to HR-DSSS (High Rate Direct Sequence Spread Spectrum), another
+8610-spread spectrum technique, which uses 11 million chips/sec to achieve 11 Mbps in the 2.4-GHz
+8611:band. It is called 802.11b but is not a follow-up to 802.11a. In fact, its standard was
+8612:approved first and it got to market first. Data rates supported by 802.11b are 1, 2, 5.5, and 11
+8613-Mbps. The two slow rates run at 1 Mbaud, with 1 and 2 bits per baud, respectively, using
+8614-phase shift modulation (for compatibility with DSSS). The two faster rates run at 1.375 Mbaud,
+8615-with 4 and 8 bits per baud, respectively, using Walsh/Hadamard codes. The data rate may
+8616-be dynamically adapted during operation to achieve the optimum speed possible under current
+8617:conditions of load and noise. In practice, the operating speed of 802.11b is nearly always 11
+8618:Mbps. Although 802.11b is slower than 802.11a, its range is about 7 times greater, which is
+8619-more important in many situations.
+8620:An enhanced version of 802.11b, 802.11g, was approved by IEEE in November 2001 after
+8621-much politicking about whose patented technology it would use. It uses the OFDM modulation
+8622:method of 802.11a but operates in the narrow 2.4-GHz ISM band along with 802.11b. In
+8623-theory it can operate at up to 54 MBps. It is not yet clear whether this speed will be realized in
+8624:practice. What it does mean is that the 802.11 committee has produced three different highspeed wireless LANs: 802.11a, 802.11b, and 802.11g (not to mention three low-speed
+8625-221
+8626-
+8627-wireless LANs). One can legitimately ask if this is a good thing for a standards committee to
+8628-do. Maybe three was their lucky number.
+8629-
+8630:4.4.3 The 802.11 MAC Sublayer Protocol
+8631-Let us now return from the land of electrical engineering to the land of computer science. The
+8632:802.11 MAC sublayer protocol is quite different from that of Ethernet due to the inherent
+8633-complexity of the wireless environment compared to that of a wired system. With Ethernet, a
+8634-station just waits until the ether goes silent and starts transmitting. If it does not receive a
+8635-noise burst back within the first 64 bytes, the frame has almost assuredly been delivered
+8636-correctly. With wireless, this situation does not hold.
+8637-To start with, there is the hidden station problem mentioned earlier and illustrated again in Fig.
+8638-4-26(a). Since not all stations are within radio range of each other, transmissions going on in
+8639-one part of a cell may not be received elsewhere in the same cell. In this example, station C is
+8640-transmitting to station B. If A senses the channel, it will not hear anything and falsely conclude
+8641-that it may now start transmitting to B.
+8642-
+8643-Figure 4-26. (a) The hidden station problem. (b) The exposed station
+8644-problem.
+8645-
+8646-In addition, there is the inverse problem, the exposed station problem, illustrated in Fig. 426(b). Here B wants to send to C so it listens to the channel. When it hears a transmission, it
+8647-falsely concludes that it may not send to C, even though A may be transmitting to D (not
+8648-shown). In addition, most radios are half duplex, meaning that they cannot transmit and listen
+8649:for noise bursts at the same time on a single frequency. As a result of these problems, 802.11
+8650-does not use CSMA/CD, as Ethernet does.
+8651:To deal with this problem, 802.11 supports two modes of operation. The first, called DCF
+8652-(Distributed Coordination Function), does not use any kind of central control (in that
+8653-respect, similar to Ethernet). The other, called PCF (Point Coordination Function), uses the
+8654-base station to control all activity in its cell. All implementations must support DCF but PCF is
+8655-optional. We will now discuss these two modes in turn.
+8656:When DCF is employed, 802.11 uses a protocol called CSMA/CA (CSMA with Collision
+8657-Avoidance). In this protocol, both physical channel sensing and virtual channel sensing are
+8658-used. Two methods of operation are supported by CSMA/CA. In the first method, when a
+8659-station wants to transmit, it senses the channel. If it is idle, it just starts transmitting. It does
+8660-not sense the channel while transmitting but emits its entire frame, which may well be
+8661-destroyed at the receiver due to interference there. If the channel is busy, the sender defers
+8662-until it goes idle and then starts transmitting. If a collision occurs, the colliding stations wait a
+8663-
+8664-222
+--
+8691-probability of a frame making it through successfully decreases with frame length. If the
+8692-probability of any bit being in error is p, then the probability of an n-bit frame being received
+8693-entirely correctly is (1 - p)n. For example, for p = 10-4, the probability of receiving a full
+8694-Ethernet frame (12,144 bits) correctly is less than 30%. If p = 10-5, about one frame in 9 will
+8695-be damaged. Even if p = 10-6, over 1% of the frames will be damaged, which amounts to
+8696-almost a dozen per second, and more if frames shorter than the maximum are used. In
+8697-summary, if a frame is too long, it has very little chance of getting through undamaged and
+8698-will probably have to be retransmitted.
+8699:To deal with the problem of noisy channels, 802.11 allows frames to be fragmented into
+8700-smaller pieces, each with its own checksum. The fragments are individually numbered and
+8701-acknowledged using a stop-and-wait protocol (i.e., the sender may not transmit fragment k +
+8702-1 until it has received the acknowledgment for fragment k). Once the channel has been
+8703-acquired using RTS and CTS, multiple fragments can be sent in a row, as shown in Fig. 4-28.
+8704-sequence of fragments is called a fragment burst.
+8705-
+8706-Figure 4-28. A fragment burst.
+8707-223
+8708-
+8709-Fragmentation increases the throughput by restricting retransmissions to the bad fragments
+8710-rather than the entire frame. The fragment size is not fixed by the standard but is a parameter
+8711-of each cell and can be adjusted by the base station. The NAV mechanism keeps other stations
+8712-quiet only until the next acknowledgement, but another mechanism (described below) is used
+8713-to allow a whole fragment burst to be sent without interference.
+8714:All of the above discussion applies to the 802.11 DCF mode. In this mode, there is no central
+8715-control, and stations compete for air time, just as they do with Ethernet. The other allowed
+8716-mode is PCF, in which the base station polls the other stations, asking them if they have any
+8717-frames to send. Since transmission order is completely controlled by the base station in PCF
+8718-mode, no collisions ever occur. The standard prescribes the mechanism for polling, but not the
+8719-polling frequency, polling order, or even whether all stations need to get equal service.
+8720-The basic mechanism is for the base station to broadcast a beacon frame periodically (10 to
+8721-100 times per second). The beacon frame contains system parameters, such as hopping
+8722-sequences and dwell times (for FHSS), clock synchronization, etc. It also invites new stations
+8723-to sign up for polling service. Once a station has signed up for polling service at a certain rate,
+8724-it is effectively guaranteed a certain fraction of the bandwidth, thus making it possible to give
+8725-quality-of-service guarantees.
+8726:Battery life is always an issue with mobile wireless devices, so 802.11 pays attention to the
+8727-issue of power management. In particular, the base station can direct a mobile station to go
+8728-into sleep state until explicitly awakened by the base station or the user. Having told a station
+8729-to go to sleep, however, means that the base station has the responsibility for buffering any
+8730-frames directed at it while the mobile station is asleep. These can be collected later.
+8731-PCF and DCF can coexist within one cell. At first it might seem impossible to have central
+8732:control and distributed control operating at the same time, but 802.11 provides a way to
+8733-achieve this goal. It works by carefully defining the interframe time interval. After a frame has
+8734-been sent, a certain amount of dead time is required before any station may send a frame.
+8735-Four different intervals are defined, each for a specific purpose. The four intervals are depicted
+8736-in Fig. 4-29.
+8737-
+8738:Figure 4-29. Interframe spacing in 802.11
+8739-
+8740-224
+8741-
+8742-The shortest interval is SIFS (Short InterFrame Spacing). It is used to allow the parties in a
+8743-single dialog the chance to go first. This includes letting the receiver send a CTS to respond to
+8744-an RTS, letting the receiver send an ACK for a fragment or full data frame, and letting the
+8745-sender of a fragment burst transmit the next fragment without having to send an RTS again.
+8746-There is always exactly one station that is entitled to respond after a SIFS interval. If it fails to
+--
+8753-any station may attempt to acquire the channel to send a new frame. The usual contention
+8754-rules apply, and binary exponential backoff may be needed if a collision occurs.
+8755-The last time interval, EIFS (Extended InterFrame Spacing), is used only by a station that
+8756-has just received a bad or unknown frame to report the bad frame. The idea of giving this
+8757-event the lowest priority is that since the receiver may have no idea of what is going on, it
+8758-should wait a substantial time to avoid interfering with an ongoing dialog between two
+8759-stations.
+8760-
+8761:4.4.4 The 802.11 Frame Structure
+8762:The 802.11 standard defines three different classes of frames on the wire: data, control, and
+8763-management. Each of these has a header with a variety of fields used within the MAC
+8764-sublayer. In addition, there are some headers used by the physical layer but these mostly deal
+8765-with the modulation techniques used, so we will not discuss them here.
+8766-The format of the data frame is shown in Fig. 4-30. First comes the Frame Control field. It
+8767-itself has 11 subfields. The first of these is the Protocol version, which allows two versions of
+8768-the protocol to operate at the same time in the same cell. Then come the Type (data, control,
+8769-or management) and Subtype fields (e.g., RTS or CTS). The To DS and From DS bits indicate
+8770-the frame is going to or coming from the intercell distribution system (e.g., Ethernet). The MF
+8771-bit means that more fragments will follow. The Retry bit marks a retransmission of a frame
+8772-sent earlier. The Power management bit is used by the base station to put the receiver into
+8773-sleep state or take it out of sleep state. The More bit indicates that the sender has additional
+8774-frames for the receiver. The W bit specifies that the frame body has been encrypted using the
+8775-WEP (Wired Equivalent Privacy) algorithm. Finally, the O bit tells the receiver that a
+8776-sequence of frames with this bit on must be processed strictly in order.
+8777-
+8778:Figure 4-30. The 802.11 data frame.
+8779-
+8780-225
+8781-
+8782-The second field of the data frame, the Duration field, tells how long the frame and its
+8783-acknowledgement will occupy the channel. This field is also present in the control frames and
+8784-is how other stations manage the NAV mechanism. The frame header contains four addresses,
+8785-all in standard IEEE 802 format. The source and destination are obviously needed, but what
+8786-are the other two for? Remember that frames may enter or leave a cell via a base station. The
+--
+8789-frame and 4 identify the fragment. The Data field contains the payload, up to 2312 bytes,
+8790-followed by the usual Checksum.
+8791-Management frames have a format similar to that of data frames, except without one of the
+8792-base station addresses, because management frames are restricted to a single cell. Control
+8793-frames are shorter still, having only one or two addresses, no Data field, and no Sequence
+8794-field. The key information here is in the Subtype field, usually RTS, CTS, or ACK.
+8795-
+8796-4.4.5 Services
+8797:The 802.11 standard states that each conformant wireless LAN must provide nine services.
+8798-These services are divided into two categories: five distribution services and four station
+8799-services. The distribution services relate to managing cell membership and interacting with
+8800-stations outside the cell. In contrast, the station services relate to activity within a single cell.
+8801-The five distribution services are provided by the base stations and deal with station mobility
+8802-as they enter and leave cells, attaching themselves to and detaching themselves from base
+8803-stations. They are as follows.
+8804-1. Association. This service is used by mobile stations to connect themselves to base
+8805-stations. Typically, it is used just after a station moves within the radio range of the
+--
+8807-include the data rates supported, need for PCF services (i.e., polling), and power
+8808-management requirements. The base station may accept or reject the mobile station. If
+8809-the mobile station is accepted, it must then authenticate itself.
+8810-2. Disassociation. Either the station or the base station may disassociate, thus breaking
+8811-the relationship. A station should use this service before shutting down or leaving, but
+8812-the base station may also use it before going down for maintenance.
+8813-3. Reassociation. A station may change its preferred base station using this service. This
+8814-facility is useful for mobile stations moving from one cell to another. If it is used
+8815:correctly, no data will be lost as a consequence of the handover. (But 802.11, like
+8816-Ethernet, is just a best-efforts service.)
+8817-4. Distribution. This service determines how to route frames sent to the base station. If
+8818-the destination is local to the base station, the frames can be sent out directly over the
+8819-air. Otherwise, they will have to be forwarded over the wired network.
+8820:5. Integration. If a frame needs to be sent through a non-802.11 network with a
+8821-different addressing scheme or frame format, this service handles the translation from
+8822:the 802.11 format to the format required by the destination network.
+8823-
+8824-226
+8825-
+8826-The remaining four services are intracell (i.e., relate to actions within a single cell). They are
+8827-used after association has taken place and are as follows.
+8828-1. Authentication. Because wireless communication can easily be sent or received by
+8829-unauthorized stations, a station must authenticate itself before it is permitted to send
+8830-data. After a mobile station has been associated by the base station (i.e., accepted into
+--
+8835-initial standard, the base station does not have to prove its identity to the mobile
+8836-station, but work to repair this defect in the standard is underway.
+8837-2. Deauthentication. When a previously authenticated station wants to leave the
+8838-network, it is deauthenticated. After deauthentication, it may no longer use the
+8839-network.
+8840-3. Privacy. For information sent over a wireless LAN to be kept confidential, it must be
+8841-encrypted. This service manages the encryption and decryption. The encryption
+8842-algorithm specified is RC4, invented by Ronald Rivest of M.I.T.
+8843:4. Data delivery. Finally, data transmission is what it is all about, so 802.11 naturally
+8844:provides a way to transmit and receive data. Since 802.11 is modeled on Ethernet and
+8845-transmission over Ethernet is not guaranteed to be 100% reliable, transmission over
+8846:802.11 is not guaranteed to be reliable either. Higher layers must deal with detecting
+8847-and correcting errors.
+8848:An 802.11 cell has some parameters that can be inspected and, in some cases, adjusted. They
+8849-relate to encryption, timeout intervals, data rates, beacon frequency, and so on.
+8850-
+8851:Wireless LANs based on 802.11 are starting to be deployed in office buildings, airports, hotels,
+8852-restaurants, and campuses around the world. Rapid growth is expected. For some experience about
+8853:the widespread deployment of 802.11 at CMU, see (Hills, 2001).
+8854-
+8855-4.5 Broadband Wireless
+8856-We have been indoors too long. Let us now go outside and see if any interesting networking is
+8857-going on there. It turns out that quite a bit is going on there, and some of it has to do with the
+8858-so-called last mile. With the deregulation of the telephone system in many countries,
+8859-competitors to the entrenched telephone company are now often allowed to offer local voice
+8860-and high-speed Internet service. There is certainly plenty of demand. The problem is that
+8861-running fiber, coax, or even category 5 twisted pair to millions of homes and businesses is
+--
+8879-these terms as interchangeable.
+8880-Like some of the other 802 standards, 802.16 was heavily influenced by the OSI model,
+8881-including the (sub)layers, terminology, service primitives, and more. Unfortunately, also like
+8882-OSI, it is fairly complicated. In the following sections we will give a brief description of some of
+8883-the highlights of 802.16, but this treatment is far from complete and leaves out many details.
+8884-For additional information about broadband wireless in general, see (Bolcskei et al., 2001; and
+8885-Webb, 2001). For information about 802.16 in particular, see (Eklund et al., 2002).
+8886-
+8887:4.5.1 Comparison of 802.11 with 802.16
+8888:At this point you may be thinking: Why devise a new standard? Why not just use 802.11?
+8889:There are some very good reasons for not using 802.11, primarily because 802.11 and 802.16
+8890-solve different problems. Before getting into the technology of 802.16, it is probably
+8891-worthwhile saying a few words about why a new standard is needed at all.
+8892:The environments in which 802.11 and 802.16 operate are similar in some ways, primarily in
+8893-that they were designed to provide high-bandwidth wireless communications. But they also
+8894-differ in some major ways. To start with, 802.16 provides service to buildings, and buildings
+8895:are not mobile. They do not migrate from cell to cell often. Much of 802.11 deals with mobility,
+8896-and none of that is relevant here. Next, buildings can have more than one computer in them, a
+8897-complication that does not occur when the end station is a single notebook computer. Because
+8898-building owners are generally willing to spend much more money for communication gear than
+8899-are notebook owners, better radios are available. This difference means that 802.16 can use
+8900:full-duplex communication, something 802.11 avoids to keep the cost of the radios low.
+8901-Because 802.16 runs over part of a city, the distances involved can be several kilometers,
+8902-which means that the perceived power at the base station can vary widely from station to
+8903-station. This variation affects the signal-to-noise ratio, which, in, turn, dictates multiple
+8904-modulation schemes. Also, open communication over a city means that security and privacy
+8905-are essential and mandatory.
+8906:Furthermore, each cell is likely to have many more users than will a typical 802.11 cell, and
+8907:these users are expected to use more bandwidth than will a typical 802.11 user. After all it is
+8908-rare for a company to invite 50 employees to show up in a room with their laptops to see if
+8909:they can saturate the 802.11 wireless network by watching 50 separate movies at once. For
+8910-this reason, more spectrum is needed than the ISM bands can provide, forcing 802.16 to
+8911-operate in the much higher 10-to-66 GHz frequency range, the only place unused spectrum is
+8912-still available.
+8913-But these millimeter waves have different physical properties than the longer waves in the ISM
+8914-bands, which in turn requires a completely different physical layer. One property that
+8915-millimeter waves have is that they are strongly absorbed by water (especially rain, but to
+8916-some extent also by snow, hail, and with a bit of bad luck, heavy fog). Consequently, error
+8917-handling is more important than in an indoor environment. Millimeter waves can be focused
+8918:into directional beams (802.11 is omnidirectional), so choices made in 802.11 relating to
+8919-multipath propagation are moot here.
+8920:Another issue is quality of service. While 802.11 provides some support for real-time traffic
+8921-(using PCF mode), it was not really designed for telephony and heavy-duty multimedia usage.
+8922-In contrast, 802.16 is expected to support these applications completely because it is intended
+8923-for residential as well as business use.
+8924:In short, 802.11 was designed to be mobile Ethernet, whereas 802.16 was designed to be
+8925-wireless, but stationary, cable television. These differences are so big that the resulting
+8926-standards are very different as they try to optimize different things.
+8927-228
+8928-
+8929-A very brief comparison with the cellular phone system is also worthwhile. With mobile phones,
+8930-we are talking about narrow-band, voice-oriented, low-powered, mobile stations that
+8931-communicate using medium-length microwaves. Nobody watches high-resolution, two-hour
+8932-movies on GSM mobile phones (yet). Even UMTS has little hope of changing this situation. In
+--
+8935-future is an interesting question. It was not optimized for them, but the possibility is there. For
+8936-the moment it is focused on fixed wireless.
+8937-
+8938-4.5.2 The 802.16 Protocol Stack
+8939-The 802.16 protocol stack is illustrated in Fig. 4-31. The general structure is similar to that of
+8940-the other 802 networks, but with more sublayers. The bottom sublayer deals with
+8941-transmission. Traditional narrow-band radio is used with conventional modulation schemes.
+8942-Above the physical transmission layer comes a convergence sublayer to hide the different
+8943:technologies from the data link layer. Actually, 802.11 has something like this too, only the
+8944-committee chose not to formalize it with an OSI-type name.
+8945-
+8946-Figure 4-31. The 802.16 protocol stack.
+8947-
+8948-Although we have not shown them in the figure, work is already underway to add two new
+8949-physical layer protocols. The 802.16a standard will support OFDM in the 2-to-11 GHz
+8950-frequency range. The 802.16b standard will operate in the 5-GHz ISM band. Both of these are
+8951:attempts to move closer to 802.11.
+8952-The data link layer consists of three sublayers. The bottom one deals with privacy and security,
+8953-which is far more crucial for public outdoor networks than for private indoor networks. It
+8954-manages encryption, decryption, and key management.
+8955-Next comes the MAC sublayer common part. This is where the main protocols, such as channel
+8956-management, are located. The model is that the base station controls the system. It can
+8957-schedule the downstream (i.e., base to subscriber) channels very efficiently and plays a major
+8958-role in managing the upstream (i.e., subscriber to base) channels as well. An unusual feature
+8959-of the MAC sublayer is that, unlike those of the other 802 networks, it is completely connection
+--
+9049-1. Constant bit rate service.
+9050-2. Real-time variable bit rate service.
+9051-231
+9052-
+9053-3. Non-real-time variable bit rate service.
+9054-4. Best-efforts service.
+9055-All service in 802.16 is connection-oriented, and each connection gets one of the above classes
+9056-of service, determined when the connection is set up. This design is very different from that of
+9057:802.11 or Ethernet, which have no connections in the MAC sublayer.
+9058-Constant bit rate service is intended for transmitting uncompressed voice such as on a T1
+9059-channel. This service needs to send a predetermined amount of data at predetermined time
+9060-intervals. It is accommodated by dedicating certain time slots to each connection of this type.
+9061-Once the bandwidth has been allocated, the time slots are available automatically, without the
+9062-need to ask for each one.
+9063-Real-time variable bit rate service is for compressed multimedia and other soft real-time
+9064-applications in which the amount of bandwidth needed each instant may vary. It is
+9065-accommodated by the base station polling the subscriber at a fixed interval to ask how much
+--
+9114-other devices (e.g., PDAs) without cables. Together with four other companies (IBM, Intel,
+9115-Nokia, and Toshiba), it formed a SIG (Special Interest Group, i.e., consortium) to develop a
+9116-wireless standard for interconnecting computing and communication devices and accessories
+9117-using short-range, low-power, inexpensive wireless radios. The project was named Bluetooth,
+9118-after Harald Blaatand (Bluetooth) II (940-981), a Viking king who unified (i.e., conquered)
+9119-Denmark and Norway, also without cables.
+9120-Although the original idea was just to get rid of the cables between devices, it soon began to
+9121-expand in scope and encroach on the area of wireless LANs. While this move makes the
+9122:standard more useful, it also creates some competition for mindshare with 802.11. To make
+9123-matters worse, the two systems also interfere with each other electrically. It is also worth
+9124-noting that Hewlett-Packard introduced an infrared network for connecting computer
+9125-peripherals without wires some years ago, but it never really caught on in a big way.
+9126-Undaunted by all this, in July 1999 the Bluetooth SIG issued a 1500-page specification of V1.0.
+9127-Shortly thereafter, the IEEE standards group looking at wireless personal area networks,
+9128-802.15, adopted the Bluetooth document as a basis and began hacking on it. While it might
+9129-seem strange to standardize something that already had a very detailed specification and no
+9130-incompatible implementations that needed to be harmonized, history shows that having an
+--
+9156-implementation of complete Bluetooth chips for under $5. The consequence of this decision is
+9157-that the slaves are fairly dumb, basically just doing whatever the master tells them to do. At
+9158-its heart, a piconet is a centralized TDM system, with the master controlling the clock and
+9159-determining which device gets to communicate in which time slot. All communication is
+9160-between the master and a slave; direct slave-slave communication is not possible.
+9161-
+9162-4.6.2 Bluetooth Applications
+9163-Most network protocols just provide channels between communicating entities and let
+9164:applications designers figure out what they want to use them for. For example, 802.11 does
+9165-not specify whether users should use their notebook computers for reading e-mail, surfing the
+9166-Web, or something else. In contrast, the Bluetooth V1.1 specification names 13 specific
+9167-applications to be supported and provides different protocol stacks for each one. Unfortunately,
+9168-this approach leads to a very large amount of complexity, which we will omit here. The 13
+9169-applications, which are called profiles, are listed in Fig. 4-36. By looking at them briefly now,
+9170-we may see more clearly what the Bluetooth SIG is trying to accomplish.
+9171-
+9172-Figure 4-36. The Bluetooth profiles.
+--
+9180-Bluetooth devices are expected to implement these two profiles. The remaining ones are
+9181-optional.
+9182-The serial port profile is a transport protocol that most of the remaining profiles use. It
+9183-emulates a serial line and is especially useful for legacy applications that expect a serial line.
+9184-The generic object exchange profile defines a client-server relationship for moving data
+9185-around. Clients initiate operations, but a slave can be either a client or a server. Like the serial
+9186-port profile, it is a building block for other profiles.
+9187-The next group of three profiles is for networking. The LAN access profile allows a Bluetooth
+9188:device to connect to a fixed network. This profile is a direct competitor to 802.11. The dial-up
+9189-networking profile was the original motivation for the whole project. It allows a notebook
+9190-computer to connect to a mobile phone containing a built-in modem without wires. The fax
+9191-profile is similar to dial-up networking, except that it allows wireless fax machines to send and
+9192-receive faxes using mobile phones without a wire between the two.
+9193-The next three profiles are for telephony. The cordless telephony profile provides a way to
+9194-connect the handset of a cordless telephone to the base station. Currently, most cordless
+9195-telephones cannot also be used as mobile phones, but in the future, cordless and mobile
+9196-phones may merge. The intercom profile allows two telephones to connect as walkie-talkies.
+--
+9255-4.6.4 The Bluetooth Radio Layer
+9256-The radio layer moves the bits from master to slave, or vice versa. It is a low-power system
+9257-with a range of 10 meters operating in the 2.4-GHz ISM band. The band is divided into 79
+9258-channels of 1 MHz each. Modulation is frequency shift keying, with 1 bit per Hz giving a gross
+9259-data rate of 1 Mbps, but much of this spectrum is consumed by overhead. To allocate the
+9260-channels fairly, frequency hopping spread spectrum is used with 1600 hops/sec and a dwell
+9261-time of 625 µsec. All the nodes in a piconet hop simultaneously, with the master dictating the
+9262-hop sequence.
+9263:Because both 802.11 and Bluetooth operate in the 2.4-GHz ISM band on the same 79
+9264:channels, they interfere with each other. Since Bluetooth hops far faster than 802.11, it is far
+9265:more likely that a Bluetooth device will ruin 802.11 transmissions than the other way around.
+9266:Since 802.11 and 802.15 are both IEEE standards, IEEE is looking for a solution to this
+9267-problem, but it is not so easy to find since both systems use the ISM band for the same
+9268:reason: no license is required there. The 802.11a standard uses the other (5 GHz) ISM band,
+9269:but it has a much shorter range than 802.11b (due to the physics of radio waves), so using
+9270:802.11a is not a perfect solution for all cases. Some companies have solved the problem by
+9271-banning Bluetooth altogether. A market-based solution is for the network with more power
+9272-(politically and economically, not electrically) to demand that the weaker party modify its
+9273-standard to stop interfering with it. Some thoughts on this matter are given in (Lansford et al.,
+9274-2001).
+9275-
+9276-4.6.5 The Bluetooth Baseband Layer
+9277-The baseband layer is the closest thing Bluetooth has to a MAC sublayer. It turns the raw bit
+9278-stream into frames and defines some key formats. In the simplest form, the master in each
+--
+9411-Ideally, bridges should be fully transparent, meaning it should be possible to move a machine
+9412-from one cable segment to another without changing any hardware, software, or configuration
+9413-tables. Also, it should be possible for machines on any segment to communicate with machines
+9414-on any other segment without regard to the types of LANs being used on the two segments or
+9415-on segments in between them. This goal is sometimes achieved, but not always.
+9416-
+9417-4.7.1 Bridges from 802.x to 802.y
+9418-Having seen why bridges are needed, let us now turn to the question of how they work. Figure
+9419:4-40 illustrates the operation of a simple two-port bridge. Host A on a wireless (802.11) LAN
+9420-has a packet to send to a fixed host, B, on an (802.3) Ethernet to which the wireless LAN is
+9421-connected. The packet descends into the LLC sublayer and acquires an LLC header (shown in
+9422:black in the figure). Then it passes into the MAC sublayer and an 802.11 header is prepended
+9423-to it (also a trailer, not shown in the figure). This unit goes out over the air and is picked up by
+9424-the base station, which sees that it needs to go to the fixed Ethernet. When it hits the bridge
+9425:connecting the 802.11 network to the 802.3 network, it starts in the physical layer and works
+9426-240
+9427-
+9428:its way upward. In the MAC sublayer in the bridge, the 802.11 header is stripped off. The bare
+9429-packet (with LLC header) is then handed off to the LLC sublayer in the bridge. In this example,
+9430-the packet is destined for an 802.3 LAN, so it works its way down the 802.3 side of the bridge
+9431-and off it goes on the Ethernet. Note that a bridge connecting k different LANs will have k
+9432-different MAC sublayers and k different physical layers, one for each type.
+9433-
+9434:Figure 4-40. Operation of a LAN bridge from 802.11 to 802.3.
+9435-
+9436-So far it looks like moving a frame from one LAN to another is easy. Such is not the case. In
+9437-this section we will point out some of the difficulties that one encounters when trying to build a
+9438:bridge between the various 802 LANs (and MANs). We will focus on 802.3, 802.11, and
+9439-802.16, but there are others as well, each with its unique problems.
+9440-To start with, each of the LANs uses a different frame format (see Fig. 4-41). Unlike the
+9441-differences between Ethernet, token bus, and token ring, which were due to history and big
+9442-corporate egos, here the differences are to some extent legitimate. For example, the Duration
+9443:field in 802.11 is there due to the MACAW protocol and makes no sense in Ethernet. As a
+9444-result, any copying between different LANs requires reformatting, which takes CPU time,
+9445-requires a new checksum calculation, and introduces the possibility of undetected errors due to
+9446-bad bits in the bridge's memory.
+9447-
+9448-Figure 4-41. The IEEE 802 frame formats. The drawing is not to scale.
+9449-
+9450-A second problem is that interconnected LANs do not necessarily run at the same data rate.
+9451-When forwarding a long run of back-to-back frames from a fast LAN to a slower one, the
+9452-bridge will not be able to get rid of the frames as fast as they come in. For example, if a
+9453:gigabit Ethernet is pouring bits into an 11-Mbps 802.11b LAN at top speed, the bridge will
+9454-have to buffer them, hoping not to run out of memory. Bridges that connect three or more
+9455-
+9456-241
+9457-
+9458-LANs have a similar problem when several LANs are trying to feed the same output LAN at the
+9459-same time even if all the LANs run at the same speed.
+9460-A third problem, and potentially the most serious of all, is that different 802 LANs have
+9461-different maximum frame lengths. An obvious problem arises when a long frame must be
+9462-forwarded onto a LAN that cannot accept it. Splitting the frame into pieces is out of the
+9463-question in this layer. All the protocols assume that frames either arrive or they do not. There
+9464-is no provision for reassembling frames out of smaller units. This is not to say that such
+9465-protocols could not be devised. They could be and have been. It is just that no data link
+9466-protocols provide this feature, so bridges must keep their hands off the frame payload.
+9467-Basically, there is no solution. Frames that are too large to be forwarded must be discarded.
+9468-So much for transparency.
+9469:Another point is security. Both 802.11 and 802.16 support encryption in the data link layer.
+9470-Ethernet does not. This means that the various encryption services available to the wireless
+9471-networks are lost when traffic passes over an Ethernet. Worse yet, if a wireless station uses
+9472-data link layer encryption, there will be no way to decrypt it when it arrives over an Ethernet.
+9473-If the wireless station does not use encryption, its traffic will be exposed over the air link.
+9474-Either way there is a problem.
+9475:One solution to the security problem is to do encryption in a higher layer, but then the 802.11
+9476:station has to know whether it is talking to another station on an 802.11 network (meaning
+9477-use data link layer encryption) or not (meaning do not use it). Forcing the station to make a
+9478-choice destroys transparency.
+9479:A final point is quality of service. Both 802.11 and 802.16 provide it in various forms, the
+9480-former using PCF mode and the latter using constant bit rate connections. Ethernet has no
+9481-concept of quality of service, so traffic from either of the others will lose its quality of service
+9482-when passing over an Ethernet.
+9483-
+9484-4.7.2 Local Internetworking
+9485-The previous section dealt with the problems encountered in connecting two different IEEE 802
+9486-LANs via a single bridge. However, in large organizations with many LANs, just interconnecting
+9487-them all raises a variety of issues, even if they are all just Ethernet. Ideally, it should be
+--
+9838-pooh-pooh this argument saying that its switches understand both IPv4 and IPv6, so
+9839-everything is fine. But what happens when IPv7 happens? The vendor would probably say: Buy
+9840-new switches, is that so bad?
+9841-
+9842-The IEEE 802.1Q Standard
+9843-Some more thought on this subject reveals that what actually matters is the VLAN of the frame
+9844-itself, not the VLAN of the sending machine. If there were some way to identify the VLAN in
+9845-the frame header, then the need to inspect the payload would vanish. For a new LAN, such as
+9846:802.11 or 802.16, it would have been easy enough to just add a VLAN field in the header. In
+9847-fact, the Connection Identifier field in 802.16 is somewhat similar in spirit to a VLAN identifier.
+9848-But what to do about Ethernet, which is the dominant LAN, and does not have any spare fields
+9849-lying around for the VLAN identifier?
+9850-The IEEE 802 committee had this problem thrown into its lap in 1995. After much discussion, it
+9851-did the unthinkable and changed the Ethernet header. The new format was published in IEEE
+9852-standard 802.1Q, issued in 1998. The new format contains a VLAN tag; we will examine it
+9853-shortly. Not surprisingly, changing something as well established as the Ethernet header is not
+9854-entirely trivial. A few questions that come to mind are:
+--
+9970-well known. Binary countdown completely eliminates contention. The tree walk protocol
+9971-reduces it by dynamically dividing the stations into two disjoint groups, one of which is
+9972-permitted to transmit and one of which is not. It tries to make the division in such a way that
+9973-only one station that is ready to send is permitted to do so.
+9974-Wireless LANs have their own problems and solutions. The biggest problem is caused by
+9975-hidden stations, so CSMA does not work. One class of solutions, typified by MACA and MACAW,
+9976-attempts to stimulate transmissions around the destination, to make CSMA work better.
+9977-Frequency hopping spread spectrum and direct sequence spread spectrum are also used. IEEE
+9978:802.11 combines CSMA and MACAW to produce CSMA/CA.
+9979-Ethernet is the dominant form of local area networking. It uses CSMA/CD for channel
+9980-allocation. Older versions used a cable that snaked from machine to machine, but now twisted
+9981-pairs to hubs and switches are most common. Speeds have risen from 10 Mbps to 1 Gbps and
+9982-are still rising.
+9983-
+9984-254
+9985-
+9986:Wireless LANs are becoming common, with 802.11 dominating the field. Its physical layer
+9987-allows five different transmission modes, including infrared, various spread spectrum schemes,
+9988-and a multichannel FDM system. It can operate with a base station in each cell, but it can also
+9989-operate without one. The protocol is a variant of MACAW, with virtual carrier sensing.
+9990-Wireless MANs are starting to appear. These are broadband systems that use radio to replace
+9991-the last mile on telephone connections. Traditional narrowband modulation techniques are
+9992-used. Quality of service is important, with the 802.16 standard defining four classes (constant
+9993-bit rate, two variable bit rate, and one best efforts).
+9994-The Bluetooth system is also wireless but aimed more at the desktop, for connecting headsets
+--
+10098-account all the relevant cases. Hint: the fact that it is gigabit Ethernet matters.
+10099-
+10100-256
+10101-
+10102-27. Name two networks that allow frames to be packed back-to-back. Why is this feature
+10103-worth having?
+10104-28. In Fig. 4-27, four stations, A, B, C, and D, are shown. Which of the last two stations do
+10105-you think is closest to A and why?
+10106:29. Suppose that an 11-Mbps 802.11b LAN is transmitting 64-byte frames back-to-back
+10107-over a radio channel with a bit error rate of 10-7. How many frames per second will be
+10108-damaged on average?
+10109-30. An 802.16 network has a channel width of 20 MHz. How many bits/sec can be sent to a
+10110-subscriber station?
+10111-31. IEEE 802.16 supports four service classes. Which service class is the best choice for
+10112-sending uncompressed video?
+10113-32. Give two reasons why networks might use an error-correcting code instead of error
+10114-detection and retransmission.
+10115-33. From Fig. 4-35, we see that a Bluetooth device can be in two piconets at the same
+10116-time. Is there any reason why one device cannot be the master in both of them at the
+10117-same time?
+10118-34. Figure 4-25 shows several physical layer protocols. Which of these is closest to the
+10119-Bluetooth physical layer protocol? What is the biggest difference between the two?
+10120-35. Bluetooth supports two types of links between a master and a slave. What are they and
+10121-what is each one used for?
+10122:36. Beacon frames in the frequency hopping spread spectrum variant of 802.11 contain the
+10123-dwell time. Do you think the analogous beacon frames in Bluetooth also contain the
+10124-dwell time? Discuss your answer.
+10125-37. Consider the interconnected LANs showns in Fig. 4-44. Assume that hosts a and b are
+10126-on LAN 1, c is on LAN 2, and d is on LAN 8. Initially, hash tables in all bridges are
+10127-empty and the spanning tree shown in Fig 4-44(b) is used. Show how the hash tables
+10128-of different bridges change after each of the following events happen in sequence, first
+10129-(a) then (b) and so on.
+10130-a. (a) a sends to d.
+--
+11145-1.
+11146-2.
+11147-3.
+11148-4.
+11149-
+11150-Military vehicles on a battlefield with no existing infrastructure.
+11151-A fleet of ships at sea.
+11152-Emergency workers at an earthquake that destroyed the infrastructure.
+11153:A gathering of people with notebook computers in an area lacking 802.11.
+11154-
+11155-In all these cases, and others, each node consists of a router and a host, usually on the same
+11156-computer. Networks of nodes that just happen to be near each other are called ad hoc
+11157-networks or MANETs (Mobile Ad hoc NETworks). Let us now examine them briefly. More
+11158-information can be found in (Perkins, 2001).
+11159-What makes ad hoc networks different from wired networks is that all the usual rules about
+11160-fixed topologies, fixed and known neighbors, fixed relationship between IP address and
+11161-location, and more are suddenly tossed out the window. Routers can come and go or appear in
+--
+12553-should not be surprising that as new hardware developments occur, new software will be
+12554-created to fit the new hardware. For example, the average home now is like the average office
+12555-ten years ago: it is full of computers that do not talk to one another. In the future, it may be
+12556-commonplace for the telephone, the television set, and other appliances all to be networked
+12557-together so that they can be controlled remotely. This new technology will undoubtedly bring
+12558-new networks and new protocols.
+12559-As an example of how different networks might be connected, consider the example of Fig. 542. Here we see a corporate network with multiple locations tied together by a wide area ATM
+12560-network. At one of the locations, an FDDI optical backbone is used to connect an Ethernet, an
+12561:802.11 wireless LAN, and the corporate data center's SNA mainframe network.
+12562-
+12563-Figure 5-42. A collection of interconnected networks.
+12564-
+12565-The purpose of interconnecting all these networks is to allow users on any of them to
+12566-communicate with users on all the other ones and also to allow users on any of them to access
+12567-data on any of them. Accomplishing this goal means sending packets from one network to
+12568-another. Since networks often differ in important ways, getting packets from one network to
+12569-another is not always so easy, as we will now see.
+--
+12602-5.5.2 How Networks Can Be Connected
+12603-Networks can be interconnected by different devices, as we saw in Chap 4. Let us briefly
+12604-review that material. In the physical layer, networks can be connected by repeaters or hubs,
+12605-which just move the bits from one network to an identical network. These are mostly analog
+12606-devices and do not understand anything about digital protocols (they just regenerate signals).
+12607-One layer up we find bridges and switches, which operate at the data link layer. They can
+12608-accept frames, examine the MAC addresses, and forward the frames to a different network
+12609-while doing minor protocol translation in the process, for example, from Ethernet to FDDI or to
+12610:802.11.
+12611-In the network layer, we have routers that can connect two networks. If two networks have
+12612-dissimilar network layers, the router may be able to translate between the packet formats,
+12613-
+12614-319
+12615-
+12616-although packet translation is now increasingly rare. A router that can handle multiple
+12617-protocols is called a multiprotocol router.
+12618-In the transport layer we find transport gateways, which can interface between two transport
+--
+20734-reason, it does not support style sheets, scripts, or frames, but most of the standard tags are
+20735-there. They are grouped into 11 modules. Some are required; some are optional. All are
+20736-defined in XML. The modules and some example tags are listed in Fig. 7-56. We have not gone
+20737-over all the example tags, but more information can be found at www.w3.org.
+20738-
+20739-Figure 7-56. The XHTML Basic modules and tags.
+20740-
+20741-Despite the agreement on the use of XHTML Basic, a threat to WAP and i-mode is lurking in
+20742:the air: 802.11. The second-generation wireless Web is supposed to run at 384 kbps, far
+20743-better than the 9600 bps of the first generation, but far worse than the 11 Mbps or 54 Mbps
+20744:offered by 802.11. Of course, 802.11 is not everywhere, but as more restaurants, hotels,
+20745-stores, companies, airports, bus stations, museums, universities, hospitals, and other
+20746-organizations decide to install base stations for their employees and customers, there may be
+20747-enough coverage in urban areas that people are willing to walk a few blocks to sit down in an
+20748:802.11-enabled fast food restaurant for a cup of coffee and an e-mail. Businesses may
+20749:routinely put 802.11 logos next to the logos that show which credit cards they accept, and for
+20750-the same reason: to attract customers. City maps (downloadable, naturally) may show
+20751-covered areas in green and silent areas in red, so people can wander from base station to base
+20752-station, like nomads trekking from oasis to oasis in the desert.
+20753:Although fast food restaurants may be quick to install 802.11 base stations, farmers will
+20754-probably not, so coverage will be spotty and limited to the downtown areas of cities, due to the
+20755-
+20756-520
+20757-
+20758:limited range of 802.11 (a few hundred meters at best). This may lead to dual-mode wireless
+20759:devices that use 802.11 if they can pick up a signal and fall back to WAP if they cannot.
+20760-
+20761-7.4 Multimedia
+20762-The wireless Web is an exciting new development, but it is not the only one. For many people,
+20763-multimedia is the holy grail of networking. When the word is mentioned, both the propeller
+20764-heads and the suits begin salivating as if on cue. The former see immense technical challenges
+20765-in providing (interactive) video on demand to every home. The latter see equally immense
+20766-profits in it. Since multimedia requires high bandwidth, getting it to work over fixed
+20767-connections is hard enough. Even VHS-quality video over wireless is a few years away, so our
+--
+24338-setup is the system administrator who has to configure and manage the firewalls. To everyone
+24339-else, it is like having a leased-line private network again. For more about VPNs, see (Brown,
+24340-1999; and Izzo, 2000).
+24341-
+24342-8.6.4 Wireless Security
+24343-It is surprisingly easy to design a system that is logically completely secure by using VPNs and
+24344-firewalls, but that, in practice, leaks like a sieve. This situation can occur if some of the
+24345-machines are wireless and use radio communication, which passes right over the firewall in
+24346:both directions. The range of 802.11 networks is often a few hundred meters, so anyone who
+24347-wants to spy on a company can simply drive into the employee parking lot in the morning,
+24348:leave an 802.11-enabled notebook computer in the car to record everything it hears, and take
+24349-off for the day. By late afternoon, the hard disk will be full of valuable goodies. Theoretically,
+24350-this leakage is not supposed to happen. Theoretically, people are not supposed to rob banks,
+24351-either.
+24352-Much of the security problem can be traced to the manufacturers of wireless base stations
+24353-(access points) trying to make their products user friendly. Usually, if the user takes the device
+24354-out of the box and plugs it into the electrical power socket, it begins operating immediately—
+24355-nearly always with no security at all, blurting secrets to everyone within radio range. If it is
+24356-then plugged into an Ethernet, all the Ethernet traffic suddenly appears in the parking lot as
+24357-well. Wireless is a snooper's dream come true: free data without having to do any work. It
+24358-therefore goes without saying that security is even more important for wireless systems than
+24359-for wired ones. In this section, we will look at some ways wireless networks handle security.
+24360-Some additional information can be found in (Nichols and Lekkas, 2002).
+24361:802.11 Security
+24362:The 802.11 standard prescribes a data link-level security protocol called WEP (Wired
+24363-Equivalent Privacy), which is designed to make the security of a wireless LAN as good as
+24364-that of a wired LAN. Since the default for wired LANs is no security at all, this goal is easy to
+24365-achieve, and WEP achieves it, as we shall see.
+24366:When 802.11 security is enabled, each station has a secret key shared with the base station.
+24367-How the keys are distributed is not specified by the standard. They could be preloaded by the
+24368-manufacturer. They could be exchanged in advance over the wired network. Finally, either the
+24369-base station or user machine could pick a random key and send it to the other one over the air
+24370-encrypted with the other one's public key. Once established, keys generally remain stable for
+24371-months or years.
+24372-WEP encryption uses a stream cipher based on the RC4 algorithm. RC4 was designed by
+24373-Ronald Rivest and kept secret until it leaked out and was posted to the Internet in 1994. As we
+24374-have pointed out before, it is nearly impossible to keep algorithms secret, even when the goal
+--
+24391-
+24392-While this approach looks good at first glance, a method for breaking it has already been
+24393-published (Borisov et al., 2001). Below we will summarize their results. First of all, surprisingly
+24394-many installations use the same shared key for all users, in which case each user can read all
+24395-the other users' traffic. This is certainly equivalent to Ethernet, but it is not very secure.
+24396-But even if each user has a distinct key, WEP can still be attacked. Since keys are generally
+24397-stable for long periods of time, the WEP standard recommends (but does not mandate) that IV
+24398-be changed on every packet to avoid the keystream reuse attack we discussed in Sec. 8.2.3.
+24399:Unfortunately, many 802.11 cards for notebook computers reset IV to 0 when the card is
+24400-inserted into the computer, and increment it by one on each packet sent. Since people often
+24401-remove and reinsert these cards, packets with low IV values are common. If Trudy can collect
+24402-several packets sent by the same user with the same IV value (which is itself sent in plaintext
+24403-along with each packet), she can compute the XOR of two plaintext values and probably break
+24404-the cipher that way.
+24405:But even if the 802.11 card picks a random IV for each packet, the IVs are only 24 bits, so
+24406-after 224 packets have been sent, they have to be reused. Worse yet, with randomly chosen
+24407-IVs, the expected number of packets that have to be sent before the same one is used twice is
+24408-about 5000, due to the birthday attack described in Sec. 8.4.4. Thus, if Trudy listens for a few
+24409-minutes, she is almost sure to capture two packets with the same IV and same key. By XORing
+24410-the ciphertexts she is able to obtain the XOR of the plaintexts. This bit sequence can be
+24411-attacked in various ways to recover the plaintexts. With some more work, the keystream for
+24412-that IV can also be obtained. Trudy can continue working like this for a while and compile a
+24413-dictionary of keystreams for various IVs. Once an IV has been broken, all the packets sent with
+--
+24416-keystream) pair, she can use it to generate all the packets she wants to using it and thus
+24417-actively interfere with communication. Theoretically, a receiver could notice that large numbers
+24418-of packets suddenly all have the same IV, but (1) WEP allows this, and (2) nobody checks for
+24419-this anyway.
+24420-604
+24421-
+24422-Finally, the CRC is not worth much, since it is possible for Trudy to change the payload and
+24423-make the corresponding change to the CRC, without even having to remove the encryption In
+24424:short, breaking 802.11's security is fairly straightforward, and we have not even listed all the
+24425-attacks Borisov et al. found.
+24426-In August 2001, a month after the Borisov et al. paper was presented, another devastating
+24427-attack on WEP was published (Fluhrer et al., 2001). This one found cryptographic weaknesses
+24428-in RC4 itself. Fluhrer et al. discovered that many of the keys have the property that it is
+24429-possible to derive some key bits from the keystream. If this attack is performed repeatedly, it
+24430-is possible to derive the entire key with a modest amount of effort. Being somewhat
+24431:theoretically inclined, Fluhrer et al. did not actually try to break any 802.11 LANs.
+24432-In contrast, when a summer student and two researchers at AT&T Labs learned about the
+24433-Fluhrer et al. attack, they decided to try it out for real (Stubblefield et al., 2002). Within a
+24434:week they had broken their first 128-bit key on a production 802.11 LAN, and most of the
+24435:week was actually devoted to looking for the cheapest 802.11 card they could find, getting
+24436-permission to buy it, installing it, and testing it. The programming took only two hours.
+24437-When they announced their results, CNN ran a story entitled ''Off-the-Shelf Hack Breaks
+24438-Wireless Encryption,'' in which some industry gurus tried to pooh-pooh their results by saying
+24439-what they had done was trivial, given the Fluhrer et al. results. While that remark is technically
+24440-true, the fact remains that the combined efforts of these two teams demonstrated a fatal flaw
+24441:in WEP and 802.11.
+24442-On September 7, 2001, IEEE responded to the fact that WEP was now completely broken by
+24443-issuing a short statement making six points that can be roughly summarized as follows:
+24444-1.
+24445-2.
+24446-3.
+24447-4.
+24448-5.
+24449-6.
+24450-
+24451-We told you that WEP security was no better than Ethernet's.
+24452-A much bigger threat is forgetting to enable security at all.
+24453-Try using some other security (e.g., transport layer security).
+24454:The next version, 802.11i, will have better security.
+24455:Future certification will mandate the use of 802.11i.
+24456:We will try to figure out what to do until 802.11i arrives.
+24457-
+24458-We have gone through this story in some detail to make the point that getting security right is
+24459-not easy, even for experts.
+24460-Bluetooth Security
+24461:Bluetooth has a considerably shorter range than 802.11, so it cannot be attacked from the
+24462-parking lot, but security is still an issue here. For example, imagine that Alice's computer is
+24463-equipped with a wireless Bluetooth keyboard. In the absence of security, if Trudy happened to
+24464-be in the adjacent office, she could read everything Alice typed in, including all her outgoing email. She could also capture everything Alice's computer sent to the Bluetooth printer sitting
+24465-next to it (e.g., incoming e-mail and confidential reports). Fortunately, Bluetooth has an
+24466-elaborate security scheme to try to foil the world's Trudies. We will now summarize the main
+24467-features of it below.
+24468-Bluetooth has three security modes, ranging from nothing at all to full data encryption and
+24469:integrity control. As with 802.11, if security is disabled (the default), there is no security. Most
+24470-users have security turned off until a serious breach has occurred; then they turn it on. In the
+24471-agricultural world, this approach is known as locking the barn door after the horse has
+24472-escaped.
+24473-Bluetooth provides security in multiple layers. In the physical layer, frequency hopping
+24474-provides a tiny bit of security, but since any Bluetooth device that moves into a piconet has to
+24475-be told the frequency hopping sequence, this sequence is obviously not a secret. The real
+24476-605
+24477-
+--
+24506-WAP 2.0 Security
+24507-For the most part, the WAP Forum learned its lesson from having a nonstandard protocol stack
+24508-in WAP 1.0. WAP 2.0 largely uses standard protocols in all layers. Security is no exception.
+24509-Since it is IP based, it supports full use of IPsec in the network layer. In the transport layer,
+24510-TCP connections can be protected by TLS, an IETF standard we will study later in this chapter.
+24511-Higher still, it uses HTTP client authentication, as defined in RFC 2617. Application-layer crypto
+24512-libraries provide for integrity control and nonrepudiation. All in all, since WAP 2.0 is based on
+24513-well-known standards, there is a chance that its security services, in particular, privacy,
+24514:authentication, integrity control, and nonrepudiation may fare better than 802.11 and
+24515-Bluetooth security.
+24516-
+24517-8.7 Authentication Protocols
+24518-Authentication is the technique by which a process verifies that its communication partner is
+24519-who it is supposed to be and not an imposter. Verifying the identity of a remote process in the
+24520-face of a malicious, active intruder is surprisingly difficult and requires complex protocols
+24521-based on cryptography. In this section, we will study some of the many authentication
+24522-protocols that are used on insecure computer networks.
+--
+25975-Public-key management can be done using certificates, which are documents that bind a
+25976-principal to a public key. Certificates are signed by a trusted authority or by someone
+25977-(recursively) approved by a trusted authority. The root of the chain has to be obtained in
+25978-advance, but browsers generally have many root certificates built into them.
+25979-These cryptographic tools can be used to secure network traffic. IPsec operates in the network
+25980-layer, encrypting packet flows from host to host. Firewalls can screen traffic going into or out
+25981-of an organization, often based on the protocol and port used. Virtual private networks can
+25982-simulate an old leased-line network to provide certain desirable security properties. Finally,
+25983:wireless networks need good security and 802.11's WEP does not provide it, although 802.11i
+25984-should improve matters considerably.
+25985-When two parties establish a session, they have to authenticate each other and if need be,
+25986-establish a shared session key. Various authentication protocols exist, including some that use
+25987-a trusted third party, Diffie-Hellman, Kerberos, and public-key cryptography.
+25988-E-mail security can be achieved by a combination of the techniques we have studied in this
+25989-chapter. PGP, for example, compresses messages, then encrypts them using IDEA. It sends
+25990-the IDEA key encrypted with the receiver's public key. In addition, it also hashes the message
+25991-and sends the signed hash to verify message integrity.
+--
+26313-647
+26314-
+26315-Hu and Li, "Satellite-Based Internet: A Tutorial"
+26316-Internet access via satellite is different from access via terrestrial lines. Not only is there the
+26317-issue of delay, but routing and switching are also different. In this paper, the authors examine
+26318-some of the issues related to using satellites for Internet access.
+26319-Joel, "Telecommunications and the IEEE Communications Society"
+26320-For a compact, but surprisingly comprehensive, history of telecommunications, starting with
+26321:the telegraph and ending with 802.11, this article is the place to look. It also covers radio,
+26322-telephones, analog and digital switching, submarine cables, digital transmission, ATM,
+26323-television broadcasting, satellites, cable TV, optical communications, mobile phones, packet
+26324-switching, the ARPANET, and the Internet.
+26325-Metcalfe, "Computer/Network Interface Design: Lessons from Arpanet & Ethernet"
+26326-Although engineers have been building network interfaces for decades now, one often wonders
+26327-if they have learned anything from all this experience. In this paper, the designer of the
+26328-Ethernet tells how to build a network interface and what to do with it once you have built it. He
+26329-pulls no punches, telling what he did wrong as well as what he did right.
+--
+26370-Bhagwat, "Bluetooth: Technology for Short-Range Wireless Apps"
+26371-For a straightforward introduction to the Bluetooth system, this is a good place to start. The
+26372-core protocols and profiles, radio, piconets, and links are discussed, followed by an
+26373-introduction to the various protocols.
+26374-Bisdikian, "An Overview of the Bluetooth Wireless Technology"
+26375-Like the Bhagwat paper (above), this is also a good starting point for learning more about the
+26376-Bluetooth system. The piconets, the protocol stack, and the profiles are all discussed, among
+26377-other topics.
+26378:Crow et al., "IEEE 802.11 Wireless Local Area Networks"
+26379:For a simple introduction to the technology and protocols of 802.11, this is a good place to
+26380-start. The emphasis is on the MAC sublayer. Both distributed control and centralized control
+26381:are covered. The paper concludes with some simulation studies of the performance of 802.11
+26382-under various conditions.
+26383-Eklund et al., "IEEE Standard 802.16: A Technical Overview of the Wireless MAN Air Interface
+26384-for Broadband Wireless Access"
+26385-The wireless local loop standardized by IEEE in 2002 as 802.16 may revolutionize telephone
+26386-service, bringing broadband to the home. In this overview, the authors explain the main
+26387-technological issues relating to this standard.
+26388:Kapp, "802.11: Leaving the Wire Behind"
+26389:This short introduction to 802.11 covers the basics, protocols, and relevant standards.
+26390-Kleinrock, "On Some Principles of Nomadic Computing and Multi-Access Communications"
+26391-Wireless access over a shared channel is more complex than having wired stations share a
+26392-channel. Among other issues are dynamic topologies, routing, and power management. These
+26393-and other issues related to channel access by mobile wireless devices are covered in this
+26394-article.
+26395-649
+26396-
+26397-Miller and Cummins, LAN Technologies Explained
+--
+26701-p. 136 , Oct. 2000.
+26702-BOGINENI, K., SIVALINGAM, K.M., and DOWD, P.W.: "Low-Complexity Multiple Access
+26703-Protocols for Wavelength-Division Multiplexed Photonic Networks," IEEE Journal on Selected
+26704-Areas in Commun. , vol. 11, pp. 590-604, May 1993.
+26705-BOLCSKEI, H., PAULRAJ, A.J., HARI, K.V.S., and NABAR, R.U.: "Fixed Broadband Wireless
+26706-Access: State of the Art, Challenges, and Future Directions," IEEE Commun. Magazine, vol. 39,
+26707-pp. 100-108, Jan. 2001.
+26708-BORISOV, N., GOLDBERG, I., and WAGNER, D.: "Intercepting Mobile Communications: The
+26709:Insecurity of 802.11," Seventh Int'l Conf. on Mobile Computing and Networking, ACM, pp. 180188, 2001.
+26710-BRANDS, S.: Rethinking Public Key Infrastructures and Digital Certificates, Cambridge, MA:
+26711-M.I.T. Press, 2000.
+26712-BRAY, J., and STURMAN, C.F.: Bluetooth 1.1: Connect without Cables, 2nd ed., Upper Saddle
+26713-River, NJ: Prentice Hall, 2002.
+26714-BREYER, R., and RILEY, S.: Switched, Fast, and Gigabit Ethernet, Indianapolis, IN: New Riders,
+26715-1999.
+26716-BROWN, S.: Implementing Virtual Private Networks, New York: McGraw-Hill, 1999.
+26717-BROWN, L., KWAN, M., PIEPRZYK, J., and SEBERRY, J.: "Improving Resistance to Differential
+--
+26767-Commun., ACM, pp. 249-259, 2001.
+26768-658
+26769-
+26770-CRAVER, S.A., WU, M., LIU, B., STUBBLEFIELD, A., SWARTZLANDER, B., WALLACH, D.W.,
+26771-DEAN, D., and FELTEN, E.W.: "Reading Between the Lines: Lessons from the SDMI Challenge,"
+26772-Proc. 10th USENIX Security Symp., USENIX, 2001.
+26773-CRESPO, P.M., HONIG, M.L., and SALEHI, J.A.: "Spread-Time Code-Division Multiple Access,"
+26774-IEEE Trans. on Commun., vol. 43, pp. 2139-2148, June 1995.
+26775:CROW, B.P., WIDJAJA, I, KIM, J.G., and SAKAI, P.T.: "IEEE 802.11 Wireless Local Area
+26776-Networks," IEEE Commun. Magazine, vol. 35, pp. 116-126, Sept. 1997.
+26777-CROWCROFT, J., WANG, Z., SMITH, A., and ADAMS, J.: "A Rough Comparison of the IETF and
+26778-ATM Service Models," IEEE Network Magazine, vol. 9, pp. 12-16, Nov./Dec. 1995.
+26779-DABEK, F., BRUNSKILL, E., KAASHOEK, M.F., KARGER, D., MORRIS, R., STOICA, R., and
+26780-BALAKRISHNAN, H.: "Building Peer-to-Peer Systems With Chord, a Distributed Lookup
+26781-Service," Proc. 8th Workshop on Hot Topics in Operating Systems, IEEE, pp. 71-76, 2001a.
+26782-DABEK, F., KAASHOEK, M.F., KARGER, D., MORRIS, R., and STOICA, I.: "Wide-Area
+26783-Cooperative Storage with CFS," Proc. 18th Symp. on Operating Systems Prin., ACM, pp. 20215 , 2001b.
+--
+26813-pp. 269-271, Oct. 1959.
+26814-DOBROWSKI, G., and GRISE, D.: ATM and SONET Basics, Fuquay-Varina, NC: APDG Telecom
+26815-Books, 2001.
+26816-DONALDSON, G., and JONES, D.: "Cable Television Broadband Network Architectures," IEEE
+26817-Commun. Magazine, vol. 39, pp. 122-126, June 2001.
+26818-DORFMAN, R.: "Detection of Defective Members of a Large Population," Annals Math.
+26819-Statistics, vol. 14, pp. 436-440, 1943.
+26820-DOUFEXI, A., ARMOUR, S., BUTLER, M., NIX, A., BULL, D., MCGEEHAN, J., and KARLSSON, P.:
+26821:"A Comparison of the HIPERLAN/2 and IEEE 802.11A Wireless LAN Standards," IEEE Commun.
+26822-Magazine, vol. 40, pp. 172-180, May 2002.
+26823-DURAND, A.: "Deploying IPv6," IEEE Internet Computing, vol. 5, pp. 79-81, Jan.-Feb. 2001.
+26824-DUTCHER, B.: The NAT Handbook, New York: Wiley, 2001.
+26825-DUTTA-ROY, A.: "An Overview of Cable Modem Technology and Market Perspectives," IEEE
+26826-Commun. Magazine, vol. 39, pp. 81-88, June 2001.
+26827-EASTTOM, C.: Learn JavaScript, Ashburton, U.K.: Wordware Publishing, 2001.
+26828-EL GAMAL, T.: "A Public-Key Cryptosystem and a Signature Scheme Based on Discrete
+26829-Logarithms," IEEE Trans. on Information Theory, vol. IT-31, pp. 469-472, July 1985.
+--
+26953-JOHNSON, N.F., and JAJODA, S.: "Exploring Steganography: Seeing the Unseen," Computer,
+26954-vol. 31, pp. 26-34, Feb. 1998.
+26955-KAHN, D.: "Cryptology Goes Public," IEEE Commun. Magazine, vol. 18, pp. 19-28, March 1980.
+26956-663
+26957-
+26958-KAHN, D.: The Codebreakers, 2nd ed., New York: Macmillan, 1995.
+26959-KAMOUN, F., and KLEINROCK, L.: "Stochastic Performance Evaluation of Hierarchical Routing
+26960-for Large Networks," Computer Networks, vol. 3, pp. 337-353, Nov. 1979.
+26961:KAPP, S.: "802.11: Leaving the Wire Behind," IEEE Internet Computing, vol. 6, pp. 82-85,
+26962-Jan.-Feb. 2002.
+26963-KARN, P.: "MACA—A New Channel Access Protocol for Packet Radio," ARRL/CRRL Amateur
+26964-Radio Ninth Computer Networking Conf., pp. 134-140, 1990.
+26965-KARTALOPOULOS, S.: Introduction to DWDM Technology: Data in a Rainbow, New York, NY:
+26966-IEEE Communications Society, 1999.
+26967-KASERA, S.K., HJALMTYSSON, G., TOWLSEY, D.F., and KUROSE, J.F.: "Scalable Reliable
+26968-Multicast Using Multiple Multicast Channels," IEEE/ACM Trans. on Networking, vol. 8, pp. 294310, 2000.
+26969-KATZ, D., and FORD, P.S.: "TUBA: Replacing IP with CLNP," IEEE Network Magazine, vol. 7,
+--
+26991-Internet, Boston: Addison-Wesley, 2001.
+26992-KWOK, T.: "A Vision for Residential Broadband Service: ATM to the Home," IEEE Network
+26993-Magazine, vol. 9, pp. 14-28, Sept./Oct. 1995.
+26994-664
+26995-
+26996-KYAS, O., and CRAWFORD, G.: ATM Networks, Upper Saddle River, NJ: Prentice Hall, 2002.
+26997-LAM, C.K.M., and TAN, B.C.Y.: "The Internet Is Changing the Music Industry," Commun. of the
+26998-ACM, vol. 44, pp. 62-66, Aug. 2001.
+26999:LANSFORD, J., STEPHENS, A, and NEVO, R.: "Wi-Fi (802.11b) and Bluetooth: Enabling
+27000-Coexistence," IEEE Network Magazine, vol. 15, pp. 20-27, Sept.-Oct 2001.
+27001-LASH, D.A.: The Web Wizard's Guide to Perl and CGI, Boston: Addison-Wesley, 2002.
+27002-LAUBACH, M.E., FARBER, D.J., and DUKES, S.D.: Delivering Internet Connections over Cable,
+27003-New York: Wiley, 2001.
+27004-LEE, J.S., and MILLER, L.E.: CDMA Systems Engineering Handbook, London: Artech House,
+27005-1998.
+27006-LEEPER, D.G.: "A Long-Term View of Short-Range Wireless," Computer, vol. 34, pp. 39-44,
+27007-June 2001.
+--
+27103-NEMETH, E., SNYDER, G., SEEBASS, S., and HEIN, T.R.: UNIX System Administration
+27104-Handbook, 3rd ed., Englewood Cliffs, NJ: Prentice Hall, 2000.
+27105-NICHOLS, R.K., and LEKKAS, P.C.: Wireless Security, New York: McGraw-Hill, 2002.
+27106-
+27107-667
+27108-
+27109-NIST: "Secure Hash Algorithm," U.S. Government Federal Information Processing Standard
+27110-180, 1993.
+27111:O'HARA, B., and PETRICK, A.: 802.11 Handbook: A Designer's Companion, New York: IEEE
+27112-Press, 1999.
+27113-OTWAY, D., and REES, O.: "Efficient and Timely Mutual Authentication," Operating Systems
+27114-Rev., pp. 8-10, Jan. 1987.
+27115-OVADIA, S.: Broadband Cable TV Access Networks: from Technologies to Applications, Upper
+27116-Saddle River, NJ: Prentice Hall, 2001.
+27117-PALAIS, J.C.: Fiber Optic Commun., 3rd ed., Englewood Cliffs, NJ: Prentice Hall, 1992.
+27118-PAN, D.: "A Tutorial on MPEG/Audio Compression," IEEE Multimedia Magazine, vol. 2, pp.6074, Summer 1995.
+27119-PANDYA, R.: "Emerging Mobile and Personal Communication Systems," IEEE Commun.
+--
+27226-vol. COM-30, pp. 822-854, May 1982.
+27227-SCOTT, R.: "Wide Open Encryption Design Offers Flexible Implementations," Cryptologia, vol.
+27228-9, pp. 75-90, Jan. 1985.
+27229-SEIFERT, R.: The Switch Book, Boston: Addison-Wesley, 2000.
+27230-SEIFERT, R.: Gigabit Ethernet, Boston: Addison-Wesley, 1998.
+27231-SENN, J.A.: "The Emergence of M-Commerce," Computer, vol. 33, pp. 148-150, Dec. 2000.
+27232-SERJANTOV, A.: "Anonymizing Censorship Resistant Systems," Proc. First Int'l Workshop on
+27233-Peer-to-Peer Systems, Berlin: Springer-Verlag LNCS, 2002.
+27234:SEVERANCE, C.: "IEEE 802.11: Wireless Is Coming Home," Computer, vol. 32, pp. 126-127,
+27235-Nov. 1999.
+27236-SHAHABI, C., ZIMMERMANN, R., FU, K., and YAO, S.-Y.D.: "YIMA: A Second-Generation
+27237-Continuous Media Server," Computer, vol. 35, pp. 56-64, June 2002.
+27238-SHANNON, C.: "A Mathematical Theory of Communication," Bell System Tech. J., vol. 27, pp.
+27239-379-423, July 1948; and pp. 623-656, Oct. 1948.
+27240-SHEPARD, S.: SONET/SDH Demystified, New York: McGraw-Hill, 2001.
+27241-SHREEDHAR, M., and VARGHESE, G.: "Efficient Fair Queueing Using Deficit Round Robin,"
+27242-Proc. SIGCOMM '95 Conf., ACM, pp. 231-243, 1995.

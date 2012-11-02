@@ -1,0 +1,64 @@
+* Fyrirlestur Um Nýja netstaðla fyrir þráðlaus net
+
+** Almenn Umfjöllun um þráðlaus net
+nota yfileit ISM tíðnisviðinn
+frequency hopping, fundið upp af Hedy Lamarr og vinur hennar
+George Antheil.
+
+The frequency hopping pattern, (tíðnis hoppunar munstrið)
+er oft ókunnugt þeim sem er ekki er ætlað að hlusta).
+
+*** meira lina 3152
+ In frequency hopping spread spectrum, the
+transmitter hops from frequency to frequency hundreds of times per second. It is popular for military
+communication because it makes transmissions hard to detect and next to impossible to jam. It also offers good
+resistance to multipath fading because the direct signal always arrives at the receiver first. Reflected signals
+follow a longer path and arrive later. By then the receiver may have changed frequency and no longer accepts
+signals on the previous frequency, thus eliminating interference between the direct and reflected signals. In
+recent years, this technique has also been applied commercially—both 802.11 and Bluetooth use it, for example.
+As a curious footnote, the technique was co-invented by the Austrian-born sex goddess Hedy Lamarr, the first
+woman to appear nude in a motion picture (the 1933 Czech film Extase). Her first husband was an armaments
+manufacturer who told her how easy it was to block the radio signals then used to control torpedos. When she
+81
+
+^Ldiscovered that he was selling weapons to Hitler, she was horrified, disguised herself as a maid to escape him\
+,
+and fled to Hollywood to continue her career as a movie actress. In her spare time, she invented frequency
+hopping to help the Allied war effort. Her scheme used 88 frequencies, the number of keys (and frequencies) on
+the piano. For their invention, she and her friend, the musical composer George Antheil, received U.S. patent
+2,292,387. However, they were unable to convince the U.S. Navy that their invention had any practical use and
+never received any royalties. Only years after the patent expired did it become popular.
+The other form of spread spectrum, direct sequence spread spectrum, which spreads the signal over a wide
+frequency band, is also gaining popularity in the commercial world. In particular, some second-generation mobile
+phones use it, and it will become dominant with the third generation, thanks to its good spectral efficiency, no\
+ise
+
+
+
+*** Undirliggjandi Stærðfræði
+Samhengi á milli bandbreiddar og gagnamagns
+
+Henry Nyquist, Claude Shannon
+
+Hámarks fjöldi bita á sekundu = B log_{2}(1+s/N)
+þ.s. B er bandvídd og S/N er hlutfall merkis og hávaða
+
+**** S/N
+http://www.wirelessforums.org/wireless-networking-discussion/signal-noise-ratio-5109.html
+
+gefur týpískt SNR ~= 15-20 dB
+
+
+
+**** 802.11a
+
+x  =    5 GHz log_{2} (1+15)
+
+   =    5 GHz * 4 =  
+** Efnislegur/Tæknilegur Grundvöllur
+** Útfærsla 802.11n
+** Örrygisatriði
+*** Útvarpsbylgjur og krabbamein
+*** WEP
+*** WPN
+*** MAC address filtering

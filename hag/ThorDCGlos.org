@@ -1,0 +1,339 @@
+* Info on Computers in Thor Data Center
+Serverar , dedicated servers undir solutions á:
+http://www.thordc.com/
+** DELL R201
+
+Setup 299 €
+Monthly fee 125 €
+- 250W power supply
+Rack in 3 T enviroment, 1 rack unit, (1U), power included 
+
+
+*** ALL
+
+DELL R210
+
+Intel Xeon E3-1230v2, 3.30GHZ, 4 Core
+Intel C202 chipset
+8GB
+(2x4GB Dual Ranked LV UDIMMs) 1333MHz
+PERC H200A (6Gbps) RAID
+controller
+2x 300GB SAS 6Gbps 2.5″ 10k HDD
+Internal Dual-Port Broadcom
+5716 Gigabit
+Connections:
+- 2x Ethernet,
+1x Serial DTE 16550
+Management
+- Dell OpenManage
+- BMC – IPMI 2.0 compliant
+- Unified Server Configurator
+- iDRAC6 Enterprise remote interface
+- 4x 2.5″ HDD slots
+- RAM slots: 4x 240-pin
+- 250W power supply
+  
+Hosting
+Rack in 3 T enviroment, 1 rack unit, (1U), power included 
+Physical Ethernet port 1 Gb RJ45 
+/29 5 IP addresses 
+2TB of internet traffic included 
+Extra 1Tb internet traffic 45 €
+Internet traffic overage per GB 0,15 €
+Additions
+Extra 8 GB RAM 10 €
+Extra 146GB SAS 6Gbps 10k 2,5″ Hot Plug 13 €
+Extra 300GB SAS 6Gbps 10k 2,5″ Hot Plug 15 €
+Extra 600GB SAS 6Gbps 10k 2,5″ Hot Plug 30 €
+Extra 900GB SAS 6Gbps 10k 2,5″ Hot Plug 38 €
+Extra 1TB NL SAS 6Gbps 7.2k 2,5″ Hot Plug 25 €
+
+Setup 299 €
+Monthly fee 125 €
+
+
+
+** DELL R320
+
+Setup 299 €
+Monthly fee 155 €
+- Redundant 80+ Silver 350W power supply
+Rack in 3 T enviroment, 1 rack unit, (1U), power included 
+
+
+*** all
+
+DELL R320
+
+1x Intel Xeon E5-2407 4 Core
+2.20GHz, 10M Cache, 6.4GT/s QPI, No Turbo, 4C, 80W
+Intel C600 chipset
+8GB Memory (1x 8GB Dual Rank RDIMMs) 1600MHz
+PERC H710 Raid Controller með 512MB NV Cache
+2x 300GB SAS 6Gbps 2.5″ 10k HDD
+D17Broadcom® 5720 GbE dual port
+Connections:
+- 2x Ethernet, 1x Serial DTE 16550
+Management
+- Dell OpenManage
+- BMC
+- IPMI 2.0 compliant
+- Unified Server Configurator
+- iDRAC7 Enterprise w/8GB flash
+PowerEdge R320 1U RACK:
+- 8x 2.5″ HDD slots
+- RAM slots: 4x 240-pin
+- Redundant 80+ Silver 350W power supply
+  
+Hosting
+Rack in 3 T enviroment, 1 rack unit, (1U), power included 
+Physical Ethernet port 1 Gb RJ45 
+/29 5 IP addresses 
+2TB of internet traffic included 
+Extra 1Tb internet traffic 45 €
+Internet traffic overage per GB 0,15 €
+Additions
+Extra 8 GB RAM 10 €
+Upgrade to Xeon E5-2420 6 Core processor 20 €
+Extra 146GB SAS 6Gbps 10k 2,5″ Hot Plug 13 €
+Extra 146GB SAS 6Gbps 15k 2,5″ Hot Plug 15 €
+Extra 300GB SAS 6Gbps 10k 2,5″ Hot Plug 15 €
+Extra 300GB SAS 6Gbps 15k 2,5″ Hot Plug 35 €
+Extra 600GB SAS 6Gbps 10k 2,5″ Hot Plug 30 €
+Extra 900GB SAS 6Gbps 10k 2,5″ Hot Plug 30 €
+
+Setup 299 €
+Monthly fee 155 €
+
+
+
+** DELL R420
+
+Setup 299 €
+Monthly fee 250 €
+- Redundant 80+ Platinium 550W power supply
+Rack in 3 T enviroment, 1 rack unit, (1U), power included 
+
+
+*** all
+
+DELL R420
+
+2x Intel Xeon E5-2420 Six Core processors
+1.90GHz, 15M Cache, 7.2GT/s QPI, Turbo, 6C, 95W
+Intel C600 chipset
+32GB Memory (4x 8GB Dual Rank RDIMMs) 1600MHz
+PERC H710 Raid Controller með 512MB NV Cache
+2x 300GB SAS 6Gbps 2.5″ 10k HDD
+D17Broadcom® 5720 GbE dual port
+Connections:
+- 2x Ethernet, 1x Serial DTE 16550
+Management
+- Dell OpenManage
+- BMC
+- IPMI 2.0 compliant
+- Unified Server Configurator
+- iDRAC7 Enterprise w/8GB flash
+PowerEdge R420 1U RACK:
+- 8 x 2.5″ HDD slots
+- RAM slots: 12 x 240-pin
+- Redundant 80+ Platinium 550W power supply
+  
+Hosting
+Rack in 3 T enviroment, 1 rack unit, (1U), power included 
+Physical Ethernet port 1 Gb RJ45 
+/29 5 IP addresses 
+2TB of internet traffic included 
+Extra 1Tb internet traffic 45 €
+Internet traffic overage per GB 0,15 €
+Additions
+Extra 8 GB RAM 10 €
+Extra 146GB SAS 6Gbps 10k 2,5″ Hot Plug 13 €
+Extra 146GB SAS 6Gbps 15k 2,5″ Hot Plug 35 €
+Extra 300GB SAS 6Gbps 10k 2,5″ Hot Plug 15 €
+Extra 300GB SAS 6Gbps 15k 2,5″ Hot Plug 35 €
+Extra 600GB SAS 6Gbps 10k 2,5″ Hot Plug 30 €
+Extra 900GB SAS 6Gbps 10k 2,5″ Hot Plug 38 €
+Extra 1TB NL SAS 6Gbps 7.2k 2,5″ Hot Plug 25 €
+
+Setup 299 €
+Monthly fee 250 €
+
+
+
+** DELL R520
+
+Setup 299 €
+Monthly fee 290 €
+- Redundant 80+ Platinium 550W power supply
+Rack in 3 T enviroment, 1 rack unit, (2U), power included 
+
+
+*** ALL
+
+DELL R520
+
+2x Intel Xeon E5-2420 Six Core processors
+1.90GHz, 15M Cache, 7.2GT/s QPI, Turbo, 6C, 95W
+Intel C600 chipset
+32GB Memory (4x 8GB Dual Rank RDIMMs) 1600MHz
+PERC H710 Raid Controller með 512MB NV Cache
+2x 300GB SAS 6Gbps 3.5″ 15k HDD
+4x 2TB NL SAS 6Gbps 7,2k 3.5″ HDD
+D17Broadcom® 5720 GbE dual port
+Connections:
+- 4x Ethernet, 1x Serial DTE 16550
+Management
+- Dell OpenManage
+- BMC
+- IPMI 2.0 compliant
+- Unified Server Configurator
+- iDRAC7 Enterprise w/8GB flash
+PowerEdge R520 2U RACK:
+- 8x 3.5″ HDD slots
+- RAM slots: 12x 240-pin
+- Redundant 80+ Platinium 550W power supply
+  
+Hosting
+Rack in 3 T enviroment, 1 rack unit, (2U), power included 
+Physical Ethernet port 1 Gb RJ45 
+/29 5 IP addresses 
+2TB of internet traffic included 
+Extra 1Tb internet traffic 45 €
+Internet traffic overage per GB 0,15 €
+Additions
+Extra 8 GB RAM 10 €
+Extra 146GB SAS 6Gbps 15k 3,5″ Hot Plug 15 €
+Extra 300GB SAS 6Gbps 15k 3,5″ Hot Plug 18 €
+Extra 600GB SAS 6Gbps 10k 3,5″ Hot Plug 33 €
+Extra 600GB SAS 6Gbps 15k 3,5″ Hot Plug 33 €
+Extra 1TB NL SAS 6Gbps 7.2k 3,5″ Hot Plug 15 €
+Extra 2TB NL SAS 6Gbps 7.2k 3,5″ Hot Plug 20 €
+Extra 3TB NL SAS 6Gbps 7.2k 3,5″ Hot Plug 38 €
+
+Setup 299 €
+Monthly fee 290 €
+
+
+
+** DELL R620
+
+Setup 299 €
+Monthly fee 315 €
+- Redundant 80+ Platinium 750W power supply
+Rack in 3 T enviroment, 1 rack unit, (1U), power included 
+
+
+*** ALL
+
+DELL R620
+
+2x Intel Xeon E5-2650 Eight Core processors
+2.00GHz, 20M Cache, 8.0GT/s QPI, Turbo, 8C, 95W
+Intel C600 chipset
+32GB Memory (4x 8GB Dual Rank RDIMMs) 1600MHz
+PERC H710 Raid Controller með 512MB NV Cache
+2x 300GB SAS 6Gbps 2.5″ 10k HDD
+4x 1TB NL SAS 6Gbps 7,2K 2.5″ HD Hot Plug HDD
+Broadcom 5720 Quad Port 1Gb Network Daughter Card
+Connections:
+- 4x Ethernet, 1x Serial DTE 16550
+Management
+- Dell OpenManage
+- BMC
+- IPMI 2.0 compliant
+- Unified Server Configurator
+- iDRAC7 Enterprise w/8GB flash
+PowerEdge R620 1U RACK:
+- 16 x 2.5″ HDD slots
+- RAM slots: 24 x 240-pin
+- Redundant 80+ Platinium 750W power supply
+  
+Hosting
+Rack in 3 T enviroment, 1 rack unit, (1U), power included 
+Physical Ethernet port 1 Gb RJ45 
+/29 5 IP addresses 
+2TB of internet traffic included 
+Extra 1Tb internet traffic 45 €
+Internet traffic overage per GB 0,15 €
+Additions
+Extra 8 GB RAM 10 €
+Extra 146GB SAS 6Gbps 10k 2,5″ Hot Plug 13 €
+Extra 146GB SAS 6Gbps 15k 2,5″ Hot Plug 15 €
+Extra 300GB SAS 6Gbps 10k 2,5″ Hot Plug 15 €
+Extra 300GB SAS 6Gbps 15k 2,5″ Hot Plug 35 €
+Extra 600GB SAS 6Gbps 10k 2,5″ Hot Plug 30 €
+Extra 900GB SAS 6Gbps 10k 2,5″ Hot Plug 38 €
+Extra 1TB NL SAS 6Gbps 7.2k 2,5″ Hot Plug 25 €
+
+Setup 299 €
+Monthly fee 315 €
+
+
+
+** DELL R720
+
+Setup 299 €
+Monthly fee 380 €
+- Redundant 80+ Platinium 550W power supply
+Rack in 3 T enviroment, 1 rack unit, (2U), power included 
+
+
+
+*** all
+DELL R720
+
+
+
+2x Intel Xeon E5-2420 Six Core processors
+1.90GHz, 15M Cache, 7.2GT/s QPI, Turbo, 6C, 95W
+Intel C600 chipset
+32GB Memory (4x 8GB Dual Rank RDIMMs) 1600MHz
+PERC H710 Raid Controller með 512MB NV Cache
+2x 300GB SAS 6Gbps 3.5″ 15k HDD
+4x 2TB NL SAS 6Gbps 7,2k 3.5″ HDD
+D17Broadcom® 5720 GbE dual port
+Connections:
+- 4x Ethernet, 1x Serial DTE 16550
+Management
+- Dell OpenManage
+- BMC
+- IPMI 2.0 compliant
+- Unified Server Configurator
+- iDRAC7 Enterprise w/8GB flash
+PowerEdge R720 2U RACK:
+- 8 x 3.5″ HDD slots
+- 16 x 2.5″ HDD slots
+- RAM slots: 24 x 240-pin
+- Redundant 80+ Platinium 550W power supply
+  
+Hosting
+Rack in 3 T enviroment, 1 rack unit, (2U), power included 
+Physical Ethernet port 1 Gb RJ45 
+/29 5 IP addresses 
+2TB of internet traffic included 
+Extra 1Tb internet traffic 45 €
+Internet traffic overage per GB 0,15 €
+Additions
+Extra 8 GB RAM 10 €
+Extra 146GB SAS 6Gbps 10k 2,5″ Hot Plug 13 €
+Extra 146GB SAS 6Gbps 15k 2,5″ Hot Plug 15 €
+Extra 300GB SAS 6Gbps 10k 2,5″ Hot Plug 15 €
+Extra 300GB SAS 6Gbps 15k 2,5″ Hot Plug 35 €
+Extra 600GB SAS 6Gbps 10k 2,5″ Hot Plug 30 €
+Extra 900GB SAS 6Gbps 10k 2,5″ Hot Plug 38 €
+Extra 1TB NL SAS 6Gbps 7.2k 2,5″ Hot Plug 25 €
+Extra 146GB SAS 6Gbps 15k 3,5″ Hot Plug 15 €
+Extra 300GB SAS 6Gbps 15k 3,5″ Hot Plug 18 €
+Extra 600GB SAS 6Gbps 10k 3,5″ Hot Plug 33 €
+Extra 600GB SAS 6Gbps 15k 3,5″ Hot Plug 33 €
+Extra 1TB NL SAS 6Gbps 7.2k 3,5″ Hot Plug 15 €
+Extra 2TB NL SAS 6Gbps 7.2k 3,5″ Hot Plug 20 €
+Extra 3TB NL SAS 6Gbps 7.2k 3,5″ Hot Plug 38 €
+Setup 299 €
+Monthly fee 380 €
+
+
+
+

@@ -30,6 +30,12 @@ Virtual Lan VLAN
 VPN's  Virtual Private Networks
 
 
+** cHAPTR 4
+
+Request To Send (RTS)
+
+Clear To Send (CTS)
+
 
 
 
@@ -81,6 +87,17 @@ transmit on frequencies of 2.4 -5 GHz, higher than  frequencies for cellphones.
 Higher frequenciy allows signal to carry more data.
 
 
+9978:802.11 combines CSMA and MACAW to produce CSMA/CA.
+9979-Ethernet is the dominant form of local area networking. It uses CSMA/CD for channel
+9980-allocation. Older versions used a cable that snaked from machine to machine, but now twisted
+9981-pairs to hubs and switches are most common. Speeds have risen from 10 Mbps to 1 Gbps and
+9982-are still rising.
+
+**** Carrier sense multiple access (CSMA)
+
+http://en.wikipedia.org/wiki/Carrier_sense_multiple_access
+
+
 
 [Til samanburðar mældist nethraðinn gegnum, WIFI á hávallagötu
 16.81 Mbs]
@@ -128,3 +145,74 @@ uses TKIP encryption
 (MAC) address filtering
 
 it is possible to spoof a mac address
+
+
+** Grep Research quotes
+
+L3280
+
+The location of the ISM bands varies somewhat from country to country. In the United States, for example,
+devices whose power is under 1 watt can use the bands shown in Fig. 2-13 without requiring a FCC license. The
+900-MHz band works best, but it is crowded and not available worldwide. The 2.4-GHz band is available in most
+countries, but it is subject to interference from microwave ovens and radar installations. Bluetooth and some of
+the 802.11 wireless LANs operate in this band. The 5.7-GHz band is new and relatively undeveloped, so
+equipment for it is expensive, but since 802.11a uses it, it will quickly become more popular.
+Figure 2-13. The ISM bands in the United States.
+
+*** Wep origins
+1.5.4 Wireless LANs: 802.11
+Almost as soon as notebook computers appeared, many people had a dream of walking into an office and
+magically having their notebook computer be connected to the Internet. Consequently, various groups began
+working on ways to accomplish this goal. The most practical approach is to equip both the office and the
+notebook computers with short-range radio transmitters and receivers to allow them to communicate. This work
+rapidly led to wireless LANs being marketed by a variety of companies.
+The trouble was that no two of them were compatible. This proliferation of standards meant that a computer
+equipped with a brand X radio would not work in a room equipped with a brand Y base station. Finally, the
+industry decided that a wireless LAN standard might be a good idea, so the IEEE committee that standardized
+the wired LANs was given the task of drawing up a wireless LAN standard. The standard it came up with was
+named 802.11. A common slang name for it is WiFi. It is an important standard and deserves respect, so we will
+call it by its proper name, 802.11.
+The proposed standard had to work in two modes:
+1. In the presence of a base station.
+2. In the absence of a base station.
+In the former case, all communication was to go through the base station, called an access point in 802.11
+terminology. In the latter case, the computers would just send to one another directly. This mode is now
+sometimes called ad hoc networking. A typical example is two or more people sitting down together in a room
+not equipped with a wireless LAN and having their computers just communicate directly. The two modes are
+illustrated in Fig. 1-35.
+Figure 1-35. (a) Wireless networking with a base station. (b) Ad hoc networking.
+
+*** 802.11 bluetooth Stuff
+
+9263:Because both 802.11 and Bluetooth operate in the 2.4-GHz ISM band on the same 79
+9264:channels, they interfere with each other. Since Bluetooth hops far faster than 802.11, it is far
+9265:more likely that a Bluetooth device will ruin 802.11 transmissions than the other way around.
+9266:Since 802.11 and 802.15 are both IEEE standards, IEEE is looking for a solution to this
+9267-problem, but it is not so easy to find since both systems use the ISM band for the same
+9268:reason: no license is required there. The 802.11a standard uses the other (5 GHz) ISM band,
+
+
+
+*** Security and bridging
+
+9469:Another point is security. Both 802.11 and 802.16 support encryption in the data link layer.
+9470-Ethernet does not. This means that the various encryption services available to the wireless
+9471-networks are lost when traffic passes over an Ethernet. Worse yet, if a wireless station uses
+9472-data link layer encryption, there will be no way to decrypt it when it arrives over an Ethernet.
+9473-If the wireless station does not use encryption, its traffic will be exposed over the air link.
+9474-Either way there is a problem.
+9475:One solution to the security problem is to do encryption in a higher layer, but then the 802.11
+9476:station has to know whether it is talking to another station on an 802.11 network (meaning
+9477-use data link layer encryption) or not (meaning do not use it). Forcing the station to make a
+9478-choice destroys transparency.
+
+
+
+*** around 24356 security WEP
+
+WEP Wired Equivalent Privacy
+
+** Orthagonal Frequency Division Multiplexing OFDM
+http://en.wikipedia.org/wiki/Orthogonal_frequency-division_multiplexing#Wireless
+is used by:
+WLAN:   IEEE 802.11a,g,n and HIPERLAN
