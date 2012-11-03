@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+lang="en" xml:lang="en">
+<head>
+<title>Þráðlaus<sub>Net</sub></title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2012-11-03 04:36:45 GMT"/>
+<meta name="author" content="bergurth"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+
+<h1 class="title">Þráðlaus<sub>Net</sub></h1>
+
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 Þráðlaus net - Nýjir Þráðlausir Netstaðlar </a>
+<ul>
+<li><a href="#sec-1.1">1.1 Tilkoma Þráðlausa neta, og þráðlausranetstaðla </a></li>
+<li><a href="#sec-1.2">1.2 ISM böndinn </a></li>
+<li><a href="#sec-1.3">1.3 Yfirlit yfir Þráðlausanetstaðla </a></li>
+<li><a href="#sec-1.4">1.4 tækni &amp; Aðferðir, á grunnlagi </a>
+<ul>
+<li><a href="#sec-1.4.1">1.4.1 DSSS </a></li>
+<li><a href="#sec-1.4.2">1.4.2 CCK </a></li>
+<li><a href="#sec-1.4.3">1.4.3 OFDM </a></li>
+<li><a href="#sec-1.4.4">1.4.4 MIMO </a></li>
+<li><a href="#sec-1.4.5">1.4.5 SDM </a></li>
+<li><a href="#sec-1.4.6">1.4.6 frame aggregation </a></li>
+</ul>
+</li>
+<li><a href="#sec-1.5">1.5 MAC undirlags samskiptareglur/aðferðir 802.11 </a>
+<ul>
+<li><a href="#sec-1.5.1">1.5.1 CSMA/CA </a></li>
+<li><a href="#sec-1.5.2">1.5.2 Virtual sensing </a></li>
+<li><a href="#sec-1.5.3">1.5.3 Ramma Strúktúr </a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Þráðlaus net - Nýjir Þráðlausir Netstaðlar </h2>
+<div class="outline-text-2" id="text-1">
+
+
+<ul>
+<li>
+nýjir þráðlausir net staðlar
+</li>
+<li>
+hvað á að fjalla um?
+</li>
+<li>
+Þróuninn í þráðlausum netstöðlum til og með 802.16, 4G, og 802.11n
+</li>
+<li>
+Samhengi varðandi þráðlaus net og þráðlausa net staðla.
+
+</li>
+</ul>
+
+</div>
+
+<div id="outline-container-1.1" class="outline-3">
+<h3 id="sec-1.1"><span class="section-number-3">1.1</span> Tilkoma Þráðlausa neta, og þráðlausranetstaðla </h3>
+<div class="outline-text-3" id="text-1.1">
+
+
+<p>
+Um leið og fartölvur komu á sjónarsviði, sáu margir fyrir sér þann draum að geta
+gengið inn á skrifstofu og fartalfan tengist sjálfkrafa við netið.  Lausnin á þessu
+fólst í því að tengja bæði útvarpsenda og mótakara við bæði fartölvurnar og við tölvu
+skrifstofunar.  Þetta leiddi til þess að fyrirtæki fóru að markaðsetja þráðlaus net,
+en hinsvegar varð til það vandamál að lausnirnar fyrir þrálausu netinn frá mismunandi
+fyritækjum voru ósamræmdar.
+Þetta leiddi á endanum til þess að IEEE var fengið til að búa til standard fyrir 
+þráðlaus net.  Þetta varð 802.11 standardinn eða WiFi.
+Standardinum var ætlað að virka í tveim hömum (modes).
+</p><ol>
+<li>
+m. basestation
+</li>
+<li>
+Peer to Peer
+
+</li>
+</ol>
+
+<p>Fig 1-35
+</p>
+<p>
+<img src="pictures/WEpBase1.png"  alt="pictures/WEpBase1.png" />
+</p>
+<p>
+þráðlausir netstaðlar tilheyra neðstu tveim lögum, yfirbyggingunar.
+</p>
+<p>
+<img src="pictures/Fig4-24.png"  alt="pictures/Fig4-24.png" />
+</p>
+<p>
+Skrautleg saga í kringum uppgötvun Frequency hopping tækninar.
+Hedy Lamarr og George Antheil sem var lagasmiður, hönnuðu aðferð
+sem notaði 88 tíðni, líkt og nótur á píanói, til að gera útvarpstýrð
+tundurskeyti ónæm fyrir Jamming.
+</p>
+<p>
+The frequency hopping pattern, (tíðnis hoppunar munstrið)
+er gjarnan ókunnugt þeim sem er ekki er ætlað að hlusta).
+</p>
+<p>
+<img src="pictures/Celebrity-Image-Hedy-Lamarr-232592.jpg"  alt="pictures/Celebrity-Image-Hedy-Lamarr-232592.jpg" />
+</p>
+
+</div>
+
+</div>
+
+<div id="outline-container-1.2" class="outline-3">
+<h3 id="sec-1.2"><span class="section-number-3">1.2</span> ISM böndinn </h3>
+<div class="outline-text-3" id="text-1.2">
+
+
+<p>
+Tíðni rafsegulgeislunar.
+</p>
+
+<p>
+<img src="pictures/Fig2-11.png"  alt="pictures/Fig2-11.png" />
+</p>
+<p>
+802.11 staðlarnir nota ISM böndin (Industrial Scientific Medical), og það eru
+takmarkanir sett á með hversu miklum krafti má senda út. e.g. 1 watt t.d. í B.N.A.
+</p>
+<p>
+ISM böndinn:
+</p>
+<p>
+<img src="pictures/ismBands.png"  alt="pictures/ismBands.png" />
+</p>
+<p>
+Samhengi á milli bandbreiddar og gagnamagns
+skv.
+Henry Nyquist, Claude Shannon
+</p>
+<p>
+Hámarks fræðl. fjölda bita á sekundu
+MAX(bps) = B log<sub>2</sub>(1+S/N).
+þ.s. B er bandvídd og S/N er hlutfall merkis og hávaða
+</p>
+<p>
+Ef við gefum okkur S/N sem circa 15 dB (eitthvað sem gæti talist týpískt fyrir þráðlaus net, þó í lægri kanntinum).
+heimild:<a href="http://www.wirelessforums.org/wireless-networking-discussion/signal-noise-ratio-5109.html">http://www.wirelessforums.org/wireless-networking-discussion/signal-noise-ratio-5109.html</a>
+þá fæst:
+</p>
+<p>
+104 Mbps, 334 Mbps, 500 Mbps.
+</p>
+<p>
+samtals tæpt Gbps úr þessum ISM böndum.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1.3" class="outline-3">
+<h3 id="sec-1.3"><span class="section-number-3">1.3</span> Yfirlit yfir Þráðlausanetstaðla </h3>
+<div class="outline-text-3" id="text-1.3">
+
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col align="left" /><col align="left" /><col align="left" /><col align="left" /><col align="left" /><col align="left" /><col align="left" />
+</colgroup>
+<thead>
+<tr><th scope="col">Netstaðall</th><th scope="col">tíðnisvið</th><th scope="col">Gagnahraði/bandvvídd</th><th scope="col">tækni og aðferðir</th><th scope="col">Langdrægni</th><th scope="col">kemur á markað</th><th scope="col">Athugasemdir</th></tr>
+</thead>
+<tbody>
+<tr><td>802.11b</td><td>2.4 GHz (2.412-2.472 GHz)</td><td>&lt;=  11 Mbps -&gt; 5-7</td><td>DSSS,CSMA/CA,CCK</td><td>30m(11 Mbps), 90m (1 Mbps)</td><td>1999</td><td>Útvíkkun á 802.11, kom á undan a</td></tr>
+<tr><td>802.11a</td><td>5 GHz (5.735 - 5.860 GHz)</td><td>&lt;=  54 Mbps -&gt; 6-20</td><td>52-rása OFDM</td><td>örlítið minni en b, og veikari fyri veggjum. o.s.f.v.</td><td>1999</td><td>5 GHz bandið er minna notað</td></tr>
+<tr><td>802.11g</td><td>2.4 GHz (2.412-2.472 GHz)</td><td>&lt;=  54 Mbps -&gt; 6-19</td><td>OFDM</td><td>32m ,   95m</td><td>2003</td><td></td></tr>
+<tr><td>802.11n</td><td>2.4 GHz og 5 GHz</td><td>54 - 600 Mbps-&gt; 140</td><td>MIMO, frame aggregation</td><td>mismunandi</td><td>2009</td><td>mimi notar mörg loftnet, ístað eins</td></tr>
+<tr><td>802.16</td><td>2 til 66 GHz, meira neðst</td><td>30-40 Mbps - 1Gbps</td><td>upp undir 2048rása OFDMA</td><td>16 km LOS</td><td>2009</td><td>stefnir í svipaða átt og 4G</td></tr>
+<tr><td>4G</td><td></td><td>100 Mbps</td><td></td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+
+
+
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1.4" class="outline-3">
+<h3 id="sec-1.4"><span class="section-number-3">1.4</span> tækni &amp; Aðferðir, á grunnlagi </h3>
+<div class="outline-text-3" id="text-1.4">
+
+
+
+</div>
+
+<div id="outline-container-1.4.1" class="outline-4">
+<h4 id="sec-1.4.1"><span class="section-number-4">1.4.1</span> DSSS </h4>
+<div class="outline-text-4" id="text-1.4.1">
+
+<p><a href="http://en.wikipedia.org/wiki/Direct-sequence_spread_spectrum">http://en.wikipedia.org/wiki/Direct-sequence_spread_spectrum</a>
+</p>
+<p>
+notar pseudonoise runu af "chips" sem eru minni en bitarnir og runan
+er líka kunnug mótakandanum.  -&gt; útkomann er merki sem líkist hvítum hávaða.
+<a href="http://en.wikipedia.org/wiki/White_noise">http://en.wikipedia.org/wiki/White_noise</a>
+</p>
+<p>
+enda útkoman er að bæta S/N hlutfallið
+því meiri chip á bita því betri, -&gt; efnisl. takmarkað
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1.4.2" class="outline-4">
+<h4 id="sec-1.4.2"><span class="section-number-4">1.4.2</span> CCK </h4>
+<div class="outline-text-4" id="text-1.4.2">
+
+<p><a href="http://en.wikipedia.org/wiki/Complementary_code_keying">http://en.wikipedia.org/wiki/Complementary_code_keying</a>
+notar eithv líkt Barker cóða til að búa til pseudoranom chip vessen,
+802.11b sendir 8 chippa tákn í QPSK, þ.s. hver chip er tvinntala í í 
+QPSK fylkinnu&hellip;
+</p></div>
+
+</div>
+
+<div id="outline-container-1.4.3" class="outline-4">
+<h4 id="sec-1.4.3"><span class="section-number-4">1.4.3</span> OFDM </h4>
+<div class="outline-text-4" id="text-1.4.3">
+
+<p><a href="http://en.wikipedia.org/wiki/Orthogonal_frequency-division_multiplexing">http://en.wikipedia.org/wiki/Orthogonal_frequency-division_multiplexing</a>
+</p>
+<p>
+Fjöldi nálægra mjóra bandbreiddarsneiðar bera með sér gögn.  Yfileit notar hver sneið QAM
+eða PSK.  Líkist hvítum hávaða.  Umframskilyrði að sneiðarnar eru "orthagonal" þ.a. það
+verður ekki "cross talk", - gefur góða nýtni á rafsegulsviði, m. tákna tíðni sem nálgast
+Nyquist tíðninni. 
+</p>
+<p>
+Notar FFT -Fast Fourier Transform - algorithman
+<a href="http://en.wikipedia.org/wiki/Fast_Fourier_Transform">http://en.wikipedia.org/wiki/Fast_Fourier_Transform</a> 
+</p><ul>
+<li id="sec-1.4.3.1">OFDMA <br/>
+<a href="http://en.wikipedia.org/wiki/OFDMA">http://en.wikipedia.org/wiki/OFDMA</a>
+
+</li>
+<li id="sec-1.4.3.2">Undirliggjandi fyrir 11a ofl. <br/>
+<a href="http://en.wikipedia.org/wiki/IEEE_802.11a-1999">http://en.wikipedia.org/wiki/IEEE_802.11a-1999</a>
+<ul>
+<li id="sec-1.4.3.2.1">BPSK <br/>
+<a href="http://en.wikipedia.org/wiki/Phase-shift_keying">http://en.wikipedia.org/wiki/Phase-shift_keying</a>
+BPSK (Bianary Phase Shift Keying) notar tvo fasa
+
+</li>
+<li id="sec-1.4.3.2.2">QPSK <br/>
+<a href="http://en.wikipedia.org/wiki/Phase-shift_keying">http://en.wikipedia.org/wiki/Phase-shift_keying</a>
+(Quadrature Phase Shift Keying) notar 4 fasa
+
+<p>
+<img src="pictures/QPSK.png"  alt="pictures/QPSK.png" />
+</p>
+
+<p>
+QAM
+<a href="http://en.wikipedia.org/wiki/Quadrature_amplitude_modulation">http://en.wikipedia.org/wiki/Quadrature_amplitude_modulation</a>
+tvær carrier sinus bylgjur 90° hvor við annara eru útslags moduleraðar
+til að ná fram samblöndu af phasa breytingu (PSK) og Útslagsbreytingu (ASK) 
+16-QAM, 32-QAM
+</p>
+<p>
+<a href="http://en.wikipedia.org/wiki/QAM">http://en.wikipedia.org/wiki/QAM</a>
+</p>
+
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-1.4.4" class="outline-4">
+<h4 id="sec-1.4.4"><span class="section-number-4">1.4.4</span> MIMO </h4>
+<div class="outline-text-4" id="text-1.4.4">
+
+<p>Smart Antenna technology,
+spatial multiplexing - patentað 1994.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1.4.5" class="outline-4">
+<h4 id="sec-1.4.5"><span class="section-number-4">1.4.5</span> SDM </h4>
+<div class="outline-text-4" id="text-1.4.5">
+
+<p>multi user mimo
+</p>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1.4.6" class="outline-4">
+<h4 id="sec-1.4.6"><span class="section-number-4">1.4.6</span> frame aggregation </h4>
+<div class="outline-text-4" id="text-1.4.6">
+
+<p><a href="http://en.wikipedia.org/wiki/Frame_aggregation">http://en.wikipedia.org/wiki/Frame_aggregation</a>
+</p>
+<p>
+margir rammar sameinaðir í stærri ramma =&gt; meiri "Throughput"
+</p>
+
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-1.5" class="outline-3">
+<h3 id="sec-1.5"><span class="section-number-3">1.5</span> MAC undirlags samskiptareglur/aðferðir 802.11 </h3>
+<div class="outline-text-3" id="text-1.5">
+
+<p>styður örryggis atriði einsog dulkóðun fram á data link laginu
+</p>
+
+</div>
+
+<div id="outline-container-1.5.1" class="outline-4">
+<h4 id="sec-1.5.1"><span class="section-number-4">1.5.1</span> CSMA/CA </h4>
+<div class="outline-text-4" id="text-1.5.1">
+
+<p>Carrier Sense Multiple Access with Collision Avoidance.
+</p>
+<p>
+Ólíkt og í Etherneti þá dugar ekki CSMA/CD vegna þess að merkið verður gjarnan
+of veikt þegar það kemur tilbaka til sendandan þ.a. ekki er hægt að reiða sig á að
+CD fari fram. 
+</p>
+<p>
+Reint er að ná fram CA með því að byrja á Random Backoff þegar stendur til að 
+senda ramma.  Þetta kerfi þarf einnig að reiða sig á Acknowledgement Ack, frá
+mótakandanum.  Ef Ack kemur ekki frá mótakara þá er því tekið sem svo að collision
+hafi átt sér stað og Backoff er stækað með veldisbundnum hætti upp að vissu marki.
+</p>
+
+</div>
+
+</div>
+
+<div id="outline-container-1.5.2" class="outline-4">
+<h4 id="sec-1.5.2"><span class="section-number-4">1.5.2</span> Virtual sensing </h4>
+<div class="outline-text-4" id="text-1.5.2">
+
+
+<p>
+Umfram efinislegs "sensing" fer fram "virtual sensing" þ.s. hver stöð heldur uppi
+bókhald um hvenær rás er í notkun með því að taka mið af NAV (Network Allocation Vector)
+sem er hluti af hverjum ramma sem tilkynnir áætlaðann tíma sem runan sem ramminn er hluti
+af á að taka í sendingu.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1.5.3" class="outline-4">
+<h4 id="sec-1.5.3"><span class="section-number-4">1.5.3</span> Ramma Strúktúr </h4>
+<div class="outline-text-4" id="text-1.5.3">
+
+
+<p>
+<img src="pictures/frameStructure.png"  alt="pictures/frameStructure.png" />
+</p>
+<p>
+Frekar involveraðar ítarlegar samskiptareglur, tög eru skilgreind (data,control,managment) og 
+undirtög, (t.d. RTS(Ready To Send) og CTS (Clear To Send)). Retry biti merkir hvort um sé að
+ræða aðra tilruan til sendingar. Duration svið fyrir NAV mekanismann o.s.f.v.
+</p></div>
+</div>
+</div>
+</div>
+<div id="postamble">
+<p class="author"> Author: bergurth
+<a href="mailto:bergurth@bergurth-Satellite-Pro-L300D">&lt;bergurth@bergurth-Satellite-Pro-L300D&gt;</a>
+</p>
+<p class="date"> Date: 2012-11-03 04:36:45 GMT</p>
+<p class="creator">HTML generated by org-mode 6.33x in emacs 23</p>
+</div>
+</div>
+</body>
+</html>
