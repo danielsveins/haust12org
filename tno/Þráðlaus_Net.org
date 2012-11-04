@@ -180,3 +180,11 @@ file:pictures/frameStructure.png
 Frekar involveraðar ítarlegar samskiptareglur, tög eru skilgreind (data,control,managment) og 
 undirtög, (t.d. RTS(Ready To Send) og CTS (Clear To Send)). Retry biti merkir hvort um sé að
 ræða aðra tilruan til sendingar. Duration svið fyrir NAV mekanismann o.s.f.v.
+
+
+** Heimildir
+
+
+Andrew S. Tanenbaum, David J. Wetherall /Computer Networks fifth ed./ New York Pearson 2011.
+
+ 
