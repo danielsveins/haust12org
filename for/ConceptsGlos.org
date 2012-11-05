@@ -1,6 +1,6 @@
 * Concepts in Programing Languages
 
-General Reading Place = 36
+General Reading Place = 36, 37
 
 ** Computer Architecture
 bls. 35
