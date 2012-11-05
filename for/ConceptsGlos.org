@@ -1,0 +1,8 @@
+* Concepts in Programing Languages
+
+General Reading Place = 36
+
+** Computer Architecture
+bls. 35
+
+Von Neuman Architecture

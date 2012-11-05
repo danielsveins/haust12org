@@ -1,0 +1,42 @@
+* Daematimi 5nov
+
+** laera straumadaemi, ódýrasta sem kemur á prófi segir dæakennari
+
+
+8
+
+[1,3,5, ...]
+
+(define (map-stream f x)
+     (cons-stream (f (stream-head(x))
+             (map-stream f (stream-tail x)))
+)
+define odds
+     (cons-stream 1 (map-stream
+             (lambda (x) (+ x 2)) odds)))
+
+** Ethv Morpho stuff
+
+[]
+
+add(pq,x)
+
+pq ->   > |x1| | ->|x2| |->
+- |y|/
+
+** Það sem eftir ef af námskeiði
+
+3 verkefni í einhverju utan Morpho
+
+
+** Einstaekl verkefni
+
+fromByTo(i,j,k)
+
+[i,j .. ..k]
+
+fromByTo[1,2,5]
+[1,2,3,4,5]
+
+fromByTO(1,4,8)
+[1,4,7]
