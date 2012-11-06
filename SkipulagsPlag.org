@@ -1,7 +1,7 @@
 * Skipulagsplagg Vor 2012
 
 ** Skóli
-*** Prepare new wireless network protocols presentation (1) -skil 3/11/12
+*** [done] Prepare new wireless network protocols presentation (1) -skil 3/11/12
 it is now the 25th which leaves, 9 days preperation for presentation, 
 the actual writing should begin no later than the 29th leaving 5 days 
 of easygoing reading and preperation until then.
@@ -9,10 +9,10 @@ file:tno/WirlesNetwProtocols.org
 
 
 
-*** Verkefnastjverkefni  (1)                                -skil 29/10/12
+*** [done] Verkefnastjverkefni  (1)                                -skil 29/10/12
 file:ver/Verkefni3/GlsV3.org
 
-*** Forritunarmal-v9     (1-3)                              -skil 29/10/12
+*** [over] Forritunarmal-v9     (1-3)                              -skil 29/10/12
 
 ** Projects
 NandtoTetris 3 project  (3)
@@ -20,7 +20,7 @@ perfect Mobius mimp project (4)
 improve student home page (4)
 
 ** Other 
- Banki redda námsláni (1)
+ Banki redda námsláni (1)     [done]
  Skattkort í skolann, redda launum (2)
  redda launum frá Nordica + redda vinnu (2)
 
