@@ -1,6 +1,20 @@
 * Concepts in Programing Languages
 
-General Reading Place = 36, 37
+General Reading Place = 36, 37,38
+
+** Námsfókus
+
+*** Hugtök sem dæmakennari mælti með
+**** activation record
+
+**** access link
+
+**** block structured programing languages
+
+**** closures
+
+**** streams
+pott þétt eitt dæmi á prófi stútað ef þetta er á hreinu
 
 ** Computer Architecture
 bls. 35
