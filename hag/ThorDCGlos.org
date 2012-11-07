@@ -7,7 +7,7 @@ Setup 299 €
 Monthly fee 125 €
 - 250W power supply
 Rack in 3 T enviroment, 1 rack unit, (1U), power included 
-
+verd circa:
 
 *** ALL
 
@@ -60,6 +60,8 @@ Setup 299 €
 Monthly fee 155 €
 - Redundant 80+ Silver 350W power supply
 Rack in 3 T enviroment, 1 rack unit, (1U), power included 
+grunn verd: 999 $
+http://www.dell.com/us/business/p/poweredge-r320/pd?refid=poweredge-r320&baynote_bnrank=0&baynote_irrank=0&~ck=baynoteSearch&isredir=true
 
 
 *** all
@@ -114,7 +116,8 @@ Setup 299 €
 Monthly fee 250 €
 - Redundant 80+ Platinium 550W power supply
 Rack in 3 T enviroment, 1 rack unit, (1U), power included 
-
+grunn verd: 1149 $
+http://www.dell.com/us/business/p/poweredge-r420/pd?refid=poweredge-r420&baynote_bnrank=0&baynote_irrank=0&~ck=baynoteSearch&isredir=true
 
 *** all
 
@@ -168,7 +171,8 @@ Setup 299 €
 Monthly fee 290 €
 - Redundant 80+ Platinium 550W power supply
 Rack in 3 T enviroment, 1 rack unit, (2U), power included 
-
+grunn verð: 1199 $
+http://www.dell.com/us/business/p/poweredge-r520/pd?refid=poweredge-r520&baynote_bnrank=0&baynote_irrank=0&~ck=baynoteSearch&isredir=true
 
 *** ALL
 
@@ -223,7 +227,8 @@ Setup 299 €
 Monthly fee 315 €
 - Redundant 80+ Platinium 750W power supply
 Rack in 3 T enviroment, 1 rack unit, (1U), power included 
-
+grunn verd: 1599 $
+http://www.dell.com/us/business/p/poweredge-r620/pd?refid=poweredge-r620&baynote_bnrank=0&baynote_irrank=0&~ck=baynoteSearch&isredir=true
 
 *** ALL
 
@@ -278,7 +283,8 @@ Setup 299 €
 Monthly fee 380 €
 - Redundant 80+ Platinium 550W power supply
 Rack in 3 T enviroment, 1 rack unit, (2U), power included 
-
+grun verd: 1549 $
+http://www.dell.com/us/business/p/poweredge-r720/pd?refid=poweredge-r720&baynote_bnrank=1&baynote_irrank=0&~ck=baynoteSearch&isredir=true
 
 
 *** all
