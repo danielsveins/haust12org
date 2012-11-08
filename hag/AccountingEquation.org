@@ -1,0 +1,4 @@
+* Accounting Equation
+http://en.wikipedia.org/wiki/Accounting_equation
+Assets = Liabilities + Capital
+

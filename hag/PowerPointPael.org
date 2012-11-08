@@ -1,0 +1,72 @@
+* Gagnaver á Íslandi
+-Græn Gagnaver í grend við Grænland
+-hópmeðlimir
+
+
+** Útskýring
+útskýra gagnaver
+
+
+*** -> tegundin sem við ákváðum að fókusa á
+    co-location ?
+       <) ->  deadicated servers. -> tileinkaðir þjónar.
+    má bíða til seinni -> útfærslu lið
+   
+** Vandamál sem þarf að leysa
+
+kostir og gallar ræddir í s.mb. við neðangreinda liði
+*** orkunotkun
+    kæling
+    rafmagn
+**** okkar utfrsla
+3.2 Mw í heildinna m. kælingum
+2 Mw rafmagn í tæki
+*** Tenging við umheiminn.
+**** Cantat-3
+2.5Gb/s
+**** Danice
+4x128X10Gb/s
+=5,12Tb/s
+**** Farice
+2X36X10Gb/s
+=720Gb/s
+**** GreenLand Connect
+2X96X10Gb/s
+=1,92Tb,s
+
+**** Hugsl seinnipart 2013 Emerald Express
+4x100X100Gb/s
+=40Tb/s
+
+**** Russian Optical Trans Arctic Cable System ROTACS
+
+*** Starfsfólk
+
+*** Aðgengi að gagnaverinu
+
+
+** Okkar Uppsetning, möguleg fjárfesting, og fýsileiki/arðsemi
+-einn hugsnl útfærslu mögleiki skoðaður-með mögulegri atburðarás
+
+kynning á stofnkostn o.s.f.v.
+-áætlaður rekstrareikningur
+-áætlað sjóðstreymi.
+
+
+** stuff eftir
+
+-Verðmat
+  núvirða sjóðstreymi.
+  ávöxtunarkrafa
+-heimildaskrá
+
+
+lan 1.67 milj.
+
+1,67*10^9 kr.
+
+
+eignir = owners equity
+http://is.wikipedia.org/wiki/Eigi%C3%B0_f%C3%A9
+eignir = skuldir + eigið fé
+eigið fé = eignir - skuldir
