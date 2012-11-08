@@ -7,6 +7,10 @@ General Reading Place = 36, 37,38
 *** Hugtök sem dæmakennari mælti með
 **** activation record
 
+***** Call stack
+http://en.wikipedia.org/wiki/Call_stack
+
+
 **** access link
 
 **** block structured programing languages

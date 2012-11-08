@@ -1,0 +1,17 @@
+* Android GPS glósur
+athugasemd-það væri best að vera með síma til þess að testa gps stuffið, 
+bara til þess að skilja hvernig það virkar. Bara t.d. fyrir þetta einfalda sýni 
+dæmi sem fylgir hér í android-gps-example.
+ 
+** android-gps-example
+heimild:
+http://hejp.co.uk/android/android-gps-example/
+hér er notað librarys:
+Location
+LocationListener
+LocationManager
+LocationProvider
+
+á meðal annara.
+
+-> Það er líka spursmál með /Location Provider/
