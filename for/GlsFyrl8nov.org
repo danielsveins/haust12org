@@ -1,0 +1,191 @@
+* Glsr Fyrl 8 nov Forritunarmal
+fjallað hefur verið um ruslasöfnun..
+gc.pdf
+
+Generation Scavenging
+fastráðnir hlutir -> (tenure)
+
+tvær kassir (stac) í gangi fyrir ruslasöfnun einhverja hlutana vegna ..
+
+ekki spurt um generational kassir og ruslasöfnun á prófi. .. en eithv. allv um ruslasöfnun.
+
+vindum okkur yfir í Haskell,
+
+nýja við Haskel er löt gildun út í gegn
+** Haskell
+ken. mælir með að við sækjum Glasgow Haskell, tilv. -> á vikublaði.
+
+*** tryhaskell.org
+
+>1+2
+ -> 3
+
+> let f n = if n==0 then 1 else n*f(n-1) in f 10
+ => 3628800
+
+[1..10]
+=> [1,2,3,4  ...
+
+>[1,3..100]
+=>
+[1,3,5,7,9,11, ...  97,99]
+
+
+*** afrm úr vikublaði
+
+hægt að setja forrit í skrá og lesa in í haskel.
+
+and :: [Bool] -> Bool
+and :: [] = True
+and :: (True : xs) = and xs
+and (False : xs) = False
+
+or :: [Bool] -> Bool
+or [] = False
+or (True : xs) = True
+or (False : xs) = or xs
+
+fib11 :: [Integer]
+fib1 =
+  [1,1]  ++ map (/(a,b)->a+b) (zip fib1 (tail fib1))
+fib2 :: [Integer]
+fib2 = [1,1] ++ zipWith (+) fib2 (tail fib2)
+
+
+"" ++ er samskeytingaraðgerð í lista
+
+*** meira TryHaskel
+
+""zipWith er sama og streamBionop
+
+>let fibo = [1,1]++zipWith (+) fibo (tail fibo) in take 10 fibo
+=> [1,1,2,3,5,8,13,21,34,55]
+
+>fold (+) 0 [1..100]
+=>5050
+
+>foldr (*) a [1..100]
+
+
+*** "" það má passa sig svoldið á þessari lötu gildun
+Snorri lenti í vessenni þegar hann reindi einusinni að útfæra halaendurkvæmni í Haskel
+því í tilvikinu sem er á vikublaði .. sum f n = .. eithv
+
+reikanaði haskel ekki úr fyrri liðinum og bjó til endalausa segð
+í stað þess að skila tölu áfram í næstu ítrun í halaendurkvæmninni einsog kannski scheme mundi gera við
+svipaðar aðstæður.
+*** meira úr vikublaði
+
+[i..]   '' óendanl listi
+
+-> tryhask
+
+>[x^2|x<-[1..10]]
+=> [1,4,9,..]
+
+'' fallsforitun nirí járninnu..
+
+> [x^2|x<-[1..]]
+... er hægt
+
+"" listinn af pythagorasar þrendum
+a^2+b^2=z^2
+
+vikubl.
+
+[(x,y,z) | x<-[1..], y<-[1..], z<-[1..], x^2+y^2==z^2]
+
+vandamálið hér verður innsta lykkjan sem klárast aldrei, þ.a. útúr þessu kemur ekki neit.
+
+[(x,y,z)|x<-[2..],
+         y<-[1..(x-1)],
+         let z=floor $ sqrt $ fromIntegral (x^2+y^2),
+         x^2+y^2==z^2
+         (gcd (gcd x y) z)==1
+]
+
+'' $ er f ° g aðgerðin.
+
+f g x   = (f g) x  /= f(g x) = f $ g x
+
+þ.a. 
+
+floor(sqrt (fromIntegral (. .n)))
+
+fromIntegral breytir heiltölu yfir í eithvað viðeigandi -> er fleira en eitt fall
+þetta er óverloading í Haskel, það má vera sama nafn á mörgum föllum í Haskel ef að 
+töginn greina á milli fallanna.
+
+
+*** 3 atriði
+framleiðendur (generators)
+
+skilgreining á breytum
+
+síur (filters)
+
+*** meira stff
+
+riháttur er mikilv ´i forritunarmálum
+java óþægil. í þessu samhengi ...
+C# er betri í þessum skilningi -> minni Þrjóska
+en ekkert meira eða nýtt "afl" í sjálfum sér..
+
+
+Haskel á að vera hreint Fallsforritunarmál-
+
+
+...
+
+map (\x->x^2) [1..10]
+=
+concatMap (\x->[x^2]) [1..10]
+
+conCatMap pælingar m. a,b,c og 1,2,3 pælingar á vikubl.
+
+til að skilja concatMap ..  -> skeytir listonum samann
+
+...
+
+listi allra prímtalna
+primes = 2:3:[p|p<-[5,7..], isPrime (tail primes
+
+isPrime (prime:plist)num =
+        if prime*prime > num
+        then
+             True
+        else
+             if (mod num prime)==0
+             then
+                  False
+             else
+                    .... vikubl.
+
+
+
+*** 4.2 Pyt threns
+
+þarf að setja mögl path á compilerinn til að þýða
+
+til að búa til exe skrá... eða .. eithv.
+
+*** 4.3 Taylor Raðir
+en einfaldari að skilg. Taylor-Raðir í Haskell
+"" aldrei reiknað úr halanum nema þörf krefur í haskel, smbr. leti
+"" þ.a. ekki þarf að gera neinar sérstakar ráðstafanir í TaylorIntegrate til að
+"" Haskel reikni ekki úr halanum. - > sem er þægil. fyrir okkur
+
+TryH
+
+> let Myif c t e = if c then t else e in myif (1==2) (1/0) 1
+=>1.0
+
+
+"" foldl er sma og itlist
+"" foldr reiknað frá hægri til vinstri.
+
+yfileit viltu nota foldl þ.s. um gæti verið að ræða óendanle lista og líka mögl. út frá svona
+halaendurkvmns. pælingum.
+
+
+       

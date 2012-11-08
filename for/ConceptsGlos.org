@@ -10,6 +10,12 @@ General Reading Place = 36, 37,38
 ***** Call stack
 http://en.wikipedia.org/wiki/Call_stack
 
+"the stack" means implicitly "the callstack of the thread or task in question"
+interesting sidetrack->
+                         fourth
+http://en.wikipedia.org/wiki/Forth_programming_language
+
+
 
 **** access link
 
