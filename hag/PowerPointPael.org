@@ -58,9 +58,37 @@ kynning á stofnkostn o.s.f.v.
 -Verðmat
   núvirða sjóðstreymi.
   ávöxtunarkrafa
--heimildaskrá
+*** -heimildaskrá
+
+**** -B.A. ritgerð
+http://www.google.is/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&ved=0CBwQFjAA&url=http%3A%2F%2Fskemman.is%2Fstream%2Fget%2F1946%2F9758%2F24642%2F1%2FBS_Unnur_Sigur%25C3%25B0ard%25C3%25B3ttir_Gagnaver.pdf&ei=UECcUNa5OOim4gSVzYDQAg&usg=AFQjCNFqHXDMibUlOmQ5JB9g79Yc2_6SOQ
+
+**** -P.W.C. skýrsla   
+-->  Benchmarking Study on Iceland as a Location for data center Activity
+MAY 2007 Invest in Iceland agency
+
+Contacts
+PricewaterhouseCoopers Enterprise Advisory
+Woluwe Garden
+Woluwedal 18
+B-1932 Sint-Stevens-Woluwe
+Belgium
+Key contact
+Jan Desmaretz
+Tel     +32 (0)3 259 3390
+jan.desmaretz@be.pwc.com
 
 
+**** -Securitas
+
+**** -Del síða
+http://www.dell.com/
+**** -Advania
+http://www.advania.is/um-advania/
+
+-Green Cloud
+
+*** random paels
 lan 1.67 milj.
 
 1,67*10^9 kr.

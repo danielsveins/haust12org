@@ -2,3 +2,19 @@
 http://en.wikipedia.org/wiki/Accounting_equation
 Assets = Liabilities + Capital
 
+balance sheet = efnahagsreikningur
+
+income statement = rekstrarreikningur
+
+** Depreciation - Afskriftir og Efnahagsreikningur - balance sheet
+
+Since the original cost of a long-lived asset should always be readily identifiable, a different type of 
+balance-sheet account, called a contra-asset account, is used to record depreciation expense. Increases 
+and normal balances appear on the credit side of a contraasset account. The net book value of long-lived 
+assets is found by subtracting the contra-asset account's credit balance from the corresponding asset 
+account's debit balance. Do not confuse book value with market value. Book value is the portion of the 
+asset's cost that has not been written off to expense. Market value is the price some-one would pay for 
+the asset. These two values are usually different. 
+
+** Double Entry Bookkeeping
+http://en.wikipedia.org/wiki/Double-entry_bookkeeping_system
