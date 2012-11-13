@@ -1,0 +1,153 @@
+* Heimaverkefni 10 Hagverkfræði
+
+** 1
+verðmeta sjávarútvegsfyrirtæki út frá upplausnarvirði.
+
+
+Skip bókfært á    50.000.000 - söluverð = 67.000.000
+
+óefnislegar eignir metnar á   21.000.000
+
+handbært fé upp á            3.700.000
+
+
+Hvert er upplausnarverðmæti fyrirtækisins skv. þessum upplýsingum ?
+
+Við matá upplausnarvirði er metið virði eigna og skulda fyrirtækis og
+fæst þáút virði eiginfjár
+
+Hugsunin í raunþessi -Hvað situr eftir handa hluthöfum ef allar eignir
+eru seldar og allar skuldir gerðar upp.
+
+Allar stærðir metnar á markaðsvirði semgetur verið frábrugðið bókfærðu
+virði.
+
+
+
+Upplausnarverðmæti fyritækisins virðist vera .. 67.000.000 + 3.700.000 = 70.700.000
+ að því gefnu að það eru eingar skuldir sem hvíla á fyrirtækinnu.
+
+** 2
+
+árlegar tekjur = 60
+árleg gjöld = 30
+árl afskriftir = 20
+
+15% skattprósenta
+
+
+
+Hagnaður = ( 60 - 30 -20  ) * (1 - 0.15 ) = 8.5
+fyrir ár 1 og 2
+en fyrir ár 3
+ 
+Hagnaður = ( 65 - 30 - 20 ) * (1 - 0.15) = 12.75
+
+
+
+| sjóðstreymi            | ár 1 | ár 2 |  ár 3 |
+|------------------------+------+------+-------|
+| Hagnaður               |  8.5 |  8.5 | 12.75 |
+| Afskriftir             |   20 |   20 |    20 |
+| Veltufé frá rekstri    | 28.5 | 28.5 | 32.75 |
+| Breyting á handbæru fé | 28.5 | 28.5 | 32.75 | 
+
+Innri Vextir (IRR):
+
+   60 = 28.5/(1+r) + 28.5/(1+r)^2 + 32.75/(1+r)^3
+
+
+                     r = 22.58%
+
+
+Hreint núvirði miðað við 13% ávöxtunarkröfu er:
+
+   NPV = 28.5/1.13 + 28.5/1.13^2 + 32.75/1.13^3 - 60 = 10.24
+
+  
+
+
+** 3
+
+
+stofnað árið 2003 
+
+stofnkostn:
+
+framleiðsluvél     105.000.000 -> keypt í lok árs 2003 -> afskriftir 35.000.000 á ári
+
+eignfærður þróunarkostn árið 2003 var 15.000.000
+
+alm rekstrarkostn = 18.000.000
+
+eignir afsk á 3 árum..
+
+63.000.000 hlutafjár
+75.000.000 lán  - 10% vextir
+höfuðstóll greiddur up í lok ársins 2006
+
+gjöld =  54 + 47 + 31 = 132  
+
+
+| Efnahagsreikningur |  2003 |  2004 |  2005 |  2006 |
+|--------------------+-------+-------+-------+-------|
+| Veltufjármunir     |       |       |       |       |
+| Handb. fé          |   0.0 |  64.4 | 128.8 | 118.2 |
+| Fastafjármunir     |       |       |       |       |
+| Vél                | 105.0 |  70.0 |  35.0 |   0.0 |
+| Óefnislegar eignir |       |       |       |       |
+| Þróunarverkefni    |  15.0 |  10.0 |   5.0 |   0.0 |
+|--------------------+-------+-------+-------+-------|
+| Eignir samtals:    | 120.0 | 144.4 | 168.8 | 118.2 |
+|--------------------+-------+-------+-------+-------|
+| Langtímaskuldir    |       |       |       |       |
+| Lán                |  75.0 |  75.0 |  75.0 |   0.0 |
+| Eigið fé           |       |       |       |       |
+| Hlutafé            |  63.0 |  63.0 |  63.0 |  63.0 |
+| Óráðstafað egiðfé  | -18.0 |   6.4 |  30.8 |  55.2 |
+|--------------------+-------+-------+-------+-------|
+| Skuldir + Eigið fé | 120.0 | 144.4 | 168.8 | 118.2 |
+
+
+| Rekstrareikningur    |  2003 |   2004 |   2005 |   2006 |
+|----------------------+-------+--------+--------+--------|
+| Tekjur               |   0.0 |  210.0 |  210.0 |  210.0 |
+| Gjöld                | -18.0 | -132.0 | -132.0 | -132.0 |
+| Afskriftir           |   0.0 |  -40.0 |  -40.0 |  -40.0 |
+|----------------------+-------+--------+--------+--------|
+| EBIT                 | -18.0 |   38.0 |   38.0 |   38.0 |
+| Vextir               |   0.0 |   -7.5 |   -7.5 |   -7.5 |
+|----------------------+-------+--------+--------+--------|
+| EBT                  | -18.0 |   30.5 |   30.5 |   30.5 |
+|----------------------+-------+--------+--------+--------|
+| skattur (20%)        |   0.0 |   -6.1 |   -6.1 |   -6.1 |
+|----------------------+-------+--------+--------+--------|
+| Hagnaður eftir skatt | -18.0 |   24.4 |   24.4 | 24.4   |
+
+
+| Sjóðstreymi               |   2003 | 2004 |  2005 |  2006 |
+|---------------------------+--------+------+-------+-------|
+| Hagnaður                  |  -18.0 | 24.4 |  24.4 |  24.4 |
+| Afskriftir                |    0.0 | 40.0 |  40.0 |  40.0 |
+| Þróunrkostnaður bókfærður |  -15.0 |  0.0 |   0.0 |   0.0 |
+|---------------------------+--------+------+-------+-------|
+| Veltufé frá rekstri       |  -33.0 | 64.4 |  64.4 |  64.4 |
+| Breyting á birgðum        |    0.0 |  0.0 |   0.0 |   0.0 |
+|---------------------------+--------+------+-------+-------|
+| Handbært fé frá rekstri   |  -33.0 | 64.4 |  64.4 |  64.4 |
+|---------------------------+--------+------+-------+-------|
+| Kaup á vél                | -105.0 |  0.0 |   0.0 |   0.0 |
+| Lán                       |   75.0 |  0.0 |   0.0 |   0.0 |
+| Br. á hlutafé             |   63.0 |  0.0 |   0.0 |   0.0 |
+| Afborgun láns             |    0.0 |  0.0 |   0.0 | -75.0 |
+|---------------------------+--------+------+-------+-------|
+| Breyting á handbæru fé    |    0.0 | 64.4 |  64.4 | -10.6 |
+|---------------------------+--------+------+-------+-------|
+| Handbært fé áður          |    0.0 |  0.0 |  64.4 | 128.8 |
+|---------------------------+--------+------+-------+-------|
+| Handbært fé eftir         |    0.0 | 64.4 | 128.8 | 118.2 |
+
+
+
+
+

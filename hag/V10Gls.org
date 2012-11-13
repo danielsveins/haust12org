@@ -1,0 +1,150 @@
+* Verkefni 10 hagverkfr. glósur
+
+** hugtök
+
+*** DCF Discounted Cashflow
+
+Núvirt sjóðstreymi (DCF=Discounted CAshflow) er:
+DCF=/SUM_{0,n}/fract{CF_{i}}{(1+r)^i}
+
+séu greiðslur fastar og greiðsluröðin óendanleg þá verður formúlan:
+
+DCF = CF / r
+
+vaxi greiðslur föstum (línulegum) vexti milli tímabila þá gildir að:
+
+DCF = [CF_{0} * (1+g)]/(r-g)
+
+þar sem g = framtíðarvöxtur
+Nefnist þessi formúla Gordon's formúla
+**** Gordon's formula
+http://en.wikipedia.org/wiki/Dividend_discount_model
+
+
+**** Dæmi
+Frjálst fjárflæði 100 kr. pr. ár um all aframtíð
+ávöxtunarkrafa 10%
+
+   Verðmæti = 100/10% = 1000
+
+----dæmi 2 vaxandi fjárstreymi
+
+Frjálst fjárflæði 100 kr. á þessu ári
+
+Ávöxtunarkrafa 10%
+
+Vöxtur fjárflæðis 5% á ári
+
+  Verðmæti = 100*(1+5%)/(10%-5%)
+           = 2.100
+
+
+*** Frjálst Sjóðflæði 2-aðferðir
+
+**** 1 - bls. 23 glærur
+Hagnaður af reglulegri starfsemi
++ afskriftir
+- breytingar á rekstrartengdum eignum og skuldum
+- fjárfestingar
++ Br. á langtímalánum
+= Frjálst sjóðsflæði til hluthafa
+
+Núvirt með ávöxtunarkröfu á eigið fé
+
+**** 2 - bls. 24 glærur
+
+Hagnaður fyrir fjármagnsliði
+- Reiknaðir skattar
+= NOPLAT (Net opperating profit/loss after taxes)
++ afskriftir
+- breytingar á rekstrartengdum eignum og skuldum
+- fjárfestingar
+= Frjálst sjóðsflæði til fjármagnseigenda
+
+Núvirt með WACC
+
+
+*** WACC
+WACC = vegin meðalkostnaður fjármagns (e, weighted average cost of capital)
+
+http://en.wikipedia.org/wiki/Weighted_average_cost_of_capital
+
+
+WACC = lánsfjárhlutfall * vextir af lánsfé * (1-skattur)+(1-lánsfjárhlutfall)*ávöxtunarkrafa á eigið fé
+
+-Dæmi:
+
+  lánsfjárhlutfall = 60%
+  Vextir af lánsfé = 10%
+  ávöxtunarkrafa á eigið fé = 15%
+  skattar = 30%
+  WACC = 60%*10%*(1-30%)+40%*15%=10,2%
+
+miða skal við markaðsverð eiginfjár þegar lánsfjárhlutfall er metið
+
+
+
+*** frjálst sjóðflæði
+
+Frjáls sjóðflæði til fjármagnseigenda
+- Hreinar vaxtaberandi skuldir
+= Frálst sjóðflæði til hluthafa
+
+
+** hugtök 2
+
+*** Veltufjárhlutfall
+- Quick (acid) test
+ Skammtímaeign.-birgðir/skammtímaskuldir
+
+- Veltufjárhlutfall
+
+  - Veltufjármunir/skammtímaskuldir
+
+*** Skuldahlutfall
+
+ Heildarskuldir/heildareignum
+
+*** Vaxtaþekja
+
+ EBIT/Vaxtagjöld
+
+*** skuldaþekja 
+  Veltufé frá rekstri/ Næsta árs afborgun langtímalána
+
+*** ROIC Heildararðsemi fjármagns
+  (Hagnaður + vextir)/ Heildarfjármagn
+
+Return On Invested Capital
+http://www.investopedia.com/terms/r/returnoninvestmentcapital.asp
+
+
+*** Arðsemi eiginfjár (ROE)
+    
+    Hagnaður/EF
+
+væntanlega EF = eigin fjár
+Return On Equity
+http://www.investopedia.com/terms/r/returnonequity.asp#axzz2C3uL8vw0
+
+
+
+*** Upplausnarvirði
+
+Við mat á upplausnarvirði er metið virði eigna og skulda fyrirtækis og 
+fæst þá út virði eiginfjár
+
+Hugsunin í raun þessi - Hvað situr eftir handa hluthöfum ef allar eignir
+eru seldar og allar skuldir gerðar upp.
+
+Allar stærðir metnar á markaðsvirði sem getur verið frábrugðið bókfærðu
+virði.
+
+
+
+*** EVA  Economic Value Added
+
+EVA = Hagnaður e. skatta - (WACC e. skatta * (Heildareignir-Skammtímaskuldir))
+
+tæki til ða meta hvoert frekari fjárfesting borgi sig
+
