@@ -1,0 +1,159 @@
+* Gósur úr fyrirlestri í hagverkfræði Wed Nov 14 09:04:26 GMT 2012
+
+
+
+** Áxöxtun og Áhætta
+
+Oft höfum  við ákv. fjármuni til að leggja í eina eða fleiri fjárfestingar, þ.e. þurfum að velja úr
+safni verkefna.
+Við vljum að safnið gefi hæsta ávöxtun/arðsemi en við þurfum líka að spá í áhættu,
+Aðferðafræðinn gengur út á að velja n verkefni x_{1}, x_{2},....,x_{n} þ.s. hvert verkefni hækkar eða
+lækkar í virði í framtíðinni.
+
+Vitum að ávöxtun hvers verkefnis er háð E-i líkindadreifingu /markmiðið/ er að búa til safn verkefna með 
+sem hæsta vænta ávöxtun m.v. ækv. áhættu
+Safn verkefna s=w_{1}*x_{1}+w_{2}*x_{2}+...+w_{n}*x_{n}
+þ.s. w_{i} er hlutfall upphæðar sem við leggjum í verkefni i
+verkefnið er tvíþætt
+
+/ÁVÖXTUN/:
+
+metum ávöxtun a= (P_{1} - P_{0})/P_{0}
+þ.s.   P_{1} : virði í framtíð
+       P_{0}:  virði í dag
+
+a er háð e-i líkindareikningi
+
+Horfum því til væntar ávöxtunar þ.s. væntigildi ávöxtunar (expected value) a
+er E[a] = 'a
+áhættuna mælum við með dreifni eða staðalfráviki
+Dreifni:  sigma^2=V[a] = E[(a-'a)^2]
+verkefnið er að hámarka ávöxtun og lágmarka áhættu fyrir safnið
+max:  E[s]=E[w_{1}*x_{1}+w_{2}*x_{2}+...+w_{n}*x_{n}]
+þ.s.  V[s]=sigma^2
+og w_{i} >= 0 og /SUM i til n w_{i} = 1
+þ.s. n er fjöldi fjárfestinga                         / Ath w er eins og sjóðurinn sem er verið að ávaxta. þ.e. w-i er hlutfall af sjóðsheildinni
+nokkrir eiginleikar vænts gildis og dreifni
+1) Ef y og z eru tilviljanabreytur þá gildir:
+E[alpha*y+beta*z] = E[alpha*y] + E[beta*z] = alphaE[y] + beta*E[z]
+alpha og bera  er í rauntölum
+t.d. gildir fyrir ávöxtun safns
+w_{1}*x_{1}+w_{2}*x_{2}}+ ..  að
+..
+
+E[w_{1}*x_{1}+ ..]=w_{1}*E[x_{1}]...
+2)
+V[b]=0 þ.s. b er almenn breyta, þ.e. ekki tilviljannabreyta
+3)
+V[x+b]=V[x]
+4)
+V[b*x]=b^2 *V[x]
+/SAMDREIFNI/
+V[x+x]=V[2*x]=2^2 *V[x]=4V[x]
+ekki = V[x] + V[x]
+
+COV[x_{1},x_{2}] = sigma_{1,2} = E[(x_{1} - 'x_{1})*(x_{2} - 'x_{2})]
+sem metur hversu háðar breyturnar eru hvor annari Ef sigma_{1,2} = 0
+er sagt að tilviljanarbreyturnar séu óháðar
+Ef sigma_{1,2} > 0  þá eru breyturnar jákvætt háðar
+annars neikvætt háðar.
+
+
+
+Fylgni Stuðull  Sigma_{1,2} = sigma_{1,2}/sigma_{1} * sigma_{2}  : Correlation Coefficient
+
+V[x_{1} + x_{2}] = V[x_{1}] + V[x_{2}] + 2 * COV[x_{1};x_{2}]
+Almennt Gildir:
+V[summa 1->n x_{i}] = V[x_{1}+x_{2}+...+x_{n}]
+
+=  Summa i,j=1 -> n    sigma_{i,j}    þ.s.
+
+  sigma_{i,j} = sigma_{i}^2 = V[x_{i}] fyrir i=j
+  sigma_{i,j} = COV[x_{i};x_{j}] fyrir i ekki = j
+
+
+/SAMDREIFNI SAFNS/
+
+ S = w_{1}*x_{1} + w_{2}*x_{2}
+                                      =   V[w_{1}x_{1} + x_{2}x_{2}]
+
+DREIFNI:
+
+     V[S] = V[w_{1}*x_{1}] + V[w_{2}*x_{2}] + 2 COV[w_{1}*x_{1};w_{2}*x_{2}]
+= w_{1}^2*V[x_{1}]+w_{2}^2V[x_{2}]+2*w_{1}*w_{2}
+
+
+
+á fylkjaformi er rithátturinn
+
+
+w=
+
+|w-1|
+|w-2|
+|.  |
+|.  |
+|.  |
+|w-n|
+
+
+
+
+C =   
+
+| sigmma_{1}^2 | sigma_{1,2} | . . . | sigma_{1,n} |
+|--------------+-------------+-------+-------------|
+| sigma_{2,1}  | sigma_{2}^2 | . . . |             |
+|              |             |       |             |
+
+
+Samdreifn er lykilatriði
+hugsum okkur safn þ.s. öll verkefni hafa vænta æavöxtun í, staðalfrávik sigma og eru öll
+óháð hver öðru
+þ.e. væntigildið: E[S] = E[w_{1}x_{1} + w_{2}x_{2}+ ... + w_{n}x_{n}]
+en þetta er vænt ávöxtun safns
+
+skiptum fjárfestingunni jafnt milli allra verkefna
+þ.e.   w_{1} = w_{2} = .... = w_{n} = 1/n
+
+E[S] = 1/n * r + 1/n * r + .... + 1/n * r = n/n * r = r 
+semm er heildarávöxtun safns
+Hver er þá áhætta safnsins?
+V[S] = V[w_{1}*x_{1} + w_{2}*x_{2} + .. . + w_{n}*x_{n}]
+     = w_{1}^2*V[x_{1}] + w_{2}^2*V[x_{2}]+ ...+ w_{n}^2*V[x_{n}] + 0  <-- þ.s. öll verkefninn eru óháð
+
+= 1/n^2 * sigma^2 + 1/n^2 * sigma^2 + . . . + 1/n^2 * sigma^2 = n * 1/n^2 * sigma^2 = sigma^2/n
+
+ 
+
+þegar n -> inf
+
+=> lim n-> inf V[S] = lim n->inf sigma^2/n = 0 => dreifni og eða áhætta = 0
+
+
+í raunveruleikanum er alltaf einhver fylgni til staðar.
+
+V[S] = V[w_{1}*x_{1} + w_{2} * x_{2} + . . . + w_{n} * x_{n}]
+     =  sum_{i,j=1 -> n}   sigma_{i,j} * w_{i} * w_{j}
+
+
+** Dæmi
+
+2 fjárfestingar með
+F_{1} = 0.12 vænt meðalávöxtun
+F_{2} = 0.15 vænt meðalávöxtun
+sigma_{1} = 0.2   staðalfrávik
+sigma_{2} = 0.18
+sigma_{1,2} 0.01 <-- COV[F_{1};F_{2}]
+
+fjárfesting w_{1}=0.25 og w_{2} = 0.75
+
+meðalávöxtur
+F =    0.25   * 0.12   +  0.75 *  0.15  =  0.1425
+      w_{1}     F_{1}     w_{2}   F_{2}
+
+áhætta metin með staðalfráviki
+
+sigma^2 = 0.25^2 * 0.2^2 + 0.25 * 0.75  . . .. eithv. strokað út.. 
+
+endaði með að vera minna heldur en annars eithv.  -> betra dreifa áhættu.
