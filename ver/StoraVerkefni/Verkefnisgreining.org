@@ -40,17 +40,18 @@ verkefninu og þar með stuðlað að því að viðeigandi útkoma náist í ve
 hverjum verkefnisþátt í texta fyrir neðan töfluna.
 
 
-| Mögulegar niðurstöður/vńtingar | Mikilvægi fyrir árangur verkefnis (1-5) | Áhætta á að takist ekki (1-5) | Þörf á verkefnastjórnun(margfeldi) |
-|--------------------------------+-----------------------------------------+-------------------------------+------------------------------------|
-| Mót stenst kröfur mótsgesta    |                                       5 |                             4 |                                 20 |
-| Húsnæði og aðbúnaður           |                                       5 |                             4 |                                 20 |
-| margir GM's mæta               |                                       3 |                             4 |                                 12 |
-| mót stenst kröfur GM's         |                                       3 |                             3 |                                 10 |
-| Framboð á mat og áfengi        |                                       4 |                             4 |                                  8 |
-| hljóð og myndkerfi             |                                       4 |                             4 |                                 14 |
-| Auglysingarsölu tekjur         |                                       4 |                             4 |                                 14 |
-| margir mætta og fylgjast með   |                                       2 |                             3 |                                 16 |
-|                                |                                         |                               |                                    |
+| Mögulegar niðurstöður/vńtingar    | Mikilvægi fyrir árangur verkefnis (1-5) | Áhætta á að takist ekki (1-5) | Þörf á verkefnastjórnun(margfeldi) |
+|-----------------------------------+-----------------------------------------+-------------------------------+------------------------------------|
+| Mót stenst kröfur mótsgesta       |                                       5 |                             2 |                                 20 |
+| Húsnæði og aðbúnaður              |                                       5 |                             2 |                                 20 |
+| margir GM's mæta                  |                                       4 |                             2 |                                 12 |
+| mót stenst kröfur GM's, keppenda  |                                       3 |                             3 |                                 10 |
+| hljóð°, mynd og tölvukerfi        |                                       4 |                             4 |                                 14 |
+| Auglysingarsölu tekjur            |                                       4 |                             4 |                                 14 |
+| margir mætta og fylgjast með      |                                       2 |                             3 |                                 16 |
+|                                   |                                         |                               |                                    |
+| Framboð á mat og áfengi           |                                       4 |                             4 |                                  8 |
+| mót stenst kröfur annara keppenda |                                         |                               |                                    |
 
 
 
@@ -102,17 +103,12 @@ nauðsynlegt að mótið standis ýtrustu kröfur allra Grandmasteranna, heldur 
 miklum kröfum þ.a. sem flestir mæta. 
 
 
-*** Framboð á mat og áfengi 
-
-Gott er að hafa ....
-
-
-*** hljóð og myndkerfi
+*** hljóð, mynd og tölvukerfi
 
 
 *** Auglýsingasölu tekjur
 
-Að mótið nái að selja auglysingar er mikilvægt er til að ná að lágmarka tapið sem verður á mótinu.
+Að mótið nái að selja auglysingar er gott uppá að lágmarka tapið sem verður á mótinu.  
 
 *** Margir mæta og fylgjast með
 
@@ -120,4 +116,9 @@ Að mótið nái að selja auglysingar er mikilvægt er til að ná að lágmark
 má vænta að góð mæting á gott mót gæti komið til með að efla og útbreiða skákmenninguna á Íslandi, eins 
 mun góð reynsla af mótinu hjá erlendum gestum eflaust vera góð landkynning og þar með efla land og þjóð.
  Til þess að mætinginn verði góð þá þarf kynning á mótinu að vera nægileg og þarf sú kynnig að ná að sýna
-mótið í jákvæðu ljósi, þ.a. tilvonandi gestir upplifi það sem eftirsóknarvert.
+mótið í jákvæðu ljósi.
+
+
+*** Framboð á mat og áfengi 
+
+Gott er að hafa ....

@@ -1,0 +1,14 @@
+* Fundur 16 november - (línuívilnun)
+** GPS
+aron hefur náð að fá location maneger til að segja hvar síminn er...
+það á eftir að útfæra eithvað með að tengjast í höfn, eða þ.e.a.s. 
+finna nálægustu höfn.
+
+** Spursmál með Hafnir og Úreldingu
+  Ef að hafnalistinn breytist núna þá úreldist forritið.
+
+** Gylvi ægis - möst have
+lag með gylva ægis. .
+
+** Nýr klassi
+fær hafnalista frá fiskistofu og reiknar næstu höfn.
