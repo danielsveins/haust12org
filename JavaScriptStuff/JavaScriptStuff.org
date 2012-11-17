@@ -1,0 +1,34 @@
+* JavaScript Stuff
+bókinn er:  Beginning JavaScript with DOM(BookFi.org)   - Christian Heilmann
+staða er: bls 32
+
+Gægi í jimminu mintist á coffeScript sem gott stuff
+-front end programing .. .
+
+**  web pages for javaScript
+code examples with book at:
+http://www.beginningjavascript.com
+
+errata and code at
+http://www,apress.com
+
+
+mozzilla javascript
+http://developer.mozilla.org/en/docs/JavaScript
+
+JavaScript Bloggers:
+
+• Jeremy Keith: http://www.adactio.com
+• Simon Willison: http://simon.incutio.com/
+• The WaSP DOM scripting task force: http://www.webstandards.org/action/dstf/
+• Stuart Langridge: http://kryogenix.org/days/
+• Robert Nyman: http://robertnyman.com/
+• Jon Snook: http://www.snook.ca/jonathan/
+
+
+
+** Tools
+
+all that is needed for javaScript rly is a text editor and a browser
+*** Debuggers
+Mozilla Venkman, Microsoft Script Debugger, or kjscmd
