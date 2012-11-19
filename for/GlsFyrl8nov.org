@@ -169,6 +169,23 @@ isPrime (prime:plist)num =
 
 til að búa til exe skrá... eða .. eithv.
 
+kenning um eithv mögl hjalpl,
+http://en.wikibooks.org/wiki/Haskell/Variables_and_functions
+nánar
+
+--
+Prelude> :cd c:\myDirectory
+Prelude> :load Varfun.hs
+Compiling Main            (Varfun.hs, interpreted )
+Ok, modules loaded: Main.
+*Main>
+--
+
+hægt er að gera: notepad skjalanafn.hs 
+í powershell og búa þannig til skrár og loada svo síðan einsog að ofan
+
+
+
 *** 4.3 Taylor Raðir
 en einfaldari að skilg. Taylor-Raðir í Haskell
 "" aldrei reiknað úr halanum nema þörf krefur í haskel, smbr. leti

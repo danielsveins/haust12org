@@ -1,0 +1,91 @@
+* Haskel 2
+ég hélt að það væri til haskel.org einhverstaðar þ.s. heitir þetta haskel2
+** Real World Haskell
+*** kafli 1
+[1..] gefur endl. lista
+
+adding elemnt to list:
+let list1 = [1,2,3]
+1 : list1
+[1,1,2,3]
+
+**** Strings & Chars
+
+putStrLn "Here is a new line --> \n <-- see?"
+
+Here is a new line -->
+<-- see?
+
+
+--ptStrL  is a function that prints a string
+
+-- this is a comment thingy that is the "--"
+
+
+--Strings are merely lists of characters in haskell
+
+ghci> let a = ['l', 'o', 't', 's', ' ', 'o', 'f', ' ', 'w', 'o', 'r', 'k']
+ghci> a
+"lots of work"
+ghci> a == "lots of work"
+True
+The empty string is written ""S, and is a synonym for []:
+ghci> "" == []
+True
+Since a string is a list of characters, we can use the regular list operators to construct
+new strings:
+ghci> 'a':"bc"
+"abc"
+ghci> "foo" ++ "bar"
+"foobar"
+
+**** Types
+
+:set +t lets us see the types of it in the cmd prompt.
+
+--type names must start with an uppercase letter and variable names with a lowercase letter
+
+-- "it" is a very special variable that tells us the output of the last expression evaluated.
+
+x :: y means "the expression x has the type y"
+
+--[Char] is the same as string meaning list of characters
+
+--staða nú er bls. 13, 53 af 712
+
+** Vikublað 11
+Formleg skilgreining á listarithættinum í haskel
+http://haskell.org/onlinereport/exps.html
+
+
+list of list of ints 
+too:[[]]
+with Int inside 
+
+
+
+*** Lausnir
+
+1. hópverkefni
+
+Prelude> foldr (+) 0 [x^2|x<-[1..100]]
+338350
+og
+Prelude> foldr (*) 1 [x^2+1|x<-[1..100]]
+31700841114....osfv.
+
+
+2. Einstaklings
+
+minor victory...
+--
+Prelude> let sf n = foldr (+) 0 [x^2|x<-n]
+Prelude> sf [1,2,3]
+14
+--
+
+
+
+** haskell hardway
+http://yannesposito.com/Scratch/en/blog/Haskell-the-Hard-Way/
+lítur frekar vel út
