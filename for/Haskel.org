@@ -1,0 +1,7 @@
+* Haskell
+
+
+http://www.haskell.org
+http://www.haskell.org/platform/
+
+looks like a job for Windows
