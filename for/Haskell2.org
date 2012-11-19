@@ -100,6 +100,15 @@ let sumr n = marglist (head n) + sumr (tail n)
 sumr e
 
 
+let fall x = foldl (+) 0 (map marglist x)
+
+Prelude> fall e
+11
+Prelude>
+
+
+--kennari benti á winghci.
+ 
 
 
 ** haskell hardway

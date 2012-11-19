@@ -1,0 +1,158 @@
+* Gls dmtmi circa 18 nov
+
+
+** 1 hopverkefni
+
+foldl (+) 0 (map (\x -> x^2) [0..100])
+
+foldl (+) 0 [x^2 | x <- [0..100])
+
+foldl (*) 1 (map (\x -> x^2+1) [0..100])
+
+foldl (*) 1 [x^2+1 | x <- [0..100]]
+
+** 2 einstaklings
+let sumprod x =
+      foldl (+) 0.0 (map (\x -> foldl (*) 1.0 x) x)
+
+** meira  Prímtölustöff
+
+1) 
+
+--Notkun: isPrimeUsingPrimeList primelist n
+--Fyrir: n er heiltala, n >= 2
+        primelist er eithva hali af óendanlega lista prímtalna
+       [2,3,5,7..]
+--Gildi: True ef n er prímtala, annars False
+
+let isPrimeUsingPrimeList (k:ks) n =
+    if k*k > n then
+        True
+    else if (mod n k) == 0 then
+        False
+    else
+        isPrimeUsingPrimeList  ks n
+
+let primeList =
+    [2,3]++(filter (\n -> isPrimeUsingPrimeList PrimeList n) [5,7..]
+
+--Notkun: isPrime n
+--Notkun: n er heiltala
+--Gildi: True ef n er prímtala, annars False
+let isPrime n =
+     if n<2 then
+        False
+     else
+        isPrimeUsingPrimeList primeList n
+
+
+take 100 primeList
+
+isPrime 174
+
+
+
+** Y- fallið
+
+y-fallið (Y combinator)
+
+Scheme notað hér
+
+
+(define factorial
+   (lambda (n)
+     (if (= n 0)
+        1
+        (* n (<???>  (- n 1)))
+      )
+    )
+)
+
+
+
+
+
+(define almost-factorial
+   (lambda (f)
+     (lambda (n)
+       (if (= n 0)
+           1
+          (* n (f (- n 1)))
+	)
+      )
+     )
+  )
+
+
+(define factorial0
+   (almost_factorial identity))    // á kannski að vera ((almost_factorial) identity) - neibs svo virdist ekki
+
+(factorial0 0) => 1
+
+(factorial0 1) => (* 1 (ident (- 1 1)))
+                  (* 1 0)
+                   0
+
+
+
+// 
+
+(define factorial1
+     (almost_factorial
+         (almost_factorial identity)))
+
+(factorial1 1) =>
+        ((almost_factorial factorial0) 1)
+
+=> ((lambda (n)
+        (if(= n 0)
+            1
+            (* n (factorial0 (- n 1)))
+         )
+      )
+     1
+  )
+
+
+
+
+
+
+// skilgreinum fcactorial fallid svona
+
+(define factorial_infinity
+   (almost_factorial
+      (almost_factorial
+         (almost_factorial
+            (........)))))
+
+
+//Fixpoints  
+
+cos(x) = x
+cos(cos(0,s))  ?
+
+(Y f) = fixpoint_of_f
+
+fixpoint_of_f = (f fixpoint_of_f)
+(Y f) = (f (Y f))
+
+
+--Verk6 --komin í haskel aftur núna
+
+let y f = f(y f)
+
+--Verke 7
+let fact n =
+     let almost_fact f n =
+         if n==0 then
+            1
+         else
+            n * f(n-1)
+       in (y almost_fact) n
+
+take 10 (map fact [1..])
+
+-- Þetta hér þ.e.a.s. 
+
+-- bent var á winghci fyrir haskel vinslu, það er svona altílagi.
