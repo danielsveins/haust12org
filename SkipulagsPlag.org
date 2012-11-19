@@ -30,11 +30,13 @@ file:ver/Verkefni3/GlsV3.org
 NandtoTetris 3 project  (3)
 perfect Mobius mimp project (4)
 improve student home page (4)
-
+*** Digital Security pælingar (4)
+stenography, key in photo or picture, enigma machine..
+læra JavaScript og mögulega CoffeScript (4)
 ** Other 
- Látta Pabbs vita af ÓperuBíó-möguleika klk-8 á laugardaginn (3)
+ Látta Pabbs vita af ÓperuBíó-möguleika klk-8 á laugardaginn (3) [done]
  Banki redda námsláni (1)     [done]
- Skattkort í skolann, redda launum (1)
+ Skattkort í skolann, redda launum (1) [done]
  redda launum frá Nordica + redda vinnu (2)
 
 
