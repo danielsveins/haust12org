@@ -21,8 +21,8 @@ let sumprod x =
 
 --Notkun: isPrimeUsingPrimeList primelist n
 --Fyrir: n er heiltala, n >= 2
-        primelist er eithva hali af óendanlega lista prímtalna
-       [2,3,5,7..]
+--        primelist er eithva hali af óendanlega lista prímtalna
+--       [2,3,5,7..]
 --Gildi: True ef n er prímtala, annars False
 
 let isPrimeUsingPrimeList (k:ks) n =

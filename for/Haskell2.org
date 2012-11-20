@@ -52,6 +52,9 @@ x :: y means "the expression x has the type y"
 --[Char] is the same as string meaning list of characters
 
 --staða nú er bls. 13, 53 af 712
+--staða nú er bls. 21
+ 
+
 
 ** Vikublað 11
 Formleg skilgreining á listarithættinum í haskel

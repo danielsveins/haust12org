@@ -6,6 +6,14 @@ General Reading Place = 36, 37,38
 
 *** Hugtök sem dæmakennari mælti með
 **** activation record
+http://en.wikipedia.org/wiki/Activation_record#Structure
+
+A call stack is composed of stack frames (also called activation records or activation 
+frames). These are machine dependent and ABI-dependent data structures containing 
+subroutine state information. Each stack frame corresponds to a call to a subroutine 
+which has not yet terminated with a return. For example, if a subroutine named DrawLine 
+is currently running, having been called by a subroutine DrawSquare, the top part of 
+the call stack might be laid out like this:
 
 ***** Call stack
 http://en.wikipedia.org/wiki/Call_stack
@@ -18,6 +26,16 @@ http://en.wikipedia.org/wiki/Forth_programming_language
 
 
 **** access link
+or static link,
+from:
+http://en.wikipedia.org/wiki/Access_link#Structure
+This is called an access link or static link (as it keeps track of static nesting
+during dynamic and recursive calls) and provides the routine (as well as any other 
+routines it may invoke) access to the local data of its encapsulating routines at 
+every nesting level. Some architectures, compilers, or optimization cases store one 
+link for each enclosing level (not just the immediately enclosing), so that deeply 
+nested routines that access shallow data do not have to traverse several links; this 
+strategy is often called a display
 
 **** block structured programing languages
 
