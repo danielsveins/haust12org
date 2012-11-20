@@ -36,7 +36,7 @@ og w_{i} >= 0 og /SUM i til n w_{i} = 1
 nokkrir eiginleikar vænts gildis og dreifni
 1) Ef y og z eru tilviljanabreytur þá gildir:
 E[alpha*y+beta*z] = E[alpha*y] + E[beta*z] = alphaE[y] + beta*E[z]
-alpha og bera  er í rauntölum
+alpha og beta  er í rauntölum
 t.d. gildir fyrir ávöxtun safns
 w_{1}*x_{1}+w_{2}*x_{2}}+ ..  að
 ..

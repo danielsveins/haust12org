@@ -1,0 +1,32 @@
+* Verkefni 11
+
+** 1 
+Verkefni A m. vænta ávöxtun 7,5% og staðalfrávik 7,5%
+Verkefni B vænt æavöxtun 5%, áhættulaust
+
+Ef við veljum saman verkefnin í safni sem er 30% A og
+70% B, hver er vænt ávöxtun safnsins?
+
+0.3 * 0.075 + 0.7 * 0.05 
+
+..
+
+** 2
+
+V[S] = 0.01 x^2 + 0.04 (1-x)^2 
+=   0.01x^2 +0.04 (1 -2x + x^2)
+= 0.05x^2 - 0.08x + 0.04
+
+-b+-Sqrt(b^2-4ac)  / 2a
+
+= [0.08 +/- (0.0064 - 0.008)] / 0.1
+
+
+wolfram finnur min  0.008
+
+ í a = 80%
+
+torfo tók við sem ritari..
+
+** annad athyglisv
+http://en.wikipedia.org/wiki/Bond_duration
