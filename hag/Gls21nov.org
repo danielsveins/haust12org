@@ -1,0 +1,231 @@
+* Gósur úr fyrirlestri 21 nóvember
+
+** Skilgreiningar úr síðasta tíma
+
+Ávöxtun: a = (P1-P0)/P0
+P1: framtidarvirdi
+P0: virdi i nutid
+
+VÆNTIGILDI ÁVÖXTUNAR E[a]=a'
+
+STAÐALFRÁVIK = sigma
+
+DREIFNI: sigma^2 = V[a]=E[(a-a')^2]
+
+SAMDREIFNI:  COV[x1;x2]  xi: fjárfestingarkostir
+
+sigma12 = 0 => óháðar tilviljanabreytur
+        > 0 => jákvætt háðar -"-
+        < 0 => Neikvætt
+
+
+sigma12 = 1 => Ef annar fjárfestingarkosturinn hækkar , þá hinn í sama
+hlutfalli
+
+sigma12 = -1 =>  - " - lækkar í sama hlutfalli.
+
+Fylgnistuðull Sigm12 = sigma12/(sigma1 * sigma2)
+
+SAMDREIFNI SAFNS: s= w1*x1+w2*x2
+
+
+V[s] = w1^2 * sigma1^2 + w2^2 * sigma2^2 + 2 * w1 * w2 * Sigma12 * sigma1 * sigma2
+                                                        \_______________________/
+                                                               |
+                                                           COV[x1,x2]=sigma12
+
+sigmaii = sigmai^2
+
+á fylkjaformi: V[s] = W^t * C * W
+
+
+** NÝTT EFNI
+_________________
+
+ÁHÆTTA Í VERÐBRÉFAVIÐSKIPTUM ER ÞRÍÞÆTT
+
+1) GREIÐSLUÁHÆTTA - EKKI GREITT Á RÉTTUM TÍMA
+2) TAPÁHÆTTA - EKKI GREITT YFIR HÖFUÐ
+3) VERÐBREYTINGARÁHÆTTA
+
+VERÐ TIL GREIÐSLU /= VIRÐI Á MARKAÐI
+
+LIÐUR 3) ER VIÐFANGSEFNN LÍKANS VIÐ ÚTREIKNINGA Á FRAMFALLI VERÐBRÉFA.
+BYGGJUM Á SAMSPILI ÁVÖXTUNAR HVERS BRÉFS Í EIGNASAFNI OG ÁHÆTTU ÞESS
+ÖLL VERÐBRÉF Í EIGNASAFNI ER HÆGT AÐ TEIKNA Á
+a' - sigma límrit
+
+
+
+^
+|
+|
+|
+|
+|   C       D
+|
+|   B       A
+|
+ ------------------------->
+graf m. a' í y-ás, og staðalfrávik í x-ás
+
+Ath.
+þessar forsendur alm. eru ekki gefnar en menn eru að gefa sér þessar forsendur
+
+EINSTAKLINGUR MUN TAKA VERKEFNI B,C,&D FRAM YFIR A A.T.T. 'AHÆTTU OG
+VÆNTRAR ÁVÖXTUNAR
+
+
+HÖFUM
+
+TVÆR FJÁRFESTINGAR X1 OG X2 SEM HÆGT ER AÐ FJÁRFESTA Í HLUTFÖLLUM Í SAFN S.
+
+E[s]
+
+^
+|
+|
+|                 .
+|
+|<-a
+|
+|
+|       .
+|
+|
+ --------------------------->   sigmaS
+
+a er lágmörkunin á sigma, þ.a. út frá þeim punkti er gerður þríhyrningur.
+öll möguleg fjárfesting þ.s. w = 1 er innan þess þríhyrnings.
+
+ÞAR SEM SAMDREIFNIN ER EKKI SÝND Á GRAFINU VITUM VIÐ EKKI NÁKVÆMLEGA HVAR
+ÁVÖXTUNIN ER.  HLUTFALL FJÁRFESTINGA W2 = (1-W1)
+
+Þ.S. 0<Wi<1; 1 = 1,2 W1+W2=1    /Ath < minna eða samasem..
+
+
+ÁVÖXTUN SAFNS S ER EINHVERSTAÐAR Á ÞRÍHYRNINGNUM 1,2,A
+FALLIÐ SYNIR HVERNIG HÆGT ER AÐ VELJA SAMAN VERKEFNI.  FYLGNIN MILLI VERKEFNA
+ÁKVARÐAR HEILDARÁVÖXTUN OG ÁHÆTTU.  FREKAR EN ÁHÆTTU HVERS OG EINS VERKEFNIS.
+
+SKOÐUM 2 VERKEFNI
+
+S=w1*x1+x2*x2
+w1+w2=1
+S=w1*x1 + (1-w1)*x2
+
+E[s] = E[w1*x1 + (1-w1)*x2]
+     = w1*W[x1] + (1-w1)*E[x2]
+V[s] = V[w1*x1 + (1-w1)*x2]
+     = V[w1*x1] + V[(1-w1)*x2] + 2*w1*(1-w1) * sigma12
+     = w1^2 * sigma1^2 + (1-w1)^2 * sigma2^2 + 2 * w1(1-w1) * Sigma * sigma1 * sigma2
+
+sigmaS = sqrt(sigmaS^2) = sqrt(w1^2 * sigma1^2 + (1-w1)^2 * sigma2^2 + 2 * w1(1-w1) * Sigma * sigma1 * sigma2)
+
+
+  
+
+SKOÐUM 3 TILFELLI FYRIR Sigma - í raun Ro
+1) Ro = 1 - jákvæð fylgni
+sigmaS = sqrt(w1^2 * sigma1^2 + (1-w1)^2 * sigma2^2 + 2 * w1(1-w1) * sigma1 * sigma2)
+ = sqrt((w1*sigma1 + (1-w1) * sigma2)^2)
+= w1 * sigma1 + (1-w1)*sigma2
+
+2) Ro = -1
+
+   sigmaS = |w1*sigma1 - (1-w1)^2 *sigma2| =     w1 * sigma1 - (1-w1)*sigma2
+                                            eda  -w1*sigma1 + (1-w1)*sigma2
+
+3) Ro = 0
+
+      sigmaS = sqrt(w1^2 * sigma1^2 + (1-w1)^2 * sigma2^2)
+
+
+BESTA LAUSN FYRI 2 VERKEFNI ER Á BÚNGU Á FALLI Á MILLI PUNKT 1 OG 2 Í
+ÞRÍHYRNINGINUM, EN ÞETTA FALL ER E[S].
+
+ÞETTA Á LÍKA VIÐ MEÐ FLEITI FJÁRFESTINGA Á E[S] SIGMAs GRAFINU
+
+FRAMFALL LAUSNAJÖFNUNAT BESTA LAUSN Í MVP
+MINIMUM VARIANCE POINT
+
+
+HÖFUM Í RAUN BARA ÁHUGA Á EFRI HLUTA KÚRFUNAR (EFFICIENT FRONTIER), ÞVÍ VIÐ
+VELJUM HÆRRI ÁVÖXTUNINA FYRIR SÖMU ÁHÆTTU
+
+ath. -skilvirk söfn liggja alltaf á framfallinu-(kúrfan)
+     -hver punktur á framfallinu er ákveðin samsetning fyrir ákv. staðalfrávik
+
+
+tiltölulega auðvelt að forrita þetta, vandin er hvort forsendurnar séu réttar, eða eithv varið í þær.
+
+
+
+** MARKOWITZ LÍKANNIÐ
+
+VILJUM FINNA SAFN S SEM  GEFUR LÁGMARKSÁHÆTTU FYRIR GEFNA VÆNTA ÁVÖXTUN ALPHA.
+
+VILJUM MARKFALL Þ.S. MIN ÁHÆTTA FYRIR ÁVÖXTUN ALPHA.
+
+MIN  SUM(i,j->n) Wi * Wj *SIGMAij
+
+þ.a.  SUM(i=1 -> n) E[Xi]*Wi = alpha
+      
+      SUM(i=1 -> n) Wi = 1
+
+Á FYLKJAFORMI 
+
+min W^t * C * W
+
+W^t * E[x] = alpha
+
+W1 = 1
+
+NOTUM LANGRANGE TIL AÐ FINNA LAUSN
+
+L = 1/2 SUM(i=1->n)SUM(j=1->n) (Wi * Wj * Sij) - lambda (SUM(lambda=1->n) Wi * E[Xi] -alpha) -mju(SUM(1=1->n) Wi -1)
+
+FYRIR 2 VERKEFNI GILDIR
+
+sigma = s
+
+L = 1/2 (W1^2 * S1^2 + 2 * W1 * W2 * S12 + W2^2 * S2^2) - lambda(W1*a1' + W2*a2' - alpha) - mju(W1 + W2 -1)
+
+a1' = E[a]
+a2' = E[a2] 
+
+
+1) dL/dW1 = W1 * S1^2 + W2 * S12 - lambda * a1' - mju
+
+2) dL/dW2 = W2 * S2^2 + W1 * S12 - lambda * a2' - mju
+
+2 ÞEKKTAR JÖFNUR Í VIÐBÓT
+
+3) W1 * a1' + W2*a2' - alpha = 0   
+
+4) W1 + W2 -1 = 0
+
+LAUSN Í FYLJAREIKNINGI
+SETJUM JÖFNU 1 OG 2 Á FYLKJAFORM
+
+| S1^2 | S12  |   | W1 |
+|------+------+-* +--   | 
+| S21  | S2^2 |   | W2 |
+ 
+
+
+afrmhld  - lambda (a1',a2')  - mju(1,1) = 0
+
+=>  (W1, W2) =  (S1^2   S12) -1   (a1'  1)
+                (S21   S2^2)      (a2'  1)
+
+jafna 3 og 4 á fyljaformi
+
+
+(a1'   a) (W1)  =  (alpha)
+(1     1) (W2)     (  1  )
+
+(alpha)    (a1'   a2') (S1^2   S12) -1 (a1'   1) (lambda)
+(  1  )  = (1      1 ) (S21   S2^2)    (a2'   1) ( mju  )
+
+
