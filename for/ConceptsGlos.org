@@ -15,6 +15,25 @@ which has not yet terminated with a return. For example, if a subroutine named D
 is currently running, having been called by a subroutine DrawSquare, the top part of 
 the call stack might be laid out like this:
 
+
+top of the stack
+| Locals of Drawline        |  <-- Stack Pointer
+|---------------------------|
+| Return Address            |
+|---------------------------|  <-- Frame Pointer
+| Parameters for Drawline   |
+|---------------------------|
+|---------------------------|  \
+| Locals of DrawSquare      |   
+|---------------------------|
+| Return Address            |     stack frame for DrawSquare subroutine
+|---------------------------|
+| Parameters for DrawSquare |
+|---------------------------|  /
+|---------------------------|
+| ....                      |
+
+
 ***** Call stack
 http://en.wikipedia.org/wiki/Call_stack
 
