@@ -1,6 +1,23 @@
 * Skipulagsplagg Vor 2012
 
 ** Skóli
+*** Prófundirbúningur (1)
+
+
+| NÁMSKEIÐ             | TÍMI                     | STOFA                                       |
+|----------------------+--------------------------+---------------------------------------------|
+| hugbúnaðarverkefni 1 | Mið. 5. des 9:00-12:00   | A231,HT302,VR-2-V152,155,258,261            |
+| hagverkefæði         | Fim. 6. des 9:00-12:00   | A230,A231,VR-2-V138,147,152,155,156,258,261 |
+| tölvunet & öryggi    | Fös. 7. des 13:30-16:30  | A050,051,052,207,218,225,229,230,HT302      |
+| verkefnastjórnun     | Fim. 13. des 13:30-16:30 | A229,HT102,105                              |
+| foritunarmál         | Þri. 18. des 13:30-16:30 | A231,HT302,VR-2-V138,152,155,156,258,261    |
+ 
+ath. hægt að finna út nákv. stofu einhvernveginn á uglu, spyrja Aron.
+
+ath. líka með sjúkrapróf, þ.e.a.s. hátarlag á þeim.
+
+
+
 *** Forritunarmál Conceptual skilnings áfangar  (1) 
 file:for/ConceptsGlos.org
 

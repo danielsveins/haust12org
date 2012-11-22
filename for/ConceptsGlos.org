@@ -57,8 +57,62 @@ nested routines that access shallow data do not have to traverse several links; 
 strategy is often called a display
 
 **** block structured programing languages
+http://www.csse.monash.edu.au/~lloyd/tildeProgLang/PL-Block/
+
+http://en.wikipedia.org/wiki/Block_%28programming%29
+
+The function of blocks in programming is to enable groups of statements to be 
+treated as if they were one statement, and to narrow the lexical scope of variables, 
+procedures and functions declared in a block so that they do not conflict with 
+variables having the same name used elsewhere in a program for different purposes.
+
+The notion of blocks is introduced by different syntax in different languages, but 
+there are two broad families: the ALGOL family in which blocks are delimited by the 
+keywords begin and end, and the C family in which blocks are delimited by curly 
+braces { and }. Some other techniques used are indentation, and s-expressions* with a 
+syntactic keyword such as lambda or let (as in the Lisp family).
+
+
+In a block-structured programing language, the names og variables and other objects 
+such as procedures which are declared in outer blocks are visible inside other inner
+blocks, unless they are shadowed by an object of the same name.
+
+
+
+***** s-expressions
+http://en.wikipedia.org/wiki/S-expression
+
 
 **** closures
+
+In computer science, a closure (also lexical closure or function closure) is a function 
+or reference to a function together with a referencing environment—a table storing a 
+reference to each of the non-local variables (also called free variables) of that 
+function.[1] A closure—unlike a plain function pointer—allows a function to access 
+those non-local variables even when invoked outside of its immediate lexical scope.
+
+in haskell:
+http://stackoverflow.com/questions/9088295/closures-in-haskell
+This is because Haskell essentially creates functions with free variables everywhere, 
+and thus, closures are created all the time. Some of these might be optimized away by the 
+compiler, but it is safe to assume that there will be more closures used than you might 
+ever be able to discover on your own.
+So, don't try to locate closures; they are nothing special in Haskell and are used all the time.
+
+in scheme:
+
+(define (add a)
+  (lambda (b)
+    (+ a b)))
+(define add3 (add 3))
+
+>(add3 4)
+7
+
+
+// What you can see is that when you call add with the parameter a (which is 3), that value is 
+// contained in the closure of the returned function that we're defining to be add3. That way, 
+when we call add3 it knows where to find a value to perform the addition.
 
 **** streams
 pott þétt eitt dæmi á prófi stútað ef þetta er á hreinu
