@@ -1,0 +1,148 @@
+* Fyrilestur Fimtd. 22 nóvember
+
+Öryggi - Security
+
+mikið af þeim hugbúnaði sem er í notkun var ekki skrifaður með öryggi í huga.
+
+Intrusion detection kerfið í HÍ, gaf of mikið af false-positives.
+
+Intrusion detection systems.
+
+Elveggirnir eru íkringum 40% af öryggi -- svona circa, en ekki 90% eins og margir mundu vilja
+
+sumir starfsmenn innan háskólans hafa jafnvel 2-3 gefið einhverjum lykilorððinn sín, + bankanúmer o.s.f.v
+
+** Confidentiality, Trúnaður
+Einungis sendandi og ætlaður móttakandi eiga að geta skilið skeyti
+
+** Authentication
+
+
+
+** Alice, Bob og Trudy
+Trudy er óvinnurinn sem reynir að hlusta á, Bob og Alice.
+
+
+Alice getur sent skeyti kóðað með almenningslykli Bob, og þá á bara Bob að geta lesið skeytið.
+** DNS  "serverar"
+
+
+** Ógnir
+*** -hlera eavesdrop
+*** -impersonate
+*** -rænt tengingu - hijacking
+"take over" ongoing ..
+*** -denial of service
+Hindra notkun þjónustu, t.d. með því að koma upp svo miklu álagi að viðkomandi vél geti ekki sinnt neinu öðru eða
+keyrist niður
+
+** Hönnun m.t.t. öryggis
+
+Mark G. Graff og K. R. Van Wyk
+
+Design with enemy in mind. -> á við um allt, á við um hvaða hugmyndir sem er.
+
+Understand and respect the chain of trust.
+
+*** Secure coding
+í hugbúnaði er reynt að lágmarka líkur á öryggisgöllum.
+-
+uppsprettur öryggisgalla
+
+**** Tæknilegir þættir 
+Ólínuleiki. hægt að nota línuleg líkön upp að vissu marki..
+**** Andlegir þættir
+óverðskuldað traust,
+huglæg líkön lýsa ekki allri
+**** umhverfi hugbúnaðarþróunar.
+pressa, stress
+
+**** kostnaður við lagfæringu galla
+cost of fixing a bug in  implementation is on average 6.5X as great as in design time.
+
+** WEP vs. WPA
+
+WPA er greinilega betri.. út frá öryggi.
+http://answers.yahoo.com/question/index?qid=20070924153500AArrQBP
+
+** Flokkun árása
+man in the middle árás
+
+Einfalt SQL injection dæmi í glæronum.
+
+** Samantekt
+
+erfit að ábyrgjast gallalausan hugbúnað.
+
+
+* Starfsmaður Reiknistofnunar - Ingimar - sérfræðingur í þráðlausum netum
+netdeild, síminn,
+
+bakgrunnur Ingimars,- Tölvunarfræði nám í HÍ..  vann hjá Tæknival
+CCNA gráða.
+
+tilhögun netkerfis á Íslandi í dag.
+
+Eftirlits og monitoring kerfi.  Hverju ætlum við að fylgjast með þegar kerfinu er komið í gang?
+
+DNS
+
+sensa, scriftar, Magnús Ólafsson
+
+lausnar-pakki seldur til HR, Cisco
+
+** Netkerfi Háskóla Íslands
+vefur rhi
+backbónið, linkurinn,
+
+netsamband á íslandi 
+
+1986 - Hafró / HÍ með upphringi samband
+
+SURÍS
+
+1995 Internet á íslandi
+
+200 RIX kemur
+
+2001 RHnet stofnað
+
+Rútað IP net
+
+öll tæki með public IP tölu
+
+30 rúterar 260 svissar, 283 þráðlausir sendar, 137 net.
+
+vararafstöð og aflgjafi, og auka kraftur í Decode fyrir HÍ
+
+rhi netinfo
+
+*** Nýting DHCP IP talna
+reglulrga vandamál ..
+Nýting breytilegra IP talna ...
+
+AutoStatus - freeware - ef að pingar ekki -> sendir sms og tölvupóst
+
+CLI - vefviðmót
+
+Scriptur - skeljar /Expect
+
+
+ssh-samband og scriptur ---- > keep it simple
+
+CiscoWorks Wireless LAN Solution Engine (WLSE)
+
+controler
+
+
+
+Notkun IPv6 á HI-neti
+
+
+
+2x10gig frá Belgíu til Háskólabíó  ---- meira en síminn oog Vodafone samanlagt til útlanda.
+
+
+
+HI-net algjörlega óöruggt, macaddres + WEP,  í júní á næsta ári stendur til að breyta yfir í eithvað betra.
+

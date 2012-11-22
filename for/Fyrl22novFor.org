@@ -1,0 +1,210 @@
+* Fyrirlestur í Forritunarmálum 22 nóvember
+síðasta nýja efnið í dag!
+
+-muna að spurja um Haskell á prófinu.
+
+
+
+Vikublað 13.
+
+fjölnota einingar í Java og C++
+
+einstaklingsverkefni er annaðhvort í Java eða C++
+
+fjölnota einingar í Java, Morpho, C++.
+
+
+** Java dæmi
+
+
+A
+void f(object[] a)
+{
+   . 
+   .
+   a[0] = new Object();
+   .
+}
+
+
+=>
+
+String[] s=new String[10];
+a = new A();
+a.f(s);
+s[0].substring(...);
+--fylki af strengjum er fylki af objectum. -- í vissum skilningi rétt.
+
+glufa í tögunarkerfinu.
+
+
+Fjölnota klasar eru Tagsmiðir
+
+monad - einstæður fjallar um tagsmiði -- ekki alveg það sama og constructor
+
+búa til nýtt tag úr tagi sem var til fyrir, hætulegra en það lítur út fyrir að vera.
+
+** Contravariance vs. Covariance
+
+að fylki af strengjum sé fylki af objectum
+
+A      N: x.f(..)
+       F: F_a
+       E: E_a
+
+B      N: x.f(..)
+       F: F_b
+       E: E_b
+
+A x;
+.
+.
+.
+.
+// F
+x.f(..)
+// E
+.
+.
+.
+.
+.
+
+
+F => F_a
+E_a => E
+
+ef að x-ið vísar í raun og veru á B hlut en ekki A
+
+þurfum þvi
+=> F=>F_a=>F_b
+og E_b=>E_a=>E
+
+þetta er þessi Contravariance sem við þurfum.
+
+
+Object[]         x=a[i]  or   a[i]=x
+   |
+   |
+String[]         x=a[i]  or   a[i]=x
+
+sumt verður í lagi með að tengja þetta saman.
+    
+seinna dæmið a[i]=x er að setja strengja fylki in sem object fylki. það að segja að string fylki sem Object fylki.
+Ef maður leyfir gildisveitingu inní þetta þá betur dæmið brotnað í runtime.
+
+=> það þarf alltaf að tékka á því að eithvað sé strengur o.s.f.v. í keyrslutíma.
+
+public class MyArray<T>
+{
+    
+    T[] arr;  
+    public MyArray(int n) { arr = new T[n];} <---- þetta er ekki hægt. þ.e.a.s. new T[n];
+    public T get(int i) {...}
+    public void put(int i T x) {...}
+    public int size() {returns arr.length;}
+
+
+}
+
+a.get(i) === a[i]
+a.put(i,x) === a[i]=x
+
+
+
+--
+
+hægt er að gera:
+
+MyArray<String> a = new MyArray<String>(100);
+
+
+ public class MyArray<T>
+{
+    
+    Object[] arr;  
+    public MyArray(int n) { arr = new Object[n];} 
+    public T get(int i) {return (T)arr[i];}
+    public void put(int i T x) {arr[i]=x}
+    public int size() {returns arr.length;}
+    public T max() {...}
+
+}
+
+þýðandinn  trúir þessu..
+
+ public class MyArray<T extends Comparable>
+{
+    
+    Object[] arr;  
+    public MyArray(int n) { arr = new Object[n];} 
+    public T get(int i) {return (T)arr[i];}
+    public void put(int i T x) {arr[i]=x}
+    public int size() {returns arr.length;}
+    public T max() {...}
+
+}
+
+Comparable      i = x.compareTo(y) <---y er object
+    |
+    |
+    A
+
+öll tög sem uppfylla þessi Compararble skil, hafa compare to boð.
+
+String
+Double
+Integer
+
+er allt samanburðarhæft.
+
+
+Comparable<A>
+     |
+     |
+     A
+     |
+     |
+     B
+
+
+getum búið til MyArray<A>
+getum við búið til MyArray<B>?
+
+B uppfyllir ekki skilyrðinn Comparable<B> þótt það uppfylli Comparable<A>
+
+
+
+public class MyArray<T extends Comparable< ? super T >>
+{
+    
+    Object[] arr;  
+    public MyArray(int n) { arr = new Object[n];} 
+    public T get(int i) {return (T)arr[i];}
+    public void put(int i T x) {arr[i]=x}
+    public int size() {returns arr.length;}
+    public T max() {...}
+
+}
+
+
+
+Viljið geta stungið inní forgangsbiðröð hluti sem eru Comparable við hvort annað.
+
+
+** C++
+
+klassar.zip
+
+Snorri opnar queueBase
+
+template fyrirbærinn í C++ eru mjög öflug fyrirbæri.  
+
+template<class T>
+class queuebase {
+
+
+
+
+VMT virtual method table
+
