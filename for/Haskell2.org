@@ -114,6 +114,143 @@ Prelude>
  
 
 
+** Vikublað 12
+
+Fallið putStrLn er af tagi String -> IO ()
+og fallið getLine er af taginu IO String.
+
+sendum gildið af IO String í gegnum (>>=), sem sendir
+strenginn í næsta skref...
+
+
+
+*** Lausn
+
+3. Einstaklingsverkefni.  Smíðið og prófið lista allra Taylor-stuðla fallsins
+e^x
+
+
+próf:
+
+Prelude> :load Taylor.hs 
+[1 of 1] Compiling Taylor           ( Taylor.hs, interpreted )
+Ok, modules loaded: Taylor.
+*Taylor> (take 10 taylorExp)
+Loading package array-0.3.0.0 ... linking ... done.
+Loading package filepath-1.1.0.3 ... linking ... done.
+Loading package old-locale-1.0.0.2 ... linking ... done.
+Loading package old-time-1.0.0.3 ... linking ... done.
+Loading package unix-2.4.0.0 ... linking ... done.
+Loading package directory-1.0.1.0 ... linking ... done.
+Loading package process-1.0.1.2 ... linking ... done.
+Loading package time-1.1.4 ... linking ... done.
+Loading package random-1.0.0.2 ... linking ... done.
+Loading package haskell98 ... linking ... done.
+[1.0,1.0,0.5,0.16666666666666666,4.1666666666666664e-2,8.333333333333333e-3,1.388888888888889e-3,1.984126984126984e-4,2.48015873015873e-5,2.7557319223985893e-6]
+*Taylor> 
+
+
+
+
+
+
+
+4. Hópverkefni
+
+foldl
+
+Description:  it takes the  second argument and the first item of the list and appæies the function to them, then feeds
+the function with this result and the second argument and so on.
+
+myFoldl f z [] = z
+myFoldl f z (x:xs) = myFoldl f (f z x) xs
+
+
+Prófun:
+
+Prelude> :load myFoldl.hs 
+[1 of 1] Compiling Main             ( myFoldl.hs, interpreted )
+Ok, modules loaded: Main.
+*Main> myFoldl (+) 0 [1,2,3]
+6
+*Main> 
+
+5. hópverkefni
+
+foldr
+
+Description: it takes the second argument and the last item on the list and applies the function, then takes the penultamate
+item from the end and the result, and so on
+
+myFoldr f z [] = z
+myFoldr f z (x:xs) = f x (myFoldr f z xs)
+
+Prelude> :load myFoldr.hs 
+[1 of 1] Compiling Main             ( myFoldr.hs, interpreted )
+Ok, modules loaded: Main.
+*Main> myFoldr (+) 0 [1,2,3]
+6
+*Main> 
+
+
+
+7. Ekki skilaverkefni
+
+
+newtype Mu a = Mu (Mu a -> a)
+y f = (\h -> h $ Mu h) (\x -> f . (\(Mu g) -> g) x $ x)
+
+
+Prelude> :load Y.hs 
+[1 of 1] Compiling Main             ( Y.hs, interpreted )
+Ok, modules loaded: Main.
+*Main> let fact n = let almost_fact f n = if n==0 then 1 else n * f(n-1) in (y almost_fact) n
+*Main> take 10 (map fact [1..])
+[1,2,6,24,120,720,5040,40320,362880,3628800]
+*Main> 
+
+
+tilaga að 8.
+
+let fib n = let fibi f n = if n==0 then 1 else n + f(n-1) in (y fibi) n
+tilaga 2
+*Main> let fib n = let fibi f n = if n==0 then 1 else if n==1 then 1 else f(n-1) + f(n-2) in (y fibi) n 
+ 
+
+8. Einstaklingsverkefni
+
+Y-Combinator
+
+Y= lambda f.(lambda x.f(x x))(lambda x.f(x x))
+
+Prelude> :load Y.hs 
+[1 of 1] Compiling Main             ( Y.hs, interpreted )
+Ok, modules loaded: Main.
+*Main> let fib n = let fibi f n = if n==0 then 1 else if n==1 then 1 else f(n-1) + f(n-2) in (y fibi) n 
+*Main> fib 3
+3
+*Main> fib 4
+5
+*Main> fib 6
+13
+*Main> fib 5
+8
+*Main> 
+
 ** haskell hardway
 http://yannesposito.com/Scratch/en/blog/Haskell-the-Hard-Way/
 lítur frekar vel út
+
+
+
+** Compileing Haskell
+
+$ ghc -o filename file.hs
+
+
+$ ./filename
+
+
+
+** Y-combinator
+http://noeit.wordpress.com/2009/04/28/how-i-finally-understood-the-y-combinator-and-blew-my-damn-mind/

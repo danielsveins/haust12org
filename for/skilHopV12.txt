@@ -1,0 +1,31 @@
+
+4. Hópverkefni
+in í myFoldl.hs
+myFoldl f z [] = z
+myFoldl f z (x:xs) = myFoldl f (f z x) xs
+
+
+Prófun:
+
+Prelude> :load myFoldl.hs 
+[1 of 1] Compiling Main             ( myFoldl.hs, interpreted )
+Ok, modules loaded: Main.
+*Main> myFoldl (+) 0 [1,2,3]
+6
+*Main> 
+
+5. hópverkefni
+in í myFoldr.hs
+myFoldr f z [] = z
+myFoldr f z (x:xs) = f x (myFoldr f z xs)
+
+Prófun:
+
+Prelude> :load myFoldr.hs 
+[1 of 1] Compiling Main             ( myFoldr.hs, interpreted )
+Ok, modules loaded: Main.
+*Main> myFoldr (+) 0 [1,2,3]
+6
+*Main> 
+
+

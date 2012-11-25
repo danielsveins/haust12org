@@ -156,3 +156,5 @@ take 10 (map fact [1..])
 -- Þetta hér þ.e.a.s. 
 
 -- bent var á winghci fyrir haskel vinslu, það er svona altílagi.
+
+
