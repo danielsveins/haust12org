@@ -1,0 +1,106 @@
+* FyrilestrarGlósur TNO 26 nov
+
+TCP UDP
+
+Fairness
+
+multimedia apps often do not use TCP
+
+:-)
+
+UT geirinn, ...UT?
+
+
+
+** Árásir
+
+DoS Attack PAckets
+
+** Cryptography
+
+Samhverfur lykill
+einkalykill
+
+| Plaintext         | Encryption            | Ciphertext           | Decryption            | Plaintext         |
+|-------------------+-----------------------+----------------------+-----------------------+-------------------|
+| Upphaflegt skeyti | Lykill fyrir dulritun | Sent skeyti dulkodad | lykill fyrir radningu | upphaflegt skeyti |
+|                   |                       |                      |                       |                   |
+
+
+ekki er gert ráð fyrir að hægt sé að halda Aðferðinni leynilegri endalaust
+
+heldur frekar lyklinnum.
+
+-hægt er að geta sér til um lykil með "exaustive search" þ.e.a.s. tæmandi leit.
+
+*** Encryption methon algorithms
+
+DES, 3DES, AES, IDEA, RSA
+
+
+Data Encryption Standard  -IBM hannar fyrir NIST - National intitute of standards
+56 bita lykill
+
+Advanced Encryption Standard
+bygður á Rijndael Algrími.
+
+*** symetric key encryption
+kostir reiknilega lítið vessen
+
+*** Public key Encryption
+
+2 lyklar
+Almennings lykill
+private decription key - seperate for each user
+
+
+| Plaintext         | Encryption            | Ciphertext           | Decryption             | Plaintext         |
+|-------------------+-----------------------+----------------------+------------------------+-------------------|
+| Upphaflegt skeyti | Lykill fyrir dulritun | Sent skeyti dulkodad | lykill fyrir radningu  | upphaflegt skeyti |
+|                   | Alm.lykill mótakk     |                      | Einkalykill móttakanda |                   |
+
+
+private lykillin skiptir öllu máli
+
+almenningslykillin er sendur fram og tilbaka, XOR-aður við sithvðran private lykil þangað til til
+verður sameiginlegur lykill,
+
+rótinn sett í browserinn ..?  eithv..
+
+
+í samskipti milli tveggja koma því 4 lyklar við sögu., tvö pör.
+
+100 sinnum hægvirkara en dulritun með samhverfy skeyti.
+
+upprunalega sennilega fundið upp af MI-5 eða eithv.
+
+verisign---self signed certificate,
+
+verisign.
+
+
+RSA  - Rivest Shamir Adelmann
+
+
+
+Biometrics  --- augnskann, fingraför o.s.f.v.
+
+*** DS digital signature, stafræn undirskrift
+
+tætiAlgrím HASH á hluta af skeytinu, dulkóðað með einkalykli, ...
+borið saman aftur o.s.f.v. fyrir authentication.
+
+*** Integrated Security Systems
+Patch and upgrade regularly
+
+maður vill geta bakkað út úr patchi..
+*** SSL
+secure soccets layer
+
+*** Other security stuff
+
+Firewalls
+Total Security
+Intrusion detection
+Trust
+
