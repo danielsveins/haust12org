@@ -121,3 +121,17 @@ pott þétt eitt dæmi á prófi stútað ef þetta er á hreinu
 bls. 35
 
 Von Neuman Architecture
+
+
+** Próf
+
+halaEndurkvæmni
+
+straumar
+
+
+
+** AukaPælingar í Samb. við Forritunarmál
+Prolog
+
+meira C++

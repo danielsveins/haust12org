@@ -1,0 +1,54 @@
+* Dæmatími 26 nóvember
+
+
+** V12
+3)
+-- Notkun: taylor-exp
+-- Gildi: Óendanlegi listinn [ 1/0! , 1/1!, 1/2!, ....]
+let taylor-exp = [1]++(zipwith (/) taylor-exp [1..])
+-- zipwith er einsog stream-binop
+4)
+let myFoldl f u x = 
+    if x==[] then
+       u
+    else
+        myFoldl f (f u head(x))(tail(x))
+
+mmyFoldl (+) 0 [1..100]
+
+5) 
+
+let myFoldr  f u x =
+    if x== [] then
+       u
+    else
+       f (head x ) (myFoldr f u (tail x))
+
+myFoldr (+) 0 [1..100]
+
+
+8)  let y f = f(y f)
+
+--Notkun: fibo n
+--fyrir: n er heiltala, n > 0
+--Gildi: n-ta fibonacci tala
+let fibo n =
+    let bf f n =
+        if n <= 2 then
+	     1
+        else
+	   (f(n-1))+(f(n-2))
+       in (y bf) n
+
+
+
+take 10 (map fibo [1..])
+
+
+
+** Restinn af tímanum - Síðasta vikublaðið
+
+
+síðasti tíminn á fimtudaginn næsta..
+
+
