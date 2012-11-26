@@ -48,7 +48,44 @@ take 10 (map fibo [1..])
 
 ** Restinn af tímanum - Síðasta vikublaðið
 
+Strauma, lambda calculus, halaendurkmvni dotið translatast vel yfir í skeame
+<) skoða scheme
+
+ruslasöfnun, nefnið 3 ruslasöfn aðferðir og lýsið einni þeirra
+vikbl 10 circa.
 
 síðasti tíminn á fimtudaginn næsta..
 
 
+*** halaendrkvm - lykkju samanburður
+
+halaEndurkvæmni:
+
+reverse = fun (x) {
+        rer fm help (z,y){
+	    if y==[]
+               z
+            else
+               help(head(y):z, tail(y));
+          };
+          help([], x);
+
+};
+
+
+
+Lykkju útfærsla:
+
+
+reverse = fun (x) {
+        var y = x, z = [];
+        while (y != []) {
+	      z = head(y):z;
+              y = tail(y);
+              }
+              return z;
+};
+
+
+þessar tvær útfærslur eru sambærilegar.
+þ.e.a.s.  Halaendurkvæmni ~= lykkja.
