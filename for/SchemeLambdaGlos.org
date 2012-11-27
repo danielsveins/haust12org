@@ -4,3 +4,40 @@
 http://www.shlomifish.org/lecture/Lambda-Calculus/
 
 ** Lambda Calculus - Introduction to Lambda Calculus
+** Teach yourself Scheme in fixnum days
+current position: page 16
+
+
+> (= 42 42.0)
+#t
+> (eqv? 42 42.0)
+#f
+> 
+
+hér sést munur á = og eqv?
+
+(- 4) => -4
+(/ 4) => 1/4
+
+#\c 
+gives the character c.
+#\; 
+gives ; without triggering comment.
+
+(char=? #\a #\a) => #t
+(char<=? #\a #\b) => #t
+
+for case-insensitive .. char-ci
+
+(char-ci=? #\a #\A) => #t
+
+case conversion
+
+char-downcase, char-upcase
+
+
+string takes a bunch of characters and returns the made from them.
+
+(string #\h #\e #\l #\l #\o)
+=> "hello"
+
