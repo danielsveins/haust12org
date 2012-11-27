@@ -1,6 +1,7 @@
 * Haskel 2
 ég hélt að það væri til haskel.org einhverstaðar þ.s. heitir þetta haskel2
 ** Real World Haskell
+núverandi staður: bls. 32 - 72 of 712
 *** kafli 1
 [1..] gefur endl. lista
 
@@ -17,7 +18,7 @@ Here is a new line -->
 <-- see?
 
 
---ptStrL  is a function that prints a string
+--putStrLn  is a function that prints a string
 
 -- this is a comment thingy that is the "--"
 
@@ -54,7 +55,27 @@ x :: y means "the expression x has the type y"
 --staða nú er bls. 13, 53 af 712
 --staða nú er bls. 21
  
+tuples are made with ("somthing", 1450, "somthing else") for example
 
+fst is a function that gives the first element of a tuple
+snd the second
+
+these are defined only for pairs
+
+*** more stuff
+
+IO monad is in chapter 7
+ghci operates in this
+
+readFile 
+
+Prelude> :type readFile
+readFile :: FilePath -> IO String
+
+In Haskell, indentation is important, it continues an existing definition instead of starting
+a new one.
+
+stdr bls. 32
 
 ** Vikublað 11
 Formleg skilgreining á listarithættinum í haskel

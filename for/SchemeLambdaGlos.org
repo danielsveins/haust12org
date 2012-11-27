@@ -1,0 +1,6 @@
+* Scheme Lambda Glósur
+
+** Lecture about scheme and lambda calculus
+http://www.shlomifish.org/lecture/Lambda-Calculus/
+
+** Lambda Calculus - Introduction to Lambda Calculus

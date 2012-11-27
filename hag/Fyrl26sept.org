@@ -1,0 +1,110 @@
+* Hagverkfræði fyrirlestur
+
+** Dæmi um inri vexti
+
+bréf keypt fyrir 996,25 
+borgað út 48,13 á ári í 20 ár
+og svo loka útborgun 1000 í lok 20 ára
+
+996,25 = (SUM k = 1 -> 20  48,13/(1+r)^k) + 1000/(1+r)^20
+
+Notum ítrun (trial and error) til að finna r, eða einfaldara að 
+nota EXCEL IRR ef jafnt er milli tímabila
+
+
+árlega greiðsla er gjarnan kölluð coupon rate, vegna þess að bréfin
+í gamla daga höfðu af-rífi miða sem þú gast skilað á hverju ári.
+
+Yield-to-Maturity calculation for the corporate Bond
+
+=(B11:B31)
+
+|  t | Cash Flow |  B |
+|----+-----------+----|
+|  0 | -996,25   | 11 |
+|  1 | 48,13     | 12 |
+|  2 | 48,13     | 13 |
+|  3 | 48,13     | 14 |
+|  4 | 48,13     | 15 |
+|  5 | 48,13     | 16 |
+|  6 | 48,13     |  . |
+|  7 | 48,13     |  . |
+|  8 | ..        |  . |
+|  9 | ..        |  . |
+| 10 | ..        |    |
+| .. | ..        |    |
+| 20 | 1048,13   | 31 |
+
+
+=(B11:B31)
+
+gefur
+
+4,843%
+
+
+** Einkun matsfyrirtækjanna á skuldurum
+
+rating clasification
+
+|                   | Moodys | Standar & Poors |
+|-------------------+--------+-----------------|
+| High grade        | Aaa    | AAA             |
+|                   | Aa     | AA              |
+| Medium Grade      | A      | A               |
+|                   | Baa    | BBB             |
+| Speculative Grade | Ba     | BB              |
+|                   | B      | B               |
+| Default Danger    | Caa    | CCC             |
+|                   | Ca     | CC              |
+|                   | C      | C               |
+|                   |        | D               |
+
+
+
+Skuldabréf eiga sér nafnvirði (face value)
+þ.e. fyrir hvaða upphæð þau eru gefin út
+úTGÁFUDAG
+LOKADAG - EINDAGI
+Síðan se það markaðarins að ákveða hvað greitt er fyrir bréfin út
+frá þeirri ávöxtunarkröfu
+sem er á hverjum tíma.
+
+Dæmi um ávöxtunarkröfu
+           
+             100
+           | 
+-----------
+| r'     t |
+P
+
+
+þ.s. r' er ávöxtunarkrafan (yield-to-maturety) Þ.E. vaxtarprósentan
+sem við notum til að núvirða.
+
+fyrir t=2
+|  r' | P    |
+|-----+------|
+|  0% | 100  |
+|  5% | 90,7 |
+| 10% | 82,6 |
+| 15% | 75,0 |
+| 20% | 69,4 |
+
+
+Eftir því sem ávöxtunarkrafan lækkar, þá hækkar núvirðið
+tafla er reiknuð út með:
+P(r') = 100/(1+r)^t
+
+
+|  r' | t=2   | t=10 | t=30 |
+|-----+-------+------+------|
+|  0% | 100   | 100  | 100  |
+|  3% | 90,7  | 61,4 | 23,1 |
+| 10% | 82,66 | 38,5 | 5,73 |
+|     |       |      |      |
+|     |       |      |      |
+
+
+Breyting á núvirði P er hraðari fyrir lága ávöxtun =>
+vaxtanæmni 
