@@ -14,7 +14,19 @@
  
 ath. hægt að finna út nákv. stofu einhvernveginn á uglu, spyrja Aron.
 
-ath. líka með sjúkrapróf, þ.e.a.s. hátarlag á þeim.
+ath. líka með sjúkrapróf, þ.e.a.s. háttarlag á þeim. [done]
+
+Nú Fimtd. 22. eru 13 daga í fyrsta próf..
+og svo 5 í Verkefnastjórnun ..
+og svo 4 í Forritunarmál..
+
+
+13 dagar fyrir, hagverkefæði, Hugbv1, og Tölvunet og örryggi
+
+-> pæling að veikjast 6, og þá verður bara HugbV1
+Tölvunet&Öryggi
+-> endurtökupr, í mæ
+
 
 
 
@@ -50,7 +62,8 @@ improve student home page (4)
 *** Digital Security pælingar (4)
 stenography, key in photo or picture, enigma machine..
 læra JavaScript og mögulega CoffeScript (4)
-** Other 
+** Other
+ Láta Pabbs vita af Óperub mögl. 8 des. Vivaldi.. 
  Látta Pabbs vita af ÓperuBíó-möguleika klk-8 á laugardaginn (3) [done]
  Banki redda námsláni (1)     [done]
  Skattkort í skolann, redda launum (1) [done]
@@ -68,3 +81,6 @@ læra JavaScript og mögulega CoffeScript (4)
 
 
 
+** misiatridi
+
+Dropbox -> hi mail + salsa4
