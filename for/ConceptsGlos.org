@@ -123,6 +123,126 @@ bls. 35
 Von Neuman Architecture
 
 
+** Call by ? - Evaluation Strategy
+http://en.wikipedia.org/wiki/Evaluation_strategy
+*** Strict vs. Non-strict (i.e. löt viðföng)
+In strict evaluation, the arguments to a function are always evaluated completely before the function is applied.
+
+Under Church encoding, eager evaluation of operators maps to strict evaluation of functions; for this reason, 
+strict evaluation is sometimes called "eager". Most existing programming languages use strict evaluation for functions.
+
+**** Non-strict (Lazy) evaluation
+In non-strict evaluation, arguments to a function are not evaluated unless they are actually used in the evaluation of 
+the function body.
+
+Under Church encoding, lazy evaluation of operators maps to non-strict evaluation of functions; for this reason, non-strict evaluation 
+is often referred to as "lazy". Boolean expressions in many languages use a form of non-strict evaluation called short-circuit evaluation, 
+where evaluation returns as soon as it can be determined that an unambiguous Boolean will result — for example, in a disjunctive expression 
+where true is encountered, or in a conjunctive expression where false is encountered, and so forth. 
+Conditional expressions also usually use lazy evaluation, where evaluation returns as soon as an 
+unambiguous branch will result.
+
+
+*** Call by Value - (Gildisviðföng)
+
+Call-by-value evaluation is the most common evaluation strategy, used in languages as different as C and Scheme. 
+In call-by-value, the argument expression is evaluated, and the resulting value is bound to the corresponding 
+variable in the function (frequently by copying the value into a new memory region). If the function or procedure 
+is able to assign values to its parameters, only its local copy is assigned — that is, anything passed into a 
+function call is unchanged in the caller's scope when the function returns.
+
+Call-by-value is not a single evaluation strategy, but rather the family of evaluation strategies in which a 
+function's argument is evaluated before being passed to the function. While many programming languages (such as 
+Eiffel and Java) that use call-by-value evaluate function arguments left-to-right, some evaluate functions and 
+their arguments right-to-left, and others (such as Scheme, OCaml and C) leave the order unspecified (though they 
+generally require implementations to be consistent).
+
+-- Breytir ekki yfileit því sem bakvið er, heldur allment virðist þetta viðhalda upprunalegu gildi bakruns, og eða efri
+földunarhæðar, kallandi breytonum, en heldur bara -Value -gildinnu, á meðan á callinu stendur, eins virðist eiga við að
+viðföng falla, eru reiknuð fyrst áður heldur en fallið er evaluerað.
+
+*** Call by reference -(Tilvísunar viðföng)
+
+In call-by-reference evaluation (also referred to as pass-by-reference), a function receives an implicit reference to a 
+variable used as argument, rather than a copy of its value. This typically means that the function can modify (i.e. 
+assign to) the variable used as argument—something that will be seen by its caller. Call-by-reference can therefore be 
+used to provide an additional channel of communication between the called function and the calling function. The same 
+effect can be emulated in languages like C by passing a pointer (not to be confused with call-by-reference), or in 
+languages like Java by passing a holding object, that can be set by the caller. A call-by-reference language makes it 
+more difficult for a programmer to track the effects of a function call, and may introduce subtle bugs.
+
+Many languages support call-by-reference in some form or another, but comparatively few use it as a default, e.g. Perl. 
+A few languages, such as C++, PHP, Visual Basic, C# and REALbasic, default to call-by-value, but offer special syntax 
+for call-by-reference parameters. C++ additionally offers call-by-reference-to-const. In purely functional languages 
+there is typically no semantic difference between the two strategies (since their data structures are immutable, so 
+there is no possibility for a function to modify any of its arguments), so they are typically described as call-by-value 
+even though implementations frequently use call-by-reference internally for the efficiency benefits.
+
+Even among languages that don't exactly support call-by-reference, many, including C and ML, support explicit references 
+(objects that refer to other objects), such as pointers (objects representing the memory addresses of other objects), and 
+these can be used to effect or simulate call-by-reference (but with the complication that a function's caller must 
+explicitly generate the reference to supply as an argument).
+
+
+-Hér  virðist vera um að ræða hæfileika til að breyta gögnum í umhverfinu sem kallar á fallið.  Þetta býður uppá meiri 
+möguleikum til að hafa samskipti á milli , en á sama tíma hefur tilhneigingu til að bjóða uppá vandamál- bugs...
+
+
+
+
+*** Call by Value-Result (Afritsviðföng) - also known as Call by copy-restore
+
+Call-by-copy-restore, copy-in copy-out, call-by-value-result or call-by-value-return (as termed in 
+the Fortran community) is a special case of call-by-reference where the provided reference is unique 
+to the caller. This variant has gained attention in multiprocessing contexts: if a parameter to a 
+function call is a reference that might be accessible by another thread of execution, its contents 
+may be copied to a new reference that is not; when the function call returns, the updated contents 
+of this new reference are copied back to the original reference ("restored").
+
+The semantics of call-by-copy-restore also differ from those of call-by-reference where two or more 
+function arguments alias one another; that is, point to the same variable in the caller's environment. 
+Under call-by-reference, writing to one will affect the other; call-by-copy-restore avoids this by 
+giving the function distinct copies, but leaves the result in the caller's environment undefined 
+depending on which of the aliased arguments is copied back first - will the copies be made in 
+left-to-right order both on entry and on return?
+
+When the reference is passed to the callee uninitialized, this evaluation strategy may be called 
+call-by-result.
+
+- Hér er um að ræða , afritun sem skilur breyturnar eins og þær voru á meðan að úrvinsla stendur en 
+svo þegar fallið klárar, skrifar það aftur tilbaka nýja gildið.
+
+*** Call by Name (Nafnviðföng)
+
+**** TODO Checka á Lambda - Calculus hluta Descrete mathematics bókarinnar
+
+
+Call by name eða nafnviðföng afritar t.d. 2+1 bara inn, í stað þess að reikna það og afrita lausnina
+
+t.d.
+
+for( i=0; i!=100; i++) a[i]=2*i+1;
+f(a[0],a[a[0]]);
+
+þar sem
+
+f(x,y)
+{
+x = 2;
+print x, y;
+y = 1;
+}
+
+
+skilar
+
+25 
+
+þ.s.   a[0] skilar (2*0+1) 'afram til 2*(2*0+1)+1 sem verður 5.
+
+en x verður 2 vegna fallsins f.
+
+
 ** Próf
 
 halaEndurkvæmni
