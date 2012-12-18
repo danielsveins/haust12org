@@ -44,7 +44,7 @@ http://en.wikipedia.org/wiki/Forth_programming_language
 
 
 
-**** access link
+**** access link - Aðgangshlekkur
 or static link,
 from:
 http://en.wikipedia.org/wiki/Access_link#Structure
@@ -77,7 +77,8 @@ In a block-structured programing language, the names og variables and other obje
 such as procedures which are declared in outer blocks are visible inside other inner
 blocks, unless they are shadowed by an object of the same name.
 
-
+***** non - blockstructured PL's
+Java, C++.
 
 ***** s-expressions
 http://en.wikipedia.org/wiki/S-expression
@@ -213,6 +214,8 @@ call-by-result.
 svo þegar fallið klárar, skrifar það aftur tilbaka nýja gildið.
 
 *** Call by Name (Nafnviðföng)
+
+Breytir ekki því sem það tekur inn fyren seinna líkt og í Lötum viðfangum, en
 
 **** TODO Checka á Lambda - Calculus hluta Descrete mathematics bókarinnar
 
