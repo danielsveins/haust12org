@@ -61,7 +61,14 @@ perfect Mobius mimp project (4)
 improve student home page (4)
 *** Digital Security pælingar (4)
 stenography, key in photo or picture, enigma machine..
+Ath 8 kafla Computer Networks.
 læra JavaScript og mögulega CoffeScript (4)
+*** Free Energy pæls
+vinna að B-motor
+*** Gray hat python - Stuff
+vinna í Python eithv.
+*** Haskell vinna
+vinna í haskell
 ** Other
  Láta Pabbs vita af Óperub mögl. 8 des. Vivaldi.. 
  Látta Pabbs vita af ÓperuBíó-möguleika klk-8 á laugardaginn (3) [done]
