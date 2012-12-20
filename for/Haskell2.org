@@ -282,6 +282,78 @@ stdr bls. 32
 gott er að nota Cntrl-c þegar ghci er í endaleysu, en þá viðhelst ghci sessionið og bindingar
 vs. Cntrl-z þá hættir ghci og bindingarnar tapast..
 
+
+**** Chypher stuff
+
+***** ceasarcypher in haskell
+#
+#import Data.Char (ord, chr)
+#import Data.Ix (inRange)
+# 
+#caesar :: Int -> String -> String
+#caesar k = map f
+#  where
+#    f c
+#    | inRange ('a', 'z') c = tr 'a' k c
+#    | inRange ('A', 'Z') c = tr 'A' k c
+#    | otherwise = c
+#
+#
+#unCaesar :: Int -> String -> String
+#unCeasar k = ceasar (-k)
+#
+#-- char addition
+#tr :: Char -> Int -> Char -> Char
+#tr base offset char = chr $ ord base + (ord char - ord base + offset) `mod` 26
+
+
+
+ghci:
+import Data.Char (ord, chr)
+import Data.Ix (inRange)
+
+let tr base offset char = chr $ ord base + (ord char - ord base + offset) `mod` 26
+let ceasar k = map f where f c | inRange ('a', 'z') c = tr 'a' k c | inRange ('A', 'Z') c = tr 'A' k c | otherwise = c
+let unCeasar k = ceasar (-k)
+
+Prelude Data.Char Data.Ix> ceasar 6 "Bergur"
+"Hkxmax"
+Prelude Data.Char Data.Ix> 
+
+Prelude Data.Char Data.Ix> ceasar 6 "Bergur"
+"Hkxmax"
+Prelude Data.Char Data.Ix> unCeasar 6 "Hkxmax"
+"Bergur"
+Prelude Data.Char Data.Ix> unCeasar 4 (ceasar 4 "secret message")
+"secret message"
+Prelude Data.Char Data.Ix> 
+
+****** Glos
+
+föll sem ég þekki ekki..
+
+
+
+
+chr
+Int -> Char
+einfaldlega tekur inn tölu, og skilar út ASCII tákninu
+
+Ex.
+
+chr 97
+'a'
+
+ord
+Char -> Int
+gefur einfaldlega ASCII tölu viðkomandi caracters
+
+Ex.
+
+ord 'a'
+97
+
+
 ** Vikublað 11
 Formleg skilgreining á listarithættinum í haskel
 http://haskell.org/onlinereport/exps.html
