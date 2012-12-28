@@ -1,0 +1,36 @@
+* Games With Python
+boook found at:
+http://inventwithpython.com/
+totaly open source and free.
+
+current place:
+10
+
+
+
+** Pages #'s of sourcecodes
+| SourceCode            | page |
+|-----------------------+------|
+| hello.py              |   21 |
+| guess.py              |   30 |
+| jokes.py              |   51 |
+| dragon.py             |   58 |
+| buggy.py              |   83 |
+| coinFlips.py          |   87 |
+| hangman.py            |  103 |
+| tictactoe.py          |  150 |
+| trueFalseFizz.py      |  172 |
+| bagels.py             |  184 |
+| sonar.py              |  213 |
+| cipher.py             |  244 |
+| reversi.py            |  261 |
+| aisimi1.py            |  292 |
+| aisimi2.py            |  294 |
+| aisimi3.py            |  299 |
+| pygameHelloWorld.py   |  309 |
+| animation.py          |  324 |
+| collisionDetection.py |  338 |
+| pyGameInput.py        |  348 |
+| spritesAndSounds.py   |  360 |
+| dodger,py             | 371  |
+
