@@ -2,6 +2,10 @@
 ég hélt að það væri til haskel.org einhverstaðar þ.s. heitir þetta haskel2
 ** Real World Haskell
 núverandi staður: bls. 32 - 72 of 712
+: - shell: date
+Fri Dec 28 00:36:29 GMT 2012 - bls. 45
+
+
 *** kafli 1
 [1..] gefur endl. lista
 
