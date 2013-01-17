@@ -1,0 +1,40 @@
+* Tölvugrafík  - 17 jan 2013 - fyrirlestur
+
+
+GLUT atburðir
+
+næsta vika: GLSL  tenging litara við OpenGL forrit og forritunarmálið GLSL
+
+
+** GLUT
+
+  Höfum séð hvernig  á að upphafstilla GLUT.  Setja ham (e. mode), stærð og 
+staðsetningu glugga og að búa til glugga
+
+
+*** Atburðir (events) í GLUT
+
+**** Display:
+
+   Verður þegar þarf að sýna glugga
+(í fyrsta sinn eða við endurtekningu)
+skráum fall (á viðfanga)
+fallið þarf að teikna allan grafíkskjáinn
+
+**** reshape:
+
+Verður þegar notandi breytir lögun glugga skráð með:
+glutReshapeFunc( eithv..,..)
+
+**** move: - eða mouse  (illa skrifað :Þ)
+ 
+verður þegar notandi ýtir á/sleppir músahnappi
+skráum fall
+það fær inn:
+
+***** Hnappinn(3 mögl)
+GLUT_LEFT_BUTTON
+..MIDDLE..RIGHT
+***** Staða(upp eða niður)
+GLUT_UPP ..DOWN
+***** staðsetning í skjáhnitum (x og y)

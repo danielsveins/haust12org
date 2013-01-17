@@ -1,0 +1,81 @@
+* Tölvugrafík  - 17 jan 2013 - fyrirlestur
+
+
+GLUT atburðir
+
+næsta vika: GLSL  tenging litara við OpenGL forrit og forritunarmálið GLSL
+
+
+** GLUT
+
+  Höfum séð hvernig  á að upphafstilla GLUT.  Setja ham (e. mode), stærð og 
+staðsetningu glugga og að búa til glugga
+
+
+*** Atburðir (events) í GLUT
+
+**** Display:
+
+   Verður þegar þarf að sýna glugga
+(í fyrsta sinn eða við endurtekningu)
+skráum fall (á viðfanga)
+fallið þarf að teikna allan grafíkskjáinn
+
+**** reshape:
+
+Verður þegar notandi breytir lögun glugga skráð með:
+glutReshapeFunc( eithv..,..)
+
+**** move: - eða mouse  (illa skrifað :Þ)
+ 
+verður þegar notandi ýtir á/sleppir músahnappi
+skráum fall
+það fær inn:
+
+***** Hnappinn(3 mögl)
+GLUT_LEFT_BUTTON
+..MIDDLE..RIGHT
+***** Staða(upp eða niður)
+GLUT_UPP ..DOWN
+***** staðsetning í skjáhnitum (x og y)
+
+
+
+***** passiveMotion
+
+verður þegar mús hreyfist með enga hnapp niðri
+
+glutPassiveMotionFunc(myPassive)
+
+                           ^
+                           |
+
+                       fær inn nýja staðsetningu músar
+                      í sig#hnitum
+
+
+
+**** IDLE fallið
+
+kallast á það þegar ekkert er að gerast...
+
+
+** Til Frumstæðrar valmyndar (menu) í GLUT
+
+búum til valmynd,
+skráum einstaka valmöguleika,
+tengjum valmyndina við einhv. músarhnapp.
+
+þ.a. það sem geris þá:
+
+það poppar upp valmynd við músarsmellinn, einsog-> hægriSmell, unix..windows..
+
+
+
+*** VAL (picking)
+
+viljum leyfa notanda að smella á hluti,..
+í 2d er þetta tiltölulega einfallt, - þurfum að vita umfang hlutar í skjáhnitum
+- ef hann er flókinn er yfileitt búinn til kassi utan u hann.
+
+3d er flóknara dæmi, þarf vörpun ...
