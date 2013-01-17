@@ -1,0 +1,68 @@
+* Rökfr í Hugb fyrl 16 jan 2013
+
+
+
+
+T á hlid thydir    er sannanlegt m. nátturulegri afleidslu
+
+T m. tvöföldum stilka á hlid thydir sannannelgt m. sanntöflu..
+
+
+Bls. 46 Soundness
+
+49 Completeness ..
+
+
+
+Gödel setnings umræda..
+
+ Hægt er ad búa til rauntölu, út frá nátturulegu talna kerfinu. .. Cauchy runur af rædum tölum..
+
+eda m. a skilgr mengi einsog..
+
+
+   t.d.
+  sqrt(2) := { x /e Q | x^2 < }
+
+
+**  CNF conjunctive normal form
+
+L ::= p | ~p
+D ::= L | L v D
+C ::= D | D ^ C.
+
+  (snid) ..
+
+dæmi:
+  (p v ~p v q v r) ^ (q v ~q v p v ~r) ^ (r v ~r)
+
+
+
+P1,P2, ..... T(hl) q
+
+jafngildir ad segja:
+
+Er  ~(P1,P2,...) v q      sísanna 
+
+th.e.
+
+    ~P1 v ~P2 .....~Pn v q
+
+
+   (s.m.b. bls 2 á ödru vikubladi)
+
+ 
+
+...
+til ad sjá hvort p1 v p2v..pn sé sísanna má sem sé koma hvort
+~p1 ^ ~p2 ^ ...~pn sé fullnægjanlegt.
+
+Ef pi = p1^p2..^pn thá ~pi = ~p1 v ~p2 v ...
+-> CNF snid
+
+
+
+
+Resolution Rule    -> á vikbl 2.
+
+ 

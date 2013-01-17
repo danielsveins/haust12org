@@ -1,0 +1,22 @@
+  IdnadarTolfr  timi 2
+
+margkostadreifing.. polynomial dreifing
+
+stuff sem var a toflu:
+{
+Sætispróf:
+  - Wilcoxon Signed Rank test
+  - Wilcocon Rank Sum test
+
+Adferdafrædi:
+
+i) Settum fram tilgátu
+ii) Rada í sætisröd
+iii) Reikna prófstærd
+iv) Bera prófstærd saman vid töflugildi
+V) Hafna H0 eda samthykkja 
+
+
+
+Lok tíma pæling:  Spurja hvad ad lesa í bók..
+hvernig ad tækla verkefni..

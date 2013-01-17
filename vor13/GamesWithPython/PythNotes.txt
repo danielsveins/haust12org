@@ -1,0 +1,21 @@
+Python notes
+
+current posish: bls. 197-198
+
+In python3 Functions can see global variables and make use of their values,
+but they cannot alter global variables only call by value, and return things.
+  Functions can take arguments, the variables inside the local scope of the 
+functions are called parameters, but the values taken into these variables
+are called arguments.
+
+
+A function definition must come before the function is called.
+
+
+Making a Matrix in Python:
+
+#This makes a 100X100 matrix with numbers in it 
+list100 = list(range(0,100))
+MatrixC = []
+for x in range(0,100): MatrixC.append(list100)
+
