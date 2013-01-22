@@ -1,0 +1,15 @@
+The Idea has surfaced to provide GOL with many different species/colors
+perhaps a rule could be:
+
+  4-same type/species/nation changes adjacent to that nation  -> problematic
+  
+  Firstly:
+  a square with cell of other type counts toward overcrowding..
+ 
+  3 or 2 switches color..
+
+
+  Possibly:
+  
+  first check cell -> if it has neigbors of other type, the most numorous type becomes the type of the cell.
+  

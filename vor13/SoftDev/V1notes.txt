@@ -1,0 +1,205 @@
+dæmi 1.
+
+>>> def celcius_fahrenheit (tempList):
+...     new = []
+...     for i in tempList:
+...             new.append((i*9/5)+32)
+...     return new
+...
+>>> print(celcius_fahrenheit([40,50]))
+[104, 122]
+>>>
+
+dæmi 2.
+
+
+def maxdiff(list):
+	md = 0
+	last = list.pop(0)
+	for i in list:
+		if (abs(i - last) > md):
+			md = abs(i - last)
+		last = i
+	return md
+
+
+
+
+>>> import v1
+>>> fart = [1,2,3,5,8,12]
+>>> v1.maxdiff(fart)
+4
+>>>
+
+
+
+
+
+
+Dæmi 3.
+
+
+
+def linecount(cfile):
+        infile = file(cfile, 'r')
+        content = infile.read()
+        n = content.count('\n')
+        return n
+
+>>> import v1
+>>> gl = v1.linecount('tmp.txt')
+>>> gl
+3
+>>>
+
+
+
+Dæmi 4.
+
+ciph = '''g fmnc wms bgblr rpylqjyrc gr zw fylb. rfyrq ufyr amknsrcpq ypc dmp. bmgle gr gl zw fylb gq glcddgagclr ylb rfyr'q ufw rfgq rcvr gq qm jmle. sqgle qrpgle.kyicrpylq() gq pcamkkclbcb. lmu ynnjw ml rfc spj.
+'''
+
+def pycha(str1):
+	new = ''
+	for i in range(len(str1)):
+		num = ord(str1[i])
+		num += 2
+		if str1[i].isalpha():
+	#		new+=(chr(ord(str1[i])+2))
+			if str1[i].isupper():
+				if num > ord('Z'):
+					num -= 26
+				elif num < ord('A'):
+					num += 26
+			elif str1[i].islower():
+				if num > ord('z'):
+					num -= 26
+				elif num < ord('a'):
+					num += 26
+			new += chr(num)
+		else:
+			new+=str1[i]
+	return new
+
+>>> import v1
+>>> bla = v1.pycha(v1.ciph)
+>>> bla
+"i hope you didnt translate it by hand. thats what computers are for. doing it in by hand is inefficient and that's why
+this text is so long. using string.maketrans() is recommended. now apply on the url.\n"
+>>>
+
+
+
+Dæmi 5.
+
+def maxseq(str1):
+	bmax = 0
+	localmax = 0
+	for i in range(len(str1)):
+		if str1[i-1]==str1[i]:
+			localmax += 1
+			if localmax > bmax:
+				bmax = localmax
+		elif str1[i-1]!=str1[i]:
+			localmax = 1
+
+	return bmax
+
+>>> import v1
+>>> bla3 = 'gggggg'
+>>> N = v1.maxseq(bla3)
+>>> N
+6
+>>> bla4 = 'gggbbbbb 555 7777777777'
+>>> n = v1.maxseq(bla4)
+>>> n
+10
+>>>
+
+
+
+Dæmi 6.
+
+
+
+
+def pump(str1):
+	arr = list(str1)
+	inc = 0
+	for i in arr:
+		if i.isdigit():
+			n = int(i)
+			l = arr[inc+1]
+			arr[inc] = arr[inc+1]
+			for x in range(n-1):
+				arr.insert(inc,l)
+		inc += 1
+
+	return ''.join(arr)
+
+>>> import v1
+>>> bla = 'ab5cde8x'
+>>> bla2 = v1.pump(bla)
+>>> bla2
+'abccccccdexxxxxxxxx'
+>>>
+
+
+
+Dæmi 7.
+
+
+
+Xlist = ['kex', 'xylofonn', 'epli','xenos','asni']
+
+def xsort(str1):
+	
+	p2 = str1
+	p2.sort()
+	# str.startswith('x')
+	new = []
+	delList = []
+	for x in range(len(p2)):
+		if p2[x].startswith('x') or p2[x].startswith('X'):
+			new.append(p2[x])
+			delList.append(x)
+			
+	for i in range(len(delList)):
+		del p2[delList[i]]
+		p2.reverse()
+		p2.append(new[i])
+		p2.reverse()
+	return new + p2
+
+
+>>> import v1
+>>> text = v1.xsort(v1.Xlist)
+>>> text
+['xenos', 'xylofonn', 'xylofonn', 'xenos', 'asni', 'epli', 'kex']
+>>>
+
+
+
+Dæmi 8.
+
+
+def wordcount(file1):
+	infile = file(file1, 'r')
+	content = infile.read()
+	c2 = content.split()
+	count = len(c2)
+	dic = []
+	for i in c2:
+		if i not in dic:
+			dic.append(i)
+
+	return (count, len(dic))
+
+
+>>> import v1
+>>> tupl1 = v1.wordcount('tmp.txt')
+>>> tupl1
+(12, 6)
+>>>
+
+
