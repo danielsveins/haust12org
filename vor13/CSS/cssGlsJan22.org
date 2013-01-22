@@ -1,0 +1,193 @@
+* Örrygi tölvukerfa glósur úr tíma 22 jan 2013
+
+data owner - not necessarilly the same as user..
+
+
+** Attack
+
+an attack is an exploit of a vulnerability
+
+6 types:
+
+active
+-
+doing somthing with the data..
+-
+passive
+-
+not doing much with the data... not having much affect.
+-
+direct
+-
+indirect
+-
+using a proxy, like a bot net for a DDOS attack for example.
+-
+intentionsal
+-
+unintentional
+-
+
+
+
+
+you could have intentinal and be passive- just accesing and reading, when you post or somthing it becomes active.
+
+
+
+
+jan 28th is international data protection day
+
+** Iranian cyber police
+
+cyber army
+-maintarget is the U.S.
+
+** Timing attack
+
+https://www.youtube.com/watch?v=idjDiBtu93Y
+
+recovering RSA private exponent..
+
+local -> remote timing attack.
+
+** Secure System Development Life-cycle
+
+what is?
+-
+process of developing software, ..
+
+SDLC
+
+Design, Systems analysis
+
+
+Client and the system owner.
+
+Analysis -> Design -> Implentation -> Testing -> Evaluation \
+ <----------------------------------------------------------/
+
+
+*** Defense in Depth
+
+multiple layers of security
+
+{ Internet } -> {Router} -> {firewall} -> {DMZ} -> {firewall} -> {servers}
+
+when you seperate youre servers into zones you have a segmented network
+
+*** Some security probs in software Development
+
+buffer overflow
+
+Command injection
+- like SQL injection
+Cross-scripting 
+ 
+Failure to handle errors
+-could be outputting errors to wrong people, or doing nothing
+
+Failure to protect network traffic
+-plaintext over wire
+
+Failure to store and protect data secutely
+- trap door
+
+Format string Problems
+-don't validate the data comming in.
+
+Neglecting Change control
+-
+
+Improper use of files
+- wrong permisions
+
+Improper use of SSL, example HTTPS
+-
+
+Information leakage
+- for example errors that give to much info
+
+Integer bugs
+-overflow
+-underflow
+-Truncation
+-Signedness
+
+Salami Attack
+-Office space, superman3
+
+Race Conditions
+- error in the execution of order of events.
+
+DNS attack or DNS poisonig
+- converts the URL into IP address
+- poisoning DNS cache
+-go to wrong place instead of bank site for example..
+
+Unauthenticated key exchange
+-
+
+Magic URL
+-cookie along with url.
+
+Weak passwords
+-
+
+Invalidated parameter
+-
+
+Broken Access Control
+-
+
+*** How to protect
+
+Accept only known valid data
+Reject known bad data
+Sanitize all data
+
+
+
+*** CEH
+
+Certified Ethical Hacker exam
+
+*** SQL injection
+
+Attack on database through user input field
+through non escaped/validated
+
+Attackers can:
+-Download entire database
+-Wipe out entire database
+-Corrupt
+-DOS
+
+
+
+Example:
+
+guess table structure
+
+
+ursl.php?id=2;%20DELETE%20FROM%20USERS
+
+using totologie to return everything
+
+
+use: mysql_real_escape_string
+
+used prepared statements, object oriented..
+
+
+Cross site scripting
+JavaScript redirect.
+
+<script>window.location('http://badsite.com')
+
+prevention:
+
+htmlentities() method
+strip_tags()
+htmlspecialchars()
+Using a whitelist of accepted elements.
