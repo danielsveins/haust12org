@@ -1,0 +1,92 @@
+* Iðnaðartölfræði, fyrirlestrarglósur 23 janúar 2013
+
+
+r og s stýririt.. eithv.
+
+6/sigma ferli, þróað af motorola og fyrst sett fram 1986.
+
+Dæmi:
+----------
+  Jón verkfræðingur.  Beita tæknigreiningu til að fylgjst með hlutabréfaverði í fyrirrtækinu
+Amrel hf. sem skráð var í kauphöll íslands.
+  Vill nota X og s - stýririt, áhættufælin og vill +_ 1,5 /sigma
+Til gögn í 20 daga, og þeim er safnað 4 sinnum á dag.
+N ~ (75,200).
+----------
+a) Finna stjórnmörk á X^ og s stýririt.
+
+      X^ --> UCL = X^ + 1,5 (/sigma / sqrt(n)) = 75 + 1,5 * sqrt(200)/sqrt(4) = 85.61
+             LCL = X^ - 1,5 * /sigma/sqrt(n) = 64,39
+----
+                       C4 = 0.9213
+
+s^-stýririt:  UCL = (C4 + 1,5 * sqrt(1 - C4^2))/sigma = 21,28 
+
+              LCL = (C4 - 1,5 * sqrt(1 - C4^2))/sigma = 4.78
+
+b)
+
+   Eftir bankahrun þá eru gögnin N ~ (55,200).  Hvað þarf Jón að fylgjast með verði í marga daga
+til að uppgötva þessa hliðrun?
+
+
+
+P{ LCL <= X <= UCL | /mju = 55, /sigma^2 = 200 }
+
+LCL = 64,39 ; UCL = 85,61
+
+P[ (LCL - (/mju))/(/sigma/sqrt(n))) <= X <= sama nem m. UCL ]
+
+= P[ 64,39 - 55 / (sqrt(200)/sqrt(n)) <= X <= sama nema 85,61 í stað 64,39 ]
+= P(1,33<=X<=4,33) = 1-0.908 = 9,2%
+
+
+
+
+--------------------------------------
+
+Dæmi:
+
+Stýririt eru notuð til þess að fylgjast með
+a) tilviljanakendum breytingum
+b) sérstökum breytingum (e. assignable variations)
+c) ...
+d) allt að ofan
+
+d
+
+
+-----
+
+
+** PCR
+
+PCR = (USL - LSL)/6(/sigma)
+
+
+ARL (Average Run Length)
+
+Delta hjá Jóni er -20, 
+
+P{ LCL <= Z <= UCL| gefin breyting Delta }
+
+ARL(0) oft skoðað, það er ef dæmið er í jafnvægi..
+
+ 
+Dæmi:
+
+ARL = 1/(1-L(Delta)) = 1/(1-0.092) = 1,1
+
+PCRk = min( (USL - /mju^)/(3/sigma),(/mju^ - LSL)/(3/sigma) )
+
+= min( (61,9-61,5)/(3/sigma), (61,5-59,7)/(3/sigma) )
+
+
+/sigma_{x^} = /sigma / sqrt(n)
+
+
+
+
+** Í næstu viku, 
+
+klára yfirferð yfir stýriritin.

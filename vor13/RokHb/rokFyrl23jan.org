@@ -1,0 +1,84 @@
+* Rokfræði við hugbúnaðargerð, fyrirlestur 23 janúar 2013
+
+** horn yrðingar
+
+kendar við mann sem hét Horn.
+
+Grunnurinn að forritunarmálinu Prolog byggir á svona horn yrðingum.
+
+A horn formula is a formula p of propositional logic if it can be
+generated as an instance of H in this grammar:
+
+  P ::= O | T | p
+  A ::= P | P ^ A
+  C ::= A -> P
+  H ::= C | C ^ H
+
+
+pælingar að sýna að einhver lausn gildir, ss. satisfiability.
+
+Horn yrðingar hafa á meðal annars ekki eða merki (V) eða ekki merki (~).
+
+Algorithminn við að meðhöndla horn yrðingar ..
+Gilding:
+
+p,s eru ein sannar, q og r eru ósannar
+
+fyrir
+(T -> p)
+(p^q^r -> s)
+(r^s -> q)
+(p -> s)
+
+fyrst er merkt við allt sem er T, síðan allt merkt vinstri -> hægri..
+o.s.f.v.
+
+Dæmi 2.
+
+S=
+(p -> O)
+(q^r -> p)
+(r -> q)
+(T -> r)
+
+út frá þessu er leidd mótsögn, þ.a. um er að ræða síósönnu, þ.e. S er ekki satisfiable.
+hér fyrir ofan er byrjað á T -> r, og svo rekið upp og endað í T -> 0, sem er mótsögnin.
+
+CNF: (pVqVr)^(rV~q)^(pVq)
+// veit ekki hvaðan þessi fyrir ofan kemur..
+
+Ath: Auðvelt er að umrita horn yrðingar yfir á CNF snið.
+
+
+** SAT-leysar bls. 68-69:
+
+SAT-solver. 
+
+byrjað á því að útrýma öllum eða merkingum og öllum leiðingum.
+
+p1 -> p2 := ~p1 V p2 := ~(p1 ^ ~p2)
+
+
+linear solver m. tré, bls. 69-70
+
+rekið niður eftir tré, byrjað á T uppi, og svo rekið áfram þar til hringur næst og 
+annaðhvort kemur mótsögn, lausn, eða þriðji möguleikinn ... einhverjir nóðar óákv.. eithv.
+
+         bls 75.      Cubic solver
+
+                                   ^
+                                 /   \
+                                ^     \
+                               / \     \
+                              ^   \     \
+                             / \   \     \
+                            ^   \  /      \
+                           /     X         \
+                          /     / \         \
+                         /     /   (~)       \
+
+..
+
+SAT verkefnið er NP fullkomið verkefni.. sem þýðir að það er enginn.. bls. 77 
+
+ 
