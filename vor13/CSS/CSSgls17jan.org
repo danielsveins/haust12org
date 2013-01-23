@@ -1,0 +1,83 @@
+* örrygi Tölvukerfa - gls jan 17 2013
+
+
+Persónuvernd - data protection agency of iceland.
+
+-> persónuvernd, ekki m. tennur BS 7799 - ekki til lengur.
+
+
+ISO27001
+
+
+Quiz lokið..
+
+
+--? 6 types of attack?---
+
+** Quiz
+
+stuxnet is Trojan horse
+
+Data:
+custodian
+user
+owner
+
+Attack:
+Any acces or alteration, explores explloits a vulnerability
+
+6 types:
+active 
+passive
+deliberate
+indirect
+unintentional
+direct
+
+
+** Chapter 2
+
+Exposure is when you know of a vulnerability
+
+Risk - associated with number..
+
+Risk appetite - how much risk are you willing to take- (live with)
+
+control - countermesure..
+
+Loss - damage caused.
+
+Security profile/ security posture - security program
+
+program - compination of safeguards.
+
+the result of risk assesment and controls is:
+   the residual risks.
+
+residual risk compared to risk appetite.
+
+
+
+AN Exploit is the actual technique..
+
+
+
+Polymorphic Treat, e.g. I love you   - virus
+
+
+
+Pharming -(farming for data, web site, email)
+
+magicURL - cookie embeded in URL
+
+Timing Attack, - event.
+
+
+Phreaking, hacking a telephone
+Phreaking handbook
+
+Cyber Activists
+
+** Smári Mcarthy
+
+Pirate party..

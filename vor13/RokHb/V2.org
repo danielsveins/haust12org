@@ -1,0 +1,186 @@
+* V2 Rökfr. í hugbg.
+
+1 .5.7
+
+b)
+
+p q r | þ
+
+1 1 1 | 1
+1 1 0 | 0
+1 0 1 | 0
+0 1 1 | 1
+1 0 0   0
+0 1 0   0
+0 0 1   1
+0 0 0   0
+
+
+pqr + ~pqr + p~q~r = f
+
+Dmorg mabaey =>
+
+~p~q~r * p~q~r * ~pqr maybe = f.. 
+
+
+pottþétt frá sanntöflu..
+(~p + ~q + r) * (~p + q + ~r) * (~p + q + r) * (p + ~q + r) + (p + q + r)
+
+
+
+1.5.8    - bls 87
+ 
+
+write a recursive function IMPL_FREE which requires a (parse tree of a ) 
+propositional formula as input and produces an equivalent implication-free
+formula as output
+
+
+function IMPL_FREE(P):
+  // precondition: p is a propositional function
+  // postconditions: returns an Impication free equivalent of p
+
+  begin function
+    case
+      p is a literal: return p
+      p is p1 -> p2: return ~IMPL_FREE(p1) V IMPL_FREE(p2)
+      otherwise (= no impications) return p
+    end case
+  end function
+
+
+
+V6
+Sannið reglu demorgans , ~(pvq) = ~p ^ ~q , m. náturl afleiðslu
+
+V7
+Ákvarðið CNF(NNF(IMPL_FREE(r^(p->(r->q)))))
+
+
+
+** Alm. gls.
+
+
+bls 53. bók
+
+*** CNF
+
+A formula is a conjunctive normal form if it is a cunjunction of clauses, 
+where each clause D is a disjunction of its literals:
+
+L ::= p | ~p
+D ::= L | L V D
+C ::= D | D ^ C
+
+examples in CNF
+
+i) (~q V p V r) ^ (~p V r) ^ q
+ii) (p V r) ^ (~p V r) ^ (p V ~r)
+
+
+Concept .
+
+Satisfyability:
+
+a proposition is satisfyable if there exists a valuation of it's literals in which
+it evaluates to true.
+
+
+p is satisfiable if ~p is not valid.
+
+
+A CNF is equivalent to a truth table in terms of information..
+
+**** Algorithm for converting p to CNF
+
+Algorithm is called CNF
+
+
+NNF or negational normal forms are formulas which only negate atoms.
+
+Changing from form p -> n to ~p V n is called IMPL_FREE proceedure
+
+
+After preprocessing p
+i.e.
+ 
+      NNF(IMPL_FREE(p))
+
+we apply CNF wich is:
+
+1 If p is a literal, it is by definition in CNF and so CNF outputs p
+2 If p equals p1 V p2, we can call CNF recurively on each p
+3 If p equals p1 V p2, we again call CNF recursively on each Pi to get the
+respective output Ni; but this this time we must instead of returning 
+Ni V Nj call DISTR(Ni , Nj)
+
+
+***** code for CNF:
+
+function CNF(p):
+
+  // precondition: p is implication free, and in NNF
+  // posconditon: returns equivalent CNF for p
+  begin function
+     
+     case
+   
+       p is a literal: return p
+       p is P1 ^ P2: return CNF(P1) ^ CNF(P2)
+       p is P1 V P2: return DISTR(CNF(P1),CNF(P2))
+     end case
+  end function
+
+
+
+***** function DISTR(n1,n2):
+  // precondition: n1 and n2 are in CNF
+  // postcondition: DISTR(n1,n2) computes a CNF for n1 V n2
+  
+  begin function
+    case
+      n1 is n11 ^ n12: return DISTR(n11,n2) ^ DISTR(n12,n2)
+      n2 is n21 ^ n22: return DISTR(n1,n21) ^ DISTR(n1,n22)
+      otherwise (= no conjunctions): return n1 V n2
+    end case
+  end function
+
+
+***** Design of IMPL_FREE is an excercise...
+
+write a recursive function IMPL_FREE which requires a (parse tree of a ) 
+propositional formula as input and produces an equivalent implication-free
+formula as output
+
+
+function IMPL_FREE(P):
+  // precondition: p is a propositional function
+  // postconditions: returns an Impication free equivalent of p
+
+  begin function
+    case
+      p is a literal: return p
+      p is p1 -> p2: return ~IMPL_FREE(p1) V IMPL_FREE(p2)
+      otherwise (= no impications) return p
+    end case
+  end function
+
+
+***** function NNF(p):
+
+  // precondition: p is implication free
+  // postcondition: NNF(p) computes a NNF for p
+
+  begin function
+    case
+      p is a literal: return p
+      p is ~~p1: return NNF(p)
+      p is p1 ^ p2: return NNF(p1) ^ NNF(p2)
+      p is p1 V p2: return NNF(pq) V NNF(p2)
+      p is ~(p1 ^ p2): return NNF(~p1) V NNF(~p2)
+      p is ~(p1 V p2): return NNF(~p1) ^ NNF(~p2)
+    end case
+  end function
+
+
+** Posish is circa 67
