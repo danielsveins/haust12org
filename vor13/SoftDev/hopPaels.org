@@ -1,0 +1,38 @@
+* Hóp Pælingar
+
+
+
+** SVN
+
+leiðbeiningar fyrir Mac og Linux kominn á Piazza
+
+** Hópa applicationir..
+
+2 so far..
+
+i
+Gestur vagn Baldursson
+ Snævar Máni Hallgrímsson og Magnús Búi Gunnarsson
+erum þrír strákar á tölvunarfræðibraut og vantar einn í viðbót. 
+
+ii
+Pétur karl Ingólfsson
+
+** Fyrsta verkefnið
+
+Allskonar forrit sem þykjast geta valið hlutabréf fyrir mann..
+Hagfræðingar ekki sammála um hvernig markaðurinn hagar sér.
+
+"pump and dump" svikamillur..
+
+
+----
+
+Framkvæmt einfalda tæknigreiningu..., Sett gögn fram myndrænt, birt nýjustu fréttir
+sem tengjast fyrirtækjum, 
+
+fáum forrit sem sækir gögn á yahoo..
+
+4 - vikna project
+
+fyrstu skil (á notandasögum, verkáætlun) á þriðjud. 23
