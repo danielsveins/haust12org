@@ -1,0 +1,34 @@
+* Heimaverkefni 2 Iðnaðartölfræði
+
+** Glósur
+
+Inference for the difference of means of two normal distributions, variances unknown
+-bls.393 3ðja útgáfa...
+
+*** Glærupakki f2
+
+
+
+**** Stiklaus próf
+These proceedures have actual level of signifigance /alpha or confidence level 100(1 - /alpha)% for
+
+
+Wilcoxon signed-rank test
+http://en.wikipedia.org/wiki/Wilcoxon_signed-rank_test
+
+bók:
+
+
+Wilcox Rank-Sum test - bls 373 5th ed.
+
+proceedure:
+
+Arrange all n1 + n2 observations in ascending order and assign ranks, with mean rank assigned to
+equal positions..
+
+let W1 be the sum of ranks in the smaller sample, and W2 the sum of ranks in the other sample..
+
+
+** D4
+
+bls 390 eithv...example 10.15
