@@ -1,0 +1,62 @@
+* SkipulagsPlagg vor 2013
+
+** Vikulegt
+
+*** sat 26 jan
+**** Rökfr fyrir hugbúnaðargerð - næsta miðvikd.
+**** Iðnaðartölfræði            - næsta fimtudag
+**** Áhættugreining            - fyrir næsta föstd.
+**** Tracker shit             - helst fyrir mánd
+**** Þróun hugbúnaðar         - mand
+
+
+
+
+** Þróun Hugbúnaðar
+
+
+** Iðnaðartölfræði
+
+
+** Rökfræði fyrir hugbúnaðargerð
+
+
+** Marel
+
+
+** Örrygi tölvukerfa
+
+
+** Priorities
+
+|               | do soon | do later |
+|---------------+---------+----------|
+| Important     | 1       | 2        |
+| Not Important | 3       | 4        |
+
+
+
+** Projects
+NandtoTetris 3 project  (3)
+perfect Mobius mimp project (4)
+improve student home page (4)
+*** Digital Security pælingar (4)
+stenography, key in photo or picture, enigma machine..
+Ath 8 kafla Computer Networks.
+læra JavaScript og mögulega CoffeScript (4)
+*** Free Energy pæls
+vinna að B-motor
+*** Gray hat python - Stuff
+vinna í Python eithv.
+*** Haskell vinna
+vinna í haskell
+
+
+** Other
+ Banki redda námsláni (1)     
+ Skattkort í skolann, redda launum (1) [done]
+ redda launum frá Nordica + redda vinnu (2)
+
+
+
+
