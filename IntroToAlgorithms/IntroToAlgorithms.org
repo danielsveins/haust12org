@@ -1,0 +1,172 @@
+* Introduction to Algorithms
+general CT-open course stuff:
+http://www.techvyom.com/free-online-resources-learning-algorithms-data-structures.html
+open course materials for *this course*:
+http://courses.csail.mit.edu/6.006/spring11/notes.shtml
+
+** First lecture
+https://www.youtube.com/watch?v=JPyuH4qXLZ0
+
+first part of course is focused on analysis
+-the second on design
+*** Analysis
+Analysisi is the study of computer program performance 
+and resource usage
+
+predominate focus is on performance.
+
+why study performance and algorithms?
+
+**** Problem of sorting
+
+Input sequence <a_{1}, a_{2}, .., a_{n}>
+   numbers
+
+Output permutation <a_{1}, a_{2}, .., a_{n}> $ a_{1} <= a_{2} <= ....<= a_{n}
+                                             ^
+                                             |
+                                         "such that"
+
+
+Insertin Sort
+
+Insertion-Sort(A,n)// Sorts A[1..n]
+
+for j <- 2 to n
+    do key <- A[j]
+       i <- j-1
+       while i > 0 and A[i] > key
+            do  A[i + 1] = A[i]
+	        i = i - 1
+	A[i+1] = key
+
+
+
+
+
+Running time:
+
+-Want upper bounds - represents a guarentee to the user.
+worst case analysis..(usually)
+T(n) = max time on any input of size n.
+
+sometimes we use Average-case
+T(n) = expected time over all inputs of size n.
+-weighted average.
+ (need an asumption of the statistical distribution of inputs)
+  a common assumption is a uniform distribution.
+
+Best-case analysis
+     You can cheat with a slow algorithm that works fast on some input.
+
+
+Asymptotic analysis
+   - Ignore machine-dependent constants
+   - look not at the running time but the *growth* of the running time. 
+
+*** Asymptotic Notation
+
+Asymptotic analysis
+   - Ignore machine-dependent constants
+   - look not at the running time but the *growth* of the running time. 
+
+
+Theda-notation:
+  
+   Drop low order terms 
+   and 
+   ignore leading constants
+
+e.g.
+
+   3n^3 + 90n^2 - 5n + 6046 = Theta(n^3)
+
+note: this is the engeneering version, there is a more rigourouse mathematical definition.
+
+as n -> Inf, Theda(n^2) alg always beats a Theda(n^3) alg.
+
+
+Insertion Sort Analysis:
+
+worst case, reverse order
+
+T(n)= Sum (j=2 -> n) T(j) = T(n^2) (arithmetic series)
+
+Theda notation is more of a descriptive notation. (weak notation)
+
+
+
+Merge Sort
+
+| T(n)    | merge sort A[1..n]      |
+| T(1)    | 1. If n = 1, done       |
+| 2T[n/2] | 2. Recursively sort     |
+|         | A[1..[n/2]] and         |
+|         | A[[n/2 + 1]..n]         |
+|  T[n]   | 3. merge 2 sorted lists |
+|         |                         |
+
+
+merge subroutine
+
+| 20 | 12 |
+| 13 | 11 |
+|  7 |  9 |
+|  2 | 1  | 
+
+output smaller element from head of two lists, and drop head from that list.
+
+Time = T(n) on n total elements
+
+  recurence of Merge sort
+
+T(n) = T(1) if n = 1
+       2T(n/2) + T(n) if n > 1
+
+how do we solve a recurance like this?
+--> Lecture 2
+
+visual way -> recurion tree
+
+  T(n) = 2T(n/2) + cn
+
+T(n) =   cn
+        /  \
+    T(n/2)  T(n/2)
+
+        =  cn
+          /  \
+       cn/2  cn/2
+       /  \  /   \
+  T(n/4)   " "     "
+
+
+
+...
+
+T(1)
+
+what is the height of the tree?
+
+ h=log(n)
+
+ # of leaves is n.
+
+adding T(n) of each level gives cn
+
+leaves is theda(n)
+
+total= (cn)log(n)+theta(n)
+     = theda(nlog(n))
+
+so Merge-sort asymtotically beats Insertion-sort
+
+
+
+         
+
+
+
+-- End of lecture 1.
+
+
