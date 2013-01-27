@@ -5,8 +5,8 @@
 *** sat 26 jan
 **** Rökfr fyrir hugbúnaðargerð - næsta miðvikd.
 **** Iðnaðartölfræði            - næsta fimtudag
-**** Áhættugreining            - fyrir næsta föstd.
-**** Tracker shit             - helst fyrir mánd
+**** Áhættugreining            - fyrir næsta föstd. [done]
+**** Tracker shit             - helst fyrir mánd    [done]
 **** Þróun hugbúnaðar         - mand
 
 
