@@ -36,3 +36,26 @@ fáum forrit sem sækir gögn á yahoo..
 4 - vikna project
 
 fyrstu skil (á notandasögum, verkáætlun) á þriðjud. 23
+
+
+*** Tæknigreining Glósur
+
+**** TEchnical analysis
+http://en.wikipedia.org/wiki/Technical_analysis
+
+tæknigreining byggir á einhverju leiti á  efficient market hypothesis EMH
+http://en.wikipedia.org/wiki/Efficient-market_hypothesis
+
+en technical analysis er svona hálfgert mótvægi við fundamental analysis, sem genglur 
+frekar út á að skoða financial statements og, sjóðstreimi og álíka..
+http://en.wikipedia.org/wiki/Fundamental_analysis
+
+
+í Tæknigreiningu:
+
+trúa menn að verð hreyfist með ´trend´ - "prices move in trends"
+- the premis is that all relative information si already reflected in the prices
+
+
+
+
