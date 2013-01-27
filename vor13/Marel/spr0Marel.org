@@ -1,0 +1,83 @@
+* Sprettur #0 Marel verkefni + UT - messu pælingar
+
+** sprettur #0 Marel verkefni
+
+hlutverk: Tracker
+
+*** Tracking
+Role Communication
+  forum messages
+          
+
+| role | forum messages | messages + responses |
+|------+----------------+----------------------|
+|      |                |                      |
+
+
+role time:
+
+ 
+hingað til 40 min.
+
+Pælinginn er að mæla Role Time. og svo Role comunication.
+
+*** Greining á Áhættu
+
+| Áhætta                                                                          | Líkur á áhættu | Áhrif áhættu                                              | Gagngerðir við áhættu                       |
+|---------------------------------------------------------------------------------+----------------+-----------------------------------------------------------+---------------------------------------------|
+| Útgáfustjórnun kemst ekki á skrið                                               |            20% | sammvinnna í verkefni tefst, jafnt og verkefnið sem slikt | Hugulsemi og þrýstingur gagnvart útgáfustj. |
+| Léleg tímaáætlun                                                                |            15% | Léleg vinnubrögð og stress í lokarikknum                  | MCW greining                                |
+| Meðlimir eiga erfitt með að tileinka sér nýju tækninna sem þarf fyrir verkefnið |            20% | Tafir, lélegar útfærslur                                  | Hnitmiðað nám.                              |
+
+*** Verkskipting innan hóps
+
+** Alm Glós sprett #0
+
+
+** UT-messa
+10 min kynning.
+
+*** Design
+
+
+*** All around
+ 
+-Tilurð verkefnis
+   Afhverju fiskistofa
+
+-Hvaða vandamál leysir kerfið
+
+-Lausnin - Appið
+
+   -Arkítektúr
+
+   -Útlit - hönnunarforsendur
+
+   -virkni -
+
+
+
+- Framtíðinn - hvernig það
+   
+
+
+
+*** lausnin
+
+-app fyrir android síma
+
+-verkefnið var að appvæða Lausnina
+
+-app sem tekur við af símalínu
+
+-skrifað í android
+
+-Talar við vefþjónustu
+
+-Arkítektúrinn
+
+
+gagnageymsl í síma:
+
+    usrname pswwd meðan á sessioni stendur.
+
