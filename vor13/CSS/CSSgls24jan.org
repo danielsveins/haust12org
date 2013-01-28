@@ -1,0 +1,120 @@
+* Örryggi tölvukerfa- fyrirlestur-janúar 24 2013
+
+** Secure youre web aplications..
+
+access to the shell through sql injection
+http://www.youtube.com/watch?v=jW0DHWqkX8k
+
+include() and Require() functions become vectors for attack..
+
+Ways to prevent Remote Code injection
+
+use a whitelist of approved files
+
+turn off allow_url_fopen()
+
+manually include files when needed
+
+XSRF/CSRF forgery Attacks
+
+-> prevent with session tokens
+
+*** Session Attacks
+
+Session Hijacking
+
+Session fixation
+
+-> prevention
+
+Use SSL encryption at login
+http://en.wikipedia.org/wiki/SSL
+ensure IP stays the same
+session timeouts
+Regenerate Session using
+
+
+*** File Uploads
+
+the $_FILES superglobal
+
+file upload attack
+-> use
+is_uploaded_file()
+move_uploaded_file()
+
+*** Charsets
+
+using other chars that don't filter ...bla bla
+
+
+** OWASP
+http://www.youtube.com/watch?v=CDbWvEwBBxo&playnext=1&list=PLF9C3F0FAAED3B66B
+
+having already built multiple web applications..
+.. prerequisite for this series
+
+most websites are not secure.
+
+historically HTTP was not designed to be secure.
+all security features where bolted on later.
+
+forged token
+
+Click-jacking ?
+
+Silverlight?
+
+Network Security
+
+Application Security
+
+OWASP
+
+Open Web Application Security Project
+owasp.org 
+large repository of application security
+
+XSS - cross site scripting.
+
+
+** SDLC System Development Life Cycle
+series of steps when you do software development.
+
+Watefall methodology
+
+Investigation
+    Analysis
+        Logical design
+            Physical design
+                  Implimentation
+                        Maintenence and Channge
+
+^
+|
+
+
+Deficiencies of waterfall, 
+
+
+V- Shaped SDLC Model
+
+
+Validation and verification in the early stages of development
+
+*** Structured Evolutinary Prototyping..
+ alows for flexible design - Quick and dirty method.
+you have to deal with (scope creep)
+
+RAD Rapid Aplication Model
+
+
+Incrimental SDLC
+
+requires well developed module interface
+
+*** Spiral Model ..
+
+*** Agile SDLC
+
+

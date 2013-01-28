@@ -1,0 +1,42 @@
+* Iðnaðartölfræði Fyrirlestur 28 janúar 2013
+
+
+control charts - stýririt
+http://en.wikipedia.org/wiki/Control_chart
+
+staðalfrávik er Sigmap^2 = p(1-p)/n
+
+UCL = eithv..
+
+stjórnmörk  => CL_{np}
+
+Gott væri að prnta út glósur, m. 6 glærur á síðu..
+
+dæmi tekið í tíma var á bls 16 á glærum f4
+
+p = 14/200
+
+/sigma_{p}^2 = ~p(1-~p)/n = 0.07*0.93/20 = 0.003255
+
+n=20
+
+UCL_{~p} = ~p + 3 * sqrt(~p(1-!p)/n) = 0.2411
+
+LCL_{~p} = -0.10 => LCL_{~p} = 0
+
+
+              /Qi_{0.85.1}
+
+----------(eithv. box sem var á töflunn)-----
+
+UCL_{~/lambda} = /lambda + 3 * sqrt(x)               /lambda = 0.2
+LCL_{~/lambda} = /lambda - 3 * sqrt(/lambda)
+
+UCL_{~/lambda} = 0.2 + 3*sqrt(0.2) = 1.54
+LCL_{~/lambda} = 0.2 - 3*sqrt(0.2) = -1.12
+
+     => LCL_{~/lambda} = 0
+
+---------------------------------------------
+
+** Miðannarpróf mánd. 25. feb
