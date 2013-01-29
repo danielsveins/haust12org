@@ -1,0 +1,308 @@
+* Glósur Örryggi tölvukerfa, Smári - Glósur jan 29 2013
+
+** Crypto Cat
+
+end to end encryption
+
+** Data Reention
+
+European law requires 6-12 months retention
+
+0.002% police investigations are assisted by retained traffic data.
+
+exeption for Iceland for data retention in EU
+
+
+** Whistleblower Protection
+
+
+*** Icelandi accounting system
+
+4 billion kronas
+only delivered 1/3 of what was promised.
+
+Oracle kerfið 
+
+** Intermediary Protection
+
+Cubby vs. Compuserv
+
+Intermediary liability limitation
+
+Skyrr - Advania got a takedown order from dutch copyright lobby brain
+
+*** Google - french insurance company
+gogle as an intermediary agrigating, fair algorithm...
+
+
+*** Transjuresdictinal stuff
+
+Intermediary protection in transnationality
+
+Hosting - switches somtimes between countries, for example
+because of prices of electricity v.s. time of day
+
+** Freedom of information act
+
+Central registry of documents important
+
+*** History Protection
+
+DV guy found guilty of libel
+
+Potential sales loss if publication si found to be self-censoring
+v.s.
+Potential revenue from publication
+
+means publications often pull stories from their database..
+
+** Process Protection
+
+Time magazine needed 6 million to defend itself from Scientology
+
+California anti-SLAPP
+
+save little magazines from bieng censored..
+
+
+
+kaupthing large loan book..
+prior restraint- was not aired on RUV
+
+Í skóm Drekans -- var stoppað
+
+´publish and be damned´
+
+injunctions against publications
+
+** Media Ownership
+
+..
+
+*** Refugee Journalists
+
+Dublin convention---
+
+Asylum in the first country applied to..
+
+
+
+
+** Privacy by Design v.s. Privacy by Design
+
+Facebook - Privacy by policy
+
+** Technological solutions
+
+DCSS - > watching DVD's on Linux
+
+tinkering and reverse engineering should be legal
+
+LEWP 
+   "Single secure European cyberspace"
+
+   "virtual Schengen border"
+and 
+   "virtual access points"
+
+
+  Nato, artical 5, electronic attack, secret list of checkboxes can
+
+
+** Cyber army
+
+US Cyber command
+US Army "Intelegence and information Warfare Directorate"
+
+German "Bundestrojan"  --> USB stick.. checkpoint computer check
+
+Syrian Electronic Army
+
+Iran, Pakistan, India
+
+CCD CoE (Nato Cooperative Cyber Defense Center of Excellence)
+
+.. and so on ...
+
+
+
+Don't get into it, anti virus software + firewalls , thats it..
+
+** Personuvernd
+
+has a staff of lawyers, Personuvernd doesn't have the technical staff it needs,
+they need a staff technologist, sooner rather than later.
+
+
+** Communicating Secret Information
+
+Umboðsmaður alþyngis
+
+** Crypto Partys
+
+Information security
+
+Thor, OTR, Ctypto Cat
+
+MI5 wistle blower Anny Machun.
+
+
+
+(Air gaped computer)
+
+2010 IMMI proposal
+
+Icelandic Modern Media Initiative
+
+-Source Protection
+(data retention) -> everything bieng loged
+
+-> give someone else youre phone, instead of everyoneturning off phone in secret meeting
+
+A31 encryption is broken
+
+-Thor browser bundle -(where you comming from, where ypu are going)
+---latency bothersome
+
+-PGP- for Email - digitaly signed
+
+Thunderbird, falsify emails from people
+
+-Reverse deniable end to end encryption
+
+Pigin - Better than nothing.
+
+
+* Gósur - rest af Tímanum
+
+Quiz destributed..
+
+** Svör
+
+
+
+| vulnerability        | Describe                                              | How can you protect from vulnerability                               |
+|----------------------+-------------------------------------------------------+----------------------------------------------------------------------|
+| Buffer Overflow      | Overflow of data, overwriting existing stack          | Validation, Operating system features, 3rd party patches upp to date |
+|                      |                                                       |                                                                      |
+| Race Conditions      | two overlaping proceedures, where the later one       |                                                                      |
+|                      | ..                                                    |                                                                      |
+| Command Injection    | Input a command..                                     | Prepared statements, sanitized user input, validation                |
+|                      |                                                       |                                                                      |
+| Error Handling Flaw  | Not managing errors,                                  | Test, logging, Implement error handeling                             |
+|                      |                                                       |                                                                      |
+| Cross Site Scripting | Rederects user from one site to another, injects code | validate, parameters.                                                |
+|                      |                                                       |                                                                      |
+
+
+
+teacher was in Morgunblaðið
+
+
+more on Buffer overflow
+
+presentation:
+
+Web browser -> Web Server -> CGI ->CGI scripts and Other programs  -> DATA
+
+|Buffer |stuff| location next instruction | 
+
+
+** News topics
+
+Anonamizer - > took down a government site and put down a message.
+
+If your not using java, uninstall it, keep it up to date.
+
+less posibility of a java flaw in Apple because they updat so much
+
+
+Google bomb.  -> Redirect from website to another site on Google.
+
+Google Bomb, Hack
+
+$3 million competition for hacking Chrome
+
+XSS cross site scripting.
+
+Web cam hacking
+
+Trojan --, full access even in sleep Mode
+
+--> Protection, black tape, and turning off computer.
+
+
+Ethics is what is socially acceptable, ~ 
+
+Cultural mores
+
+Law
+
+Liability: legal obligation of an entity extending beyond criminal or contract law
+includes legan obligation to make restitution
+
+Restitution
+Due care: Insuring employees kknow blabla
+
+Due diligence: calidation
+
+Jurisdiction:
+
+court's right to hear a case if the wrong was commited in it's teritorry
+
+Policy: Breaking a policie doesn't necisarilly mean punishment
+
+burden of proof on the knowledge of a policy.
+
+Uniform enforcement.
+
+Licence agreement.
+
+following Company Policy.
+
+** Types of Law
+
+Civil
+
+Criminal
+
+Private
+
+Public --> ~ Civil
+
+CFA Act
+Computer Fruad and Abuse act
+
+National Information Infrastructure ProtectionAct
+
+USA PATRIOT Act of 2001
+
+USA PATRIOT  Immpovement and Reauthorization Act
+
+Computer Security Act of 1987
+
+
+
+** Privacy
+
+PII Personable Identifiable Information
+
+name is not neccisarily personafiable and Identifiable Information
+-> somthing thet can lead to you..
+
+HIPAA
+
+
+*** Personuvernd
+
+all lawyers, less and less people, don't do audits, you need to specifically complain.
+
+** Identity Theft
+
+kennitala, þjóðskrá..
+
+** Export and Espionage LAw
+
+any form of encryption is a wepon legally in U.S.
+
+
