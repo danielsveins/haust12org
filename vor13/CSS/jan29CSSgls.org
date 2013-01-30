@@ -172,6 +172,8 @@ Thunderbird, falsify emails from people
 
 Pigin - Better than nothing.
 
+OTR - encrypted chat, reverse deniability
+
 
 * Gósur - rest af Tímanum
 

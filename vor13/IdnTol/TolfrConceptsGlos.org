@@ -1,0 +1,22 @@
+* Tölfræði Concepts glos
+
+** Central Limit Theorem
+
+prelim: has to do with means of stuff from distributions not necesarilly normal bieng normal
+
+** Kafli 15
+
+X-charts -> mean
+process variability:
+
+S-chart -> std. dev.
+R-chart -> range
+
+X-chart
+
+UCL = /mju + 3/sigma / sqrt(n)
+
+LCL = /mju - 3/sigma / sqrt(n)
+
+CL = /mju
+

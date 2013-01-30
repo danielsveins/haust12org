@@ -1,0 +1,47 @@
+* C# Glósur
+
+tvær bækur á ferðinni
+
+.Net Programing A Practical Guide using C#
+
+og C# from java
+
+** .Net Programing A Practical Guide using C#
+stada: bls. 11
+
+COM - component Object Model
+DCOM Distributed -"-
+
+
+.NET architecture ..
+
+
+ASP.NET - Technologie
+
+Chapter 6 : Distributed computing:
+ deals somewhat with ASP.NET
+
+
+
+** C# from Java
+stada: bls. 6
+
+
+the .NET runtime system
+
+~=
+
+  Java Virtual Machine
+
+Windows has .NET runtimes built in
+
+
+** Almennt Visual Studio Glos
+
+Almennt situr Visual studio hluti n'una 'i
+
+C:\Users\bergurth\My Documents\Visual Studio 2012\Projects\"project name"
+
+og síðan yfileit ..\"project name"\bin\Debug>
+
+og þar er exe skjalið.
