@@ -1,0 +1,130 @@
+* Rökfræði í Hugbúnaðargerð, fyrirlestur 30 jan 2013
+
+Umsagnarrökfræði,
+
+umsagnir (predicates) varpa stökum í sanngildi
+
+föll sem varpa stök í önnur stök
+
+magnarar E A, en E nátl afturbak og A á hvolfi
+
+föll:
+  
+    S(x) = x er stúdent
+
+    Y(x,y) = x er yngri en y
+
+every student is younger than some instructor
+
+a:  Ax(S(x) -> Ey I(y)^Y(x,y))
+
+Ax:x^2 >= 0
+AxeR:x^2>=0
+ : merkir ->
+
+í a er ekkert grunmengi undanskilið, þessegna þurfum við 
+   S(x) til að tilgreina að viðkomandi er stúdent.
+
+Not all birds can fly.
+
+B(x): x is a bird
+F(x): x can fly
+
+mætti rita:
+  
+  ~(Ax(B(x)->F(x)))
+
+eða
+
+  Ex(B(x)^~F(x))
+
+kafli. 2.4
+
+í stærðfræði eru tvær merkingar fyrir :
+
+ExeR:x^2 = 9   // hér merkir : "og"
+
+AxeR:x^2 >= 0 //hér merkir : ->
+
+natural deduction calculus for predicate logic is sound and complete with respect to semantic entailment
+
+b:    Q1,Q2,.....,Qn T P    iff     Q1,Q2,...,Qn  TT P
+
+
+bls. 96
+
+Gödel  1929
+->
+The first proof of this 
+
+
+No books are gaseous. Dictionarys are books, 
+Therefore, no dictionary is gaseous
+
+B(x):  x is a book
+G(x): x is gaseous
+D(x): x is a dictionary
+
+~Ex(B(x)^G(x)), Ax(D(x) -> B(x)) T ~Ex(D(x)^G(x))
+og skilgr. merkingu fullyrðingarinnar
+
+sem -"-    TT  -"-
+
+Gödel sannaði að það væri jafngilt s.m.b. b, í doktorsritgerðinni sinni.
+
+
+    
+
+** Tímaverkefni
+
+þýða:
+Enginn sem á albróður er einbirni.
+yfir á umsagnarökfr.
+
+F(x) = faðir x
+m(x) = móðir x
+Y(x) = x er einbirni
+
+Lausnir okkar hóps:
+
+Ax,y:~((f(x) = f(y))^(m(x) = m(y))^Y(x)^Y(y))
+
+
+(Ax:Ey:(f(x) = f(y))^(m(x) = m(y)))-> ~Y(x))
+
+önnur torfalaus:
+
+~ExEy(f(x)=f(y) ^ m(x) = m(y) -> ~Y(y))
+
+Lausn kennara:
+
+Ax(~(Ey(f(x)=f(y)^m(x)=m(y))-> Y(x))
+
+~Ex[Ey:f(x)=f(y) ^ m(x) = m(y) -> ~Y(y)]
+
+AxAy((f(x)=f(y) ^ m(x) = m(y)) -> ~Y(x))
+
+** Aframhald
+Bls. 96-97
+
+Every child is youngeer than its mother
+
+AxAy(C(x)^M(y,x)->Y(x,y))
+
+Andy and paul have the same maternal grandmother..
+
+
+liðir -> terms
+
+arity er fjöldi viðfanga
+
+unara
+binary
+ternary
+.
+.
+.
+n-ary
+
+Bls. 101 reiknitré..
+
