@@ -5,6 +5,17 @@
 ** SVN
 
 leiðbeiningar fyrir Mac og Linux kominn á Piazza
+staðsetning er á annaðhvort rót eða Documents:
+vor13Doc
+og svo í SoftDev
+
+svn co   https:...
+
+hópur 26
+
+observe
+
+það er málið, að fylgjast vel með..
 
 ** Hópa applicationir..
 
@@ -59,3 +70,13 @@ trúa menn að verð hreyfist með ´trend´ - "prices move in trends"
 
 
 
+
+** Python
+
+apt-get install python-wxgtk2.8
+
+sér um að ná í wx glugga classasafnið, e. library
+
+
+pæling að reina að nota wx-python til að útfæra svona 
+dagbók líkt og í viðmótsforritun..

@@ -1,0 +1,54 @@
+* Örryggi tölvukerfa - Glósur 31/1/2013
+
+næsta þriðjudag koma með Windows tölvu..
+
+TORT LAW
+
+hackerthreads.org
+
+** Privacy
+
+reveiling only that information that you want to others
+
+opt in opt out..
+U.S opt in
+rest opt out
+
+
+name + beileifs = PII
+
+kennitala = PII
+
+*** Privacy requirements
+
+retention schedule
+
+E.U. ->
+
+crossing to U.S. can endanger Data.
+
+All PII must stay in E.U. and not cross over to U.S.
+
+
+PHI and PII
+
+PHI medical
+
+Chapter 3 email liability - lögfr romsa..
+
+*** Tool
+
+CC-cleaner
+
+good tool, free tool.
+
+** Ethics
+
+Ethics, set of concepts and principles that guides us in 
+determining what behavior helps or harms sentient creatures
+
+
+SANS - best security training out there
+
+sans.org
+
