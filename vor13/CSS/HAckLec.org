@@ -1,0 +1,216 @@
+* Hack Lecture
+
+
+2000
+
+Fikt, fraegd, vold.
+
+2012
+
+ Hacking is an enterprise
+Peningar, njosnir, vold
+money, spying, power
+
+Virði öryggisgalla
+
+
+Google will pay you 60,000 for an exploit
+
+- hackers did it and got more for it on black market
+
+
+-Adobe 100,000
+-500.000 á svörtum markaði..
+
+
+Total number of security vulnerabilityes in common software, v.s. time.. Looks kindof exponential
+
+
+Hvaðan kemur ætið?
+-we want features... Arg!
+
+Security is always an afterthought in general software development
+
+Linux used to be a secure
+
+SLOC (source lines of code=)
+
+75 bugs per 1000 lines, as a probability distribution
+
+reuse og code, ->  multiplication of bugs
+
+What can be done to exploit vulnerabilities.
+
+DDoS attacks through botnets.
+
+
+Google has own Internet, maintains own backbone...
+
+People call, hello I won send your page to the moon if you pay me X-money..
+
+
+
+Spam
+
+Botnet-with 100.000ands
+
+Mariposa/Rimecud   12.7000K computers
+
+encrypt babyphotos -> ransom key.
+
+Clickbots.  -> GoogleAds. -> pay per click
+
+
+
+Stuxnet - U.S. Isreal - large, a few megabytes of code, USB stick, VeriSign, scada
+
+managed to destroy about 20% of centerfuges in Iran..
+
+Environmental key generation, 
+
+** Chinease Hacking Indusdry
+
+2000 people
+
+** 
+
+Lockeed Martin, Google, Yahoo, Juniper, Symantec.
+
+** Russians
+have compromised almost all the diplomats in the world, intrest in
+oil and gas
+
+
+** US
+has around 1000 good hackers, and want 30.000
+
+
+** Anti-Virus Software
+
+worse than 80% of the viruses, Malware
+
+5% of the time, does the anti-virus software detect the treat
+
+recompiling the virus, is usually enough.
+
+telling wheather somthing is a virus is the HAlting Problem.
+
+** Cross-site Scripting
+XSS,Flash,PDF files,Java, ...
+
+Java should be disabled as far as the browser goes.
+
+** Örrygi er ekki Búðarvara
+
+
+** Hvað gera íslensk fyrirtæki í dag?
+ ISO27001 vottun
+-checklist
+-kaupa vísusvörn, en ekki uppfæra t.d. Java
+
+- Cellphones, not allowed in US, government.
+- PDF, files are very unsafe
+
+** Offensive security
+
+pay hacker to attack you and, pay him to tekll you how he hacked you
+
+
+
+
+** Security from the point of view of hacker
+
+3 vikur á vorinn í HR, allan daginn, opið fyrir alla!
+
+23rd of april
+
+C, linux, Assembly Language)(put, stack),.   verð 57.000
+pearl
+
+ymsir.com/hacking
+
+
+** Robert Moris
+
+1988 Robert Moris, Worm
+
+Internet Worm and IM War
+
+                           (AIM client)                             
+                                    |
+(MSN Server) <-> (MSN client) <-> (AIM server) 
+                                    |
+                           (AIM client)
+
+stack buffer overflow exploits!
+
+Pascale had length og string at front...
+
+C had arbitrarily long strings - also a weakness
+
+C stores a bunch ofImportant things on the stack..return address
+
+return address can be overwriten
+
+could write new return adress to place you control
+
+launch shell (say "/bin/bash/")
+
+assembly code without nulls (specially crafted)
+
+lots of trickery to avoid nullbytes, specially crafted code..
+
+
+dmesg | tail -n 1
+
+\xcc 
+
+
+Exploit code..
+
+basis of all these memory corruption attacks.
+
+MIT-guy
+
+finger -> remote access
+
+2012 - Hacked the council of Foreign Affairs
+
+ymsir.com
+
+*** ymsir.com -> do not click me..
+
+java script code
+
+use after free vulnerability
+
+**** Data Execution Prevention
+
+search for the bad code in the preexisting
+executable code, string together to bootstrap
+-> make your code executable
+
+
+- Java DLL doesn't randomize its memory ..
+
+
+..Exploit code overcomesmodern memory defenses
+
+
+
+'\o' or '\0' seems to be nullbyte..
+
+
+
+
+
+SunTzu
+
+"Know thyself, know thy enemy"
+
+huge Escelation in the security world
+
+3 vikna
+23 appril
+
+12 klst 8 mars 15. mars Open Háskólin
