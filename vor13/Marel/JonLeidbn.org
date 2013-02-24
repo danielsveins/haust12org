@@ -1,0 +1,23 @@
+* Leidbeiningar fr Jon 6 feb 9:27pm fb
+
+Mjög gróft install ferlið:
+
+iis server: installa í windows (add/remove programs) ->worldwideweb service
+
+setja inn serverinn okkur -> restore server from file velja nafn
+
+fara í dbo.bade_sysprograms -> computer name dálkinn og svo stilla sem localhost
+
+fara program files / marel / og þaðan í mps.config -> velja nafnið á databaseni
+
+inn í cmd prompt í bin foldernum:
+baseop -o lipc -c PRODUCT-CODE
+
+biðja um license key í licence key forritinu senda honum súpuna
+
+<- staddur hjer, 12 Feb.
+
+og svo fara í install license key
+
+username: developer
+pw: test

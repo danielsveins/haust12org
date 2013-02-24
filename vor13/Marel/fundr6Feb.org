@@ -1,0 +1,39 @@
+* Marel - Fundur 6 feb
+
+
+Innova kerfi..
+
+vefþjónusta.
+
+
+SQL server er bara fyrir 64-bita windows....
+Þarf að redda 32-bit, ---- Spurja Sigurbjörn, í lok fundar..
+
+ImiContoller.cs
+
+ImiControllerConfig.cs
+
+ImiMan.cs
+
+InacPlantWS.cs
+
+PlantGateway.cs
+
+
+dummy gagnagrunnur
+
+mps.config
+
+  -: breyta nafni a gagnagrunni
+
+
+SQL server install
+
+
+SERVMAR - Instance nafn eithv
+
+fishfreinds
+
+fishfreind
+
+123
