@@ -1,0 +1,40 @@
+* Glos E2 verkefni Nannon
+
+** Skipl
+
+** GAmestate
+
+
+1 2 3 4 5 6 7 8
+byrjun
+symbolism
+W is white triangle
+B is black triangle
+0 is zero piece
+X is X piece
+W0 is a white triangle with 0 piece
+B0 is a black triangle with 0 piece
+WX
+BX
+
+- white triangles are on even numbers exept 8
+- black on odd except 1
+
+
+
+in the beggining
+GS = [0,W0,B0,W,B,WX,BX,X]
+or
+GS = [0,0,0,W,B,X,X,X]
+
+
+** ASCI list fyrir leikinn
+
+|
+ \|_|
+
+
+  /__/
+ |   |
+ | o |
+ |___|
