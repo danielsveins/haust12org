@@ -101,6 +101,10 @@ Type "help", "copyright", "credits" or "license" for more information.
 // Frekar successfull daemi.. 
 
 
+4. 
+
+new nannon.py, seems to work...
+
 ** ASCI list fyrir leikinn
 
 |

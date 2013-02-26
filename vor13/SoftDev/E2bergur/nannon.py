@@ -235,7 +235,9 @@ def adjecents(board,space):
 # returns True if move is legal otherwise False
 def moveLegal(board,roll,move,player):
     if player == 'PO':
-        if (board[move] in EMPTYS) and (board[move - roll] in OSPACES):
+        if (move - roll) not in [0,1,2,3,4,5,6,7]:
+            return False
+        elif (board[move] in EMPTYS) and (board[move - roll] in OSPACES):
             return True
         elif (board[move] in XSPACES) and board[move - roll] in OSPACES and not adjecents(board,move): 
             return True
@@ -245,7 +247,9 @@ def moveLegal(board,roll,move,player):
             return False
 
     elif player == 'PX':
-        if (board[move] in EMPTYS) and (board[move + roll] in XSPACES):
+        if (move + roll) not in [0,1,2,3,4,5,6,7]:
+            return False
+        elif (board[move] in EMPTYS) and (board[move + roll] in XSPACES):
             return True
         elif (board[move] in OSPACES) and board[move + roll] in XSPACES and not adjecents(board,move): 
             return True
@@ -308,15 +312,19 @@ def Move(board,roll,move,player):
             # moves on an enemy piece.
             else:
                 newboard[move] = O
+                newboard[move - roll] = EMPTYBOARD[move - roll]
                 # uppgrade PX home base.
                 if board[7] == EX2:
                     newboard[7] = EX3
+                    drawboard(newboard)
                     return newboard
                 elif board[7] == EX:
                     newboard[7] = EX2
+                    drawboard(newboard)
                     return newboard
                 elif board[7] == E:
                     newboard[7] = EX
+                    drawboard(newboard)
                     return newboard
 
         elif (player == 'PX'):
@@ -339,16 +347,20 @@ def Move(board,roll,move,player):
                 return newboard
             # moves on an enemy piece.
             else:
-                newboard[move] = O
+                newboard[move] = X
+                newboard[move + roll] = EMPTYBOARD[move + roll]
                 # uppgrade PO home base.
                 if board[0] == EO2:
                     newboard[0] = EO3
+                    drawboard(newboard)
                     return newboard
                 elif board[0] == EO:
                     newboard[0] = EO2
+                    drawboard(newboard)
                     return newboard
                 elif board[0] == E:
                     newboard[0] = EO
+                    drawboard(newboard)
                     return newboard
 
 
