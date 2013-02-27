@@ -93,12 +93,9 @@ while True:
 		drawboard(nxt)
 		contin = raw_input("Do you want to roll the dice " + currentP[0] + " ?  (yes or no)")
 		if not contin[0] in ['y','Y']:
-			ok = playAgain()
-			if(ok):
-				GameOver = True
-				
-			else:
-				sys.exit()
+                    GameOver = True
+                    break
+		
 		else:
 			currentP[1] = roll() + 1
 			drawboard(nxt)

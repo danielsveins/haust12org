@@ -15,7 +15,8 @@ def drawboard(GameState):
         print
     print("|    0    |    1     |    2     |    3     |    4     |    5     |    6     |    7     |")
 
-# determines if the space has adjecents, ie. is part of a prime 
+# determines if the space has adjecents, ie. is part of a prime, doesn't rly apply for ends themselves, -> causes call out of array bounds
+# but ends help form a prime, has no behavior for being called where there are no pieces. 
 def adjecents(board,space):
     if board[space] in OSPACES:
         if board[space - 1] in OSPACES:
@@ -99,6 +100,8 @@ def playAgain():
 	choice = raw_input("Play Again? (y/n)")
 	if not choice[0] in ['y','Y']:
 		return False
+        else:
+            return True
 
 # determines if game is won for player on board.
 def isWon(board,player):
@@ -227,6 +230,7 @@ def Move(board,roll,move,player):
 
 
 def roll():
+    # Ath. skilar fra 0 til 5 (>
     for x in range(15):
         time.sleep(0.1)
         print(ROLLINGDICEPICS[x % 5])
@@ -281,7 +285,7 @@ def getNextMove(board,roll1,player):
 			time.sleep(1.5)
 			r1 = roll()
 			currentP2[1] = r1 + 1
-			moves = getLegalMoves(board,currentP[1],currentP[0])
+			moves = getLegalMoves(board,currentP2[1],currentP2[0])
                         if(moves[0] != []):
 				drawboard(board)
 	
@@ -289,18 +293,27 @@ def getNextMove(board,roll1,player):
 	for x in range(len(moves[0])):
 		print(str(x) + ". move to position " + str(moves[0][x]) + " from position " + str(moves[1][x]) +".")
 	var = len(moves[0])
-	choice = int(raw_input("Choose the number coresponding to your choice of move."))
-	chosen = False
-	if choice in range(var):
-		chosen = True
+	
+        
+        chosen = False
+	
 	while not chosen:
+            while True:
+                choice = raw_input("Choose the number coresponding to your choice of move.")
+                if choice.isdigit():
+                    break
+                else:
+                    print("Try again.")
+        
+            choice = int(choice)
+            if choice in range(var):
+		chosen = True        
+        
+            else:
 		print("your choice is not in " + str(range(var)) + " choose again.")
 		print(currentP2[0] + " Your options are.")
 		for x in range(len(moves[0])):
 			print(str(x) + ". move to possision " + str(moves[0][x]) + " from possision " + str(moves[1][x]) +".")
-		choice = int(raw_input("Choose the number coresponding to your choice of move."))
-		if choice in range(var):
-			chosen = True
-
+		
 	nxt = Move(GS,moves[2][int(choice)],moves[0][int(choice)] ,currentP2[0])
 	return nxt

@@ -105,6 +105,10 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 new nannon.py, seems to work...
 
+
+
+
+5.  abati2.py er málið, held ég endanl útgáfa af forritinu.
 ** ASCI list fyrir leikinn
 
 |
@@ -115,3 +119,84 @@ new nannon.py, seems to work...
  |   |
  | o |
  |___|
+
+
+** Testing
+
+
+kerfid:
+
+Notendur -> kerfid er svartur kassi
+Profarar -> grar kassi
+Forritarar -> hvitur kassi
+
+
+*** Test daemi
+
+1
+
+import unittest
+import maxutil
+
+class testMaxFunctions(unittest.TestCase):
+    def test_maxseq(self):
+        self.assertEqual(maxutil.maxseq('abc'),1)
+	self.assertEqual(maxutil.maxseq('aaxxxt'), 3)
+
+    def test_maxdiff(self):
+        self.assertEqual(maxutil.maxdiff([5,23,1,0]), 22)
+	self.assertEqual(maxutil.maxdiff([23,5,1,0]), 18)
+
+if __name__ == '__main__':
+    unittest.main(verbosity=2, exit=False)
+
+*** Profhogun
+
+aeskilegt hlutfall profkoda/kerfiskoda  2:1 eda 3:1
+
+keyra oll prof m. einni skipun
+
+
+
+GRafik --> 'Virkni Prof' -> Notendur
+
+*** Gallar
+
+
+
+
+i farid ur jadar olli ad, skifu stafli hvarf
+-> orsok Empty board lausn tok ekki tillit til Home stafna
+     -> vidgerd svoldid hakk, hvert tilfelli tekid fyrir sig 
+         i if yrdingum inni Move falli..:P
+
+ii ljeleg villumedhondlun upprunalega i getNextMove, int() tholdi ekki non digit
+  input -> olli krashi vid raungu inputi, skemmir leik
+
+  -> lausn .isdigit() tjekkk, + tjekk hvort digitid er i rjetta range
+
+
+iii getNextMove roll vessen, var lengi ad fatta ad roll var thar tekid sem
+    int en ekki fallid roll(), ef roll parameterinn var notadur
+
+    -> breyti i roll1
+
+
+iV getLegalMoves hack,  tharf ad breyta rolli thannig ad move legal virki
+   rjett, svoldid hakk lausn, en getLegalMoves og moveLegal, vinna eiginlega
+   saman en eru kannski ekki eins sjalfstaed og thau aettu ad vera..
+
+
+drawboard
+adjecents
+isWon
+playAgain
+roll
+doStartRoll
+
+og jafnvel Move
+
+Eru allt frekar god foll, einfold allavega.
+
+Hin eru sum, kannski pinu hakk a koflum en virka, samt 
+held eg frekar orruglega og fullkomlega.
