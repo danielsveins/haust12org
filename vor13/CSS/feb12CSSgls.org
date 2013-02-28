@@ -1,0 +1,13 @@
+
+* Örryggi tölvukerfa glósur  12 febrúar 2013
+
+Intrusion detection system
+
+
+PCI-DSS
+
+Payment Card Industry  - Data System Security
+
+Audit..
+
+valitor has been certified for a PCI.

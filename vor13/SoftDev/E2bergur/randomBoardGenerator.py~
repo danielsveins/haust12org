@@ -1,0 +1,9 @@
+import random
+from pics import *
+
+'''
+       0        1     2     3     4     5     6         7
+[E|EO|EO2|EO3,O|X|W,O|X|B,O|X|W,O|X|B,O|X|W,O|X|B,E|EX|EX2|EX3]
+
+
+'''
