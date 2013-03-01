@@ -202,3 +202,34 @@ Eru allt frekar god foll, einfold allavega.
 
 Hin eru sum, kannski pinu hakk a koflum en virka, samt 
 held eg frekar orruglega og fullkomlega.
+
+** Taring
+On the Unix command line, you create a tar archive as follows. Suppose you have several files, foo.tex, fig1.eps, fig2.eps. Then the following creates a tar file called mystuff.tar including those files:
+
+  $ tar -cvf mystuff.tar foo.tex fig1.eps fig2.eps
+
+Warning: If you forget to type the filename mystuff.tar, tar will over-write the first file name it sees (in this case foo.tex is next in line). Isn't Unix fun?
+
+You will then want to use gzip to compress the tar file for fastest upload:
+
+  $ gzip mystuff.tar
+
+which will create a file named mystuff.tar.gz.
+
+Alternately, most versions of tar allow you to create a gzipped tar file in one action. Using the above example, to create a gzipped tar file called mystuff.tar.gz, do the following:
+
+  $ tar -cvzf mystuff.tar.gz foo.tex fig1.eps fig2.eps
+
+
+*** Untaring
+
+There is more than one way to do this, however I tend to do it like this from command prompt:
+
+gunzip file.tar.gz
+tar -xvf file.tar
+
+Alternatively you can use one single command to do all the work:
+
+tar -zxvf file.tar.gz
+
+The -z basically does the gunzip work for you. Hope that helps.
