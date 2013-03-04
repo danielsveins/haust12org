@@ -1,0 +1,42 @@
+* Bagginning ASP.NET 4.5 in VB and C#
+
+stada bls 8 / 54 of 890
+9
+12
+16
+
+
+** Forward
+
+jQuery is client side, Library for java script
+
+while ASP.NET is server side
+
+** Source Code
+
+www.wrox.com/
+remtitle.cgi?isbn=1118311809
+
+
+www.wrox.con
+this book the ISBN is 978-1-118-31180-6
+
+
+bls. xi
+
+
+** Intro
+
+ASP -> Active Server Pages
+
+
+first HW page done ..
+
+
+VS F5 run with debugging
+   Cntr + F5 run without debugging
+
+*** HTML
+complete index
+www.w3.org/TR/html5/index.html
+

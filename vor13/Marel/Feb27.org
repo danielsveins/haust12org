@@ -1,0 +1,15 @@
+* Fundur Marel feb 27
+
+
+
+ImiMan : Controlapplication
+
+** Binni ad vinna ietv i sinni tolvu
+
+2 refreance ur Distrib
+
+marel, Innova, distribution
+
+Marel.common.dll
+
+

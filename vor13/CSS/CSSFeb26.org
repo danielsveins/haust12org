@@ -1,0 +1,193 @@
+* Fyrlstr 26 feb
+
+** Google hacking
+http://en.wikipedia.org/wiki/Google_hacking
+search engines used to find exploitable targets 
+
+GHDB
+
+The google hacking database
+http://www.exploit-db.com/google-dorks/
+
+
+*** avoidance
+
+use meta-tags, to avoid indexing or caching by the search engine robots f.x.
+
+** midterm
+
+Thursday 27 feb
+
+** class continued
+
+OSI model
+
+A ll
+P eople
+S eem
+T o
+N eed
+D ata
+P rocessing
+
+P ysical
+D ata Link  MAC
+N etwork
+T ransport Layer
+S ession
+P resentation
+A pplication
+
+
+I theory the router should not go any higher than the Transport Layer..
+Technically a router is a type of firewall.
+UDP, TCP
+TCP is more secure - because o handshake..
+
+Firewalls protect networks, stop all packets unless they have instructions to
+allow them.
+
+DMZ, - Demileterized zone.
+
+*** Firewalls & VPNs
+virtual private networks
+
+Firewall categorization
+
+
+MAC-layer firewall -> Data Link layer
+Packet Filtering   -> Network layer
+
+//OCD  --- Obsessive Compulsive Disorder
+
+Packet Filtering
+
+- Static Filtering
+
+
+- Dynamic Filtering
+
+-Stateful inspection
+   
+  Protocol, time to live, destination.
+
+
+
+TCP - has the source, destination .. time to live? maybe
+
+
+ports 0 - 1023 assigned..
+
+
+Sample Firewall Rule and Format
+
+| Source Address | Destination Address | Service (HTTO,SMTP,FTP,Telnet) | Action(Allow or Deny) |
+|----------------+---------------------+--------------------------------+-----------------------|
+|                |                     |                                |                       |
+
+
+Application Gateway
+-Proxy server
+
+Application gateway in a DMZ.
+e.g. you want your Wb SErver in a DMZ..
+
+a Honey Pot is a machine you allow hackers to get into..
+
+
+Circuit Gateways
+
+Circuit Gatway firewall operates at Transport Layer
+
+-> tunnels between processes
+
+
+MAC Layer Firewalls.
+
+pretty safe, still easy to fake though...
+
+Hybrid Firewall is a combination of these other types.
+
+
+Screened Host Firewall
+
+
+
+NAT, Network Address Translation
+
+
+
+ACLes
+
+** QUIz
+
+OSI model er mikilvaegt..
+
+ACL Acces Control List
+
+Integrity Availability
+
+Calculating inherent risk
+
+IR - Controls = residual risk.
+
+Cost benefit analysis
+- residual risk v.s. cost of controls..
+cost of controls should not be more than the benefit derived.
+
+Civil Law ->  Fines.
+
+Intelectual Property
+
+patents, pattents, tradmarks, trade secrets.. (not computers)
+
+MAC addres is a sublayer on wich OSI  -> data Link
+
+Hot site ->  
+
+relates to desaster recovery..
+
+a Hotsite is a replica of the site ready to go.
+
+a warm site is almost ready to go
+
+a cold site just a room or somthing.
+
+
+Comunications outage is not a national disaster.
+
+
+Acountability -> the ability to acsociate users with actions.
+
+
+CISSP is the most senior proffessional security certification.
+  CSSP -> all you need is one year experience.
+
+
+TCP more secure than http, udp.
+
+Etihcs done by everyone and not required.
+
+Most secure VPN -> tunnel mode.
+
+Which standar details risk managment.
+
+ISO 3100
+
+27001 info sec
+
+BS 7799
+
+
+TORT
+
+
+worms self replicate
+
+
+TORT law, administrative law. contracts..
+
+Security implemented in any stage of software development.  
+
+
+Data owner is responsible .. 

@@ -44,12 +44,18 @@ improve student home page (4)
 stenography, key in photo or picture, enigma machine..
 Ath 8 kafla Computer Networks.
 læra JavaScript og mögulega CoffeScript (4)
+Laera C og x86 assembly language (2)
 *** Free Energy pæls
 vinna að B-motor
 *** Gray hat python - Stuff
 vinna í Python eithv.
 *** Haskell vinna
 vinna í haskell
+
+*** Lyklabord custom
+Paeling me[ custom lyklabord i tveim stykkjum,
+Development system..
+
 
 
 ** Other
