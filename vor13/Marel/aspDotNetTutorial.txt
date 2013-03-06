@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<!--
+  For more information on how to configure your ASP.NET application, please visit
+  http://go.microsoft.com/fwlink/?LinkId=169433
+  -->
+
+<configuration>
+    <system.web>
+      <compilation debug="true" strict="false" explicit="true" targetFramework="4.5" />
+      <httpRuntime targetFramework="4.5"  />
+    </system.web>
+
+</configuration>
+
+
+
+Stuff above is inpertenent
+
+cool tutorial asp.net visual studio 2012
+http://www.youtube.com/watch?v=I37gdSc0-fc
+
+file -> new project -> templates -> visual basic -> web
+asp.net Empty Web aplication
+
+Name> will be 	
+OK
+
+project -> Web Form
+
+Name> Hello_Internet.aspx
+Add
+
+
+kominn upp 'i 7
+http://www.youtube.com/watch?v=PjwS_dCfoG8
+
+hjerna er fyrir c# - begginer tutorial
+https://www.youtube.com/watch?v=-ZNvct9veZg
+
+klaradii verkefni 6 ur seinasta tutorial yfir i c# -> sharp1 project
