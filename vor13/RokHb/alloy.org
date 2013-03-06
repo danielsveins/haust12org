@@ -74,3 +74,31 @@ assert oneRoot { one d: Dir | no d.parent }
 
 // Every fd object is in at most one directory
 assert oneLocation { all o: FSObject | lone d: Dir | o in d.contents }
+
+
+** Alloy pakki
+
+*** Profun yrdingar
+
+**** daemi 1
+
+// Ey((Ax Px) -> Py)
+
+sig A {}
+fact {some A}
+sig PM in A {}
+pred P[x:A] {x in PM}
+pred fi {some y:A | (all x:A | P[x]) => P[y]}
+
+
+
+**** Lausn vid V26c 8 vikbl
+sig A {}
+fact {some A}
+sig PM in A {}
+one sig M {BM: A -> A}
+pred P[x:A] {x in PM}
+pred B[x:A,y:A] {x->y in M.BM}
+pred fi {some x:A | all y:A | (P[x] => B[x,y]) && (all x:A | P[x]) => (all y:A | some x:A | B[x,y])}
+
+run fi
