@@ -395,5 +395,5 @@ def getNextMove(board,roll1,player):
 		for x in range(len(moves[0])):
 			print(str(x) + ". move to possision " + str(moves[0][x]) + " from possision " + str(moves[1][x]) +".")
 		
-	nxt = Move(GS,moves[2][int(choice)],moves[0][int(choice)] ,currentP2[0])
+	nxt = Move(board,moves[2][int(choice)],moves[0][int(choice)] ,currentP2[0])
 	return nxt
