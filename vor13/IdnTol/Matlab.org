@@ -1,0 +1,219 @@
+* Matlab 
+
+** Intro video
+file:///C:/Program%20Files/MATLAB/R2012b/toolbox/matlab/demos/html/GettingStartedwithMATLAB.html
+
+
+t = 1:5
+
+1 2 3 4 5 
+
+
+t = [1 2 3 4 5]
+
+sama og 
+
+t = 1:5
+
+t = 0:0.01:1;
+
+byr til matrix med gildi 0 til 1 med millibili 0.01
+
+whos 
+
+to see bound variables and such
+
+y = sin(2*pi*t)
+
+plot(t,y)
+
+gives the plot..
+
+sem gefur sinus kúrfu..
+
+
+variables can be complex
+
+x = 3+4i
+
+x =
+
+  3.0000 +4.00000i
+
+
+a = [1 2 3;4 5 6;7 8 10]
+
+-----
+
+data = rand(5,5)
+
+gives 5 row and 5 collumns of random data..
+
+size(data)
+
+ans  =
+
+    5       5
+
+
+
+do matrix opperations like..b equals a_transpose.
+
+b = a'
+
+
+c = a*b  -> prformes matrix multiplication
+
+or 
+
+c = a.*b  ->  which performs element wise multiplication. (hvert element sinnum elementið
+a sama stað
+
+
+inv(a)   -> calculates the inverse of matrix a.
+
+
+# indxing
+a(row,collumn)
+shows the element at 
+
+
+section:
+
+data(1:3,2:end)
+
+u can set values this way also e.g.:
+
+data(1:2,:) = 0
+
+array indexes in matlab start at 1!
+
+
+
+Transpose is made by drawing a line down the diagonal and rotating 180 degrees..
+
+w = y' * y
+
+** Linear Regression - and how to do in Matlab
+
+http://www.youtube.com/watch?v=nkhadlenijo
+
+baisic linear equation:
+Y = mX + B
+
+Y is the dependent variable
+
+X is the independent variable
+
+
+Yi = a + b* Xi + rnadError_i
+
+Assumptions:
+
+-Linear relationship between X and Y
+-Y is distributed normally at each value of X
+-The variance of Y at every value of X is the same (homogeneity of variances)
+-The observations are independent
+
+*** In matlab
+new edit file.
+->
+types: edit  -> and somthing opens up..
+
+function [a0 a1]=Linear_regression(x,y);
+// y and x are the input for the function
+
+//so
+function [a0 a1]=linear_regression(x,y);
+n=length(x);
+a1=(n*sum(x.*y)-sum(x)*sum(y))/n*sum(x.^2)-(sum(x))^2
+a0=mean(y)-a1*mean(x)
+end
+
+
+making a function:
+
+type edit, then make it, then do publish..
+
+
+*** plotting ML
+http://www.youtube.com/watch?v=cyxFsSJSxwE
+
+workspace->
+new variable
+->
+copy out numerical data..
+
+..->
+
+do all this on an m-or n-file seems like just a new file
+
+
+attendence = nba(:,1);
+price = nba(:,2);
+
+plot(attendance, price, 'ks')  -> no lines , black squares.
+
+...
+title('NBA Attendance VS. ticket price')
+xlabel('Attendance [people]')
+ylabel('Ticket price [$]')
+grid on
+
+** Paels
+
+Matlab -> sorting matrix by 1 collumn
+
+returning vectors..
+
+doing 1arry function, funct1, to each element of vector x
+http://stackoverflow.com/questions/4986403/matlab-how-to-apply-function-componentwise
+
+Y = arrayfun(@funct1, x)
+
+
+
+*** Adferd - (einföld linuleg aðhvarfsgreining í MatLab)
+
+
+setja breytur i vigra
+a og b
+gera adhvarfsgreiningu..m. linear_regression
+[
+
+function [a0 a1] = linear_regression(x,y)
+n = length(x);
+a1=(n*sum(x.*y)-sum(x)*sum(y))/(n*sum(x.^2)-(sum(x))^2)
+a0=mean(y)-a1*mean(x)
+end
+]
+
+ as = linear_regression(a,b)
+
+nota nidurst a0 og a1 i nytt function funk1
+[
+function y = funk1(x)
+    y =  a0 + ( a1*x)
+end
+]
+
+búa til vigur t fyrir x-as sem spannar fra min a til max a.
+
+búa til annan vigur z1 fyrir reggresionid, tekkiid a hvert gildi i t, til ad fa linunna
+
+z1 = arrayfun(@funk1, t)
+
+plotta stuffid m.
+[
+plot(a,b, 'ks')
+ hold on
+ plot(t,z1)
+ hold of
+ grid on
+]
+
+
+
+
+
+ 
