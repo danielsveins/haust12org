@@ -1,0 +1,93 @@
+* Glossur tölvunet og örryggi, 9 April
+
+** A1
+
+Injection Attacks, jpeg.. sony...
+
+SQL querrys, Exploit example.
+
+
+SANS - top 20 vulnerabilitys OWASP top 10
+
+** A2
+
+XSS - cross-site scripting
+
+** A3 
+Broken authentication and session managment
+
+hash the passwords, sha-2 is what you should be using..
+
+assault-> random number, concatinate it to known password
+
+
+--> skype password reset vulnerability.
+
+use a proxy on your machine..to change user for paswd auth for example..
+
+changing session id... are they exposed in the URL?
+
+do session ID's timeout?
+session ID's rotated?  ->  if not session can be taken over -> e.g.   https...stolensessonId...
+
+scenario -> Insider or external captures password database..
+
+** A4
+
+Insecure Direct Object Refrences
+
+
+http..../accountInfo?acct=notmyacct
+
+
+client side, hidden fields and so on..
+
+** A5
+Cross site request forgery..
+
+transfer money to my account
+
+<imgsrc="http://example.com/app/transferFunds?amount=150...
+
+is not an image but transfers mony in bank if user is authenticated on a particular bank site..
+
+** A6
+Security Misconfiguration
+
+web defacements...
+
+
+ports...
+
+smpt  server, ssh, ...-> disable services not in use. 
+
+
+** A7
+
+Insecure Cryptographic Storage
+
+--> sending plaintext.. creditcard information.
+
+** A9
+Insuficient transport layer protection
+
+
+SSL authentication
+
+
+** A10
+
+Unvalidated redericts
+
+
+** OWASP Top 10 Mobile
+1. insecure data storage
+2. Weak Server side Controls
+3. Insufficient Transport Layer protection
+4. Cl;ient side injection
+5. Poor Authorization and Authentication
+6. Impropper Session Handleing
+7. Security Decisions Via Untrusted Inputs
+8. Side channel Data leakage
+9. Broken Cryptography
+10. Sensitive Information Disclosure
