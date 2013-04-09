@@ -1,0 +1,40 @@
+*  Windows 7 stuff
+
+** Usefull keybindings and stuff
+
+Cntrl + Esc      (opens startMenu)
+
+Win + <-         (Makes window a side thingy)
+
+Win + Downarrow   (minimizes a window)  
+
+win + d            minimize all windows or return to previos state
+
+win + space         makes all windows transparent
+
+
+win + t     go to first item in taskbar
+
+win + b     go to other side task bar thingy, called system tray
+
+win + 1-9    switch to item n on the task bar
+
+shift + win + 1-9     start new instance of thingy n on the taskbar.
+
+win +  - or +     for zooming in and out..
+
+
+** Shell stuff 
+
+*** CMD
+
+powershell --> opens powershell
+
+
+*** Powershell
+
+explorer .     opens exporer in the current directory
+
+
+explorer /n      opens in mydocuments
+
