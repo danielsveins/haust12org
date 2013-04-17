@@ -1,0 +1,31 @@
+* Fyrirlestur Rokfraedi i hugbunadargerd -- 17/4/13
+
+kassa og tigul rokfraedi er kominn vid sogu...
+
+modal logic
+
+háttarökfræði
+
+kassi(Ap: p=p)
+
+
+2.
+
+kassi Q er satt ef tad er enginn tengdur heimur
+
+| yrding             | sonn i      |
+|--------------------+-------------|
+| q                  | a,c,d       |
+| tigul q            | b,d         |
+| kassi q            | c,d         |
+| kassi p V kassi q  | c,d         |
+| kassi(pvq)         | c,d         |
+| kassi p -> p       | alltaf satt |
+| p -> kassi tigul p |             |
+
+
+tigull p = ~ kassi ~ p
+
+skv. kripke likani
+
+
