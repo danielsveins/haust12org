@@ -1,0 +1,56 @@
+* Wardriving
+
+** wiki link
+http://en.wikipedia.org/wiki/Wardriving
+
+** Etymology
+
+Originated from a term wardialing, which was a practice where all numbers in a sequence are dialed
+looking for modems.  This hacking technique was made popular in a 1983 movie wargames.
+
+file:wargames.jpg 
+
+wargames :https://www.youtube.com/watch?v=tAcEzhQ7oqA 
+
+*** Variations
+warwalking, warbiking and warjogging are variations on wardriving.
+
+Warwalking and warjogging are of course slower than wardriving.
+** Wardriving
+
+Wardriving uses a wifi device together with a GPS device to map out wireless networks.  This is generally
+for the purpose of piggybacking.  Although sometimes more malicious purposes or just for akademic purposes.
+
+active vs. passive wardriving.  Some types of software like for example NetStumbler actively send probing messages.
+
+*** piggybacking
+
+Piggybacking is using a wireless network without explicit permission.
+
+** Antennae
+
+file:antenna.jpg
+
+Wireless receivers can be modified to extend their range for picking up and connecting to wireless access points.
+
+** Programs
+
+*** aircrack toolkit,
+air dump
+air mon
+air crack
+**** simple wepcrack tutorial
+http://www.aircrack-ng.org/doku.php?id=simple_wep_crack&DokuWiki=74027b804520dee909710c816bcd8d69
+*** kismet
+http://www.kismetwireless.net/
+
+KisMAc is like a Macintosh version of Kismet - both are used for passive (listen only wardriving)
+
+Kismet is an 802.11 layer2 wireless network detector, sniffer, and intrusion detection system. 
+Kismet will work with any wireless card which supports raw monitoring (rfmon) mode, and 
+(with appropriate hardware) can sniff 802.11b, 802.11a, 802.11g, and 802.11n traffic. Kismet 
+also supports plugins which allow sniffing other media such as DECT. 
+
+** wardriving with rasberry pie
+
+https://www.youtube.com/watch?v=RVVaWoxHKJo
