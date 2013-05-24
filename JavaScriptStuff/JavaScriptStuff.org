@@ -1,10 +1,10 @@
 * JavaScript Stuff
 bókinn er:  Beginning JavaScript with DOM(BookFi.org)   - Christian Heilmann
 staða er: bls 32
-
+-36
 Gægi í jimminu mintist á coffeScript sem gott stuff
 -front end programing .. .
-
+-36
 **  web pages for javaScript
 code examples with book at:
 http://www.beginningjavascript.com
@@ -32,3 +32,87 @@ JavaScript Bloggers:
 all that is needed for javaScript rly is a text editor and a browser
 *** Debuggers
 Mozilla Venkman, Microsoft Script Debugger, or kjscmd
+
+
+
+** Alm Gls
+
+*** Comments
+
+// rest of line is comment
+
+/* beginning of comment
+
+*/  end
+
+*** ;
+
+; is optional at end of statement, newline does the same..
+
+
+*** Code bls. 33
+
+<!DOCTYPE HTML PUBLIC " -//W3C//DTD HTML 4.01//EN"
+"http://www.w3.prg/TR/htmla4/strict.dtd">
+<html dir="ltr" lang="en">
+<head>
+<body>
+<script type="text/JavaScript">
+ // One-line comments are useful for reminding us what the code is doing
+
+/* 
+  This is a multiline comment
+
+*/
+
+/* 
+  Script starts here.  We'r declaring variabel myName, and assigning to it the
+value of whatever the user puts in the prompt box (more on that in Chapter2),
+finishing the instrution with a semicolon because it is a statement
+*/
+var myName = prompt ("Enter your name","");
+
+// If the name the user enters is Chris Heilmann
+if (myName == "Chris Heilmann")
+{
+   // the a new window pops u[[ saying hello
+   alert("Hello Me");
+}
+
+// If the name isn't Chris ..
+else
+{
+  // say hello to someone else
+  alert("hello someone else");
+}
+</script>
+</body>
+</html>
+
+
+
+*** code bls 34
+
+<!DOCTYPE HTML PUBLIC " -//W3C//DTD HTML 4.01//EN"
+"http://www.w3.prg/TR/htmla4/strict.dtd">
+<html dir="ltr" lang="en">
+<head>
+<script type="text/JavaScript">
+alert( 'First script Block ');
+alert( 'First script Block - Second Line ');
+</script>
+</head>
+<body>
+<h1>Test Page</h1>
+<script type="text/JavaScript">
+ alert( 'Second script Block' );
+</script>
+<p> Some more HTML </p>
+<script type="text/JavaScript">
+  alert( 'Third script Block' );
+  function doSomthing() {
+    alert( 'Function in Third script Block' );
+  }
+</script>
+</body>
+</html>

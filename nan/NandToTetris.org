@@ -584,6 +584,13 @@ RAM chips needed for the HACK platform are:
 | RAM4K     |  4096 | 12 |
 | RAM16K    | 16384 | 14 | 
 
+***** book notes on RAM
+
+The basic design perameters on a RAM is:
+ the data width -> the width of each one of its words.
+ ans its size   -> the number of words in the RAM
+
+
   
 ****  counter
 
@@ -598,3 +605,228 @@ If reset(t-1) then out(t)=0
 Tue Oct 23 22:14:32 GMT 2012
 
 lestur lectures lokid:  Tue Oct 23 22:14:32 GMT 2012
+
+
+
+
+
+**** virdist vera buid
+
+Bit  -> buid
+
+PC   -> ekki buid
+
+RAM64 -> ekki buid
+RAM8  -> buid
+Register ..-> buid
+
+
+mid RAM64
+
+
+*** Project
+
+**** RAM64
+/**
+ * Memory of 64 registers, each 16-bit wide.
+ * The chip facilitates read and write operations, as follows:
+ *     Read:  out(t) = RAM64[address(t)](t)
+ *     Write: If load(t-1) then RAM64[address(t-1)](t) = in(t-1)
+ * In words: the chip always outputs the value stored at the memory
+ * location specified by address. If load == 1, the in value is loaded
+ * into the memory location specified by address.  This value becomes
+ * available through the out output starting from the next time step.
+ */
+
+CHIP RAM64 {
+    IN in[16], load, address[6];
+    OUT out[16];
+
+    PARTS:
+    // Put your code here.
+    DMux8Way(in = load, sel = address[3..5], a = l0, b = l1, c=l2, d=l3, e=l4, f=l5, g=l6, h=l7);
+
+    RAM8(in = in, load = l0, address = address[0..2], out = out0);
+    RAM8(in = in, load = l1, address = address[0..2], out = out1);
+    RAM8(in = in, load = l2, address = address[0..2], out = out2);
+    RAM8(in = in, load = l3, address = address[0..2], out = out3);
+
+    RAM8(in = in, load = l4, address = address[0..2], out = out4);
+    RAM8(in = in, load = l5, address = address[0..2], out = out5);
+    RAM8(in = in, load = l6, address = address[0..2], out = out6);
+    RAM8(in = in, load = l7, address = address[0..2], out = out7);
+
+    Mux8Way16(a= out0,b = out1, c=out2, d = out3, e = out4 , f = out5, g=out6, h=out7, sel = address[3..5], ou\
+t=out);
+
+}
+
+**** RAM512
+
+/**
+ * Memory of 512 registers, each 16-bit wide.
+ * The chip facilitates read and write operations, as follows:
+ *     Read:  out(t) = RAM512[address(t)](t)
+ *     Write: If load(t-1) then RAM512[address(t-1)](t) = in(t-1)
+ * In words: the chip always outputs the value stored at the memory
+ * location specified by address. If load == 1, the in value is loaded
+ * into the memory location specified by address.  This value becomes
+ * available through the out output starting from the next time step.
+ */
+
+CHIP RAM512 {
+    IN in[16], load, address[9];
+    OUT out[16];
+
+    PARTS:
+    // Put your code here.
+    DMux8Way(in = load, sel = address[6..8], a = l0, b = l1, c=l2, d=l3, e=l4, f=l5, g=l6, h=l7);
+
+    RAM64(in = in, load = l0, address = address[0..5], out = out0);
+    RAM64(in = in, load = l1, address = address[0..5], out = out1);
+    RAM64(in = in, load = l2, address = address[0..5], out = out2);
+    RAM64(in = in, load = l3, address = address[0..5], out = out3);
+
+    RAM64(in = in, load = l4, address = address[0..5], out = out4);
+    RAM64(in = in, load = l5, address = address[0..5], out = out5);
+    RAM64(in = in, load = l6, address = address[0..5], out = out6);
+    RAM64(in = in, load = l7, address = address[0..5], out = out7);
+
+    Mux8Way16(a  = out0, b = out1, c=out2, d = out3, e = out4 , f = out5, g=out6, h=out7, sel = address[6..8], o\
+ut=out);
+
+
+
+**** RAM4k
+
+/**
+ * Memory of 4K registers, each 16-bit wide.
+ * The chip facilitates read and write operations, as follows:
+ *     Read:  out(t) = RAM4K[address(t)](t)
+ *     Write: If load(t-1) then RAM4K[address(t-1)](t) = in(t-1)
+ * In words: the chip always outputs the value stored at the memory
+ * location specified by address. If load == 1, the in value is loaded
+ * into the memory location specified by address.  This value becomes
+ * available through the out output starting from the next time step.
+ */
+
+CHIP RAM4K {
+    IN in[16], load, address[12];
+    OUT out[16];
+
+    PARTS:
+    // Put your code here.
+    DMux8Way(in = load, sel = address[9..11], a = l0, b = l1, c=l2, d=l3, e=l4, f=l5, g=l6, h=l7);
+
+    RAM512(in = in, load = l0, address = address[0..8], out = out0);
+    RAM512(in = in, load = l1, address = address[0..8], out = out1);
+    RAM512(in = in, load = l2, address = address[0..8], out = out2);
+    RAM512(in = in, load = l3, address = address[0..8], out = out3);
+
+    RAM512(in = in, load = l4, address = address[0..8], out = out4);
+    RAM512(in = in, load = l5, address = address[0..8], out = out5);
+    RAM512(in = in, load = l6, address = address[0..8], out = out6);
+    RAM512(in = in, load = l7, address = address[0..8], out = out7);
+
+    Mux8Way16(a  = out0, b = out1, c=out2, d = out3, e = out4 , f = out5, g=out6, h=out7, sel = address[9..11], \
+out=out);
+
+
+**** RAM16K
+
+/**
+ * Memory of 16K registers, each 16-bit wide.
+ * The chip facilitates read and write operations, as follows:
+ *     Read:  out(t) = RAM16K[address(t)](t)
+ *     Write: If load(t-1) then RAM16K[address(t-1)](t) = in(t-1)
+ * In words: the chip always outputs the value stored at the memory
+ * location specified by address. If load=1, the in value is loaded
+ * into the memory location specified by address.  This value becomes
+ * available through the out output starting from the next time step.
+ */
+
+CHIP RAM16K {
+    IN in[16], load, address[14];
+    OUT out[16];
+
+    PARTS:
+    // Put your code here.
+    DMux4Way(in = load, sel = address[12..13], a = l0, b = l1, c=l2, d=l3);
+
+    RAM4K(in = in, load = l0, address = address[0..11], out = out0);
+    RAM4K(in = in, load = l1, address = address[0..11], out = out1);
+    RAM4K(in = in, load = l2, address = address[0..11], out = out2);
+    RAM4K(in = in, load = l3, address = address[0..11], out = out3);
+
+    Mux4Way16(a  = out0, b = out1, c=out2, d = out3, sel = address[12..13], out =out);
+
+
+}
+
+**** PC or program counter
+//sort of cheated, used someone elses code that also uses premade Inc16
+// but whatevs..
+/**
+ * 16-bit counter with load and reset controls.
+ *
+ * If reset(t-1) then out(t) = 0
+ *    else if load(t-1) then out(t) = in(t-1)
+ *         else if inc(t-1) then out(t) = out(t-1) + 1 (integer addition)
+ *              else out(t) = out(t-1)
+ */
+
+CHIP PC {
+    IN in[16],load,inc,reset;
+    OUT out[16];
+
+    PARTS:
+    // Put your code here.
+    Inc16(in=prev, out=incout);
+    // use few simple gates to avoid using Mux8Way16
+    Or(a=load, b=inc, out=loadorinc);
+    Or(a=loadorinc, b=reset, out=change);
+    Not(in=reset, out=nreset);
+    And(a=load, b=nreset, out=xload);
+    And(a=inc, b=nreset, out=xinc);
+    Mux4Way16(a=false, b=in, c=incout, d=in,
+              sel[0]=xload, sel[1]=xinc, out=muxout);
+    Register(in=muxout, load=change, out=prev, out=out);
+
+}
+
+
+
+
+*** Project completion
+Fri May 24 03:07:56 GMT 2013
+
+** Project 04
+http://www.nand2tetris.org/04.php
+
+*** status
+status is on page 4 in chapter 4
+*** Before Project
+
+read Assembler Tutorial
+
+and CPU emulator tutorial 
+
+as well as the chapter 4
+
+*** LectureGlos
+
+
+machine language
+
+addr is some value..
+
+ADD R1,R2,R3   //  R1  <- R2 + R3
+
+
+ADDI R1,R2,addr // R1 <- R2 + addr
+
+AND R1,R2,R3  // R1 <- bitwise and of R2 and R3
+
+JMP addr   //  PC <- addr
+
+
