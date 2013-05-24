@@ -1,0 +1,22 @@
+* April 10 glosur um Windows, XAML og WPF osfv. samvinna med Aroni
+
+** leitar strengir
+
+Live tiles
+
+Live tiles and components
+
+** Tile Gauge Hack
+
+http://msdn.microsoft.com/en-us/library/cc148994.aspx
+
+paelinginn er ad breyta myndum inn i foler sem livetile fyrir gaugeid visar i,
+
+hugmyndin er ad nota bara skell forrit sem copyerar , og breytir nafni i sama naf,
+og thar med yfirskrifar og laetur live tile, birta thar med myndir af gauge eftir
+stodu thess sem innova segir.
+
+*** milestones
+
+einsog er getum vid m. console app, copyerad syncronusly
+en naudsyn vaeri liklega ad gera thetta m. async thraedi.
