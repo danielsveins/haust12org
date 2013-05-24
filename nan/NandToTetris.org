@@ -804,7 +804,7 @@ Fri May 24 03:07:56 GMT 2013
 http://www.nand2tetris.org/04.php
 
 *** status
-status is on page 4 in chapter 4
+status is on page 10 in chapter 4
 *** Before Project
 
 read Assembler Tutorial
@@ -828,5 +828,153 @@ ADDI R1,R2,addr // R1 <- R2 + addr
 AND R1,R2,R3  // R1 <- bitwise and of R2 and R3
 
 JMP addr   //  PC <- addr
+
+
+*** BookGlos
+
+**** Machine Language (in general)
+
+ADD R2,R1,R3 // R2 <- R1+R3  where R1,R2,R3 are registers
+
+ADD R2,R1,foo // R2 <- R1+foo   where foo stands for the
+              // value of the  memory location pointed at by the
+	      // user defined label foo
+
+AND R1,R1,R2  // R1 <- bit wise And of R1 and R2
+
+
+***** Memory access
+all computers feature explicit load and store commands... 3 common 
+memory access modes:
+
+****** Direct addressing, 
+express specific address, use symbol, e.g.
+
+LOAD R1,67   //   R1 <- Memory[67]
+
+// Or, assuming that bar refers to memory address 67:
+
+LOAD R1,bar  //   R1 <- Memory[67]
+
+
+****** Immediate addressing
+This form of addressing is used to load constants- namely load values that
+are in the instruction code.  Load the value of the field itself into the register.
+e.g.
+
+LOADI R1,67  //  R1 <- 67
+
+****** Indirect addressing
+
+ This is inderect n the sense that the instructions hold a memory location that 
+then holds the required address, this is used in the case of handeling pointers.
+high level example code:
+
+x=foo[j]  // foo is an array variable and x and y are integer variables.
+
+in C can be expressed as x=*(foo+j)...*n stands for value at memory[n]
+
+Machine Language Translation: (generally)
+
+//  Translation of x=foo[j] or x = *(foo+j):
+ADD R1,foo,j  // R1 <- foo+j
+LOAD* R2,R1   // R2 <- Memory[R1]
+STR R2,x      // x <- R2
+
+
+***** Flow Control
+
+used for branching and looping
+example
+
+
+| High level       | Low-level                                |
+|------------------+------------------------------------------|
+| // A while loop: | //Typical translation:                   |
+| while (R1>=0) {  | beginWhile:                              |
+| code segment 1   | JNG R1,endWhile // If R1<0 goto endWhile |
+| }                | //Translation of code segment 1          |
+| code segment 2   | JMP beginWhile // Goto beginWhile        |
+|                  | endWhile:                                |
+|                  | // Translation of code segment 2         |
+
+
+here we have JMP a conditionless jump to beginwhile a location
+and JNG which examines a condition <- in this case a register..
+
+
+**** the Hack machine language
+Hack MAchine Language specification.
+
+The hack computer is a von Neumann platform.  It is a 16-bit machine,
+consisting of a CPU, two separate memory modules serving as instruction memory and 
+data memory, and two memory-mapped I/O devices: a screen and a keyboard.
+
+ 
+***** Memmory addres spaces
+
+Both memorys, tha data memory and the instruction memory are 16-bit wide.
+and have 15-bit address space, meaning that the maximum addressable size of
+each memory is 32K 16-bit words.  2^15 = 32768.
+
+The CPU can only execute programs in the instructional memory. This is a 
+read only device that can only be loaded in through some exogenous means. Like 
+a ROM chip, or like a cartridge in a game console (Nintendo).
+->
+  This is simulated instructional memory is loaded from a text file containing
+a machine language program.
+
+***** Registers
+
+Hack assembly programers are aware of 2 16-bit registers called D and A.
+
+D is used soley for data but A doubles as an adress and Data register..
+
+
+Syntax of the Hack language mandates that memory access instructions operate on  an
+implicit memory location labled "M"   e.g.  D=M+1
+-> to resolve this address the convention is that M always refers to the memoty word
+whose address is the current value of the A register.
+So for example if we want to affect the operation
+D = Memory[516] - 1
+, we have to use oone instruction to set the A register to 516, and a subsequent 
+instruction to specify D=M+1
+
+This same trick is used when A is used for flow control addrssing the instruction memory.
+Thus a Hack jump command jumps to the address writen in A.
+
+@value command stores a value, value in the register A.
+
+
+
+****** Example add 1+..+100
+
+
+| C language        | Hack machine Language                    |
+|-------------------+------------------------------------------|
+| //Adds 1+..+100.  | //Adds 1+..+100.                         |
+| int i = 1;        | @i  // i refers to some location         |
+| int sum = 0;      | M=1 // i=1                               |
+| While (i <= 100){ | @sum // sum refers to some mem. location |
+| sum + = 1;        | M=0  // sum=0                            |
+| i++;              | (LOOP)                                   |
+| }                 | @i                                       |
+|                   | D=M  // D=i                              |
+|                   | @100                                     |
+|                   | D=D-A // D=i-100                         |
+|                   | @END                                     |
+|                   | D;JGT  // If (i-100)>0 goto END          |
+|                   | @i                                       |
+|                   | D=M  // D=i                              |
+|                   | @sum                                     |
+|                   | M=D+M  // sum=sum+i                      |
+|                   | @i                                       |
+|                   | M=M+1  // i=i+1                          |
+|                   | @LOOP                                    |
+|                   | 0;JMP // Goto LOOP                       |
+|                   | (END)                                    |
+|                   | @END                                     |
+|                   | 0;JMP  // Infinite loop                  |
+
 
 
