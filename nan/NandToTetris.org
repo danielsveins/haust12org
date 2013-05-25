@@ -804,7 +804,7 @@ Fri May 24 03:07:56 GMT 2013
 http://www.nand2tetris.org/04.php
 
 *** status
-status is on page 12 in chapter 4
+status is on page 17 in chapter 4, just before project
 *** Before Project
 
 read Assembler Tutorial
@@ -1039,7 +1039,8 @@ note similarity to figure 2.6 the specification of the ALU
 
 ****** Dest part
 
-the first and second d-bits code weather to store the computed value in the A register and D register respectively.
+the first and second d-bits code weather to store the computed value in the 
+A register and D register respectively.
 the third weather to store also in M (Memory[A])
 one, more than one, or none of these bits may be asserted.
 
@@ -1054,5 +1055,113 @@ Supose we wanted to increment the value of Memory[7] by 1. and also store the re
 
 ****** Jump part
 
-The question is weather to jump.  If a jump occurs it is assumed that the address has already been put in the A register.
+The question is weather to jump.  If a jump occurs it is assumed that the address 
+has already been put in the A register.
 If it is decided not to jump, the program carries on as is the default behavior
+
+Wheather a jump happens depends on the 3 jump bits and the output value of the ALU.
+first bit specifies weather to jump if output is negative
+second if output is zero
+third if output is positive
+
+
+| j1 (out<0) | j2 (out=0) | j3 (out > 0) | Mnemonic | Effect           |
+|------------+------------+--------------+----------+------------------|
+|          0 |          0 |            0 | null     | No jump          |
+|          0 |          0 |            1 | JGT      | If out > 0  jump |
+|          0 |          1 |            0 | JEQ      | If out = 0  jump |
+|          0 |          1 |            1 | JGE      | If out >= 0 jump |
+|          1 |          0 |            0 | JLT      | If out < -  jump |
+|          1 |          0 |            1 | JNE      | IF out != 0 jump |
+|          1 |          1 |            0 | JLE      | If out <= 0 jump |
+|          1 |          1 |            1 | JMP      | Jump             |
+
+
+Out refers to the ALU output (resulting from the instruction's comp part)
+and jump implies "continue execution with the instruction addressed by the A register"
+
+
+A register can be used for a data memory location for subsequent C-instruction
+involving M
+or an instruction memory location for a subsequent C-instruction involving a jump
+
+******* Example
+|   | Logic                         | Implementation           |
+|---+-------------------------------+--------------------------|
+|   | if Memory[3]=5 then goto 100, | @3                       |
+|   | else goto 200                 | D=M // D=Memory[3]       |
+|   |                               | @5                       |
+|   |                               | D=D-A  // D=D-5          |
+|   |                               | @100                     |
+|   |                               | D;JEQ // If D=0 goto 100 |
+|   |                               | @200                     |
+|   |                               | 0;JMP  // Goto 200       |
+
+
+
+***** Symbols for memory
+
+R0 to R15 refer to RAM addresses 1-15
+
+SO, LCL,ARG,THIS,THAT to RAM addresses 1-4
+
+****** I/O pointers
+
+SCREEN 16384 (0x4000)  
+KBD    24576 (0x6000)
+
+are the base addresses of the screen and keyboard memmory maps.
+
+****** LAbel symbols
+
+"(Xxx)" refers to instruction memory location holding the next command in program.
+
+
+Any user defined symbol not defined elsewhere is assigned unique memory address
+treated as a variable
+starting at RAM address 16 (0x0010)
+
+****** screen
+
+1 = black, 0=white
+
+drawing a black dot:
+
+// Draw a single black dot at the screen's top left corner:
+@SCREEN  // Set the A register to point to the memory
+         // word that is mapped to the 16 left-most
+	 // pixels of the top row of the screen.
+M=1	 // Blacken the left most pixel.
+
+
+****** Keyboard
+
+RAM[24576] single word.. 24576 (0x6000)
+16-bit ASCII characters
+
+when no key is pressed the 0 code appears in RAM[24576]
+
+***** Syntax conventions for file
+
+binary code file has text lines 16 chars each either the 0 or 1 ASCII character
+each line represents an instruction, the n'th line in binary code file is stored in 
+address n in the instruction memory.
+
+Prog.hack
+
+would be an example of a binary file program.
+
+assembly language as: Prog.asm
+
+***** Assembly language syntax and conventions
+
+user defined symbols can be any sequence of letters, digits, underscore (_), dot (.),
+dollar sign ($), and colon (:) that does not begin with a digit.
+
+
+// Comments 
+  
+whitspace ingnored
+
+All assembly Mnemonics must be written in uppercase.  user defined labels and 
+variables are case sensitive.
