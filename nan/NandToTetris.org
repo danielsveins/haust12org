@@ -804,7 +804,7 @@ Fri May 24 03:07:56 GMT 2013
 http://www.nand2tetris.org/04.php
 
 *** status
-status is on page 10 in chapter 4
+status is on page 12 in chapter 4
 *** Before Project
 
 read Assembler Tutorial
@@ -928,7 +928,7 @@ a machine language program.
 
 Hack assembly programers are aware of 2 16-bit registers called D and A.
 
-D is used soley for data but A doubles as an adress and Data register..
+D is used soley for data but A doubles as an address and Data register..
 
 
 Syntax of the Hack language mandates that memory access instructions operate on  an
@@ -978,3 +978,81 @@ Thus a Hack jump command jumps to the address writen in A.
 
 
 
+***** C-Instruction
+
+dest = comp;jump
+
+|   | comp                              | dest                               | jump                                   |
+|---+-----------------------------------+------------------------------------+----------------------------------------|
+|   | Instructs the ALU what to compute | where to strore the computed value | which comand to fetch and execute next |
+|   |                                   |                                    |                                        |
+
+
+****** Computation and specification
+
+The Hack ALU is designed to compute a fixed set of functions on the D, A and M registers..(M stands for Memory[A])
+
+the computed function is specified by the a-bit and the 6 c-bits in the comp feild
+
+|         |     | comp                | dest     | jump     |
+|---------+-----+---------------------+----------+----------|
+| binary: | 111 | a c1 c2 c3 c4 c5 c6 | d1 d2 d3 | j1 j2 j3 |
+
+
+
+
+theleft most bit which is a 1 is the C-instruction code, the next two are not used ..
+
+
+| (when a = 0) comp nmeonic | c1 | c2 | c3 | c4 | c5 | c6 | (when a = 1) comp nmonic |   |
+|---------------------------+----+----+----+----+----+----+--------------------------+---|
+| 0                         |  1 |  0 |  1 |  0 |  1 |  0 |                          |   |
+| 1                         |  1 |  1 |  1 |  1 |  1 |  1 |                          |   |
+| -1                        |  1 |  1 |  1 |  0 |  1 |  0 |                          |   |
+| D                         |  0 |  0 |  1 |  1 |  0 |  0 |                          |   |
+| A                         |  1 |  1 |  0 |  0 |  0 |  0 | M                        |   |
+| !D                        |  0 |  0 |  1 |  1 |  0 |  1 |                          |   |
+| !A                        |  1 |  1 |  0 |  0 |  0 |  1 | !M                       |   |
+| -D                        |  0 |  0 |  1 |  1 |  1 |  1 |                          |   |
+| -A                        |  1 |  1 |  0 |  0 |  1 |  1 | -M                       |   |
+| D+1                       |  0 |  1 |  1 |  1 |  1 |  1 |                          |   |
+| A+1                       |  1 |  1 |  0 |  1 |  1 |  1 | M+1                      | x |
+| D-1                       |  0 |  0 |  1 |  1 |  1 |  0 |                          |   |
+| A-1                       |  1 |  1 |  0 |  0 |  1 |  0 | M-1                      |   |
+| D+A                       |  0 |  0 |  0 |  0 |  1 |  0 | D+M                      |   |
+| D-A                       |  0 |  1 |  0 |  0 |  1 |  1 | D-M                      |   |
+| A-D                       |  0 |  0 |  0 |  1 |  1 |  1 | M-D                      |   |
+| D^A                       |  0 |  0 |  0 |  0 |  0 |  0 | D^M                      |   |
+| DvA                       |  0 |  1 |  0 |  1 |  0 |  1 | DvM                      |   |
+
+fig. 4.3 
+
+D and A are names of registers while M referes to the memory location addressed by A.
+
++ and - denote 16-bit twos compliment addition and subtraction.
+
+!, | , and &  denote the 16-bit bitwise boolean operators   : Not, Or and And
+   v       ^   in the notation above..
+
+note similarity to figure 2.6 the specification of the ALU
+
+
+****** Dest part
+
+the first and second d-bits code weather to store the computed value in the A register and D register respectively.
+the third weather to store also in M (Memory[A])
+one, more than one, or none of these bits may be asserted.
+
+******* Example
+
+Supose we wanted to increment the value of Memory[7] by 1. and also store the result in the D register
+
+0000 0000 0000 0111   // @7
+
+1111 1101 1101 1000   // MD=M+1
+
+
+****** Jump part
+
+The question is weather to jump.  If a jump occurs it is assumed that the address has already been put in the A register.
+If it is decided not to jump, the program carries on as is the default behavior
