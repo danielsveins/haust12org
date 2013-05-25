@@ -1,0 +1,54 @@
+* Web Programing (Isl Vef-forritun)
+Whearas there seems to be a big demand for WebProgramers, based on tvinna.is
+-it seems incumbant upon me to apply myself to learning Web_Programing/Development
+
+** Lanugages that seem pertinent
+
+The most important seem to be HTML and Javascript
+source:
+http://webdesign.about.com/od/jobs/p/should_I_become_a_web_programmer.htm
+
+followd by:
+PHP
+Perl
+Java
+ASP and .Net
+
+according to source:http://www.host-shopper.com/what-is-web-programming.html
+
+PHP
+ASP.NET
+Ruby on Rails
+Perl
+ASP
+CGI
+Python
+JSP
+
+according to source: http://www.granneman.com/webdev/becoming-a-web-developer/
+
+HTML
+CSS
+PHP or some othe server-side Language
+
+to do it effectively , you've got a lot more to learn
+
+SQL
+JavaScript
+libraries and frameworks
+a bug tracking system
+Subversion or some other revision control system
+IDEs
+other tools
+Apache
+Linux command line
+
+to do it well, there's even more:
+
+usability
+unobtrusive JavaScript
+separation concerns (MVC, etc)
+testing
+customer relations
+HTTP protocol
+AJAX  
