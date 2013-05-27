@@ -933,7 +933,7 @@ D is used soley for data but A doubles as an address and Data register..
 
 Syntax of the Hack language mandates that memory access instructions operate on  an
 implicit memory location labled "M"   e.g.  D=M+1
--> to resolve this address the convention is that M always refers to the memoty word
+-> to resolve this address the convention is that M always refers to the memory word
 whose address is the current value of the A register.
 So for example if we want to affect the operation
 D = Memory[516] - 1
@@ -1071,7 +1071,7 @@ third if output is positive
 |          0 |          0 |            1 | JGT      | If out > 0  jump |
 |          0 |          1 |            0 | JEQ      | If out = 0  jump |
 |          0 |          1 |            1 | JGE      | If out >= 0 jump |
-|          1 |          0 |            0 | JLT      | If out < -  jump |
+|          1 |          0 |            0 | JLT      | If out < 0  jump |
 |          1 |          0 |            1 | JNE      | IF out != 0 jump |
 |          1 |          1 |            0 | JLE      | If out <= 0 jump |
 |          1 |          1 |            1 | JMP      | Jump             |
@@ -1111,6 +1111,20 @@ SCREEN 16384 (0x4000)
 KBD    24576 (0x6000)
 
 are the base addresses of the screen and keyboard memmory maps.
+
+******* more on SCREEN
+
+256    *    512   pixels
+rows    p per row
+
+8k memory, starts at 16384
+
+RAM[16384 + r * 32 + c/16]
+is location of bit on screen, on r row from the top 
+
+for an entire segment of the 32 segments in the 512 pixel row the umber to be put 
+into the 16-bit register coresponding to that segment is -1 or 1111111111111111 in
+the 2ws complement code.
 
 ****** LAbel symbols
 
@@ -1165,3 +1179,273 @@ whitspace ingnored
 
 All assembly Mnemonics must be written in uppercase.  user defined labels and 
 variables are case sensitive.
+
+
+*** Project
+**** Mult
+
+// Multiplies R0 and R1 and stores the result in R2.
+// (R0, R1, R2 refer to RAM[0], RAM[1], and RAM[3], respectively.)
+
+// Put your code here.
+@R2
+M=0   // sum is 0
+//@R0
+//r0=M  // put value of Memory[R0] into variable r0.
+(LOOP)
+@R0
+D=M   // D = Memory[R0]
+@END
+D;JLE  // If Memory[R0] <= 0 goto END
+D=D-1  // Decrease D by one
+@R0
+M=D    // put decreased value into Mem[R0]
+@R2
+D=M    // sum is in the data
+@R1
+D=D+M  // add into sum
+@R2
+M=D    // put value into sum memory
+@LOOP
+0;JMP
+(END)
+@END
+0;JMP  // Infinite loop 
+
+
+// This works according to the CPU emulator..
+
+**** Fill
+
+***** try for static blackfill
+
+// called staticScreenfill  , only need to change 
+// 32767 to -1 whitout the thing not running
+// The idea is to blacken the screen
+@32767
+D=A
+@black
+M=D    // -1 the value of 16 bit blackness
+@16384  // screen
+D=A
+@locate
+M=D
+@i
+M=1  // i = 1
+// 8198 registers
+@8198
+D=A
+@reg
+M=D
+
+
+(LOOP)
+
+@i
+D=M
+@reg
+D=D-M
+@END
+D;JGT  // If (i-8198) > 0 goto END
+
+
+@black
+D=M // D = -1
+@locate
+A=M
+M=D  // blackens address field.
+@locate
+M=M+1
+@i
+M=M+1  // i++
+@LOOP
+0;JMP  // goto LOOP
+(END)
+@END
+0;JMP // infinite loop
+
+
+***** staticblackfill fixed
+// The program was fixed by startin A register as 0 and then putting 
+// A-1 into the data register to acceive -1 or 1111111111111111 int the register.
+
+
+// The idea is to blacken the screen
+@0
+D=A-1
+@black
+M=D    // -1 the value of 16 bit blackness
+@16384  // screen
+D=A
+@locate
+M=D
+@i
+M=1  // i = 1
+// 8198 registers
+@8198
+D=A
+@reg
+M=D
+
+
+(LOOP)
+
+@i
+D=M
+@reg
+D=D-M
+@END
+D;JGT  // If (i-8198) > 0 goto END
+
+
+@black
+D=M // D = -1
+@locate
+A=M
+M=D  // blackens address field.
+@locate
+M=M+1
+@i
+M=M+1  // i++
+@LOOP
+0;JMP  // goto LOOP
+(END)
+@END
+0;JMP // infinite loop
+
+
+
+***** Fill
+// Thetta nokurnvegin virkar..svona just about..
+
+
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/04/Fill.asm
+
+// Runs an infinite loop that listens to the keyboard input. 
+// When a key is pressed (any key), the program blackens the screen,
+// i.e. writes "black" in every pixel. When no key is pressed, the
+// program clears the screen, i.e. writes "white" in every pixel.
+
+// Put your code here.
+
+
+// first we set the 3 defined quantitys, black, white, and reg.
+@0
+D=A
+@white
+M = D  // setting the white value
+@0
+D=A-1
+@black
+M=D    // setting the black value 
+@8198
+D=A
+@reg
+M=D
+
+
+
+// now all the environmental variables are set, we do the reset/setting of
+// the i and locate variables.
+// Presetting
+@16384
+D=A
+@locate
+M=D
+@i
+M=1
+@state  // state = 0 if no one pressing was the last state, 1 otherwise
+M=0
+@color
+M=0
+
+(RESET)
+@16384  // screen
+D=A
+@locate
+M=D
+@i
+M=1
+
+
+
+(LOOP)
+@KBD
+D=M
+@PRESS
+
+D;JNE     // Jumps to pressed if button is pressed
+
+@state    // not pressed
+D=M
+@ONWD
+D;JEQ   // sends to ONWARD if not pressed before
+@0
+D=A
+@color
+M=D    // change color to white
+@state
+M=0      // last two a question..
+@RESET
+0;JMP
+
+
+
+(PRESS)
+@state
+D=M
+@ONWD
+D;JNE  //  pressed before
+@black // not pressed before
+D=M
+@color
+M=D   // changes color to black
+@state
+M=1
+@RESET
+0;JMP
+
+(ONWD)
+@i
+D=M
+@reg
+D=D-M
+@LOOP
+D;JGT    // If (i-8198) > 0 continue on LOOP
+@color
+D=M
+@locate
+A=M
+M=D  // colors address field.
+@locate
+M=M+1
+@i
+M=M+1  // i++
+@KBD
+D=M
+@SWITCHEROO
+D;JNE
+@state
+M=0
+@color
+M=0
+@LOOP
+0;JMP
+(SWITCHEROO)
+@state
+M=1
+@black
+D=M
+@color
+M=D
+@LOOP
+0;JMP   // Jumps to LOOP
+
+
+
+
+
+
