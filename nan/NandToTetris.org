@@ -1449,3 +1449,20 @@ M=D
 
 
 
+** Project 5
+
+
+*** Extra Curicular paels
+
+**** Learning Assembly Language
+http://stackoverflow.com/questions/82432/is-learning-assembly-language-worth-the-effort
+Intel 64
+http://www.intel.com/content/www/us/en/processors/architectures-software-developer-manuals.html
+ 
+
+**** CISC v.s. RISC
+CISC - Complex Instruction Set Computing  --> Intel x86 is arguably the
+only chip that retains CISC architecture.
+
+RISC - Reduced Instruction Set COmputing
+http://www-cs-faculty.stanford.edu/~eroberts/courses/soco/projects/risc/risccisc/
