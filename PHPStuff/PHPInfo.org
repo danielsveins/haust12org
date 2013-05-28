@@ -1,0 +1,9 @@
+* PHP info 
+
+** localhost directory
+C:\Program Files\Apache Group\Apache2\htdocs
+
+
+
+** Book - PHP the good parts
+Peter B. MacIntyre 
