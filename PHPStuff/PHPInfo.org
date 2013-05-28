@@ -1,4 +1,10 @@
 * PHP info 
+byrjunnin a skodun PHP hja mer var i midjum profum og stutt og 
+oskipulagt th.a. reint er ad glogvast a thessu addeins m. localhost dir
+og Files and locations..
+.. notad er XAMPP - fyrir gagnagruns og servera eithv..
+
+
 
 ** localhost directory
 C:\Program Files\Apache Group\Apache2\htdocs
@@ -7,3 +13,22 @@ C:\Program Files\Apache Group\Apache2\htdocs
 
 ** Book - PHP the good parts
 Peter B. MacIntyre 
+
+** Files and locations
+
+
+-1
+
+C:\Users\berguth\vor13\Orygis\phpStuffAccess.txt
+*** Innihald 1
+http://localhost:8080/phpinfo.php
+
+-2
+
+C:\Users\berguth\vor13\randomShit\phpinfo.php
+*** Innihald 2
+<?php phpinfo() ; ?>
+
+
+** XAMPP
+to be filled in..
