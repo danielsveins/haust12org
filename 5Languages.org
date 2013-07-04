@@ -12,3 +12,5 @@ these languages create a cluster so you know others
 
 -> good for high performance numerical computation
 
+Stalman on getting good at programming:
+https://www.youtube.com/watch?v=qN7u1j44QTo
