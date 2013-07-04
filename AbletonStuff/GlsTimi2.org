@@ -1,0 +1,80 @@
+* Gls Timi2
+
+cntr - z .. undo
+
+** Midi Mapping
+Key Mapping..
+Ytir a KEY -> clickar a taka og ytir a lyklabords taka t.e.a.s. tolvu lyklabord
+
+KEY er upp i haegra horni..
+
+med Midi taeki er tad eins, bara yta a MIDI, svo a function til ad stjorna, og svo fikta
+i graejunni til ad ableton nemi tad..
+
+haegt ad nota smartphones og Ipads sem Midi graejur..
+
+Midi er fyrir Fadera og Nobes..
+
+
+** Effects
+
+*** Reverb
+
+sjerstakar rasir,  return, Reverb
+
+Gott ad vera m effecta a svona return rasum, tha geta allar rasir sent a thessa
+return ras m effetcinum.
+
+Delay reverb, Falanger, -> gott ad hafa a  Return Ras, einkum ef madur vill fikta 
+I thvi.
+
+
+** Uptaka
+
+
+Yta a metrinome, ytir a hringinn, telur inn,
+
+hringurinn uppi hja NEW  -> vinstra meginn. -> velur ras ytir a hringinn, og spilar inn.
+
+
+
+** Envelope
+
+_> Mixer -> reverb
+
+
+
+** Annolog
+
+Frequency Resonance samspil..
+
+Midi - > arpegiator..-> rate..
+
+Break - taka allt kickid ut...  Svo arpeggio i gangi..
+
+
+** Arangement view
+
+yta a tab til ad skipta a mill, session og arangment view..
+
+Draga klippur yfir eda yta a stora Rauda I session til ad
+faera yfir i arangement..
+
+
+Haegra daemi I Session, bydur upp a autimation..
+
+
+Drop -> M cymbal..
+
+
+** Taka upp Live
+
+Haegt ad taka upp, live.. med stora rauda takkannum.
+
+fara yfir I arangement, og finpussa..
+
+** Verkefni 
+
+bua til lag m 5-8 sceanur..
+
+ma faeri yfir I arangement-> tharf ekki endl...
