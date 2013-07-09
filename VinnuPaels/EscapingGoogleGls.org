@@ -1,0 +1,23 @@
+* Escaping GoogleGls - ofl - Tue Jul  9 10:25:04 GMT 2013
+
+** LAMP stack
+
+Linux
+Apache
+MySQL
+PHP
+
+Ubuntu Server ....or
+Debian  --> select web server option when installing.
+
+
+
+Install ownCloud..
+
+
+http://demo.owncloud.org
+
+
+** Drupal
+
+is open source PHP library
