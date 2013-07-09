@@ -1,0 +1,27 @@
+* Game Of Life implementation
+found in:
+http://www.youtube.com/watch?v=o9pEzgHorH0
+
+** Implementation
+def advance(board):
+    newstate = set()
+    recalc = board | set(itertools.chain(*map(neighbors, board)))
+    for point in recalc:
+        count = sum(neigh in board)
+	    for neigh in neighbors(point))
+	if count == 3 or (count == 2 an dpoint in board):
+	    newstate.add(point)
+    return newstate
+
+glider = set([(0,0),(1,0),(2,0),(0,1),(2,1)])
+    for i in range(1000):
+        glider = advance(glider)
+print glider
+
+
+
+** More stuff from place found, Stop writing Classes
+
+form of premature optimization..
+people comeing from Java
+

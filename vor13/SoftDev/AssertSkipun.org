@@ -1,0 +1,32 @@
+* Assert skipun i Python
+
+finnur villur o.s.f.v.
+
+** notkunardaemi
+
+def finna_aldur(kennitala):
+    assert(len(kennitala)==10)
+    return str(kennitala[4])+str(kennitala[5])
+
+*** villumedhondlun
+
+>>> try:
+...     finna_faedingar_ar("1608813809")
+... except AssertionError:
+...     print("The kennitala is not the right size")
+... else:
+...     print("everything whent purrfukedly")
+... 
+'81'
+everything whent purrfukedly
+>>> try:
+...     finna_faedingar_ar("160881389")
+... except AssertionError:
+...     print("The kennitala is not the right size")
+... else:
+...     print("everything whent purrfukedly")
+... 
+The kennitala is not the right size
+>>> 
+
+ 

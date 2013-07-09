@@ -1,0 +1,45 @@
+* Loka Glos fyrir ---- Orrygis
+
+
+
+** Random stuff
+
+*** ?  DMZ De Militerized Zone
+
+
+http://en.wikipedia.org/wiki/DMZ_%28computing%29
+
+or perimiter network, is a physical or somtimes logical subnetwork that
+contains and exposes an organizations external facing services to a larger
+untrusted network, usually the internet.
+
+
+*** OSI
+
+Please Do Not Tell Secret Passwords Anytime
+
+Physical
+
+Data Link 
+
+Network
+
+Transport
+
+Session
+
+Presentation
+
+Application
+
+
+
+*** RBAC Role BAsed Access Control
+
+
+
+*** ACL Access Control List
+
+*** BIA Buissiness Impact Analysis
+
+

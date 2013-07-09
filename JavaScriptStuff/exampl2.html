@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C/ DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html dir="ltr" lang="en">
+  <head>
+    <meta http-equiv="Contemt-Type" content="text/html; charset=iso-8859-1">
+    <title>CSS Resolution Demo</title>
+    <!-- Basic style with all settings -->
+    <link rel="StyleSheet" href="basic.css" type="text/css" />
+    <!-- 
+	 extra style applied ia havva script to overide default settings, according to
+	 the screen resolution
+	 -->
+    <script type="text/javascript">
+      // Define a variable called cssName and a message called, 
+      // resolution info.
+      var cssName;
+      var resolutionInfo;
+      // If the width of the screen is less than  650 pixels.
+      if( screen.availWidth < 650 ) {
+			      // define the style available as the low resolution style.
+			      cssName = 'lowres.css';
+			      resolutionInfo = 'low resolution';
+      }
+else {
+			      if(screen.availwidth > 1000) {
+	cssName = 'highres.css';
+	resolutionInfo = 'high resolution';
+}else { 
+	cssName = 'lowres.css';
+	resolutionInfo = 'medium resolution';
+}
+}
+	document.write( '<p>Applied Style:' + resolutionInfo +  '<p/>' );
+</script>
+</body>
+</html>
+ 
+			     

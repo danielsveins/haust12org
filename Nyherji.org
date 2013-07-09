@@ -1,0 +1,14 @@
+* Nyherji
+
+
+** vSphere
+
+** Websphere
+http://en.wikipedia.org/wiki/IBM_WebSpher
+
+
+hypervisor or VMM virtual machine monitor
+
+creates and runs virtual machines.
+** Portal
+
