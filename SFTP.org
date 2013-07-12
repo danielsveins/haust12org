@@ -1,0 +1,8 @@
+* SFTP glosur
+
+gagnleg vefsida:
+http://www.bic.mni.mcgill.ca/users/kate/Howto/sftp_notes.html
+
+
+adalatridid er ad haegt er ad navigata local og remote, venjul fyrir remote,
+en svo l a undan fyrir local, einsog lls, fyrir local-ls.
