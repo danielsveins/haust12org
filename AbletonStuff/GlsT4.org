@@ -1,0 +1,80 @@
+* Ableton Namsk. timi 4
+
+** Lemurinn
+
+- hugbunadur - f. t.d. Ipad
+- Grid
+
+- Galaxy - android - Wifi -- > app store
+
+  Midi controler
+  Lemur - Editor
+  - til ad bua til control surface fyrir Live
+
+
+-Amina Isl hljomsveit
+
+Ritcie Hawtin  = minus  - minimal techno
+                   |
+                   V
+                Labelid
+
+
+** Bandvidd Trix
+
+- setja upp t.d. alla bassalinu og svo stilla bara mism loopu fyrir hverja scenu
+-->  Thetta sparar ad loada alltaf allt upppa nytt fyrir hverja nyja clipu..
+
+Velja ras -> file -> export
+   bua til nytt session -> og draga stoff inn.
+
+
+  --> velja thad sem er ssolo -> render a Master
+
+-- Hljodblondun
+   - submix
+   - resampling ..
+
+--Taka up mix fra master - og rendera
+
+-compressa submixid a trommum
+
+** Loops
+
+Launch moode  (L)
+-> follow action
+
+ ----->
+ ----->  taka upp a submix
+ ----->
+
+
+** Grooves
+
+Groovepool
+-swing = syncoperad
+
+Drag drop song into Clip in Live
+
+Extract Groove from sample..
+
+--> convert drums to new MIDI
+
+
+-- Flauta og convert to MIDI.
+
+
+__ Draga Lag inn I Live
+   convert  (i) Melody
+            (ii)  Harmony
+            (iii) Drums
+                          __ to new MIDI
+
+-- Sampla af plotu..
+
+
+Ableton Hopur
+
+Elvar --> 778-554
+Helgi     824-5189
+Bergur    697-3561

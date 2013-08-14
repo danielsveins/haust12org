@@ -1,0 +1,43 @@
+* C++ Mobius Project
+
+** Complex numbers stuff
+
+complex.h is a header file..
+http://support.sas.com/documentation/onlinedoc/sasc/doc/cplus/z0274855.htm
+
+c headers
+http://publib.boulder.ibm.com/infocenter/comphelp/v7v91/index.jsp?topic=%2Fcom.ibm.vacpp7a.doc%2Fstandlib%2Fref%2Fstdcpplib.htm
+
+
+gnu header      ---> looks good   --> #include <complex>
+http://www.physics.utah.edu/~detar/lessons/c++/canned_classes/node2.html
+/home/share/include/g++/std/complext.h
+
+*** example
+// Illustration of compiler <complex> class.
+#include <iostream>
+#include <complex>
+using namespace std;
+
+typedef complex<double> dcmplx;
+
+int main(){
+
+  dcmplx a(5.,6.),b;
+
+  cout << "Enter b: ";
+  cin >> b;
+
+  cout << "a = " << a << "\n";
+  cout << "b = " << b << "\n";
+
+  cout << "a + b = " << a + b << "\n";
+  cout << "a * b = " << a * b << "\n";
+  cout << "a / b = " << a / b << "\n";
+  cout << "|a| = "   << abs(a) << "\n";
+  cout << "complex conjugate of a = " << conj(a) << "\n";
+  cout << "norm of a = " << norm(a) << "\n";
+  cout << "abs of a = " << abs(a) << "\n";
+  cout << "exp(a) = " << exp(a) << "\n";
+}
+

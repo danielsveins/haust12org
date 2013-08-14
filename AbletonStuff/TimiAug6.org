@@ -1,0 +1,130 @@
+* Ableton timi august 6
+
+Max for Live - visuals,..
+
+
+-Kannski 10% orginal hljod i kvikmyndum..
+--> thvi meira sem thid finnid til ad duba, thvi meiri penningur í vasann
+
+Foley..  --> foley listamenn sóttir til þyskalands.
+
+Teiknimyndir-eru mest challenge, það þarf að gera allt.
+
+sample rate 48.
+
+** Compression
+
+dans music -- allt compression.. allt compressad.
+
+EQ - velja lowpass eda highpass filter..
+
+Sidechain - haegt ad haekka gainid i sidechaininu sjalfu
+
+      sidechaina reverb fra trommum, beint aftur in a trommur.!
+
+Glue - compressor
+ 
+  Eftirmynd af fraegum breskum kompressor - endurgerd
+  Virkar vel a trommur   --> naer framm thessum smelli 
+  --gerdur fyrir trommur
+
+best ad nota ekkert preset -> best ad nota eyru.
+
+NewYork - Compression
+   
+     EQ og aftur compressor a return ras, laegri tidnin, lowpass
+
+
+
+Audio Effects ->
+Multiband Dynamics  --> compression a 3- mism tidnisvid
+
+
+Dynamic frekar i classiskri music,
+
+
+** Rymi
+
+Hellar -- salir
+
+Dautt rymi
+
+head room -> 3 til 6 DB
+
+headroom til ad lata fra okkur i mastering.
+
+** Mixing
+
+halda ollu i graenu, og viljum vera med headroom i master til ad boosta allt seinna
+
+EQ 8 er adal taekid i mixid.
+
+
+exporta hverja ras -> aftur inn i live
+
+exportum return rasir sem sjer wav ras..
+
+
+
+NLS Channel Stereo -> setur a allar rasir i mixing skrefinu
+
+Kramer PIE
+
+DeEsser -- > minkar Sss hljod. -- gagnvart saung
+
+Vocal Rider
+
+Base - Rider
+
+
+Falskur songur
+ 
+  Pitcher
+  Melodine  --> finnur allar noturnar i saunginum.
+
+
+slate-digital
+
+Ilock..pluggin_m digital handcuffs th.a. thau thurfa ilock til ad nota thau..
+
+
+Master Ras --Compressor - EQ - Utility - Limiter
+
+
+Limiter
+
+   stilla a t.d. 4.DB -> eykur upp i en ekki yfir limitid..
+
+stilla Utility a adeins minna.
+
+
+Dither  -- sett a Master eda i export..-- tekur ut sud t.d.
+   triangular Dither er frekar safe.
+
+Bounca ut í 24 bitum, semja í 24 bitum.
+
+
+preferences -: bit depth
+
+Sample rate -->  44 er standard sample rate
+
+
+
+
+SoundCloud..youtube...tonlist.is
+
+
+
+Mix og hljodblondun --> Guide Track
+
+
+Mastering a vid morglog, theas plotu
+
+OSO fra Isotope, mastering plugin..
+Mastering vinnur bara med eitt track
+** Tonleikar
+
+
+3 september.--> stefnt ad.
+** 7 Sept Oddi - Örrlygur Smár
+klk 14:00

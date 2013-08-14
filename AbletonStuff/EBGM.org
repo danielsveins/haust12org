@@ -1,0 +1,7 @@
+* EBMG
+
+
+** Anolog chorus
+
+fikt-Freq a filter 1 'i kring um 791, reso 80%
+og svo fikt 'a Arpeginator,.. steps og distance..

@@ -1,0 +1,4 @@
+* SoundCard Stuff
+
+WindowsStuff
+http://support.presonus.com/entries/21486905-How-do-I-set-my-AudioBox-as-my-computer-s-default-output-

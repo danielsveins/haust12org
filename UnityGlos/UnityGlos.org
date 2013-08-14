@@ -1,0 +1,13 @@
+* Unity Glos 
+
+stada i tutorials
+https://www.youtube.com/watch?v=OgFa4H2P6Z0
+
+
+** GeoSyncronus
+
+
+*** FlyMode
+
+ship movement paels
+http://answers.unity3d.com/questions/203613/movement-in-space-scrip-assistance.html

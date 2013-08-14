@@ -1,0 +1,66 @@
+* Timi 3
+
+Allar senur sem thid gerid merkid thid..
+
+
+thvi meiri vinna sem er unnin i session thvi audveldari verdur arangement
+view vinnan vid ad setja saman lagid..
+
+Med thvi ad spila live login, tha verda thau meira organic og skemmtilegri..
+
+Haegt ad skira senurnar..
+
+Gulur takki uppi einsog tvistur a tening ,tharf ad vera kveikt a til ad taka up automation.
+
+
+
+
+** Reglur - oskradar i electroniskri tonlist
+
+bar 16, bar 32, gerist eithvad nytt.  64 kemur break..midja i laginu..
+
+
+
+** Cntrl K
+
+velja stoff til ad stjorna m. lyklabordi
+
+Cntrl M - allt verdur blatt - midi..
+
+
+** Uptaka
+
+tokum upp a Audi ras
+
+Yta a rek a rasinni, og velja Input af hljodkorti..
+
+Faid ykkur hljodkort..
+
+
+Hardware synthar.. kontroladir m MIDI ur Ableton m. hljodkorti..
+--> ekkert sem jafnast a vid anolog sound.
+
+Modular synth -> GusGus notar Modular syntha..
+
+** Warp Punktar
+
+Preferences -> Auto-Warp Long Samples.
+
+take off for complicated things like jazz drums, vocals, o.s.f.v.
+
+haegt ad velja Re-Pitch stillingu.. annars breytist pitch vid warpid..
+
+*** sample adferd
+
+cntrl-L haegri smell, crop sample..
+
+slice to new Midi Track..-> byr til sliceur inni nyja trommu daemi..
+
+
+** Verkefni
+
+Kroppa sampla
+
+Donna Summer..
+
+Vinna M, live settinn, spa 'I hvad thid viljid gera..
